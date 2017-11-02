@@ -182,7 +182,7 @@ namespace BSCKPI.KPI
 
         protected void btnInKeHoach_Click(object sender, DirectEventArgs e)
         {
-            if (slbThang.SelectedItem.Value == null || slbNam.SelectedItem.Value == null || slbNhanVien.SelectedItem.Value == null)
+            if (slbThang.SelectedItem.Value == null || slbNam.SelectedItem.Value == null)
             {
                 X.Msg.Alert("", "Thiếu dữ liệu chọn để in báo cáo").Show();
                 return;
