@@ -12,8 +12,10 @@ namespace DaoBSCKPI.ThamSoTinhDiem
     {
         private linqTSTinhDiemDataContext lTSTD = new linqTSTinhDiemDataContext();
         private sp_tblBKThamSoTinhDiem_ThongTinResult _TSTD = new sp_tblBKThamSoTinhDiem_ThongTinResult();
+        private sp_tblBKThamSoTinhDiem_TimResult _TSTDTim = new sp_tblBKThamSoTinhDiem_TimResult();
 
         public sp_tblBKThamSoTinhDiem_ThongTinResult TSTD { get => _TSTD; set => _TSTD = value; }
+        public sp_tblBKThamSoTinhDiem_TimResult TSTDTim { get => _TSTDTim; set => _TSTDTim = value; }
 
         public sp_tblBKThamSoTinhDiem_ThongTinResult ThongTin()
         {
@@ -21,6 +23,19 @@ namespace DaoBSCKPI.ThamSoTinhDiem
             {
                 TSTD = lTSTD.sp_tblBKThamSoTinhDiem_ThongTin(TSTD.ID).Single();
                 return TSTD;
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        public sp_tblBKThamSoTinhDiem_TimResult Tim()
+        {
+            try
+            {
+                TSTDTim = lTSTD.sp_tblBKThamSoTinhDiem_Tim(TSTD.Ten).Single();
+                return TSTDTim;
             }
             catch
             {

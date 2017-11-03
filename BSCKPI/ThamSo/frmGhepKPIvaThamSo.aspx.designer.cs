@@ -10,7 +10,7 @@
 namespace BSCKPI.ThamSo {
     
     
-    public partial class frmThamSoTinhDiem {
+    public partial class frmGhepKPIvaThamSo {
         
         /// <summary>
         /// form1 control.
@@ -22,49 +22,94 @@ namespace BSCKPI.ThamSo {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// stoTSTD control.
+        /// stoKPIvTS control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.Store stoTSTD;
+        protected global::Ext.Net.Store stoKPIvTS;
         
         /// <summary>
-        /// grdTSTD control.
+        /// grdKPIvTS control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.GridPanel grdTSTD;
+        protected global::Ext.Net.GridPanel grdKPIvTS;
         
         /// <summary>
-        /// btnThemTSTD control.
+        /// btnThemGhep control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.Button btnThemTSTD;
+        protected global::Ext.Net.Button btnThemGhep;
         
         /// <summary>
-        /// wThamSoTD control.
+        /// wKPIvTS control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.Window wThamSoTD;
+        protected global::Ext.Net.Window wKPIvTS;
         
         /// <summary>
-        /// ucTSTD1 control.
+        /// slbKPIChon control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::BSCKPI.ThamSo.UC.ucThamSoTinhDiem ucTSTD1;
+        protected global::Ext.Net.ComboBox slbKPIChon;
+        
+        /// <summary>
+        /// stoKPIChon control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Store stoKPIChon;
+        
+        /// <summary>
+        /// slbTSChon control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.SelectBox slbTSChon;
+        
+        /// <summary>
+        /// stoTSTDChon control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Store stoTSTDChon;
+        
+        /// <summary>
+        /// txtNgayApDung control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.DateField txtNgayApDung;
+        
+        /// <summary>
+        /// txtNgayKetThuc control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.DateField txtNgayKetThuc;
         
         /// <summary>
         /// btnCapNhatTSTD control.

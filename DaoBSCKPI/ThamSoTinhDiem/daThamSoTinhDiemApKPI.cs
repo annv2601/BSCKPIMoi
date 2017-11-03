@@ -48,10 +48,10 @@ namespace DaoBSCKPI.ThamSoTinhDiem
             lTDKPI.sp_tblBKThamSoTinhDiemApChoKPI_ThemSua(TDKPI.ID, TDKPI.IDKPI, TDKPI.IDThamSo, TDKPI.NgayApDung, TDKPI.NgayKetThuc, TDKPI.NguoiTao);
         }
 
-        public void DanhSach()
+        public DataTable DanhSach()
         {
             List<sp_tblBKThamSoTinhDiemApChoKPI_DanhSachResult> lst;
-            lst = lTDKPI.sp_tblBKThamSoTinhDiemApChoKPI_DanhSach(TDKPI.IDKPI).ToList();
+            lst = lTDKPI.sp_tblBKThamSoTinhDiemApChoKPI_DanhSach(TDKPI.IDThamSo).ToList();
             return daDatatableVaList.ToDataTable(lst);
         }
     }

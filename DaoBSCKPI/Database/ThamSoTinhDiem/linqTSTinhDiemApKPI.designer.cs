@@ -62,13 +62,6 @@ namespace DaoBSCKPI.Database.ThamSoTinhDiem
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_tblBKThamSoTinhDiemApChoKPI_DanhSach")]
-		public ISingleResult<sp_tblBKThamSoTinhDiemApChoKPI_DanhSachResult> sp_tblBKThamSoTinhDiemApChoKPI_DanhSach([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDKPI", DbType="Int")] System.Nullable<int> iDKPI)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iDKPI);
-			return ((ISingleResult<sp_tblBKThamSoTinhDiemApChoKPI_DanhSachResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_tblBKThamSoTinhDiemApChoKPI_Tim")]
 		public ISingleResult<sp_tblBKThamSoTinhDiemApChoKPI_TimResult> sp_tblBKThamSoTinhDiemApChoKPI_Tim([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDKPI", DbType="Int")] System.Nullable<int> iDKPI, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Ngay", DbType="Date")] System.Nullable<System.DateTime> ngay)
 		{
@@ -89,175 +82,12 @@ namespace DaoBSCKPI.Database.ThamSoTinhDiem
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD);
 			return ((ISingleResult<sp_tblBKThamSoTinhDiemApChoKPI_ThongTinResult>)(result.ReturnValue));
 		}
-	}
-	
-	public partial class sp_tblBKThamSoTinhDiemApChoKPI_DanhSachResult
-	{
 		
-		private System.Nullable<long> _STT;
-		
-		private int _ID;
-		
-		private string _Ma;
-		
-		private string _TenKPI;
-		
-		private string _TenThamSo;
-		
-		private System.Nullable<decimal> _CanTren;
-		
-		private System.Nullable<decimal> _CanDuoi;
-		
-		private System.Nullable<decimal> _DiemCanTren;
-		
-		private System.Nullable<decimal> _DiemCanDuoi;
-		
-		public sp_tblBKThamSoTinhDiemApChoKPI_DanhSachResult()
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_tblBKThamSoTinhDiemApChoKPI_DanhSach")]
+		public ISingleResult<sp_tblBKThamSoTinhDiemApChoKPI_DanhSachResult> sp_tblBKThamSoTinhDiemApChoKPI_DanhSach([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDThamSo", DbType="Int")] System.Nullable<int> iDThamSo)
 		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_STT", DbType="BigInt")]
-		public System.Nullable<long> STT
-		{
-			get
-			{
-				return this._STT;
-			}
-			set
-			{
-				if ((this._STT != value))
-				{
-					this._STT = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", DbType="Int NOT NULL")]
-		public int ID
-		{
-			get
-			{
-				return this._ID;
-			}
-			set
-			{
-				if ((this._ID != value))
-				{
-					this._ID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ma", DbType="NVarChar(15)")]
-		public string Ma
-		{
-			get
-			{
-				return this._Ma;
-			}
-			set
-			{
-				if ((this._Ma != value))
-				{
-					this._Ma = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenKPI", DbType="NVarChar(250)")]
-		public string TenKPI
-		{
-			get
-			{
-				return this._TenKPI;
-			}
-			set
-			{
-				if ((this._TenKPI != value))
-				{
-					this._TenKPI = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenThamSo", DbType="NVarChar(80)")]
-		public string TenThamSo
-		{
-			get
-			{
-				return this._TenThamSo;
-			}
-			set
-			{
-				if ((this._TenThamSo != value))
-				{
-					this._TenThamSo = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CanTren", DbType="Decimal(22,3)")]
-		public System.Nullable<decimal> CanTren
-		{
-			get
-			{
-				return this._CanTren;
-			}
-			set
-			{
-				if ((this._CanTren != value))
-				{
-					this._CanTren = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CanDuoi", DbType="Decimal(22,3)")]
-		public System.Nullable<decimal> CanDuoi
-		{
-			get
-			{
-				return this._CanDuoi;
-			}
-			set
-			{
-				if ((this._CanDuoi != value))
-				{
-					this._CanDuoi = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiemCanTren", DbType="Decimal(18,3)")]
-		public System.Nullable<decimal> DiemCanTren
-		{
-			get
-			{
-				return this._DiemCanTren;
-			}
-			set
-			{
-				if ((this._DiemCanTren != value))
-				{
-					this._DiemCanTren = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiemCanDuoi", DbType="Decimal(18,3)")]
-		public System.Nullable<decimal> DiemCanDuoi
-		{
-			get
-			{
-				return this._DiemCanDuoi;
-			}
-			set
-			{
-				if ((this._DiemCanDuoi != value))
-				{
-					this._DiemCanDuoi = value;
-				}
-			}
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iDThamSo);
+			return ((ISingleResult<sp_tblBKThamSoTinhDiemApChoKPI_DanhSachResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -596,6 +426,230 @@ namespace DaoBSCKPI.Database.ThamSoTinhDiem
 				if ((this._NguoiSua != value))
 				{
 					this._NguoiSua = value;
+				}
+			}
+		}
+	}
+	
+	public partial class sp_tblBKThamSoTinhDiemApChoKPI_DanhSachResult
+	{
+		
+		private System.Nullable<long> _STT;
+		
+		private int _ID;
+		
+		private int _IDKPI;
+		
+		private string _Ma;
+		
+		private string _TenKPI;
+		
+		private string _TenThamSo;
+		
+		private System.Nullable<System.DateTime> _NgayApDung;
+		
+		private System.Nullable<System.DateTime> _NgayKetThuc;
+		
+		private System.Nullable<decimal> _CanTren;
+		
+		private System.Nullable<decimal> _CanDuoi;
+		
+		private System.Nullable<decimal> _DiemCanTren;
+		
+		private System.Nullable<decimal> _DiemCanDuoi;
+		
+		public sp_tblBKThamSoTinhDiemApChoKPI_DanhSachResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_STT", DbType="BigInt")]
+		public System.Nullable<long> STT
+		{
+			get
+			{
+				return this._STT;
+			}
+			set
+			{
+				if ((this._STT != value))
+				{
+					this._STT = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", DbType="Int NOT NULL")]
+		public int ID
+		{
+			get
+			{
+				return this._ID;
+			}
+			set
+			{
+				if ((this._ID != value))
+				{
+					this._ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IDKPI", DbType="Int NOT NULL")]
+		public int IDKPI
+		{
+			get
+			{
+				return this._IDKPI;
+			}
+			set
+			{
+				if ((this._IDKPI != value))
+				{
+					this._IDKPI = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ma", DbType="NVarChar(15)")]
+		public string Ma
+		{
+			get
+			{
+				return this._Ma;
+			}
+			set
+			{
+				if ((this._Ma != value))
+				{
+					this._Ma = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenKPI", DbType="NVarChar(250)")]
+		public string TenKPI
+		{
+			get
+			{
+				return this._TenKPI;
+			}
+			set
+			{
+				if ((this._TenKPI != value))
+				{
+					this._TenKPI = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenThamSo", DbType="NVarChar(80)")]
+		public string TenThamSo
+		{
+			get
+			{
+				return this._TenThamSo;
+			}
+			set
+			{
+				if ((this._TenThamSo != value))
+				{
+					this._TenThamSo = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayApDung", DbType="Date")]
+		public System.Nullable<System.DateTime> NgayApDung
+		{
+			get
+			{
+				return this._NgayApDung;
+			}
+			set
+			{
+				if ((this._NgayApDung != value))
+				{
+					this._NgayApDung = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayKetThuc", DbType="Date")]
+		public System.Nullable<System.DateTime> NgayKetThuc
+		{
+			get
+			{
+				return this._NgayKetThuc;
+			}
+			set
+			{
+				if ((this._NgayKetThuc != value))
+				{
+					this._NgayKetThuc = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CanTren", DbType="Decimal(22,3)")]
+		public System.Nullable<decimal> CanTren
+		{
+			get
+			{
+				return this._CanTren;
+			}
+			set
+			{
+				if ((this._CanTren != value))
+				{
+					this._CanTren = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CanDuoi", DbType="Decimal(22,3)")]
+		public System.Nullable<decimal> CanDuoi
+		{
+			get
+			{
+				return this._CanDuoi;
+			}
+			set
+			{
+				if ((this._CanDuoi != value))
+				{
+					this._CanDuoi = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiemCanTren", DbType="Decimal(18,3)")]
+		public System.Nullable<decimal> DiemCanTren
+		{
+			get
+			{
+				return this._DiemCanTren;
+			}
+			set
+			{
+				if ((this._DiemCanTren != value))
+				{
+					this._DiemCanTren = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiemCanDuoi", DbType="Decimal(18,3)")]
+		public System.Nullable<decimal> DiemCanDuoi
+		{
+			get
+			{
+				return this._DiemCanDuoi;
+			}
+			set
+			{
+				if ((this._DiemCanDuoi != value))
+				{
+					this._DiemCanDuoi = value;
 				}
 			}
 		}

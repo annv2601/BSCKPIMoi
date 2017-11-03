@@ -51,4 +51,22 @@
     <Parameter Name="NguoiTao" Parameter="nguoiTao" Type="System.String" DbType="NVarChar(30)" />
     <Return Type="System.Int32" />
   </Function>
+  <Function Name="dbo.sp_tblBKThamSoTinhDiem_Tim" Method="sp_tblBKThamSoTinhDiem_Tim">
+    <Parameter Name="Ten" Parameter="ten" Type="System.String" DbType="NVarChar(50)" />
+    <ElementType Name="sp_tblBKThamSoTinhDiem_TimResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Ten" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+      <Column Name="IDXuHuongYeuCau" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CanDuoi" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="CanTren" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="DiemCanDuoi" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
+      <Column Name="DiemCanTren" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
+      <Column Name="IDNhomThamSo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDGiaTri" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NgayTao" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NgaySua" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NguoiTao" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="NguoiSua" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+    </ElementType>
+  </Function>
 </Database>
