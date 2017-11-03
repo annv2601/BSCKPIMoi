@@ -146,12 +146,12 @@ namespace BSCKPI.KetQuaDanhGia
                 return;
             }
 
-            daKetQuaDanhGia dKQ = new daKetQuaDanhGia();
+            /*daKetQuaDanhGia dKQ = new daKetQuaDanhGia();
             dKQ.KQ.Thang = byte.Parse(slbThang.SelectedItem.Value);
             dKQ.KQ.Nam = int.Parse(slbNam.SelectedItem.Value);
             dKQ.KQ.IDNhanVien = Guid.Parse(slbNhanVien.SelectedItem.Value);
             dKQ.KQ.NguoiTao = daPhien.NguoiDung.IDNhanVien.ToString();
-            dKQ.KhoiTaoNhanVien();
+            dKQ.KhoiTaoNhanVien();*/
 
             Session["ThangBangDanhGiaCaNhan"] = slbThang.SelectedItem.Value;
             Session["NamBangDanhGiaCaNhan"] = slbNam.SelectedItem.Value;

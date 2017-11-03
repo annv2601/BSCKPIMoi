@@ -117,6 +117,27 @@ namespace DaoBSCKPI.Database.KetQuaDanhGia
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), thang, nam, iDNhanVien, iDKPI);
 			return ((ISingleResult<sp_tblBKKetQuaDanhGia_ThongTinResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_tblBKKetQuaDanhGia_KhoiTao_NhanVien_TuDonVi")]
+		public ISingleResult<sp_tblBKKetQuaDanhGia_KhoiTao_NhanVien_TuDonViResult> sp_tblBKKetQuaDanhGia_KhoiTao_NhanVien_TuDonVi([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Thang", DbType="SmallInt")] System.Nullable<short> thang, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nam", DbType="Int")] System.Nullable<int> nam, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDNhanVien", DbType="UniqueIdentifier")] System.Nullable<System.Guid> iDNhanVien, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="NguoiTao", DbType="NVarChar(30)")] string nguoiTao)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), thang, nam, iDNhanVien, nguoiTao);
+			return ((ISingleResult<sp_tblBKKetQuaDanhGia_KhoiTao_NhanVien_TuDonViResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_tblBKKetQuaDanhGia_TinhDiem_Kehoach")]
+		public ISingleResult<sp_tblBKKetQuaDanhGia_TinhDiem_KehoachResult> sp_tblBKKetQuaDanhGia_TinhDiem_Kehoach([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Thang", DbType="SmallInt")] System.Nullable<short> thang, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nam", DbType="Int")] System.Nullable<int> nam, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDKeHoach", DbType="Int")] System.Nullable<int> iDKeHoach, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="NguoiTao", DbType="NVarChar(30)")] string nguoiTao)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), thang, nam, iDKeHoach, nguoiTao);
+			return ((ISingleResult<sp_tblBKKetQuaDanhGia_TinhDiem_KehoachResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_tblBKKetQuaDanhGia_TinhDiem_NhanVien")]
+		public ISingleResult<sp_tblBKKetQuaDanhGia_TinhDiem_NhanVienResult> sp_tblBKKetQuaDanhGia_TinhDiem_NhanVien([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Thang", DbType="SmallInt")] System.Nullable<short> thang, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nam", DbType="Int")] System.Nullable<int> nam, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDNhanVien", DbType="UniqueIdentifier")] System.Nullable<System.Guid> iDNhanVien, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="NguoiTao", DbType="NVarChar(30)")] string nguoiTao)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), thang, nam, iDNhanVien, nguoiTao);
+			return ((ISingleResult<sp_tblBKKetQuaDanhGia_TinhDiem_NhanVienResult>)(result.ReturnValue));
+		}
 	}
 	
 	public partial class sp_tblBKKetQuaDanhGia_DanhSachResult
@@ -598,6 +619,84 @@ namespace DaoBSCKPI.Database.KetQuaDanhGia
 				if ((this._NgaySua != value))
 				{
 					this._NgaySua = value;
+				}
+			}
+		}
+	}
+	
+	public partial class sp_tblBKKetQuaDanhGia_KhoiTao_NhanVien_TuDonViResult
+	{
+		
+		private int _Co;
+		
+		public sp_tblBKKetQuaDanhGia_KhoiTao_NhanVien_TuDonViResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Co", DbType="Int NOT NULL")]
+		public int Co
+		{
+			get
+			{
+				return this._Co;
+			}
+			set
+			{
+				if ((this._Co != value))
+				{
+					this._Co = value;
+				}
+			}
+		}
+	}
+	
+	public partial class sp_tblBKKetQuaDanhGia_TinhDiem_KehoachResult
+	{
+		
+		private int _Co;
+		
+		public sp_tblBKKetQuaDanhGia_TinhDiem_KehoachResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Co", DbType="Int NOT NULL")]
+		public int Co
+		{
+			get
+			{
+				return this._Co;
+			}
+			set
+			{
+				if ((this._Co != value))
+				{
+					this._Co = value;
+				}
+			}
+		}
+	}
+	
+	public partial class sp_tblBKKetQuaDanhGia_TinhDiem_NhanVienResult
+	{
+		
+		private int _Co;
+		
+		public sp_tblBKKetQuaDanhGia_TinhDiem_NhanVienResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Co", DbType="Int NOT NULL")]
+		public int Co
+		{
+			get
+			{
+				return this._Co;
+			}
+			set
+			{
+				if ((this._Co != value))
+				{
+					this._Co = value;
 				}
 			}
 		}

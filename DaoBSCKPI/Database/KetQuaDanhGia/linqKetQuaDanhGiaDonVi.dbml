@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BSCKPI" Class="linqKetQuaDanhGiaDonViDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=10.10.200.160;Initial Catalog=BSCKPI;Persist Security Info=True;User ID=chay" SettingsObjectName="DaoBSCKPI.Properties.Settings" SettingsPropertyName="BSCKPIConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.sp_tblBKKetQuaDanhGiaDonVi_CapNhat" Method="sp_tblBKKetQuaDanhGiaDonVi_CapNhat">
+    <Parameter Name="Thang" Parameter="thang" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="Nam" Parameter="nam" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDDonVi" Parameter="iDDonVi" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDPhongBan" Parameter="iDPhongBan" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDKPI" Parameter="iDKPI" Type="System.Int32" DbType="Int" />
+    <Parameter Name="KetQua" Parameter="ketQua" Type="System.Decimal" DbType="Decimal(22,3)" />
+    <Parameter Name="NguoiTao" Parameter="nguoiTao" Type="System.String" DbType="NVarChar(30)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_tblBKKetQuaDanhGiaDonVi_KhoiTao" Method="sp_tblBKKetQuaDanhGiaDonVi_KhoiTao">
+    <Parameter Name="Thang" Parameter="thang" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="Nam" Parameter="nam" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDDonVi" Parameter="iDDonVi" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDPhongBan" Parameter="iDPhongBan" Type="System.Int32" DbType="Int" />
+    <Parameter Name="NguoiTao" Parameter="nguoiTao" Type="System.String" DbType="NVarChar(30)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_tblBKKetQuaDanhGiaDonVi_DanhSach" Method="sp_tblBKKetQuaDanhGiaDonVi_DanhSach">
+    <Parameter Name="Thang" Parameter="thang" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="Nam" Parameter="nam" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDDonVi" Parameter="iDDonVi" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDPhongBan" Parameter="iDPhongBan" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_tblBKKetQuaDanhGiaDonVi_DanhSachResult">
+      <Column Name="STT" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Thang" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Nam" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDDonVi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDPhongBan" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDKPI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MucTieu" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="KetQua" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="NguoiTao" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="NguoiSua" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="NgayTao" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NgaySua" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Ma" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="Ten" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DonViTinh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TanSuatDo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="XuHuongYeuCau" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_tblBKKetQuaDanhGiaDonVi_ThongTin" Method="sp_tblBKKetQuaDanhGiaDonVi_ThongTin">
+    <Parameter Name="Thang" Parameter="thang" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="Nam" Parameter="nam" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDDonVi" Parameter="iDDonVi" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDPhongBan" Parameter="iDPhongBan" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDKPI" Parameter="iDKPI" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_tblBKKetQuaDanhGiaDonVi_ThongTinResult">
+      <Column Name="Thang" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Nam" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDDonVi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDPhongBan" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDKPI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MucTieu" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="KetQua" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="NguoiTao" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="NguoiSua" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="NgayTao" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NgaySua" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

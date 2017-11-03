@@ -53,6 +53,21 @@ namespace DaoBSCKPI.KetQuaDanhGia
             lKQ.sp_tblBKKetQuaDanhGia_KhoiTao_NhanVien(KQ.Thang, KQ.Nam, KQ.IDNhanVien, KQ.NguoiTao);
         }
 
+        public void KhoiTaoNhanVienTuDonVi()
+        {
+            lKQ.sp_tblBKKetQuaDanhGia_KhoiTao_NhanVien_TuDonVi(KQ.Thang, KQ.Nam, KQ.IDNhanVien, KQ.NguoiTao);
+        }
+
+        public void TinhDiemNhanVien()
+        {
+            lKQ.sp_tblBKKetQuaDanhGia_TinhDiem_NhanVien(KQ.Thang, KQ.Nam, KQ.IDNhanVien, KQ.NguoiTao);
+        }
+
+        public void TinhDiemKeHoach(int rIDKeHoach)
+        {
+            lKQ.sp_tblBKKetQuaDanhGia_TinhDiem_Kehoach(KQ.Thang, KQ.Nam, rIDKeHoach, KQ.NguoiTao);
+        }
+
         public DataTable DanhSach()
         {
             List<sp_tblBKKetQuaDanhGia_DanhSachResult> lst;

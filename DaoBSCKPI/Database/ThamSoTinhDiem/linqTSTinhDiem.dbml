@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BSCKPI" Class="linqTSTinhDiemDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=10.10.200.160;Initial Catalog=BSCKPI;Persist Security Info=True;User ID=chay" SettingsObjectName="DaoBSCKPI.Properties.Settings" SettingsPropertyName="BSCKPIConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.sp_tblBKThamSoTinhDiem_DanhSach" Method="sp_tblBKThamSoTinhDiem_DanhSach">
+    <ElementType Name="sp_tblBKThamSoTinhDiem_DanhSachResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Ten" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+      <Column Name="IDXuHuongYeuCau" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="XuHuongYeuCau" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CanDuoi" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="CanTren" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="DiemCanDuoi" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
+      <Column Name="DiemCanTren" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
+      <Column Name="IDNhomThamSo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NhomThamSo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDGiaTri" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Giatri" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NgayTao" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NgaySua" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NguoiTao" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="NguoiSua" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_tblBKThamSoTinhDiem_ThongTin" Method="sp_tblBKThamSoTinhDiem_ThongTin">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_tblBKThamSoTinhDiem_ThongTinResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Ten" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+      <Column Name="IDXuHuongYeuCau" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CanDuoi" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="CanTren" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="DiemCanDuoi" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
+      <Column Name="DiemCanTren" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
+      <Column Name="IDNhomThamSo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDGiaTri" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NgayTao" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NgaySua" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NguoiTao" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="NguoiSua" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_tblBKThamSoTinhDiem_ThemSua" Method="sp_tblBKThamSoTinhDiem_ThemSua">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Ten" Parameter="ten" Type="System.String" DbType="NVarChar(80)" />
+    <Parameter Name="IDXuHuongYeuCau" Parameter="iDXuHuongYeuCau" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CanDuoi" Parameter="canDuoi" Type="System.Decimal" DbType="Decimal(22,3)" />
+    <Parameter Name="CanTren" Parameter="canTren" Type="System.Decimal" DbType="Decimal(22,3)" />
+    <Parameter Name="DiemCanDuoi" Parameter="diemCanDuoi" Type="System.Decimal" DbType="Decimal(18,3)" />
+    <Parameter Name="DiemCanTren" Parameter="diemCanTren" Type="System.Decimal" DbType="Decimal(18,3)" />
+    <Parameter Name="IDNhomThamSo" Parameter="iDNhomThamSo" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDGiaTri" Parameter="iDGiaTri" Type="System.Int32" DbType="Int" />
+    <Parameter Name="NguoiTao" Parameter="nguoiTao" Type="System.String" DbType="NVarChar(30)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

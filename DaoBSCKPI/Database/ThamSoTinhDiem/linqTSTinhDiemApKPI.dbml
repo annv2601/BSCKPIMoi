@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BSCKPI" Class="linqTSTinhDiemApKPIDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=10.10.200.160;Initial Catalog=BSCKPI;Persist Security Info=True;User ID=chay" SettingsObjectName="DaoBSCKPI.Properties.Settings" SettingsPropertyName="BSCKPIConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.sp_tblBKThamSoTinhDiemApChoKPI_DanhSach" Method="sp_tblBKThamSoTinhDiemApChoKPI_DanhSach">
+    <Parameter Name="IDKPI" Parameter="iDKPI" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_tblBKThamSoTinhDiemApChoKPI_DanhSachResult">
+      <Column Name="STT" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Ma" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="TenKPI" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TenThamSo" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+      <Column Name="CanTren" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="CanDuoi" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="DiemCanTren" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
+      <Column Name="DiemCanDuoi" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_tblBKThamSoTinhDiemApChoKPI_Tim" Method="sp_tblBKThamSoTinhDiemApChoKPI_Tim">
+    <Parameter Name="IDKPI" Parameter="iDKPI" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Ngay" Parameter="ngay" Type="System.DateTime" DbType="Date" />
+    <ElementType Name="sp_tblBKThamSoTinhDiemApChoKPI_TimResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IDKPI" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IDThamSo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NgayApDung" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="NgayKetThuc" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="NgayTao" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NgaySua" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NguoiTao" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="NguoiSua" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_tblBKThamSoTinhDiemApChoKPI_ThemSua" Method="sp_tblBKThamSoTinhDiemApChoKPI_ThemSua">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDKPI" Parameter="iDKPI" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDThamSo" Parameter="iDThamSo" Type="System.Int32" DbType="Int" />
+    <Parameter Name="NgayApDung" Parameter="ngayApDung" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="NgayKetThuc" Parameter="ngayKetThuc" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="NguoiTao" Parameter="nguoiTao" Type="System.String" DbType="NVarChar(30)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_tblBKThamSoTinhDiemApChoKPI_ThongTin" Method="sp_tblBKThamSoTinhDiemApChoKPI_ThongTin">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_tblBKThamSoTinhDiemApChoKPI_ThongTinResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IDKPI" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IDThamSo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NgayApDung" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="NgayKetThuc" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="NgayTao" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NgaySua" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NguoiTao" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="NguoiSua" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

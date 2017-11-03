@@ -46,6 +46,13 @@ namespace BSCKPI.KetQuaDanhGia
         #region Rieng
         private void LayBangDanhGia(byte rThang, int rNam, Guid rIDNhanVien)
         {
+            daKetQuaDanhGia dKQ = new daKetQuaDanhGia();
+            dKQ.KQ.Thang = Thang;
+            dKQ.KQ.Nam = Nam;
+            dKQ.KQ.IDNhanVien = IDNhanVien;
+            dKQ.KQ.NguoiTao = daPhien.NguoiDung.IDNhanVien.ToString();
+            dKQ.KhoiTaoNhanVienTuDonVi();
+
             daBangDanhGia dBDG = new daBangDanhGia();
             dBDG.Thang = rThang;
             dBDG.Nam = rNam;
