@@ -108,7 +108,9 @@ namespace BSCKPI.KPI
                 rptBDG.SetParameterValue(7, dDiem.LayDXL.TongDiemKPI.Value.ToString("N2", CultureInfo.CreateSpecificCulture("vi-VN")));
                 rptBDG.SetParameterValue(8, dDiem.LayDXL.Ten.ToUpper());
             }
-            
+
+            rptBDG.SetParameterValue(9, dTTNV.Tim.PhuTrach);
+
             CrystalReportViewer1.ReportSource = rptBDG;
         }
         #endregion
@@ -172,6 +174,7 @@ namespace BSCKPI.KPI
                 rptDGNhieu.SetParameterValue("TongDiem", dDiem.LayDXL.TongDiemKPI.Value.ToString("N2", CultureInfo.CreateSpecificCulture("vi-VN")), rTenBC);
                 rptDGNhieu.SetParameterValue("XepLoai", dDiem.LayDXL.Ten.ToUpper(), rTenBC);
             }
+            rptDGNhieu.SetParameterValue("LinhVucPhuTrach", dTTNV.Tim.PhuTrach, rTenBC);
         }
 
         private void NapThamSoDGTrong(string rTenBC)

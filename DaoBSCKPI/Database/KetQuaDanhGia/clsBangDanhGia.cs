@@ -45,6 +45,8 @@ namespace DaoBSCKPI.Database.KetQuaDanhGia
 
         private System.Nullable<bool> _NhapDiem;
 
+        private System.Nullable<bool> _NhapKetQua;
+
         public clsBangDanhGia()
         {
         }
@@ -333,6 +335,22 @@ namespace DaoBSCKPI.Database.KetQuaDanhGia
                 if ((this._NhapDiem != value))
                 {
                     this._NhapDiem = value;
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_NhapKetQua", DbType = "Bit")]
+        public System.Nullable<bool> NhapKetQua
+        {
+            get
+            {
+                return this._NhapKetQua;
+            }
+            set
+            {
+                if ((this._NhapKetQua != value))
+                {
+                    this._NhapKetQua = value;
                 }
             }
         }

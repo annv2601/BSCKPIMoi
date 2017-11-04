@@ -82,14 +82,29 @@
                             <Menu>
                                 <ext:Menu runat="server">
                                     <Items>
-                                        <ext:MenuItem runat="server" Text="Bản in cá nhân" ID="btnInCaNhan" UI="Warning">
+                                        <ext:MenuItem runat="server" Text="Bản in cá nhân" ID="btnInCaNhan" Icon="ReportUser">
                                             <DirectEvents>
                                                 <Click OnEvent="btnInCaNhan_Click" />
                                             </DirectEvents>
                                         </ext:MenuItem>
-                                        <ext:MenuItem runat="server" Text="Bản in theo kế hoạch" ID="btnInKeHoach" UI="Warning" >
+                                        <ext:MenuItem runat="server" Text="Bản in theo kế hoạch" ID="btnInKeHoach" Icon="Report" >
                                             <DirectEvents>
                                                 <Click OnEvent="btnInKeHoach_Click" />
+                                            </DirectEvents>
+                                        </ext:MenuItem>
+                                        <ext:MenuSeparator />
+                                        <ext:MenuItem runat="server" Text="Tính điểm cá nhân" ID="btnTinhDiemCaNhan" Icon="CalculatorEdit" >
+                                            <DirectEvents>
+                                                <Click OnEvent="btnTinhDiemCaNhan_Click" >
+                                                    <EventMask ShowMask="true" Msg="Đang tính toán ......" />
+                                                </Click>
+                                            </DirectEvents>
+                                        </ext:MenuItem>
+                                        <ext:MenuItem runat="server" Text="Tính điểm theo kế hoạch" ID="btnTinhDiemKeHoach" Icon="Calculator" >
+                                            <DirectEvents>
+                                                <Click OnEvent="btnTinhDiemKeHoach_Click" >
+                                                    <EventMask ShowMask="true" Msg="Đang tính toán ......" />
+                                                </Click>
                                             </DirectEvents>
                                         </ext:MenuItem>
                                     </Items>

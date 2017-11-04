@@ -111,6 +111,10 @@
                 //alert("Co chay");
                 CellEditing1.cancelEdit(); 
             }
+            if (e.field == "KetQua" && e.record.data.NhapKetQua == false) {
+                //alert("Co chay");
+                CellEditing1.cancelEdit();
+            }
         }
 
         var edit = function (editor, e) {
@@ -151,6 +155,7 @@
                                 <ext:ModelField Name="DienGiai" />
                                 <ext:ModelField Name="LoaiChiTieu" />
                                 <ext:ModelField Name="NhapDiem" />
+                                <ext:ModelField Name="NhapKetQua" />
                             </Fields>
                         </ext:Model>
                     </Model>

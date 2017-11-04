@@ -954,7 +954,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG1_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG0_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[9];
             }
@@ -962,7 +962,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG1_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG1_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[10];
             }
@@ -970,7 +970,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG1_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG1_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[11];
             }
@@ -978,7 +978,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG1_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG1_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[12];
             }
@@ -986,7 +986,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG1_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG1_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[13];
             }
@@ -994,7 +994,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG1_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG1_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[14];
             }
@@ -1002,7 +1002,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG1_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG1_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[15];
             }
@@ -1010,7 +1010,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG1_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG1_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[16];
             }
@@ -1018,7 +1018,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG1_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG1_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[17];
             }
@@ -1026,7 +1026,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG10_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG1_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[18];
             }
@@ -1034,7 +1034,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG10_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG1_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[19];
             }
@@ -1042,7 +1042,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG10_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG10_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[20];
             }
@@ -1050,7 +1050,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG10_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG10_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[21];
             }
@@ -1058,7 +1058,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG10_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG10_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[22];
             }
@@ -1066,7 +1066,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG10_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG10_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[23];
             }
@@ -1074,7 +1074,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG10_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG10_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[24];
             }
@@ -1082,7 +1082,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG10_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG10_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[25];
             }
@@ -1090,7 +1090,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG10_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG10_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[26];
             }
@@ -1098,7 +1098,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG11_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG10_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[27];
             }
@@ -1106,7 +1106,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG11_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG10_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[28];
             }
@@ -1114,7 +1114,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG11_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG10_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[29];
             }
@@ -1122,7 +1122,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG11_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG11_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[30];
             }
@@ -1130,7 +1130,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG11_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG11_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[31];
             }
@@ -1138,7 +1138,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG11_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG11_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[32];
             }
@@ -1146,7 +1146,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG11_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG11_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[33];
             }
@@ -1154,7 +1154,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG11_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG11_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[34];
             }
@@ -1162,7 +1162,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG11_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG11_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[35];
             }
@@ -1170,7 +1170,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG12_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG11_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[36];
             }
@@ -1178,7 +1178,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG12_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG11_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[37];
             }
@@ -1186,7 +1186,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG12_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG11_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[38];
             }
@@ -1194,7 +1194,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG12_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG11_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[39];
             }
@@ -1202,7 +1202,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG12_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG12_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[40];
             }
@@ -1210,7 +1210,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG12_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG12_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[41];
             }
@@ -1218,7 +1218,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG12_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG12_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[42];
             }
@@ -1226,7 +1226,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG12_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG12_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[43];
             }
@@ -1234,7 +1234,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG12_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG12_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[44];
             }
@@ -1242,7 +1242,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG13_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG12_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[45];
             }
@@ -1250,7 +1250,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG13_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG12_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[46];
             }
@@ -1258,7 +1258,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG13_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG12_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[47];
             }
@@ -1266,7 +1266,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG13_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG12_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[48];
             }
@@ -1274,7 +1274,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG13_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG12_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[49];
             }
@@ -1282,7 +1282,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG13_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG13_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[50];
             }
@@ -1290,7 +1290,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG13_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG13_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[51];
             }
@@ -1298,7 +1298,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG13_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG13_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[52];
             }
@@ -1306,7 +1306,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG13_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG13_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[53];
             }
@@ -1314,7 +1314,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG14_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG13_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[54];
             }
@@ -1322,7 +1322,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG14_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG13_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[55];
             }
@@ -1330,7 +1330,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG14_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG13_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[56];
             }
@@ -1338,7 +1338,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG14_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG13_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[57];
             }
@@ -1346,7 +1346,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG14_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG13_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[58];
             }
@@ -1354,7 +1354,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG14_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG13_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[59];
             }
@@ -1362,7 +1362,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG14_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG14_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[60];
             }
@@ -1370,7 +1370,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG14_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG14_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[61];
             }
@@ -1378,7 +1378,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG14_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG14_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[62];
             }
@@ -1386,7 +1386,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG15_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG14_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[63];
             }
@@ -1394,7 +1394,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG15_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG14_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[64];
             }
@@ -1402,7 +1402,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG15_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG14_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[65];
             }
@@ -1410,7 +1410,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG15_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG14_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[66];
             }
@@ -1418,7 +1418,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG15_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG14_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[67];
             }
@@ -1426,7 +1426,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG15_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG14_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[68];
             }
@@ -1434,7 +1434,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG15_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG14_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[69];
             }
@@ -1442,7 +1442,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG15_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG15_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[70];
             }
@@ -1450,7 +1450,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG15_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG15_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[71];
             }
@@ -1458,7 +1458,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG16_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG15_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[72];
             }
@@ -1466,7 +1466,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG16_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG15_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[73];
             }
@@ -1474,7 +1474,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG16_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG15_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[74];
             }
@@ -1482,7 +1482,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG16_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG15_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[75];
             }
@@ -1490,7 +1490,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG16_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG15_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[76];
             }
@@ -1498,7 +1498,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG16_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG15_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[77];
             }
@@ -1506,7 +1506,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG16_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG15_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[78];
             }
@@ -1514,7 +1514,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG16_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG15_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[79];
             }
@@ -1522,7 +1522,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG16_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG16_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[80];
             }
@@ -1530,7 +1530,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG17_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG16_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[81];
             }
@@ -1538,7 +1538,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG17_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG16_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[82];
             }
@@ -1546,7 +1546,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG17_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG16_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[83];
             }
@@ -1554,7 +1554,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG17_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG16_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[84];
             }
@@ -1562,7 +1562,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG17_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG16_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[85];
             }
@@ -1570,7 +1570,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG17_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG16_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[86];
             }
@@ -1578,7 +1578,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG17_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG16_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[87];
             }
@@ -1586,7 +1586,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG17_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG16_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[88];
             }
@@ -1594,7 +1594,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG17_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG16_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[89];
             }
@@ -1602,7 +1602,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG18_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG17_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[90];
             }
@@ -1610,7 +1610,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG18_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG17_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[91];
             }
@@ -1618,7 +1618,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG18_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG17_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[92];
             }
@@ -1626,7 +1626,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG18_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG17_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[93];
             }
@@ -1634,7 +1634,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG18_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG17_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[94];
             }
@@ -1642,7 +1642,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG18_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG17_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[95];
             }
@@ -1650,7 +1650,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG18_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG17_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[96];
             }
@@ -1658,7 +1658,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG18_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG17_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[97];
             }
@@ -1666,7 +1666,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG18_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG17_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[98];
             }
@@ -1674,7 +1674,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG19_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG17_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[99];
             }
@@ -1682,7 +1682,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG19_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG18_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[100];
             }
@@ -1690,7 +1690,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG19_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG18_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[101];
             }
@@ -1698,7 +1698,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG19_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG18_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[102];
             }
@@ -1706,7 +1706,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG19_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG18_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[103];
             }
@@ -1714,7 +1714,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG19_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG18_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[104];
             }
@@ -1722,7 +1722,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG19_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG18_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[105];
             }
@@ -1730,7 +1730,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG19_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG18_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[106];
             }
@@ -1738,7 +1738,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG19_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG18_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[107];
             }
@@ -1746,7 +1746,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG2_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG18_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[108];
             }
@@ -1754,7 +1754,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG2_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG18_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[109];
             }
@@ -1762,7 +1762,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG2_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG19_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[110];
             }
@@ -1770,7 +1770,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG2_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG19_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[111];
             }
@@ -1778,7 +1778,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG2_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG19_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[112];
             }
@@ -1786,7 +1786,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG2_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG19_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[113];
             }
@@ -1794,7 +1794,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG2_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG19_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[114];
             }
@@ -1802,7 +1802,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG2_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG19_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[115];
             }
@@ -1810,7 +1810,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG2_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG19_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[116];
             }
@@ -1818,7 +1818,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG20_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG19_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[117];
             }
@@ -1826,7 +1826,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG20_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG19_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[118];
             }
@@ -1834,7 +1834,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG20_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG19_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[119];
             }
@@ -1842,7 +1842,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG20_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG2_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[120];
             }
@@ -1850,7 +1850,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG20_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG2_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[121];
             }
@@ -1858,7 +1858,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG20_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG2_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[122];
             }
@@ -1866,7 +1866,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG20_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG2_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[123];
             }
@@ -1874,7 +1874,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG20_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG2_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[124];
             }
@@ -1882,7 +1882,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG20_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG2_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[125];
             }
@@ -1890,7 +1890,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG21_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG2_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[126];
             }
@@ -1898,7 +1898,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG21_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG2_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[127];
             }
@@ -1906,7 +1906,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG21_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG2_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[128];
             }
@@ -1914,7 +1914,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG21_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG2_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[129];
             }
@@ -1922,7 +1922,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG21_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG20_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[130];
             }
@@ -1930,7 +1930,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG21_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG20_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[131];
             }
@@ -1938,7 +1938,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG21_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG20_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[132];
             }
@@ -1946,7 +1946,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG21_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG20_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[133];
             }
@@ -1954,7 +1954,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG21_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG20_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[134];
             }
@@ -1962,7 +1962,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG22_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG20_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[135];
             }
@@ -1970,7 +1970,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG22_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG20_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[136];
             }
@@ -1978,7 +1978,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG22_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG20_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[137];
             }
@@ -1986,7 +1986,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG22_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG20_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[138];
             }
@@ -1994,7 +1994,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG22_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG20_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[139];
             }
@@ -2002,7 +2002,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG22_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG21_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[140];
             }
@@ -2010,7 +2010,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG22_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG21_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[141];
             }
@@ -2018,7 +2018,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG22_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG21_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[142];
             }
@@ -2026,7 +2026,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG22_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG21_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[143];
             }
@@ -2034,7 +2034,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG23_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG21_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[144];
             }
@@ -2042,7 +2042,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG23_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG21_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[145];
             }
@@ -2050,7 +2050,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG23_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG21_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[146];
             }
@@ -2058,7 +2058,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG23_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG21_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[147];
             }
@@ -2066,7 +2066,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG23_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG21_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[148];
             }
@@ -2074,7 +2074,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG23_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG21_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[149];
             }
@@ -2082,7 +2082,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG23_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG22_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[150];
             }
@@ -2090,7 +2090,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG23_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG22_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[151];
             }
@@ -2098,7 +2098,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG23_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG22_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[152];
             }
@@ -2106,7 +2106,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG24_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG22_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[153];
             }
@@ -2114,7 +2114,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG24_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG22_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[154];
             }
@@ -2122,7 +2122,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG24_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG22_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[155];
             }
@@ -2130,7 +2130,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG24_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG22_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[156];
             }
@@ -2138,7 +2138,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG24_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG22_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[157];
             }
@@ -2146,7 +2146,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG24_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG22_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[158];
             }
@@ -2154,7 +2154,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG24_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG22_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[159];
             }
@@ -2162,7 +2162,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG24_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG23_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[160];
             }
@@ -2170,7 +2170,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG24_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG23_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[161];
             }
@@ -2178,7 +2178,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG25_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG23_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[162];
             }
@@ -2186,7 +2186,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG25_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG23_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[163];
             }
@@ -2194,7 +2194,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG25_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG23_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[164];
             }
@@ -2202,7 +2202,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG25_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG23_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[165];
             }
@@ -2210,7 +2210,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG25_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG23_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[166];
             }
@@ -2218,7 +2218,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG25_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG23_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[167];
             }
@@ -2226,7 +2226,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG25_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG23_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[168];
             }
@@ -2234,7 +2234,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG25_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG23_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[169];
             }
@@ -2242,7 +2242,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG25_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG24_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[170];
             }
@@ -2250,7 +2250,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG26_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG24_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[171];
             }
@@ -2258,7 +2258,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG26_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG24_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[172];
             }
@@ -2266,7 +2266,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG26_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG24_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[173];
             }
@@ -2274,7 +2274,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG26_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG24_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[174];
             }
@@ -2282,7 +2282,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG26_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG24_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[175];
             }
@@ -2290,7 +2290,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG26_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG24_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[176];
             }
@@ -2298,7 +2298,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG26_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG24_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[177];
             }
@@ -2306,7 +2306,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG26_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG24_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[178];
             }
@@ -2314,7 +2314,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG26_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG24_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[179];
             }
@@ -2322,7 +2322,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG27_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG25_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[180];
             }
@@ -2330,7 +2330,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG27_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG25_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[181];
             }
@@ -2338,7 +2338,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG27_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG25_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[182];
             }
@@ -2346,7 +2346,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG27_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG25_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[183];
             }
@@ -2354,7 +2354,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG27_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG25_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[184];
             }
@@ -2362,7 +2362,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG27_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG25_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[185];
             }
@@ -2370,7 +2370,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG27_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG25_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[186];
             }
@@ -2378,7 +2378,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG27_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG25_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[187];
             }
@@ -2386,7 +2386,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG27_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG25_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[188];
             }
@@ -2394,7 +2394,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG28_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG25_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[189];
             }
@@ -2402,7 +2402,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG28_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG26_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[190];
             }
@@ -2410,7 +2410,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG28_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG26_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[191];
             }
@@ -2418,7 +2418,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG28_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG26_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[192];
             }
@@ -2426,7 +2426,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG28_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG26_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[193];
             }
@@ -2434,7 +2434,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG28_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG26_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[194];
             }
@@ -2442,7 +2442,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG28_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG26_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[195];
             }
@@ -2450,7 +2450,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG28_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG26_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[196];
             }
@@ -2458,7 +2458,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG28_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG26_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[197];
             }
@@ -2466,7 +2466,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG29_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG26_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[198];
             }
@@ -2474,7 +2474,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG29_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG26_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[199];
             }
@@ -2482,7 +2482,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG29_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG27_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[200];
             }
@@ -2490,7 +2490,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG29_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG27_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[201];
             }
@@ -2498,7 +2498,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG29_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG27_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[202];
             }
@@ -2506,7 +2506,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG29_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG27_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[203];
             }
@@ -2514,7 +2514,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG29_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG27_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[204];
             }
@@ -2522,7 +2522,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG29_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG27_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[205];
             }
@@ -2530,7 +2530,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG29_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG27_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[206];
             }
@@ -2538,7 +2538,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG3_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG27_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[207];
             }
@@ -2546,7 +2546,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG3_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG27_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[208];
             }
@@ -2554,7 +2554,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG3_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG27_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[209];
             }
@@ -2562,7 +2562,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG3_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG28_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[210];
             }
@@ -2570,7 +2570,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG3_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG28_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[211];
             }
@@ -2578,7 +2578,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG3_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG28_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[212];
             }
@@ -2586,7 +2586,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG3_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG28_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[213];
             }
@@ -2594,7 +2594,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG3_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG28_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[214];
             }
@@ -2602,7 +2602,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG3_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG28_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[215];
             }
@@ -2610,7 +2610,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG30_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG28_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[216];
             }
@@ -2618,7 +2618,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG30_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG28_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[217];
             }
@@ -2626,7 +2626,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG30_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG28_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[218];
             }
@@ -2634,7 +2634,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG30_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG28_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[219];
             }
@@ -2642,7 +2642,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG30_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG29_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[220];
             }
@@ -2650,7 +2650,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG30_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG29_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[221];
             }
@@ -2658,7 +2658,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG30_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG29_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[222];
             }
@@ -2666,7 +2666,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG30_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG29_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[223];
             }
@@ -2674,7 +2674,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG30_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG29_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[224];
             }
@@ -2682,7 +2682,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG31_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG29_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[225];
             }
@@ -2690,7 +2690,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG31_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG29_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[226];
             }
@@ -2698,7 +2698,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG31_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG29_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[227];
             }
@@ -2706,7 +2706,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG31_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG29_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[228];
             }
@@ -2714,7 +2714,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG31_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG29_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[229];
             }
@@ -2722,7 +2722,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG31_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG3_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[230];
             }
@@ -2730,7 +2730,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG31_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG3_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[231];
             }
@@ -2738,7 +2738,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG31_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG3_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[232];
             }
@@ -2746,7 +2746,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG31_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG3_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[233];
             }
@@ -2754,7 +2754,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG32_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG3_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[234];
             }
@@ -2762,7 +2762,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG32_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG3_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[235];
             }
@@ -2770,7 +2770,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG32_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG3_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[236];
             }
@@ -2778,7 +2778,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG32_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG3_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[237];
             }
@@ -2786,7 +2786,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG32_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG3_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[238];
             }
@@ -2794,7 +2794,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG32_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG3_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[239];
             }
@@ -2802,7 +2802,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG32_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG30_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[240];
             }
@@ -2810,7 +2810,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG32_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG30_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[241];
             }
@@ -2818,7 +2818,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG32_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG30_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[242];
             }
@@ -2826,7 +2826,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG33_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG30_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[243];
             }
@@ -2834,7 +2834,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG33_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG30_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[244];
             }
@@ -2842,7 +2842,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG33_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG30_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[245];
             }
@@ -2850,7 +2850,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG33_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG30_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[246];
             }
@@ -2858,7 +2858,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG33_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG30_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[247];
             }
@@ -2866,7 +2866,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG33_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG30_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[248];
             }
@@ -2874,7 +2874,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG33_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG30_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[249];
             }
@@ -2882,7 +2882,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG33_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG31_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[250];
             }
@@ -2890,7 +2890,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG33_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG31_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[251];
             }
@@ -2898,7 +2898,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG34_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG31_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[252];
             }
@@ -2906,7 +2906,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG34_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG31_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[253];
             }
@@ -2914,7 +2914,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG34_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG31_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[254];
             }
@@ -2922,7 +2922,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG34_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG31_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[255];
             }
@@ -2930,7 +2930,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG34_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG31_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[256];
             }
@@ -2938,7 +2938,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG34_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG31_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[257];
             }
@@ -2946,7 +2946,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG34_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG31_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[258];
             }
@@ -2954,7 +2954,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG34_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG31_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[259];
             }
@@ -2962,7 +2962,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG34_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG32_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[260];
             }
@@ -2970,7 +2970,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG35_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG32_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[261];
             }
@@ -2978,7 +2978,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG35_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG32_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[262];
             }
@@ -2986,7 +2986,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG35_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG32_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[263];
             }
@@ -2994,7 +2994,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG35_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG32_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[264];
             }
@@ -3002,7 +3002,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG35_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG32_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[265];
             }
@@ -3010,7 +3010,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG35_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG32_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[266];
             }
@@ -3018,7 +3018,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG35_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG32_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[267];
             }
@@ -3026,7 +3026,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG35_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG32_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[268];
             }
@@ -3034,7 +3034,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG35_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG32_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[269];
             }
@@ -3042,7 +3042,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG36_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG33_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[270];
             }
@@ -3050,7 +3050,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG36_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG33_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[271];
             }
@@ -3058,7 +3058,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG36_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG33_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[272];
             }
@@ -3066,7 +3066,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG36_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG33_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[273];
             }
@@ -3074,7 +3074,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG36_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG33_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[274];
             }
@@ -3082,7 +3082,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG36_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG33_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[275];
             }
@@ -3090,7 +3090,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG36_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG33_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[276];
             }
@@ -3098,7 +3098,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG36_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG33_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[277];
             }
@@ -3106,7 +3106,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG36_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG33_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[278];
             }
@@ -3114,7 +3114,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG37_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG33_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[279];
             }
@@ -3122,7 +3122,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG37_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG34_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[280];
             }
@@ -3130,7 +3130,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG37_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG34_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[281];
             }
@@ -3138,7 +3138,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG37_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG34_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[282];
             }
@@ -3146,7 +3146,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG37_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG34_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[283];
             }
@@ -3154,7 +3154,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG37_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG34_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[284];
             }
@@ -3162,7 +3162,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG37_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG34_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[285];
             }
@@ -3170,7 +3170,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG37_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG34_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[286];
             }
@@ -3178,7 +3178,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG37_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG34_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[287];
             }
@@ -3186,7 +3186,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG38_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG34_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[288];
             }
@@ -3194,7 +3194,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG38_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG34_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[289];
             }
@@ -3202,7 +3202,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG38_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG35_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[290];
             }
@@ -3210,7 +3210,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG38_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG35_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[291];
             }
@@ -3218,7 +3218,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG38_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG35_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[292];
             }
@@ -3226,7 +3226,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG38_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG35_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[293];
             }
@@ -3234,7 +3234,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG38_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG35_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[294];
             }
@@ -3242,7 +3242,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG38_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG35_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[295];
             }
@@ -3250,7 +3250,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG38_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG35_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[296];
             }
@@ -3258,7 +3258,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG39_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG35_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[297];
             }
@@ -3266,7 +3266,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG39_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG35_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[298];
             }
@@ -3274,7 +3274,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG39_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG35_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[299];
             }
@@ -3282,7 +3282,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG39_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG36_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[300];
             }
@@ -3290,7 +3290,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG39_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG36_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[301];
             }
@@ -3298,7 +3298,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG39_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG36_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[302];
             }
@@ -3306,7 +3306,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG39_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG36_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[303];
             }
@@ -3314,7 +3314,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG39_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG36_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[304];
             }
@@ -3322,7 +3322,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG39_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG36_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[305];
             }
@@ -3330,7 +3330,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG4_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG36_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[306];
             }
@@ -3338,7 +3338,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG4_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG36_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[307];
             }
@@ -3346,7 +3346,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG4_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG36_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[308];
             }
@@ -3354,7 +3354,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG4_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG36_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[309];
             }
@@ -3362,7 +3362,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG4_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG37_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[310];
             }
@@ -3370,7 +3370,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG4_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG37_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[311];
             }
@@ -3378,7 +3378,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG4_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG37_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[312];
             }
@@ -3386,7 +3386,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG4_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG37_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[313];
             }
@@ -3394,7 +3394,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG4_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG37_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[314];
             }
@@ -3402,7 +3402,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG40_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG37_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[315];
             }
@@ -3410,7 +3410,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG40_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG37_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[316];
             }
@@ -3418,7 +3418,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG40_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG37_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[317];
             }
@@ -3426,7 +3426,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG40_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG37_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[318];
             }
@@ -3434,7 +3434,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG40_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG37_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[319];
             }
@@ -3442,7 +3442,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG40_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG38_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[320];
             }
@@ -3450,7 +3450,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG40_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG38_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[321];
             }
@@ -3458,7 +3458,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG40_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG38_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[322];
             }
@@ -3466,7 +3466,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG40_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG38_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[323];
             }
@@ -3474,7 +3474,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG41_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG38_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[324];
             }
@@ -3482,7 +3482,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG41_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG38_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[325];
             }
@@ -3490,7 +3490,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG41_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG38_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[326];
             }
@@ -3498,7 +3498,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG41_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG38_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[327];
             }
@@ -3506,7 +3506,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG41_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG38_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[328];
             }
@@ -3514,7 +3514,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG41_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG38_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[329];
             }
@@ -3522,7 +3522,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG41_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG39_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[330];
             }
@@ -3530,7 +3530,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG41_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG39_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[331];
             }
@@ -3538,7 +3538,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG41_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG39_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[332];
             }
@@ -3546,7 +3546,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG42_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG39_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[333];
             }
@@ -3554,7 +3554,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG42_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG39_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[334];
             }
@@ -3562,7 +3562,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG42_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG39_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[335];
             }
@@ -3570,7 +3570,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG42_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG39_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[336];
             }
@@ -3578,7 +3578,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG42_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG39_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[337];
             }
@@ -3586,7 +3586,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG42_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG39_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[338];
             }
@@ -3594,7 +3594,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG42_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG39_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[339];
             }
@@ -3602,7 +3602,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG42_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG4_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[340];
             }
@@ -3610,7 +3610,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG42_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG4_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[341];
             }
@@ -3618,7 +3618,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG43_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG4_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[342];
             }
@@ -3626,7 +3626,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG43_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG4_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[343];
             }
@@ -3634,7 +3634,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG43_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG4_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[344];
             }
@@ -3642,7 +3642,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG43_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG4_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[345];
             }
@@ -3650,7 +3650,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG43_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG4_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[346];
             }
@@ -3658,7 +3658,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG43_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG4_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[347];
             }
@@ -3666,7 +3666,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG43_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG4_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[348];
             }
@@ -3674,7 +3674,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG43_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG4_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[349];
             }
@@ -3682,7 +3682,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG43_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG40_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[350];
             }
@@ -3690,7 +3690,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG44_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG40_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[351];
             }
@@ -3698,7 +3698,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG44_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG40_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[352];
             }
@@ -3706,7 +3706,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG44_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG40_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[353];
             }
@@ -3714,7 +3714,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG44_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG40_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[354];
             }
@@ -3722,7 +3722,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG44_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG40_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[355];
             }
@@ -3730,7 +3730,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG44_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG40_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[356];
             }
@@ -3738,7 +3738,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG44_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG40_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[357];
             }
@@ -3746,7 +3746,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG44_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG40_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[358];
             }
@@ -3754,7 +3754,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG44_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG40_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[359];
             }
@@ -3762,7 +3762,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG45_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG41_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[360];
             }
@@ -3770,7 +3770,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG45_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG41_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[361];
             }
@@ -3778,7 +3778,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG45_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG41_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[362];
             }
@@ -3786,7 +3786,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG45_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG41_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[363];
             }
@@ -3794,7 +3794,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG45_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG41_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[364];
             }
@@ -3802,7 +3802,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG45_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG41_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[365];
             }
@@ -3810,7 +3810,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG45_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG41_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[366];
             }
@@ -3818,7 +3818,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG45_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG41_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[367];
             }
@@ -3826,7 +3826,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG45_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG41_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[368];
             }
@@ -3834,7 +3834,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG46_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG41_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[369];
             }
@@ -3842,7 +3842,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG46_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG42_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[370];
             }
@@ -3850,7 +3850,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG46_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG42_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[371];
             }
@@ -3858,7 +3858,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG46_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG42_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[372];
             }
@@ -3866,7 +3866,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG46_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG42_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[373];
             }
@@ -3874,7 +3874,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG46_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG42_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[374];
             }
@@ -3882,7 +3882,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG46_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG42_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[375];
             }
@@ -3890,7 +3890,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG46_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG42_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[376];
             }
@@ -3898,7 +3898,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG46_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG42_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[377];
             }
@@ -3906,7 +3906,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG47_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG42_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[378];
             }
@@ -3914,7 +3914,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG47_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG42_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[379];
             }
@@ -3922,7 +3922,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG47_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG43_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[380];
             }
@@ -3930,7 +3930,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG47_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG43_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[381];
             }
@@ -3938,7 +3938,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG47_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG43_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[382];
             }
@@ -3946,7 +3946,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG47_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG43_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[383];
             }
@@ -3954,7 +3954,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG47_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG43_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[384];
             }
@@ -3962,7 +3962,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG47_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG43_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[385];
             }
@@ -3970,7 +3970,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG47_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG43_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[386];
             }
@@ -3978,7 +3978,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG48_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG43_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[387];
             }
@@ -3986,7 +3986,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG48_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG43_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[388];
             }
@@ -3994,7 +3994,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG48_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG43_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[389];
             }
@@ -4002,7 +4002,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG48_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG44_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[390];
             }
@@ -4010,7 +4010,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG48_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG44_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[391];
             }
@@ -4018,7 +4018,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG48_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG44_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[392];
             }
@@ -4026,7 +4026,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG48_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG44_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[393];
             }
@@ -4034,7 +4034,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG48_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG44_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[394];
             }
@@ -4042,7 +4042,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG48_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG44_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[395];
             }
@@ -4050,7 +4050,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG49_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG44_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[396];
             }
@@ -4058,7 +4058,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG49_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG44_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[397];
             }
@@ -4066,7 +4066,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG49_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG44_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[398];
             }
@@ -4074,7 +4074,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG49_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG44_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[399];
             }
@@ -4082,7 +4082,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG49_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG45_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[400];
             }
@@ -4090,7 +4090,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG49_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG45_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[401];
             }
@@ -4098,7 +4098,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG49_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG45_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[402];
             }
@@ -4106,7 +4106,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG49_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG45_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[403];
             }
@@ -4114,7 +4114,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG49_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG45_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[404];
             }
@@ -4122,7 +4122,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG5_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG45_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[405];
             }
@@ -4130,7 +4130,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG5_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG45_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[406];
             }
@@ -4138,7 +4138,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG5_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG45_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[407];
             }
@@ -4146,7 +4146,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG5_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG45_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[408];
             }
@@ -4154,7 +4154,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG5_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG45_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[409];
             }
@@ -4162,7 +4162,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG5_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG46_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[410];
             }
@@ -4170,7 +4170,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG5_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG46_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[411];
             }
@@ -4178,7 +4178,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG5_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG46_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[412];
             }
@@ -4186,7 +4186,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG5_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG46_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[413];
             }
@@ -4194,7 +4194,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG50_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG46_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[414];
             }
@@ -4202,7 +4202,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG50_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG46_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[415];
             }
@@ -4210,7 +4210,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG50_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG46_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[416];
             }
@@ -4218,7 +4218,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG50_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG46_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[417];
             }
@@ -4226,7 +4226,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG50_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG46_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[418];
             }
@@ -4234,7 +4234,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG50_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG46_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[419];
             }
@@ -4242,7 +4242,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG50_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG47_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[420];
             }
@@ -4250,7 +4250,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG50_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG47_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[421];
             }
@@ -4258,7 +4258,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG50_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG47_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[422];
             }
@@ -4266,7 +4266,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG51_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG47_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[423];
             }
@@ -4274,7 +4274,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG51_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG47_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[424];
             }
@@ -4282,7 +4282,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG51_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG47_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[425];
             }
@@ -4290,7 +4290,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG51_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG47_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[426];
             }
@@ -4298,7 +4298,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG51_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG47_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[427];
             }
@@ -4306,7 +4306,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG51_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG47_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[428];
             }
@@ -4314,7 +4314,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG51_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG47_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[429];
             }
@@ -4322,7 +4322,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG51_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG48_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[430];
             }
@@ -4330,7 +4330,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG51_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG48_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[431];
             }
@@ -4338,7 +4338,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG52_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG48_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[432];
             }
@@ -4346,7 +4346,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG52_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG48_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[433];
             }
@@ -4354,7 +4354,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG52_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG48_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[434];
             }
@@ -4362,7 +4362,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG52_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG48_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[435];
             }
@@ -4370,7 +4370,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG52_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG48_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[436];
             }
@@ -4378,7 +4378,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG52_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG48_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[437];
             }
@@ -4386,7 +4386,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG52_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG48_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[438];
             }
@@ -4394,7 +4394,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG52_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG48_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[439];
             }
@@ -4402,7 +4402,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG52_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG49_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[440];
             }
@@ -4410,7 +4410,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG53_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG49_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[441];
             }
@@ -4418,7 +4418,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG53_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG49_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[442];
             }
@@ -4426,7 +4426,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG53_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG49_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[443];
             }
@@ -4434,7 +4434,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG53_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG49_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[444];
             }
@@ -4442,7 +4442,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG53_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG49_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[445];
             }
@@ -4450,7 +4450,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG53_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG49_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[446];
             }
@@ -4458,7 +4458,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG53_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG49_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[447];
             }
@@ -4466,7 +4466,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG53_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG49_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[448];
             }
@@ -4474,7 +4474,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG53_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG49_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[449];
             }
@@ -4482,7 +4482,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG54_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG5_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[450];
             }
@@ -4490,7 +4490,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG54_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG5_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[451];
             }
@@ -4498,7 +4498,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG54_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG5_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[452];
             }
@@ -4506,7 +4506,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG54_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG5_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[453];
             }
@@ -4514,7 +4514,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG54_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG5_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[454];
             }
@@ -4522,7 +4522,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG54_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG5_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[455];
             }
@@ -4530,7 +4530,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG54_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG5_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[456];
             }
@@ -4538,7 +4538,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG54_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG5_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[457];
             }
@@ -4546,7 +4546,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG54_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG5_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[458];
             }
@@ -4554,7 +4554,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG55_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG5_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[459];
             }
@@ -4562,7 +4562,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG55_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG50_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[460];
             }
@@ -4570,7 +4570,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG55_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG50_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[461];
             }
@@ -4578,7 +4578,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG55_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG50_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[462];
             }
@@ -4586,7 +4586,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG55_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG50_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[463];
             }
@@ -4594,7 +4594,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG55_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG50_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[464];
             }
@@ -4602,7 +4602,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG55_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG50_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[465];
             }
@@ -4610,7 +4610,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG55_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG50_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[466];
             }
@@ -4618,7 +4618,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG55_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG50_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[467];
             }
@@ -4626,7 +4626,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG56_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG50_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[468];
             }
@@ -4634,7 +4634,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG56_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG50_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[469];
             }
@@ -4642,7 +4642,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG56_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG51_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[470];
             }
@@ -4650,7 +4650,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG56_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG51_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[471];
             }
@@ -4658,7 +4658,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG56_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG51_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[472];
             }
@@ -4666,7 +4666,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG56_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG51_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[473];
             }
@@ -4674,7 +4674,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG56_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG51_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[474];
             }
@@ -4682,7 +4682,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG56_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG51_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[475];
             }
@@ -4690,7 +4690,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG56_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG51_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[476];
             }
@@ -4698,7 +4698,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG57_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG51_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[477];
             }
@@ -4706,7 +4706,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG57_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG51_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[478];
             }
@@ -4714,7 +4714,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG57_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG51_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[479];
             }
@@ -4722,7 +4722,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG57_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG52_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[480];
             }
@@ -4730,7 +4730,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG57_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG52_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[481];
             }
@@ -4738,7 +4738,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG57_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG52_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[482];
             }
@@ -4746,7 +4746,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG57_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG52_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[483];
             }
@@ -4754,7 +4754,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG57_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG52_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[484];
             }
@@ -4762,7 +4762,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG57_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG52_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[485];
             }
@@ -4770,7 +4770,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG58_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG52_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[486];
             }
@@ -4778,7 +4778,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG58_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG52_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[487];
             }
@@ -4786,7 +4786,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG58_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG52_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[488];
             }
@@ -4794,7 +4794,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG58_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG52_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[489];
             }
@@ -4802,7 +4802,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG58_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG53_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[490];
             }
@@ -4810,7 +4810,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG58_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG53_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[491];
             }
@@ -4818,7 +4818,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG58_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG53_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[492];
             }
@@ -4826,7 +4826,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG58_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG53_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[493];
             }
@@ -4834,7 +4834,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG58_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG53_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[494];
             }
@@ -4842,7 +4842,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG59_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG53_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[495];
             }
@@ -4850,7 +4850,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG59_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG53_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[496];
             }
@@ -4858,7 +4858,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG59_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG53_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[497];
             }
@@ -4866,7 +4866,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG59_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG53_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[498];
             }
@@ -4874,7 +4874,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG59_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG53_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[499];
             }
@@ -4882,7 +4882,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG59_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG54_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[500];
             }
@@ -4890,7 +4890,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG59_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG54_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[501];
             }
@@ -4898,7 +4898,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG59_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG54_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[502];
             }
@@ -4906,7 +4906,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG59_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG54_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[503];
             }
@@ -4914,7 +4914,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG6_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG54_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[504];
             }
@@ -4922,7 +4922,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG6_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG54_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[505];
             }
@@ -4930,7 +4930,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG6_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG54_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[506];
             }
@@ -4938,7 +4938,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG6_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG54_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[507];
             }
@@ -4946,7 +4946,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG6_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG54_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[508];
             }
@@ -4954,7 +4954,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG6_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG54_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[509];
             }
@@ -4962,7 +4962,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG6_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG55_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[510];
             }
@@ -4970,7 +4970,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG6_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG55_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[511];
             }
@@ -4978,7 +4978,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG6_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG55_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[512];
             }
@@ -4986,7 +4986,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG60_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG55_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[513];
             }
@@ -4994,7 +4994,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG60_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG55_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[514];
             }
@@ -5002,7 +5002,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG60_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG55_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[515];
             }
@@ -5010,7 +5010,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG60_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG55_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[516];
             }
@@ -5018,7 +5018,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG60_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG55_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[517];
             }
@@ -5026,7 +5026,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG60_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG55_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[518];
             }
@@ -5034,7 +5034,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG60_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG55_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[519];
             }
@@ -5042,7 +5042,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG60_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG56_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[520];
             }
@@ -5050,7 +5050,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG60_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG56_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[521];
             }
@@ -5058,7 +5058,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG61_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG56_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[522];
             }
@@ -5066,7 +5066,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG61_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG56_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[523];
             }
@@ -5074,7 +5074,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG61_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG56_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[524];
             }
@@ -5082,7 +5082,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG61_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG56_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[525];
             }
@@ -5090,7 +5090,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG61_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG56_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[526];
             }
@@ -5098,7 +5098,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG61_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG56_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[527];
             }
@@ -5106,7 +5106,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG61_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG56_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[528];
             }
@@ -5114,7 +5114,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG61_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG56_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[529];
             }
@@ -5122,7 +5122,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG61_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG57_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[530];
             }
@@ -5130,7 +5130,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG62_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG57_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[531];
             }
@@ -5138,7 +5138,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG62_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG57_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[532];
             }
@@ -5146,7 +5146,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG62_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG57_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[533];
             }
@@ -5154,7 +5154,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG62_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG57_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[534];
             }
@@ -5162,7 +5162,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG62_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG57_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[535];
             }
@@ -5170,7 +5170,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG62_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG57_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[536];
             }
@@ -5178,7 +5178,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG62_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG57_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[537];
             }
@@ -5186,7 +5186,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG62_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG57_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[538];
             }
@@ -5194,7 +5194,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG62_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG57_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[539];
             }
@@ -5202,7 +5202,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG63_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG58_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[540];
             }
@@ -5210,7 +5210,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG63_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG58_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[541];
             }
@@ -5218,7 +5218,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG63_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG58_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[542];
             }
@@ -5226,7 +5226,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG63_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG58_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[543];
             }
@@ -5234,7 +5234,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG63_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG58_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[544];
             }
@@ -5242,7 +5242,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG63_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG58_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[545];
             }
@@ -5250,7 +5250,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG63_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG58_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[546];
             }
@@ -5258,7 +5258,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG63_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG58_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[547];
             }
@@ -5266,7 +5266,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG63_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG58_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[548];
             }
@@ -5274,7 +5274,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG64_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG58_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[549];
             }
@@ -5282,7 +5282,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG64_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG59_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[550];
             }
@@ -5290,7 +5290,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG64_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG59_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[551];
             }
@@ -5298,7 +5298,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG64_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG59_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[552];
             }
@@ -5306,7 +5306,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG64_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG59_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[553];
             }
@@ -5314,7 +5314,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG64_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG59_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[554];
             }
@@ -5322,7 +5322,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG64_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG59_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[555];
             }
@@ -5330,7 +5330,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG64_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG59_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[556];
             }
@@ -5338,7 +5338,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG64_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG59_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[557];
             }
@@ -5346,7 +5346,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG65_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG59_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[558];
             }
@@ -5354,7 +5354,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG65_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG59_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[559];
             }
@@ -5362,7 +5362,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG65_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG6_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[560];
             }
@@ -5370,7 +5370,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG65_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG6_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[561];
             }
@@ -5378,7 +5378,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG65_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG6_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[562];
             }
@@ -5386,7 +5386,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG65_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG6_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[563];
             }
@@ -5394,7 +5394,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG65_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG6_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[564];
             }
@@ -5402,7 +5402,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG65_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG6_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[565];
             }
@@ -5410,7 +5410,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG65_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG6_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[566];
             }
@@ -5418,7 +5418,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG66_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG6_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[567];
             }
@@ -5426,7 +5426,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG66_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG6_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[568];
             }
@@ -5434,7 +5434,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG66_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG6_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[569];
             }
@@ -5442,7 +5442,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG66_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG60_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[570];
             }
@@ -5450,7 +5450,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG66_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG60_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[571];
             }
@@ -5458,7 +5458,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG66_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG60_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[572];
             }
@@ -5466,7 +5466,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG66_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG60_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[573];
             }
@@ -5474,7 +5474,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG66_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG60_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[574];
             }
@@ -5482,7 +5482,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG66_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG60_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[575];
             }
@@ -5490,7 +5490,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG67_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG60_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[576];
             }
@@ -5498,7 +5498,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG67_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG60_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[577];
             }
@@ -5506,7 +5506,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG67_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG60_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[578];
             }
@@ -5514,7 +5514,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG67_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG60_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[579];
             }
@@ -5522,7 +5522,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG67_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG61_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[580];
             }
@@ -5530,7 +5530,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG67_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG61_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[581];
             }
@@ -5538,7 +5538,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG67_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG61_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[582];
             }
@@ -5546,7 +5546,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG67_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG61_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[583];
             }
@@ -5554,7 +5554,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG67_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG61_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[584];
             }
@@ -5562,7 +5562,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG68_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG61_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[585];
             }
@@ -5570,7 +5570,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG68_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG61_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[586];
             }
@@ -5578,7 +5578,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG68_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG61_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[587];
             }
@@ -5586,7 +5586,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG68_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG61_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[588];
             }
@@ -5594,7 +5594,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG68_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG61_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[589];
             }
@@ -5602,7 +5602,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG68_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG62_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[590];
             }
@@ -5610,7 +5610,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG68_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG62_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[591];
             }
@@ -5618,7 +5618,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG68_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG62_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[592];
             }
@@ -5626,7 +5626,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG68_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG62_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[593];
             }
@@ -5634,7 +5634,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG69_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG62_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[594];
             }
@@ -5642,7 +5642,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG69_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG62_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[595];
             }
@@ -5650,7 +5650,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG69_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG62_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[596];
             }
@@ -5658,7 +5658,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG69_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG62_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[597];
             }
@@ -5666,7 +5666,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG69_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG62_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[598];
             }
@@ -5674,7 +5674,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG69_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG62_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[599];
             }
@@ -5682,7 +5682,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG69_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG63_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[600];
             }
@@ -5690,7 +5690,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG69_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG63_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[601];
             }
@@ -5698,7 +5698,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG69_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG63_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[602];
             }
@@ -5706,7 +5706,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG7_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG63_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[603];
             }
@@ -5714,7 +5714,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG7_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG63_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[604];
             }
@@ -5722,7 +5722,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG7_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG63_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[605];
             }
@@ -5730,7 +5730,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG7_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG63_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[606];
             }
@@ -5738,7 +5738,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG7_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG63_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[607];
             }
@@ -5746,7 +5746,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG7_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG63_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[608];
             }
@@ -5754,7 +5754,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG7_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG63_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[609];
             }
@@ -5762,7 +5762,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG7_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG64_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[610];
             }
@@ -5770,7 +5770,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG7_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG64_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[611];
             }
@@ -5778,7 +5778,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG70_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG64_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[612];
             }
@@ -5786,7 +5786,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG70_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG64_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[613];
             }
@@ -5794,7 +5794,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG70_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG64_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[614];
             }
@@ -5802,7 +5802,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG70_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG64_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[615];
             }
@@ -5810,7 +5810,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG70_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG64_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[616];
             }
@@ -5818,7 +5818,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG70_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG64_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[617];
             }
@@ -5826,7 +5826,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG70_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG64_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[618];
             }
@@ -5834,7 +5834,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG70_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG64_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[619];
             }
@@ -5842,7 +5842,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG70_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG65_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[620];
             }
@@ -5850,7 +5850,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG71_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG65_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[621];
             }
@@ -5858,7 +5858,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG71_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG65_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[622];
             }
@@ -5866,7 +5866,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG71_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG65_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[623];
             }
@@ -5874,7 +5874,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG71_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG65_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[624];
             }
@@ -5882,7 +5882,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG71_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG65_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[625];
             }
@@ -5890,7 +5890,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG71_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG65_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[626];
             }
@@ -5898,7 +5898,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG71_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG65_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[627];
             }
@@ -5906,7 +5906,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG71_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG65_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[628];
             }
@@ -5914,7 +5914,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG71_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG65_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[629];
             }
@@ -5922,7 +5922,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG72_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG66_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[630];
             }
@@ -5930,7 +5930,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG72_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG66_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[631];
             }
@@ -5938,7 +5938,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG72_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG66_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[632];
             }
@@ -5946,7 +5946,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG72_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG66_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[633];
             }
@@ -5954,7 +5954,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG72_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG66_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[634];
             }
@@ -5962,7 +5962,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG72_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG66_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[635];
             }
@@ -5970,7 +5970,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG72_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG66_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[636];
             }
@@ -5978,7 +5978,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG72_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG66_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[637];
             }
@@ -5986,7 +5986,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG72_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG66_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[638];
             }
@@ -5994,7 +5994,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG73_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG66_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[639];
             }
@@ -6002,7 +6002,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG73_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG67_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[640];
             }
@@ -6010,7 +6010,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG73_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG67_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[641];
             }
@@ -6018,7 +6018,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG73_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG67_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[642];
             }
@@ -6026,7 +6026,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG73_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG67_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[643];
             }
@@ -6034,7 +6034,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG73_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG67_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[644];
             }
@@ -6042,7 +6042,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG73_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG67_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[645];
             }
@@ -6050,7 +6050,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG73_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG67_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[646];
             }
@@ -6058,7 +6058,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG73_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG67_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[647];
             }
@@ -6066,7 +6066,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG74_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG67_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[648];
             }
@@ -6074,7 +6074,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG74_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG67_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[649];
             }
@@ -6082,7 +6082,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG74_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG68_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[650];
             }
@@ -6090,7 +6090,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG74_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG68_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[651];
             }
@@ -6098,7 +6098,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG74_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG68_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[652];
             }
@@ -6106,7 +6106,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG74_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG68_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[653];
             }
@@ -6114,7 +6114,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG74_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG68_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[654];
             }
@@ -6122,7 +6122,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG74_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG68_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[655];
             }
@@ -6130,7 +6130,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG74_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG68_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[656];
             }
@@ -6138,7 +6138,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG75_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG68_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[657];
             }
@@ -6146,7 +6146,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG75_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG68_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[658];
             }
@@ -6154,7 +6154,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG75_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG68_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[659];
             }
@@ -6162,7 +6162,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG75_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG69_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[660];
             }
@@ -6170,7 +6170,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG75_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG69_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[661];
             }
@@ -6178,7 +6178,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG75_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG69_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[662];
             }
@@ -6186,7 +6186,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG75_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG69_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[663];
             }
@@ -6194,7 +6194,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG75_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG69_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[664];
             }
@@ -6202,7 +6202,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG75_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG69_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[665];
             }
@@ -6210,7 +6210,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG76_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG69_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[666];
             }
@@ -6218,7 +6218,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG76_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG69_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[667];
             }
@@ -6226,7 +6226,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG76_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG69_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[668];
             }
@@ -6234,7 +6234,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG76_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG69_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[669];
             }
@@ -6242,7 +6242,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG76_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG7_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[670];
             }
@@ -6250,7 +6250,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG76_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG7_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[671];
             }
@@ -6258,7 +6258,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG76_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG7_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[672];
             }
@@ -6266,7 +6266,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG76_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG7_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[673];
             }
@@ -6274,7 +6274,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG76_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG7_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[674];
             }
@@ -6282,7 +6282,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG77_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG7_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[675];
             }
@@ -6290,7 +6290,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG77_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG7_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[676];
             }
@@ -6298,7 +6298,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG77_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG7_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[677];
             }
@@ -6306,7 +6306,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG77_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG7_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[678];
             }
@@ -6314,7 +6314,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG77_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG7_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[679];
             }
@@ -6322,7 +6322,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG77_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG70_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[680];
             }
@@ -6330,7 +6330,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG77_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG70_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[681];
             }
@@ -6338,7 +6338,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG77_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG70_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[682];
             }
@@ -6346,7 +6346,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG77_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG70_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[683];
             }
@@ -6354,7 +6354,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG78_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG70_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[684];
             }
@@ -6362,7 +6362,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG78_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG70_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[685];
             }
@@ -6370,7 +6370,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG78_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG70_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[686];
             }
@@ -6378,7 +6378,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG78_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG70_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[687];
             }
@@ -6386,7 +6386,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG78_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG70_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[688];
             }
@@ -6394,7 +6394,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG78_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG70_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[689];
             }
@@ -6402,7 +6402,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG78_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG71_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[690];
             }
@@ -6410,7 +6410,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG78_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG71_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[691];
             }
@@ -6418,7 +6418,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG78_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG71_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[692];
             }
@@ -6426,7 +6426,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG79_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG71_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[693];
             }
@@ -6434,7 +6434,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG79_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG71_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[694];
             }
@@ -6442,7 +6442,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG79_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG71_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[695];
             }
@@ -6450,7 +6450,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG79_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG71_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[696];
             }
@@ -6458,7 +6458,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG79_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG71_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[697];
             }
@@ -6466,7 +6466,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG79_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG71_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[698];
             }
@@ -6474,7 +6474,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG79_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG71_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[699];
             }
@@ -6482,7 +6482,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG79_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG72_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[700];
             }
@@ -6490,7 +6490,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG79_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG72_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[701];
             }
@@ -6498,7 +6498,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG8_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG72_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[702];
             }
@@ -6506,7 +6506,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG8_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG72_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[703];
             }
@@ -6514,7 +6514,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG8_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG72_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[704];
             }
@@ -6522,7 +6522,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG8_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG72_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[705];
             }
@@ -6530,7 +6530,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG8_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG72_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[706];
             }
@@ -6538,7 +6538,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG8_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG72_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[707];
             }
@@ -6546,7 +6546,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG8_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG72_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[708];
             }
@@ -6554,7 +6554,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG8_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG72_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[709];
             }
@@ -6562,7 +6562,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG8_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG73_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[710];
             }
@@ -6570,7 +6570,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG80_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG73_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[711];
             }
@@ -6578,7 +6578,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG80_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG73_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[712];
             }
@@ -6586,7 +6586,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG80_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG73_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[713];
             }
@@ -6594,7 +6594,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG80_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG73_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[714];
             }
@@ -6602,7 +6602,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG80_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG73_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[715];
             }
@@ -6610,7 +6610,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG80_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG73_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[716];
             }
@@ -6618,7 +6618,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG80_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG73_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[717];
             }
@@ -6626,7 +6626,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG80_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG73_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[718];
             }
@@ -6634,7 +6634,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG80_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG73_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[719];
             }
@@ -6642,7 +6642,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG81_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG74_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[720];
             }
@@ -6650,7 +6650,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG81_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG74_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[721];
             }
@@ -6658,7 +6658,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG81_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG74_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[722];
             }
@@ -6666,7 +6666,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG81_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG74_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[723];
             }
@@ -6674,7 +6674,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG81_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG74_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[724];
             }
@@ -6682,7 +6682,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG81_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG74_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[725];
             }
@@ -6690,7 +6690,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG81_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG74_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[726];
             }
@@ -6698,7 +6698,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG81_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG74_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[727];
             }
@@ -6706,7 +6706,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG81_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG74_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[728];
             }
@@ -6714,7 +6714,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG82_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG74_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[729];
             }
@@ -6722,7 +6722,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG82_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG75_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[730];
             }
@@ -6730,7 +6730,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG82_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG75_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[731];
             }
@@ -6738,7 +6738,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG82_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG75_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[732];
             }
@@ -6746,7 +6746,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG82_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG75_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[733];
             }
@@ -6754,7 +6754,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG82_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG75_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[734];
             }
@@ -6762,7 +6762,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG82_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG75_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[735];
             }
@@ -6770,7 +6770,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG82_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG75_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[736];
             }
@@ -6778,7 +6778,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG82_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG75_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[737];
             }
@@ -6786,7 +6786,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG83_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG75_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[738];
             }
@@ -6794,7 +6794,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG83_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG75_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[739];
             }
@@ -6802,7 +6802,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG83_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG76_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[740];
             }
@@ -6810,7 +6810,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG83_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG76_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[741];
             }
@@ -6818,7 +6818,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG83_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG76_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[742];
             }
@@ -6826,7 +6826,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG83_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG76_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[743];
             }
@@ -6834,7 +6834,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG83_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG76_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[744];
             }
@@ -6842,7 +6842,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG83_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG76_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[745];
             }
@@ -6850,7 +6850,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG83_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG76_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[746];
             }
@@ -6858,7 +6858,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG84_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG76_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[747];
             }
@@ -6866,7 +6866,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG84_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG76_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[748];
             }
@@ -6874,7 +6874,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG84_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG76_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[749];
             }
@@ -6882,7 +6882,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG84_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG77_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[750];
             }
@@ -6890,7 +6890,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG84_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG77_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[751];
             }
@@ -6898,7 +6898,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG84_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG77_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[752];
             }
@@ -6906,7 +6906,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG84_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG77_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[753];
             }
@@ -6914,7 +6914,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG84_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG77_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[754];
             }
@@ -6922,7 +6922,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG84_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG77_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[755];
             }
@@ -6930,7 +6930,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG85_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG77_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[756];
             }
@@ -6938,7 +6938,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG85_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG77_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[757];
             }
@@ -6946,7 +6946,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG85_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG77_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[758];
             }
@@ -6954,7 +6954,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG85_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG77_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[759];
             }
@@ -6962,7 +6962,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG85_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG78_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[760];
             }
@@ -6970,7 +6970,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG85_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG78_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[761];
             }
@@ -6978,7 +6978,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG85_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG78_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[762];
             }
@@ -6986,7 +6986,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG85_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG78_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[763];
             }
@@ -6994,7 +6994,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG85_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG78_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[764];
             }
@@ -7002,7 +7002,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG86_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG78_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[765];
             }
@@ -7010,7 +7010,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG86_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG78_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[766];
             }
@@ -7018,7 +7018,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG86_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG78_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[767];
             }
@@ -7026,7 +7026,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG86_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG78_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[768];
             }
@@ -7034,7 +7034,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG86_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG78_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[769];
             }
@@ -7042,7 +7042,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG86_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG79_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[770];
             }
@@ -7050,7 +7050,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG86_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG79_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[771];
             }
@@ -7058,7 +7058,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG86_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG79_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[772];
             }
@@ -7066,7 +7066,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG86_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG79_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[773];
             }
@@ -7074,7 +7074,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG87_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG79_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[774];
             }
@@ -7082,7 +7082,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG87_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG79_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[775];
             }
@@ -7090,7 +7090,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG87_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG79_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[776];
             }
@@ -7098,7 +7098,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG87_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG79_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[777];
             }
@@ -7106,7 +7106,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG87_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG79_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[778];
             }
@@ -7114,7 +7114,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG87_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG79_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[779];
             }
@@ -7122,7 +7122,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG87_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG8_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[780];
             }
@@ -7130,7 +7130,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG87_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG8_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[781];
             }
@@ -7138,7 +7138,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG87_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG8_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[782];
             }
@@ -7146,7 +7146,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG88_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG8_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[783];
             }
@@ -7154,7 +7154,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG88_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG8_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[784];
             }
@@ -7162,7 +7162,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG88_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG8_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[785];
             }
@@ -7170,7 +7170,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG88_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG8_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[786];
             }
@@ -7178,7 +7178,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG88_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG8_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[787];
             }
@@ -7186,7 +7186,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG88_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG8_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[788];
             }
@@ -7194,7 +7194,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG88_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG8_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[789];
             }
@@ -7202,7 +7202,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG88_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG80_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[790];
             }
@@ -7210,7 +7210,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG88_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG80_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[791];
             }
@@ -7218,7 +7218,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG89_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG80_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[792];
             }
@@ -7226,7 +7226,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG89_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG80_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[793];
             }
@@ -7234,7 +7234,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG89_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG80_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[794];
             }
@@ -7242,7 +7242,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG89_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG80_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[795];
             }
@@ -7250,7 +7250,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG89_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG80_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[796];
             }
@@ -7258,7 +7258,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG89_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG80_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[797];
             }
@@ -7266,7 +7266,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG89_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG80_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[798];
             }
@@ -7274,7 +7274,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG89_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG80_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[799];
             }
@@ -7282,7 +7282,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG89_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG81_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[800];
             }
@@ -7290,7 +7290,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG9_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG81_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[801];
             }
@@ -7298,7 +7298,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG9_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG81_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[802];
             }
@@ -7306,7 +7306,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG9_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG81_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[803];
             }
@@ -7314,7 +7314,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG9_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG81_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[804];
             }
@@ -7322,7 +7322,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG9_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG81_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[805];
             }
@@ -7330,7 +7330,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG9_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG81_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[806];
             }
@@ -7338,7 +7338,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG9_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG81_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[807];
             }
@@ -7346,7 +7346,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG9_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG81_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[808];
             }
@@ -7354,7 +7354,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG9_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG81_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[809];
             }
@@ -7362,7 +7362,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG90_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG82_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[810];
             }
@@ -7370,7 +7370,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG90_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG82_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[811];
             }
@@ -7378,7 +7378,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG90_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG82_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[812];
             }
@@ -7386,7 +7386,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG90_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG82_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[813];
             }
@@ -7394,7 +7394,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG90_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG82_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[814];
             }
@@ -7402,7 +7402,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG90_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG82_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[815];
             }
@@ -7410,7 +7410,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG90_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG82_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[816];
             }
@@ -7418,7 +7418,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG90_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG82_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[817];
             }
@@ -7426,7 +7426,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG90_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG82_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[818];
             }
@@ -7434,7 +7434,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG91_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG82_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[819];
             }
@@ -7442,7 +7442,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG91_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG83_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[820];
             }
@@ -7450,7 +7450,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG91_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG83_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[821];
             }
@@ -7458,7 +7458,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG91_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG83_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[822];
             }
@@ -7466,7 +7466,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG91_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG83_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[823];
             }
@@ -7474,7 +7474,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG91_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG83_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[824];
             }
@@ -7482,7 +7482,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG91_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG83_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[825];
             }
@@ -7490,7 +7490,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG91_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG83_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[826];
             }
@@ -7498,7 +7498,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG91_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG83_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[827];
             }
@@ -7506,7 +7506,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG92_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG83_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[828];
             }
@@ -7514,7 +7514,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG92_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG83_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[829];
             }
@@ -7522,7 +7522,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG92_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG84_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[830];
             }
@@ -7530,7 +7530,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG92_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG84_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[831];
             }
@@ -7538,7 +7538,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG92_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG84_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[832];
             }
@@ -7546,7 +7546,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG92_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG84_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[833];
             }
@@ -7554,7 +7554,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG92_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG84_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[834];
             }
@@ -7562,7 +7562,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG92_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG84_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[835];
             }
@@ -7570,7 +7570,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG92_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG84_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[836];
             }
@@ -7578,7 +7578,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG93_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG84_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[837];
             }
@@ -7586,7 +7586,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG93_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG84_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[838];
             }
@@ -7594,7 +7594,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG93_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG84_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[839];
             }
@@ -7602,7 +7602,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG93_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG85_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[840];
             }
@@ -7610,7 +7610,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG93_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG85_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[841];
             }
@@ -7618,7 +7618,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG93_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG85_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[842];
             }
@@ -7626,7 +7626,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG93_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG85_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[843];
             }
@@ -7634,7 +7634,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG93_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG85_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[844];
             }
@@ -7642,7 +7642,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG93_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG85_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[845];
             }
@@ -7650,7 +7650,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG94_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG85_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[846];
             }
@@ -7658,7 +7658,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG94_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG85_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[847];
             }
@@ -7666,7 +7666,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG94_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG85_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[848];
             }
@@ -7674,7 +7674,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG94_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG85_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[849];
             }
@@ -7682,7 +7682,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG94_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG86_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[850];
             }
@@ -7690,7 +7690,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG94_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG86_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[851];
             }
@@ -7698,7 +7698,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG94_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG86_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[852];
             }
@@ -7706,7 +7706,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG94_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG86_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[853];
             }
@@ -7714,7 +7714,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG94_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG86_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[854];
             }
@@ -7722,7 +7722,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG95_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG86_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[855];
             }
@@ -7730,7 +7730,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG95_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG86_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[856];
             }
@@ -7738,7 +7738,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG95_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG86_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[857];
             }
@@ -7746,7 +7746,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG95_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG86_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[858];
             }
@@ -7754,7 +7754,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG95_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG86_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[859];
             }
@@ -7762,7 +7762,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG95_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG87_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[860];
             }
@@ -7770,7 +7770,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG95_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG87_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[861];
             }
@@ -7778,7 +7778,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG95_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG87_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[862];
             }
@@ -7786,7 +7786,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG95_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG87_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[863];
             }
@@ -7794,7 +7794,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG96_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG87_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[864];
             }
@@ -7802,7 +7802,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG96_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG87_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[865];
             }
@@ -7810,7 +7810,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG96_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG87_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[866];
             }
@@ -7818,7 +7818,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG96_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG87_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[867];
             }
@@ -7826,7 +7826,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG96_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG87_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[868];
             }
@@ -7834,7 +7834,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG96_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG87_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[869];
             }
@@ -7842,7 +7842,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG96_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG88_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[870];
             }
@@ -7850,7 +7850,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG96_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG88_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[871];
             }
@@ -7858,7 +7858,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG96_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG88_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[872];
             }
@@ -7866,7 +7866,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG97_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG88_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[873];
             }
@@ -7874,7 +7874,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG97_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG88_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[874];
             }
@@ -7882,7 +7882,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG97_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG88_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[875];
             }
@@ -7890,7 +7890,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG97_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG88_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[876];
             }
@@ -7898,7 +7898,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG97_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG88_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[877];
             }
@@ -7906,7 +7906,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG97_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG88_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[878];
             }
@@ -7914,7 +7914,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG97_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG88_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[879];
             }
@@ -7922,7 +7922,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG97_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG89_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[880];
             }
@@ -7930,7 +7930,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG97_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG89_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[881];
             }
@@ -7938,7 +7938,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG98_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG89_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[882];
             }
@@ -7946,7 +7946,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG98_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG89_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[883];
             }
@@ -7954,7 +7954,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG98_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG89_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[884];
             }
@@ -7962,7 +7962,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG98_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG89_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[885];
             }
@@ -7970,7 +7970,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG98_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG89_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[886];
             }
@@ -7978,7 +7978,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG98_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG89_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[887];
             }
@@ -7986,7 +7986,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG98_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG89_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[888];
             }
@@ -7994,7 +7994,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG98_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG89_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[889];
             }
@@ -8002,7 +8002,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG98_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG9_DVTren {
             get {
                 return this.DataDefinition.ParameterFields[890];
             }
@@ -8010,7 +8010,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG99_DVTren {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG9_DVDuoi {
             get {
                 return this.DataDefinition.ParameterFields[891];
             }
@@ -8018,7 +8018,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG99_DVDuoi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG9_ThoiGian {
             get {
                 return this.DataDefinition.ParameterFields[892];
             }
@@ -8026,7 +8026,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG99_ThoiGian {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG9_TenNhanVien {
             get {
                 return this.DataDefinition.ParameterFields[893];
             }
@@ -8034,7 +8034,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG99_TenNhanVien {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG9_DonVi {
             get {
                 return this.DataDefinition.ParameterFields[894];
             }
@@ -8042,7 +8042,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG99_DonVi {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG9_ChucVu {
             get {
                 return this.DataDefinition.ParameterFields[895];
             }
@@ -8050,7 +8050,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG99_ChucVu {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG9_ChucDanh {
             get {
                 return this.DataDefinition.ParameterFields[896];
             }
@@ -8058,7 +8058,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG99_ChucDanh {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG9_TongDiem {
             get {
                 return this.DataDefinition.ParameterFields[897];
             }
@@ -8066,7 +8066,7 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG99_TongDiem {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG9_XepLoai {
             get {
                 return this.DataDefinition.ParameterFields[898];
             }
@@ -8074,9 +8074,809 @@ namespace BaoBieuIn.DanhGia {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_rptDG99_XepLoai {
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG9_LinhVucPhuTrach {
             get {
                 return this.DataDefinition.ParameterFields[899];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG90_DVTren {
+            get {
+                return this.DataDefinition.ParameterFields[900];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG90_DVDuoi {
+            get {
+                return this.DataDefinition.ParameterFields[901];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG90_ThoiGian {
+            get {
+                return this.DataDefinition.ParameterFields[902];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG90_TenNhanVien {
+            get {
+                return this.DataDefinition.ParameterFields[903];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG90_DonVi {
+            get {
+                return this.DataDefinition.ParameterFields[904];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG90_ChucVu {
+            get {
+                return this.DataDefinition.ParameterFields[905];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG90_ChucDanh {
+            get {
+                return this.DataDefinition.ParameterFields[906];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG90_TongDiem {
+            get {
+                return this.DataDefinition.ParameterFields[907];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG90_XepLoai {
+            get {
+                return this.DataDefinition.ParameterFields[908];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG90_LinhVucPhuTrach {
+            get {
+                return this.DataDefinition.ParameterFields[909];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG91_DVTren {
+            get {
+                return this.DataDefinition.ParameterFields[910];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG91_DVDuoi {
+            get {
+                return this.DataDefinition.ParameterFields[911];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG91_ThoiGian {
+            get {
+                return this.DataDefinition.ParameterFields[912];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG91_TenNhanVien {
+            get {
+                return this.DataDefinition.ParameterFields[913];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG91_DonVi {
+            get {
+                return this.DataDefinition.ParameterFields[914];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG91_ChucVu {
+            get {
+                return this.DataDefinition.ParameterFields[915];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG91_ChucDanh {
+            get {
+                return this.DataDefinition.ParameterFields[916];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG91_TongDiem {
+            get {
+                return this.DataDefinition.ParameterFields[917];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG91_XepLoai {
+            get {
+                return this.DataDefinition.ParameterFields[918];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG91_LinhVucPhuTrach {
+            get {
+                return this.DataDefinition.ParameterFields[919];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG92_DVTren {
+            get {
+                return this.DataDefinition.ParameterFields[920];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG92_DVDuoi {
+            get {
+                return this.DataDefinition.ParameterFields[921];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG92_ThoiGian {
+            get {
+                return this.DataDefinition.ParameterFields[922];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG92_TenNhanVien {
+            get {
+                return this.DataDefinition.ParameterFields[923];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG92_DonVi {
+            get {
+                return this.DataDefinition.ParameterFields[924];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG92_ChucVu {
+            get {
+                return this.DataDefinition.ParameterFields[925];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG92_ChucDanh {
+            get {
+                return this.DataDefinition.ParameterFields[926];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG92_TongDiem {
+            get {
+                return this.DataDefinition.ParameterFields[927];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG92_XepLoai {
+            get {
+                return this.DataDefinition.ParameterFields[928];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG92_LinhVucPhuTrach {
+            get {
+                return this.DataDefinition.ParameterFields[929];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG93_DVTren {
+            get {
+                return this.DataDefinition.ParameterFields[930];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG93_DVDuoi {
+            get {
+                return this.DataDefinition.ParameterFields[931];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG93_ThoiGian {
+            get {
+                return this.DataDefinition.ParameterFields[932];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG93_TenNhanVien {
+            get {
+                return this.DataDefinition.ParameterFields[933];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG93_DonVi {
+            get {
+                return this.DataDefinition.ParameterFields[934];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG93_ChucVu {
+            get {
+                return this.DataDefinition.ParameterFields[935];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG93_ChucDanh {
+            get {
+                return this.DataDefinition.ParameterFields[936];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG93_TongDiem {
+            get {
+                return this.DataDefinition.ParameterFields[937];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG93_XepLoai {
+            get {
+                return this.DataDefinition.ParameterFields[938];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG93_LinhVucPhuTrach {
+            get {
+                return this.DataDefinition.ParameterFields[939];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG94_DVTren {
+            get {
+                return this.DataDefinition.ParameterFields[940];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG94_DVDuoi {
+            get {
+                return this.DataDefinition.ParameterFields[941];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG94_ThoiGian {
+            get {
+                return this.DataDefinition.ParameterFields[942];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG94_TenNhanVien {
+            get {
+                return this.DataDefinition.ParameterFields[943];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG94_DonVi {
+            get {
+                return this.DataDefinition.ParameterFields[944];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG94_ChucVu {
+            get {
+                return this.DataDefinition.ParameterFields[945];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG94_ChucDanh {
+            get {
+                return this.DataDefinition.ParameterFields[946];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG94_TongDiem {
+            get {
+                return this.DataDefinition.ParameterFields[947];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG94_XepLoai {
+            get {
+                return this.DataDefinition.ParameterFields[948];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG94_LinhVucPhuTrach {
+            get {
+                return this.DataDefinition.ParameterFields[949];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG95_DVTren {
+            get {
+                return this.DataDefinition.ParameterFields[950];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG95_DVDuoi {
+            get {
+                return this.DataDefinition.ParameterFields[951];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG95_ThoiGian {
+            get {
+                return this.DataDefinition.ParameterFields[952];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG95_TenNhanVien {
+            get {
+                return this.DataDefinition.ParameterFields[953];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG95_DonVi {
+            get {
+                return this.DataDefinition.ParameterFields[954];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG95_ChucVu {
+            get {
+                return this.DataDefinition.ParameterFields[955];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG95_ChucDanh {
+            get {
+                return this.DataDefinition.ParameterFields[956];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG95_TongDiem {
+            get {
+                return this.DataDefinition.ParameterFields[957];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG95_XepLoai {
+            get {
+                return this.DataDefinition.ParameterFields[958];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG95_LinhVucPhuTrach {
+            get {
+                return this.DataDefinition.ParameterFields[959];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG96_DVTren {
+            get {
+                return this.DataDefinition.ParameterFields[960];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG96_DVDuoi {
+            get {
+                return this.DataDefinition.ParameterFields[961];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG96_ThoiGian {
+            get {
+                return this.DataDefinition.ParameterFields[962];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG96_TenNhanVien {
+            get {
+                return this.DataDefinition.ParameterFields[963];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG96_DonVi {
+            get {
+                return this.DataDefinition.ParameterFields[964];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG96_ChucVu {
+            get {
+                return this.DataDefinition.ParameterFields[965];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG96_ChucDanh {
+            get {
+                return this.DataDefinition.ParameterFields[966];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG96_TongDiem {
+            get {
+                return this.DataDefinition.ParameterFields[967];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG96_XepLoai {
+            get {
+                return this.DataDefinition.ParameterFields[968];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG96_LinhVucPhuTrach {
+            get {
+                return this.DataDefinition.ParameterFields[969];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG97_DVTren {
+            get {
+                return this.DataDefinition.ParameterFields[970];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG97_DVDuoi {
+            get {
+                return this.DataDefinition.ParameterFields[971];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG97_ThoiGian {
+            get {
+                return this.DataDefinition.ParameterFields[972];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG97_TenNhanVien {
+            get {
+                return this.DataDefinition.ParameterFields[973];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG97_DonVi {
+            get {
+                return this.DataDefinition.ParameterFields[974];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG97_ChucVu {
+            get {
+                return this.DataDefinition.ParameterFields[975];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG97_ChucDanh {
+            get {
+                return this.DataDefinition.ParameterFields[976];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG97_TongDiem {
+            get {
+                return this.DataDefinition.ParameterFields[977];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG97_XepLoai {
+            get {
+                return this.DataDefinition.ParameterFields[978];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG97_LinhVucPhuTrach {
+            get {
+                return this.DataDefinition.ParameterFields[979];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG98_DVTren {
+            get {
+                return this.DataDefinition.ParameterFields[980];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG98_DVDuoi {
+            get {
+                return this.DataDefinition.ParameterFields[981];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG98_ThoiGian {
+            get {
+                return this.DataDefinition.ParameterFields[982];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG98_TenNhanVien {
+            get {
+                return this.DataDefinition.ParameterFields[983];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG98_DonVi {
+            get {
+                return this.DataDefinition.ParameterFields[984];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG98_ChucVu {
+            get {
+                return this.DataDefinition.ParameterFields[985];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG98_ChucDanh {
+            get {
+                return this.DataDefinition.ParameterFields[986];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG98_TongDiem {
+            get {
+                return this.DataDefinition.ParameterFields[987];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG98_XepLoai {
+            get {
+                return this.DataDefinition.ParameterFields[988];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG98_LinhVucPhuTrach {
+            get {
+                return this.DataDefinition.ParameterFields[989];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG99_DVTren {
+            get {
+                return this.DataDefinition.ParameterFields[990];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG99_DVDuoi {
+            get {
+                return this.DataDefinition.ParameterFields[991];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG99_ThoiGian {
+            get {
+                return this.DataDefinition.ParameterFields[992];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG99_TenNhanVien {
+            get {
+                return this.DataDefinition.ParameterFields[993];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG99_DonVi {
+            get {
+                return this.DataDefinition.ParameterFields[994];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG99_ChucVu {
+            get {
+                return this.DataDefinition.ParameterFields[995];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG99_ChucDanh {
+            get {
+                return this.DataDefinition.ParameterFields[996];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG99_TongDiem {
+            get {
+                return this.DataDefinition.ParameterFields[997];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG99_XepLoai {
+            get {
+                return this.DataDefinition.ParameterFields[998];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rptDG99_LinhVucPhuTrach {
+            get {
+                return this.DataDefinition.ParameterFields[999];
             }
         }
     }

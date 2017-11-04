@@ -214,5 +214,38 @@ namespace BSCKPI.KetQuaDanhGia
             CSo.Show();
         }
         #endregion
+
+        #region Tinh diem 
+        protected void btnTinhDiemCaNhan_Click(object sender, DirectEventArgs e)
+        {
+            if(slbThang.SelectedItem.Value==null||slbNam.SelectedItem.Value==null||slbKeHoachDG.SelectedItem.Value==null||slbNhanVien.SelectedItem.Value==null)
+            {
+                X.Msg.Alert("","Chưa chọn đủ tham số tính toán").Show();
+                return;
+            }
+            daKetQuaDanhGia dKQ = new daKetQuaDanhGia();
+            dKQ.KQ.Thang = byte.Parse(slbThang.SelectedItem.Value);
+            dKQ.KQ.Nam = int.Parse(slbNam.SelectedItem.Value);
+            dKQ.KQ.IDNhanVien = Guid.Parse(slbNhanVien.SelectedItem.Value);
+            dKQ.KQ.NguoiTao = daPhien.NguoiDung.IDNhanVien.ToString();
+            dKQ.TinhDiemNhanVien();
+            X.Msg.Alert("","Đã hoàn thành tính toán").Show();
+        }
+
+        protected void btnTinhDiemKeHoach_Click(object sender, DirectEventArgs e)
+        {
+            if (slbThang.SelectedItem.Value == null || slbNam.SelectedItem.Value == null || slbKeHoachDG.SelectedItem.Value == null)
+            {
+                X.Msg.Alert("", "Chưa chọn đủ tham số tính toán").Show();
+                return;
+            }
+            daKetQuaDanhGia dKQ = new daKetQuaDanhGia();
+            dKQ.KQ.Thang = byte.Parse(slbThang.SelectedItem.Value);
+            dKQ.KQ.Nam = int.Parse(slbNam.SelectedItem.Value);            
+            dKQ.KQ.NguoiTao = daPhien.NguoiDung.IDNhanVien.ToString();
+            dKQ.TinhDiemKeHoach(int.Parse(slbKeHoachDG.SelectedItem.Value));
+            X.Msg.Alert("", "Đã hoàn thành tính toán").Show();
+        }
+        #endregion
     }
 }
