@@ -125,6 +125,8 @@
     <Content Include="KetQuaDanhGia\frmBangPhong.aspx" />
     <Content Include="KetQuaDanhGia\frmHienThiBaoCaoDanhGia.aspx" />
     <Content Include="KetQuaDanhGia\frmKetQuaDanhGiaDonVi.aspx" />
+    <Content Include="KPI\DiemCongTru\frmDiemCongTru.aspx" />
+    <Content Include="KPI\DiemCongTru\frmDiemCongTruDanhGia.aspx" />
     <Content Include="KPI\frmDanhSachKPI.aspx" />
     <Content Include="KPI\frmHienThiBaoCaoKPI.aspx" />
     <Content Include="KPI\frmKetQuaDanhGiaCaNhan.aspx" />
@@ -219,12 +221,6 @@
     <Compile Include="CongViecCaNhan\uccvcnNguoiThucHien.ascx.designer.cs">
       <DependentUpon>uccvcnNguoiThucHien.ascx</DependentUpon>
     </Compile>
-    <Compile Include="CrystalReport1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReport1.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="DanhMuc\frmDanhMucTrongSoNhom.aspx.cs">
       <DependentUpon>frmDanhMucTrongSoNhom.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -280,6 +276,20 @@
     </Compile>
     <Compile Include="KetQuaDanhGia\frmKetQuaDanhGiaDonVi.aspx.designer.cs">
       <DependentUpon>frmKetQuaDanhGiaDonVi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KPI\DiemCongTru\frmDiemCongTru.aspx.cs">
+      <DependentUpon>frmDiemCongTru.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KPI\DiemCongTru\frmDiemCongTru.aspx.designer.cs">
+      <DependentUpon>frmDiemCongTru.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KPI\DiemCongTru\frmDiemCongTruDanhGia.aspx.cs">
+      <DependentUpon>frmDiemCongTruDanhGia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KPI\DiemCongTru\frmDiemCongTruDanhGia.aspx.designer.cs">
+      <DependentUpon>frmDiemCongTruDanhGia.aspx</DependentUpon>
     </Compile>
     <Compile Include="KPI\frmDanhSachKPI.aspx.cs">
       <DependentUpon>frmDanhSachKPI.aspx</DependentUpon>
@@ -406,12 +416,6 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="CrystalReport1.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

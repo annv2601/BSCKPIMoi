@@ -43,5 +43,12 @@ namespace DaoBSCKPI.DiemXepLoai
                 return null;
             }
         }
+        
+        public DataTable BaoCaoTatCa()
+        {
+            List<sp_tblBKDiemXepLoai_BaoCao_TatCaResult> lst;
+            lst = lD.sp_tblBKDiemXepLoai_BaoCao_TatCa(DXL.Thang, DXL.Nam).ToList();
+            return daDatatableVaList.ToDataTable(lst);
+        }
     }
 }

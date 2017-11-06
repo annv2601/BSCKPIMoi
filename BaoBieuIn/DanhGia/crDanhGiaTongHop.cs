@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BSCKPI {
+namespace BaoBieuIn.DanhGia {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -16,14 +16,14 @@ namespace BSCKPI {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class CrystalReport1 : ReportClass {
+    public class crDanhGiaTongHop : ReportClass {
         
-        public CrystalReport1() {
+        public crDanhGiaTongHop() {
         }
         
         public override string ResourceName {
             get {
-                return "CrystalReport1.rpt";
+                return "crDanhGiaTongHop.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace BSCKPI {
         
         public override string FullResourceName {
             get {
-                return "BSCKPI.CrystalReport1.rpt";
+                return "BaoBieuIn.DanhGia.crDanhGiaTongHop.rpt";
             }
             set {
                 // Do nothing
@@ -87,12 +87,60 @@ namespace BSCKPI {
                 return this.ReportDefinition.Sections[4];
             }
         }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_DVTren {
+            get {
+                return this.DataDefinition.ParameterFields[0];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_DVDuoi {
+            get {
+                return this.DataDefinition.ParameterFields[1];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_TieuDe1 {
+            get {
+                return this.DataDefinition.ParameterFields[2];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_TieuDe2 {
+            get {
+                return this.DataDefinition.ParameterFields[3];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_TieuDe3 {
+            get {
+                return this.DataDefinition.ParameterFields[4];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_ThoiGian {
+            get {
+                return this.DataDefinition.ParameterFields[5];
+            }
+        }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedCrystalReport1 : Component, ICachedReport {
+    public class CachedcrDanhGiaTongHop : Component, ICachedReport {
         
-        public CachedCrystalReport1() {
+        public CachedcrDanhGiaTongHop() {
         }
         
         [Browsable(false)]
@@ -129,7 +177,7 @@ namespace BSCKPI {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            CrystalReport1 rpt = new CrystalReport1();
+            crDanhGiaTongHop rpt = new crDanhGiaTongHop();
             rpt.Site = this.Site;
             return rpt;
         }

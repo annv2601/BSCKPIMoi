@@ -25,4 +25,25 @@
       <Column Name="NguoiDanhGia" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
     </ElementType>
   </Function>
+  <Function Name="dbo.sp_tblBKDiemXepLoai_BaoCao_TatCa" Method="sp_tblBKDiemXepLoai_BaoCao_TatCa">
+    <Parameter Name="Thang" Parameter="thang" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="Nam" Parameter="nam" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_tblBKDiemXepLoai_BaoCao_TatCaResult">
+      <Column Name="ThuTu" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TenNhanVien" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HoDem" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Ten" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="DonVi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ChucDanhChucVu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MoTaCongViec" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DanhDauRieng" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TongDiemKPI" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="DiemCongTru" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="TongDiemKPICong" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
+      <Column Name="XepLoai" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="XepLoaiCong" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Dam" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nghieng" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
 </Database>
