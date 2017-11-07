@@ -42,7 +42,7 @@ namespace BSCKPI.KPI
                         BangDanhGiaKeHoach(_Thang,_Nam,int.Parse(Request.QueryString["IDKeHoach"]));
                         break;
                     case 9:
-                        BangTongHop(_Thang, _Nam, int.Parse(Request.QueryString["IDDonViBaoCao"]), Request.QueryString["TD1BaoCao"], Request.QueryString["TD2BaoCao"], Request.QueryString["TD3BaoCao"]);
+                        BangTongHop(_Thang, _Nam, int.Parse(Request.QueryString["IDDonViBaoCao"]), int.Parse(Request.QueryString["KHBaoCao"]));
                         break;
                 }
             }
@@ -374,12 +374,12 @@ namespace BSCKPI.KPI
         #endregion
 
         #region Tong hop
-        private void BangTongHop(byte rThang, int rNam, int rIDDonVi, string rTieuDe1, string rTieuDe2, string rTieuDe3)
+        private void BangTongHop(byte rThang, int rNam, int rIDDonVi, int rIDKH)
         {
             daDiemXepLoai dXL = new daDiemXepLoai();
             dXL.DXL.Thang = rThang;
             dXL.DXL.Nam = rNam;
-            rptDGTongHop.SetDataSource(dXL.BaoCaoTatCa());
+            rptDGTongHop.SetDataSource(dXL.BaoCaoKeHoach(rIDKH));
 
             daMoHinhDonVi dMHDV = new daMoHinhDonVi();
             daDonVi dDV = new daDonVi();
@@ -394,9 +394,12 @@ namespace BSCKPI.KPI
             dDV.ThongTin();
             rptDGTongHop.SetParameterValue(1, dDV.DV.Ten.ToUpper());
 
-            rptDGTongHop.SetParameterValue(2,rTieuDe1.ToUpper());
-            rptDGTongHop.SetParameterValue(3, rTieuDe2);
-            rptDGTongHop.SetParameterValue(4, rTieuDe3);
+            daKeHoachDanhGia dKH = new daKeHoachDanhGia();
+            dKH.KHDG.ID = rIDKH;
+            dKH.ThongTin();
+            rptDGTongHop.SetParameterValue(2,dKH.KHDG.TieuDe1.ToUpper());
+            rptDGTongHop.SetParameterValue(3, dKH.KHDG.TieuDe2);
+            rptDGTongHop.SetParameterValue(4, dKH.KHDG.TieuDe3);
             rptDGTongHop.SetParameterValue(5, "Kỳ đánh giá: " + "Tháng " + rThang.ToString() + "/" + rNam.ToString());
 
             CrystalReportViewer1.ReportSource = rptDGTongHop;

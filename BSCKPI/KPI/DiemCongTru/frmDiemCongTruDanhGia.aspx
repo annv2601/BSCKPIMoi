@@ -22,7 +22,7 @@
         <ext:FieldContainer runat="server" Layout="HBoxLayout" MarginSpec="10 0 0 0">
             <Items>
                 <ext:SelectBox runat="server" ID="slbThang" 
-                            EmptyText="Tháng ...." DisplayField="Ten" ValueField="ID" MarginSpec="0 0 0 10" RenderXType="True">                           
+                            EmptyText="Tháng ...." DisplayField="Ten" ValueField="ID" MarginSpec="0 0 0 10" RenderXType="True" >
                             <Store>
                                 <ext:Store runat="server" ID="stoThang">
                                     <Model>

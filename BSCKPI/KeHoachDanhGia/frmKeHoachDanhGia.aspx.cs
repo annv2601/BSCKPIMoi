@@ -31,6 +31,10 @@ namespace BSCKPI.KeHoachDanhGia
         {
             IDKeHoachDG = 0;
             txtTen.Text = "";
+            txtTieuDe1.Text = "";
+            txtTieuDe2.Text = "";
+            txtTieuDe3.Text = "";
+
             DanhSachChon();
         }
         #region Rieng
@@ -87,6 +91,9 @@ namespace BSCKPI.KeHoachDanhGia
             dKH.KHDG.Ten = txtTen.Text.Trim();
             dKH.KHDG.TuNgay = txtTuNgay.SelectedDate;
             dKH.KHDG.DenNgay = txtDenNgay.SelectedDate;
+            dKH.KHDG.TieuDe1 = txtTieuDe1.Text.Trim();
+            dKH.KHDG.TieuDe2 = txtTieuDe2.Text.Trim();
+            dKH.KHDG.TieuDe3 = txtTieuDe3.Text.Trim();
             _IDKHThem = dKH.ThemSua();
 
             if (IDKeHoachDG==0)
@@ -216,6 +223,9 @@ namespace BSCKPI.KeHoachDanhGia
                     txtTen.Text = row["Ten"].ToString();
                     txtTuNgay.SelectedDate = DateTime.Parse(row["TuNgay"].ToString());
                     txtDenNgay.SelectedDate = DateTime.Parse(row["DenNgay"].ToString());
+                    txtTieuDe1.Text = row["TieuDe1"].ToString();
+                    txtTieuDe2.Text = row["TieuDe2"].ToString();
+                    txtTieuDe3.Text = row["TieuDe3"].ToString();
                 }
                 catch
                 {

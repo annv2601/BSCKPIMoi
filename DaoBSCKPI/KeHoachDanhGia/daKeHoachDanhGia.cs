@@ -35,7 +35,7 @@ namespace DaoBSCKPI.KeHoachDanhGia
 
         public int ThemSua()
         {
-            return lKH.sp_tblBKKeHoachDanhGia_ThemSua(KHDG.ID, KHDG.Ten, KHDG.TuNgay, KHDG.DenNgay, KHDG.NguoiNhap).Single().IDKeHoachThem.Value;
+            return lKH.sp_tblBKKeHoachDanhGia_ThemSua(KHDG.ID, KHDG.Ten, KHDG.TuNgay, KHDG.DenNgay,KHDG.TieuDe1,KHDG.TieuDe2,KHDG.TieuDe3, KHDG.NguoiNhap).Single().IDKeHoachThem.Value;
         }
 
         public void KhoiTaoPhanBo()

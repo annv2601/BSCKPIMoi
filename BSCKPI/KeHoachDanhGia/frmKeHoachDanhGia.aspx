@@ -67,6 +67,9 @@
                                 <ext:ModelField Name="NgaySua" />
                                 <ext:ModelField Name="NguoiNhap" />
                                 <ext:ModelField Name="NguoiSua" />
+                                <ext:ModelField Name="TieuDe1" />
+                                <ext:ModelField Name="TieuDe2" />
+                                <ext:ModelField Name="TieuDe3" />
                             </Fields>
                         </ext:Model>
                     </Model>
@@ -109,7 +112,11 @@
                         <ext:DateField runat="server" ID="txtDenNgay" FieldLabel="Đến ngày" Width="360" MarginSpec="0 0 0 40" LabelWidth="70"/>
                     </Items>
                 </ext:FieldContainer>
-                
+
+                <ext:TextField runat="server" Width="780" ID="txtTieuDe1" FieldLabel="Tiêu đề 1" MarginSpec="10 0 0 10" LabelWidth="70" />
+                <ext:TextField runat="server" Width="780" ID="txtTieuDe2" FieldLabel="Tiêu đề 2" MarginSpec="10 0 0 10" LabelWidth="70" />
+                <ext:TextField runat="server" Width="780" ID="txtTieuDe3" FieldLabel="Tiêu đề 3" MarginSpec="10 0 0 10" LabelWidth="70" />
+
                 <ext:Panel runat="server" Height="230" Width="780" Title="" Layout="HBoxLayout" MarginSpec="10 0 0 0">
                 <LayoutConfig>
                     <ext:HBoxLayoutConfig Align="Stretch" Padding="5" />

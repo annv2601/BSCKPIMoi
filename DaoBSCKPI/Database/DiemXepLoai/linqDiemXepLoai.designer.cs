@@ -82,6 +82,13 @@ namespace DaoBSCKPI.Database.DiemXepLoai
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), thang, nam);
 			return ((ISingleResult<sp_tblBKDiemXepLoai_BaoCao_TatCaResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_tblBKDiemXepLoai_BaoCao_KeHoach")]
+		public ISingleResult<sp_tblBKDiemXepLoai_BaoCao_TatCaResult> sp_tblBKDiemXepLoai_BaoCao_KeHoach([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Thang", DbType="SmallInt")] System.Nullable<short> thang, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nam", DbType="Int")] System.Nullable<int> nam, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDKeHoach", DbType="Int")] System.Nullable<int> iDKeHoach)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), thang, nam, iDKeHoach);
+			return ((ISingleResult<sp_tblBKDiemXepLoai_BaoCao_TatCaResult>)(result.ReturnValue));
+		}
 	}
 	
 	public partial class sp_tblBKDiemXepLoai_LayResult

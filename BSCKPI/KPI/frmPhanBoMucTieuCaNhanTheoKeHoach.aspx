@@ -163,14 +163,20 @@
                             <Menu>
                                 <ext:Menu runat="server">
                                     <Items>
-                                        <ext:MenuItem runat="server" Text="Bản in cá nhân" ID="btnInbangPhanBo" UI="Success">
+                                        <ext:MenuItem runat="server" Text="Bản in cá nhân" ID="btnInbangPhanBo" UI="Success" Icon="ReportUser">
                                             <DirectEvents>
                                                 <Click OnEvent="btnInbangPhanBo_Click" />
                                             </DirectEvents>
                                         </ext:MenuItem>
-                                        <ext:MenuItem runat="server" Text="Bản in theo kế hoạch" ID="btnInKeHoach" UI="Success" >
+                                        <ext:MenuItem runat="server" Text="Bản in theo kế hoạch" ID="btnInKeHoach" UI="Success" Icon="Report" >
                                             <DirectEvents>
                                                 <Click OnEvent="btnInKeHoach_Click" />
+                                            </DirectEvents>
+                                        </ext:MenuItem>
+                                        <ext:MenuSeparator />
+                                        <ext:MenuItem runat="server" Text="Cập nhật mục tiêu" ID="btnCapNhatMucTieu" UI="Success" Icon="BugEdit">
+                                            <DirectEvents>
+                                                <Click OnEvent="btnCapNhatMucTieu_Click" />
                                             </DirectEvents>
                                         </ext:MenuItem>
                                     </Items>

@@ -157,6 +157,15 @@ namespace BSCKPI.KPI {
         protected global::Ext.Net.MenuItem btnInKeHoach;
         
         /// <summary>
+        /// btnCapNhatMucTieu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.MenuItem btnCapNhatMucTieu;
+        
+        /// <summary>
         /// RowNumbererColumn1 control.
         /// </summary>
         /// <remarks>

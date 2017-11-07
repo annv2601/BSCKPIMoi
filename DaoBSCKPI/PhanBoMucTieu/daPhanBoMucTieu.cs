@@ -57,6 +57,11 @@ namespace DaoBSCKPI.PhanBoMucTieu
         {
             return lPB.sp_tblBKPhanBoMucTieu_KiemTraCoSoLieu(Thang, Nam, IDDonVi, IDPhongBan).Single().SoLuongCo.Value;
         }
+
+        public void CapNhatMucTieu()
+        {
+            lPB.sp_tblBKPhanBoMucTieu_CapNhatMucTieu_TheoNhanVien(MT.Thang, MT.Nam, MT.IDNhanVien, MT.NguoiTao);
+        }
         
         public DataTable DanhSach()
         {

@@ -131,6 +131,13 @@ namespace DaoBSCKPI.Database.PhanBoMucTieu
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), thang, nam, iDNhanVien, iDKPI);
 			return ((ISingleResult<sp_tblBKPhanBoMucTieu_ThongTinResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_tblBKPhanBoMucTieu_CapNhatMucTieu_TheoNhanVien")]
+		public int sp_tblBKPhanBoMucTieu_CapNhatMucTieu_TheoNhanVien([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Thang", DbType="SmallInt")] System.Nullable<short> thang, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nam", DbType="Int")] System.Nullable<int> nam, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDNhanVien", DbType="UniqueIdentifier")] System.Nullable<System.Guid> iDNhanVien, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="NguoiTao", DbType="NVarChar(30)")] string nguoiTao)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), thang, nam, iDNhanVien, nguoiTao);
+			return ((int)(result.ReturnValue));
+		}
 	}
 	
 	public partial class sp_tblBKPhanBoMucTieu_DanhSachResult

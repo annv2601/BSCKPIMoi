@@ -194,6 +194,21 @@ namespace BSCKPI.KPI
             CSo.Render();
             CSo.Show();
         }
+
+        protected void btnCapNhatMucTieu_Click(object sender, DirectEventArgs e)
+        {
+            daPhanBoMucTieu dPBMT = new daPhanBoMucTieu();
+            dPBMT.MT.Thang = byte.Parse(slbThang.SelectedItem.Value);
+            dPBMT.MT.Nam = int.Parse(slbNam.SelectedItem.Value);
+            dPBMT.MT.IDNhanVien = Guid.Parse(slbNhanVien.SelectedItem.Value);
+            dPBMT.MT.NguoiTao = daPhien.NguoiDung.IDNhanVien.ToString();
+
+            dPBMT.CapNhatMucTieu();
+            stoPhanBoCT.DataSource = dPBMT.DanhSach();
+            stoPhanBoCT.DataBind();
+
+            X.Msg.Alert("","Đã cập nhật mục tiêu từ dữ liệu KPI 12 tháng xong.").Show();
+        }
         #endregion
     }
 }

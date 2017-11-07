@@ -121,6 +121,33 @@ namespace BSCKPI.KeHoachDanhGia {
         protected global::Ext.Net.DateField txtDenNgay;
         
         /// <summary>
+        /// txtTieuDe1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.TextField txtTieuDe1;
+        
+        /// <summary>
+        /// txtTieuDe2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.TextField txtTieuDe2;
+        
+        /// <summary>
+        /// txtTieuDe3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.TextField txtTieuDe3;
+        
+        /// <summary>
         /// grdChucVu control.
         /// </summary>
         /// <remarks>
