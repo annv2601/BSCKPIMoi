@@ -310,6 +310,18 @@ namespace BSCKPI.BSC
 
             tpBSC.GetNodeById(id).Commit();
         }
+
+        protected void btnDongBoChiTieu_Click(object sender, DirectEventArgs e)
+        {
+            if(slbNam.SelectedItem.Value==null)
+            {
+                X.Msg.Alert("","Đề nghị chọn Năm số liệu").Show();
+                return;
+            }
+            daChiTieuBSC dBSC = new daChiTieuBSC();
+            dBSC.DongBoChiTieu(int.Parse(slbNam.SelectedItem.Value));
+            X.Msg.Alert("", "Đã đồng bộ chỉ tiêu xong!").Show();
+        }
         #endregion
     }
 }

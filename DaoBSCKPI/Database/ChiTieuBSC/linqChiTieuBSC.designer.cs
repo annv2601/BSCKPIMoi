@@ -96,6 +96,13 @@ namespace DaoBSCKPI.Database.ChiTieuBSC
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iDChiTieuTren);
 			return ((ISingleResult<sp_tblBKChiTieuBSC_LayTongTrongSoResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_DongBo_ChiTieu")]
+		public int sp_DongBo_ChiTieu([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nam", DbType="Int")] System.Nullable<int> nam)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), nam);
+			return ((int)(result.ReturnValue));
+		}
 	}
 	
 	public partial class sp_tblBKChiTieuBSC_DanhSachResult

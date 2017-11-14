@@ -60,5 +60,10 @@ namespace DaoBSCKPI.ChiTieuBSC
         }
         
         
+
+        public void DongBoChiTieu(int rNam)
+        {
+            lBSC.sp_DongBo_ChiTieu(rNam);
+        }
     }
 }

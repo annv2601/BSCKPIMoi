@@ -85,6 +85,15 @@ namespace BSCKPI.BSC {
         protected global::Ext.Net.Button btnHienThi;
         
         /// <summary>
+        /// btnDongBoChiTieu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Button btnDongBoChiTieu;
+        
+        /// <summary>
         /// tabBieuDo control.
         /// </summary>
         /// <remarks>

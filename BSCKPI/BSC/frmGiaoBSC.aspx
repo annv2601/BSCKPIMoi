@@ -95,7 +95,14 @@
                             <DirectEvents>
                                 <Click OnEvent="btnHienThi_Click" />
                             </DirectEvents>
-                        </ext:Button>                       
+                        </ext:Button>
+                        <ext:Button ID="btnDongBoChiTieu" runat="server" Icon="TableRefresh" Text="Đồng bộ" MarginSpec="0 0 0 30">
+                            <DirectEvents>
+                                <Click OnEvent="btnDongBoChiTieu_Click">
+                                    <EventMask ShowMask="true" Msg="Đang thực hiện ........" />
+                                </Click>
+                            </DirectEvents>
+                        </ext:Button>
                     </Items>
                 </ext:Toolbar>
             </TopBar>
