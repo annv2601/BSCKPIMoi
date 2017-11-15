@@ -43,5 +43,19 @@ namespace DaoBSCKPI.KetQuaDanhGia
             lst = lBDG.sp_tblBKMauBangDanhGia_BangPhanBo(Thang, Nam, IDNhanVien).ToList();
             return daDatatableVaList.ToDataTable(lst);
         }
+
+        public DataTable BangPhanBoNhap()
+        {
+            List<clsBangPhanBo> lst;
+            lst = lBDG.sp_tblBKMauBangDanhGia_BangPhanBo(Thang, Nam, IDNhanVien).ToList();
+            for(int i=0;i<lst.Count;i++)
+            {
+                if(lst[i].ThuTu=="0")
+                {
+                    lst.RemoveAt(i);
+                }
+            }
+            return daDatatableVaList.ToDataTable(lst);
+        }
     }
 }

@@ -9,6 +9,7 @@ using DaoBSCKPI;
 using DaoBSCKPI.NhanVien;
 using DaoBSCKPI.CongViec;
 using DaoBSCKPI.Khac;
+using DaoBSCKPI.DonVi;
 
 using Ext.Net;
 using BSCKPI.UIHelper;
@@ -21,6 +22,7 @@ namespace BSCKPI.KPI
             if(!X.IsAjaxRequest)
             {
                 DanhSachThangNam();
+                DanhSachDonVi(DateTime.Now, daPhien.NguoiDung.IDDonVi.Value);
                 ucNV1.KhoiTao();
             }
         }
@@ -36,37 +38,63 @@ namespace BSCKPI.KPI
             stoNam.DataBind();
         }
 
-        private void DanhSachNhanVienNhap()
+        private void DanhSachNhanVienNhap(int rIDDonVi, int rIDphongBan)
         {
             daThongTinNhanVien dTTNV = new daThongTinNhanVien();
             dTTNV.TTNV.Thang = byte.Parse(slbThang.SelectedItem.Value);
             dTTNV.TTNV.Nam = int.Parse(slbNam.SelectedItem.Value);
-            dTTNV.TTNV.IDDonVi = daPhien.NguoiDung.IDDonVi.Value;
-            dTTNV.TTNV.IDPhongBan = daPhien.NguoiDung.IDPhongBan.Value;
+            dTTNV.TTNV.IDDonVi = rIDDonVi;
+            dTTNV.TTNV.IDPhongBan = rIDphongBan;
 
             ucNV1.DanhSachNhanVien(dTTNV.DanhSach());
         }
-        #endregion
 
-        #region SuKien
-        protected void DanhSachNVTTam(object sender, StoreReadDataEventArgs e)
+        private void DanhSachDonVi(DateTime rNgay, int rIDDVQL)
         {
-            if (slbThang.SelectedItem.Value==null||slbNam.SelectedItem.Value==null)
-            {
-                return;
-            }
-            DanhSachNhanVienNhap();
+            daMoHinhDonVi dMHDV = new daMoHinhDonVi();
+            dMHDV.MHDV.TuNgay = rNgay;
+            dMHDV.MHDV.IDDonViQuanLy = rIDDVQL;
+            stoDonVi.DataSource = dMHDV.DanhSach();
+            stoDonVi.DataBind();
+        }
 
+        private void DanhSachNhiemVuChinh(int rIDDonVi, int rIDphongBan)
+        {
             daNhiemVuTrongTam dNVu = new daNhiemVuTrongTam();
             dNVu.Thang = byte.Parse(slbThang.SelectedItem.Value);
             dNVu.Nam = int.Parse(slbNam.SelectedItem.Value);
-            dNVu.IDDonVi = daPhien.NguoiDung.IDDonVi.Value;
-            dNVu.IDPhongBan = daPhien.NguoiDung.IDPhongBan.Value;
+            dNVu.IDDonVi = rIDDonVi;
+            dNVu.IDPhongBan = rIDphongBan;
 
             stoNV.DataSource = dNVu.DanhSach();
             stoNV.DataBind();
 
-            grdNV.Title= "Nhiệm vụ trọng tâm "+dNVu.Thang.ToString()+"/"+dNVu.Nam.ToString();
+            grdNV.Title = "Nhiệm vụ trọng tâm " + dNVu.Thang.ToString() + "/" + dNVu.Nam.ToString();
+        }
+        #endregion
+
+        #region SuKien
+        protected void DanhSachPhongBan(object sender, StoreReadDataEventArgs e)
+        {
+            daMoHinhPhongBan dMHPB = new daMoHinhPhongBan();
+            dMHPB.MHPB.TuNgay = DateTime.Now;
+            dMHPB.MHPB.IDDonVi = int.Parse(slbDonVi.SelectedItem.Value);
+            stoPhong.DataSource = dMHPB.DanhSachDDL();
+            stoPhong.DataBind();
+        }
+
+        protected void DanhSachNVTTam(object sender, StoreReadDataEventArgs e)
+        {
+            if (slbThang.SelectedItem.Value==null||slbNam.SelectedItem.Value==null || slbDonVi.SelectedItem.Value==null || slbPhongBan.SelectedItem.Value==null)
+            {
+                return;
+            }
+
+            int _IDDV,_IDPB;
+            _IDDV = int.Parse(slbDonVi.SelectedItem.Value);
+            _IDPB = int.Parse(slbPhongBan.SelectedItem.Value);
+            DanhSachNhanVienNhap(_IDDV,_IDPB);
+            DanhSachNhiemVuChinh(_IDDV, _IDPB);
         }
 
         protected void btnCapNhatNV_Click(object sender, DirectEventArgs e)
@@ -92,6 +120,8 @@ namespace BSCKPI.KPI
             dNVu.NVu.NguoiTao = daPhien.NguoiDung.IDNhanVien.ToString();
             dNVu.NVu.Thang = byte.Parse(slbThang.SelectedItem.Value);
             dNVu.NVu.Nam = int.Parse(slbNam.SelectedItem.Value);
+            dNVu.NVu.IDXuHuongYeuCau = ucNV1.XuHuongYeuCau;
+            dNVu.NVu.Ma = ucNV1.Ma;
             if (dNVu.NVu.ID==0)
             {
                 dNVu.NVu.IDTrangThai = (int)daTrangThai.eTrangThai.Nhập;
@@ -148,6 +178,8 @@ namespace BSCKPI.KPI
                 ucNV1.TanSuatDo = dNVu.NVu.IDTanSuatDo.Value;
                 ucNV1.DonViTinh = dNVu.NVu.IDDonViTinh.Value;
                 ucNV1.TrangThai = dNVu.NVu.IDTrangThai.Value;
+                ucNV1.XuHuongYeuCau = dNVu.NVu.IDXuHuongYeuCau.Value;
+                ucNV1.Ma = dNVu.NVu.Ma;
             }
         }
         #endregion

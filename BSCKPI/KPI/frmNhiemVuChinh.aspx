@@ -28,6 +28,9 @@
                                 <ext:ModelField Name="MucTieu" />
                                 <ext:ModelField Name="IDTrangThai" />
                                 <ext:ModelField Name="TrangThai" />
+                                <ext:ModelField Name="IDXuHuongYeuCau" />
+                                <ext:ModelField Name="XuHuongYeuCau" />
+                                <ext:ModelField Name="Ma" />
                             </Fields>
                         </ext:Model>
                     </Model>
@@ -72,6 +75,32 @@
                                 </ext:Store>
                             </Store>
                         </ext:SelectBox>
+                        <ext:SelectBox runat="server" ID="slbDonVi" DisplayField="Ten" ValueField="IDDonVi" EmptyText="Chọn đơn vị" MarginSpec="0 0 0 10" Width="200">
+                            <Listeners>
+                                <Select Handler="#{stoPhong}.reload();#{stoNV}.reload();" />
+                            </Listeners>
+                            <Store>
+                                <ext:Store runat="server" ID="stoDonVi">
+                                    <Fields>
+                                        <ext:ModelField Name="IDDonVi" />
+                                        <ext:ModelField Name="Ten" />
+                                    </Fields>
+                                </ext:Store>
+                            </Store>
+                        </ext:SelectBox>
+                    <ext:SelectBox runat="server" ID="slbPhongBan" DisplayField="TenPhongBan" ValueField="IDPhongBan" EmptyText="Chọn Phòng ban" MarginSpec="0 0 0 10" Width="200">
+                                <Listeners>
+                                    <Select Handler="#{stoNV}.reload();" />
+                                </Listeners>
+                                <Store>
+                                    <ext:Store runat="server" ID="stoPhong" OnReadData="DanhSachPhongBan">
+                                        <Fields>
+                                            <ext:ModelField Name="IDPhongBan" />
+                                            <ext:ModelField Name="TenPhongBan" />
+                                        </Fields>
+                                    </ext:Store>
+                                </Store>
+                            </ext:SelectBox>
                     </Items>
                 </ext:Toolbar>
             </TopBar>
@@ -79,9 +108,11 @@
                 <Columns>
                     <ext:RowNumbererColumn runat="server" Text="STT" Align="Center" Width="60" />
                     <ext:Column runat="server" Text="Tên nhân viên" DataIndex="TenNhanVien" Width="200" />
+                    <ext:Column runat="server" Text="Mã công việc" DataIndex="Ma" Width="80" Align="Center" />
                     <ext:Column runat="server" Text="Tên công việc" DataIndex="TenCongViec" Width="400" CellWrap="true"/>
-                    <ext:Column runat="server" Text="Tần suất đo" DataIndex="TanSuatDo" Width="120" />
-                    <ext:Column runat="server" Text="Đơn vị tính" DataIndex="DonViTinh" Width="120" />
+                    <ext:Column runat="server" Text="Tần suất đo" DataIndex="TanSuatDo" Width="120" Align="Center"/>
+                    <ext:Column runat="server" Text="Đơn vị tính" DataIndex="DonViTinh" Width="120" Align="Center"/>
+                    <ext:Column runat="server" Text="Xu hướng" DataIndex="XuHuongYeuCau" Width="120" Align="Center"/>
                     <ext:NumberColumn runat="server" Text="Mục tiêu" DataIndex="MucTieu" Width="150" Align="Right" />
                     <ext:Column runat="server" Text="Trạng thái" DataIndex="TrangThai" Width="120" />
                 </Columns>

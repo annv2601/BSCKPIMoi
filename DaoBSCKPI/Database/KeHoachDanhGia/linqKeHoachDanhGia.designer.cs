@@ -96,6 +96,13 @@ namespace DaoBSCKPI.Database.KeHoachDanhGia
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), tuNgay, denNgay);
 			return ((ISingleResult<sp_tblBKKeHoachDanhGia_DanhSachResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_tblBKKeHoachDanhGia_DanhSachNhanVien_DonVi")]
+		public ISingleResult<sp_tblBKKeHoachDanhGia_DanhSachNhanVien_DonViResult> sp_tblBKKeHoachDanhGia_DanhSachNhanVien_DonVi([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Thang", DbType="SmallInt")] System.Nullable<short> thang, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nam", DbType="Int")] System.Nullable<int> nam, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDKeHoach", DbType="Int")] System.Nullable<int> iDKeHoach, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDDonVi", DbType="Int")] System.Nullable<int> iDDonVi, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDPhongBan", DbType="Int")] System.Nullable<int> iDPhongBan)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), thang, nam, iDKeHoach, iDDonVi, iDPhongBan);
+			return ((ISingleResult<sp_tblBKKeHoachDanhGia_DanhSachNhanVien_DonViResult>)(result.ReturnValue));
+		}
 	}
 	
 	public partial class sp_tblBKKeHoachDanhGia_DanhSachNhanVienResult
@@ -575,6 +582,50 @@ namespace DaoBSCKPI.Database.KeHoachDanhGia
 				if ((this._NguoiSua != value))
 				{
 					this._NguoiSua = value;
+				}
+			}
+		}
+	}
+	
+	public partial class sp_tblBKKeHoachDanhGia_DanhSachNhanVien_DonViResult
+	{
+		
+		private System.Nullable<System.Guid> _IDNhanVien;
+		
+		private string _TenNhanVien;
+		
+		public sp_tblBKKeHoachDanhGia_DanhSachNhanVien_DonViResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IDNhanVien", DbType="UniqueIdentifier")]
+		public System.Nullable<System.Guid> IDNhanVien
+		{
+			get
+			{
+				return this._IDNhanVien;
+			}
+			set
+			{
+				if ((this._IDNhanVien != value))
+				{
+					this._IDNhanVien = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenNhanVien", DbType="NVarChar(83)")]
+		public string TenNhanVien
+		{
+			get
+			{
+				return this._TenNhanVien;
+			}
+			set
+			{
+				if ((this._TenNhanVien != value))
+				{
+					this._TenNhanVien = value;
 				}
 			}
 		}

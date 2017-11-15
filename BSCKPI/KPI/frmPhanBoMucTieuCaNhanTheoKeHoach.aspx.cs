@@ -9,6 +9,9 @@ using DaoBSCKPI.ChiTieuKPI;
 using DaoBSCKPI.NhanVien;
 using DaoBSCKPI;
 using DaoBSCKPI.KeHoachDanhGia;
+using DaoBSCKPI.CongViec;
+using DaoBSCKPI.KetQuaDanhGia;
+using DaoBSCKPI.DonVi;
 
 using Ext.Net;
 using BSCKPI.UIHelper;
@@ -22,6 +25,7 @@ namespace BSCKPI.KPI
             if(!X.IsAjaxRequest)
             {
                 DanhSachThangNam();
+                DanhSachDonVi(DateTime.Now,daPhien.NguoiDung.IDDonVi.Value);
                 DanhSachKeHoachDG();
             }
         }
@@ -35,6 +39,15 @@ namespace BSCKPI.KPI
 
             stoNam.DataSource = dTS.DanhSachNam();
             stoNam.DataBind();
+        }
+
+        private void DanhSachDonVi(DateTime rNgay, int rIDDVQL)
+        {
+            daMoHinhDonVi dMHDV = new daMoHinhDonVi();
+            dMHDV.MHDV.TuNgay = rNgay;
+            dMHDV.MHDV.IDDonViQuanLy = rIDDVQL;
+            stoDonVi.DataSource = dMHDV.DanhSach();
+            stoDonVi.DataBind();
         }
 
         private void DanhSachKeHoachDG()
@@ -55,6 +68,20 @@ namespace BSCKPI.KPI
                 stoNhanVien.DataSource = dKHDG.DanhSachNhanVien();
                 stoNhanVien.DataBind();
             }            
+        }
+
+        private void DanhSachNhanVienDanhGiaDonVi()
+        {
+            if (slbKeHoachDG.SelectedItem.Value != null)
+            {
+                daKeHoachDanhGia dKHDG = new daKeHoachDanhGia();
+                dKHDG.Thang = byte.Parse(slbThang.SelectedItem.Value);
+                dKHDG.Nam = int.Parse(slbNam.SelectedItem.Value);
+                dKHDG.KHDG.ID = int.Parse(slbKeHoachDG.SelectedItem.Value);
+
+                stoNhanVien.DataSource = dKHDG.DanhSachNhanVienDonVi(int.Parse(slbDonVi.SelectedItem.Value), int.Parse(slbPhongBan.SelectedItem.Value));
+                stoNhanVien.DataBind();
+            }
         }
 
         private bool KiemTraChonThangNam()
@@ -102,12 +129,32 @@ namespace BSCKPI.KPI
         #region Su kien
         protected void DanhSachNhanVien(object sender, StoreReadDataEventArgs e)
         {
-            if (KiemTraChonThangNam())
+            if (slbThang.SelectedItem.Value==null || slbNam.SelectedItem.Value==null)
+            {
+                return;
+            }
+            if (slbDonVi.SelectedItem.Value == null && slbPhongBan.SelectedItem.Value == null)
             {
                 DanhSachNhanVienDanhGia();
             }
+            else
+            {
+                if (slbDonVi.SelectedItem.Value != null && slbPhongBan.SelectedItem.Value != null)
+                {
+                    DanhSachNhanVienDanhGiaDonVi();
+                }
+            }
         }
-        
+
+        protected void DanhSachPhongBan(object sender, StoreReadDataEventArgs e)
+        {
+            daMoHinhPhongBan dMHPB = new daMoHinhPhongBan();
+            dMHPB.MHPB.TuNgay = DateTime.Now;
+            dMHPB.MHPB.IDDonVi = int.Parse(slbDonVi.SelectedItem.Value);
+            stoPhong.DataSource = dMHPB.DanhSachDDL();
+            stoPhong.DataBind();
+        }
+
         protected void DanhSachPBMTNV(object sender, StoreReadDataEventArgs e)
         {
             if (KiemTraChonThangNam()&& slbNhanVien.SelectedItem.Value!=null)
@@ -120,7 +167,18 @@ namespace BSCKPI.KPI
 
                 dPBMT.KhoiTaoTheoNhanVien();
 
-                stoPhanBoCT.DataSource = dPBMT.DanhSach();
+                daPBNhiemVuTrongTam dPBNV = new daPBNhiemVuTrongTam();
+                dPBNV.PBNV.Thang = dPBMT.MT.Thang;
+                dPBNV.PBNV.Nam = dPBMT.MT.Nam;
+                dPBNV.PBNV.NguoiTao = dPBMT.MT.NguoiTao;
+                dPBNV.KhoiTaovaBoSung(dPBMT.MT.IDNhanVien.Value);
+
+                daBangDanhGia dBDG = new daBangDanhGia();
+                dBDG.Thang = Convert.ToByte(dPBMT.MT.Thang.Value);
+                dBDG.Nam = dPBMT.MT.Nam.Value;
+                dBDG.IDNhanVien = dPBMT.MT.IDNhanVien.Value;
+
+                stoPhanBoCT.DataSource = dBDG.BangPhanBoNhap();//dPBMT.DanhSach();
                 stoPhanBoCT.DataBind();
 
                 daThongTinNhanVien dTTNV = new daThongTinNhanVien();
@@ -147,26 +205,46 @@ namespace BSCKPI.KPI
         [DirectMethod(Namespace = "BangPBMTCTX")]
         public void EditCT(int id, string field, string oldvalue, string newvalue, object BangPB)
         {
-            daPhanBoMucTieu dPBMT = new daPhanBoMucTieu();
-            dPBMT.MT.Thang = byte.Parse(slbThang.SelectedItem.Value);
-            dPBMT.MT.Nam = int.Parse(slbNam.SelectedItem.Value);
-            dPBMT.MT.IDNhanVien = Guid.Parse(slbNhanVien.SelectedItem.Value);
-            dPBMT.MT.NguoiTao = daPhien.NguoiDung.IDNhanVien.Value.ToString();
+            
             Newtonsoft.Json.Linq.JObject node = JSON.Deserialize<Newtonsoft.Json.Linq.JObject>(BangPB.ToString());
 
-            dPBMT.MT.IDKPI = int.Parse(node.Property("IDKPI").Value.ToString());
-            try
+            switch(node.Property("LoaiChiTieu").Value.ToString())
             {
-                dPBMT.MT.TrongSo = decimal.Parse(node.Property("TrongSo").Value.ToString());
-            }
-            catch { dPBMT.MT.TrongSo = 0; }
-            try
-            {
-                dPBMT.MT.MucTieu = decimal.Parse(node.Property("MucTieu").Value.ToString());
-            }
-            catch { dPBMT.MT.TrongSo = 0; }
+                case "1":
+                    daPhanBoMucTieu dPBMT = new daPhanBoMucTieu();
+                    dPBMT.MT.Thang = byte.Parse(slbThang.SelectedItem.Value);
+                    dPBMT.MT.Nam = int.Parse(slbNam.SelectedItem.Value);
+                    dPBMT.MT.IDNhanVien = Guid.Parse(slbNhanVien.SelectedItem.Value);
+                    dPBMT.MT.NguoiTao = daPhien.NguoiDung.IDNhanVien.Value.ToString();
+                    dPBMT.MT.IDKPI = int.Parse(node.Property("ID").Value.ToString());
+                    try
+                    {
+                        dPBMT.MT.TrongSo = decimal.Parse(node.Property("TrongSo").Value.ToString());
+                    }
+                    catch { dPBMT.MT.TrongSo = 0; }
+                    try
+                    {
+                        dPBMT.MT.MucTieu = decimal.Parse(node.Property("MucTieu").Value.ToString());
+                    }
+                    catch { dPBMT.MT.MucTieu = 0; }
 
-            dPBMT.ThemSua();
+                    dPBMT.ThemSua();
+                    break;
+                case "2":
+                    daPBNhiemVuTrongTam dPBNV = new daPBNhiemVuTrongTam();
+                    dPBNV.PBNV.Thang = byte.Parse(slbThang.SelectedItem.Value);
+                    dPBNV.PBNV.Nam = int.Parse(slbNam.SelectedItem.Value);
+                    dPBNV.PBNV.NguoiTao = daPhien.NguoiDung.IDNhanVien.Value.ToString();
+                    dPBNV.PBNV.IDNhiemVu = int.Parse(node.Property("ID").Value.ToString());
+                    try
+                    {
+                        dPBNV.PBNV.TrongSo = decimal.Parse(node.Property("TrongSo").Value.ToString());
+                    }
+                    catch { dPBNV.PBNV.TrongSo = 0; }
+                    dPBNV.CapNhat();
+                    break;
+            }
+            
             grdPBChiTieu.GetStore().GetById(id).Commit();
         }
         
@@ -204,8 +282,17 @@ namespace BSCKPI.KPI
             dPBMT.MT.NguoiTao = daPhien.NguoiDung.IDNhanVien.ToString();
 
             dPBMT.CapNhatMucTieu();
-            stoPhanBoCT.DataSource = dPBMT.DanhSach();
+
+            daBangDanhGia dBDG = new daBangDanhGia();
+            dBDG.Thang = Convert.ToByte(dPBMT.MT.Thang.Value);
+            dBDG.Nam = dPBMT.MT.Nam.Value;
+            dBDG.IDNhanVien = dPBMT.MT.IDNhanVien.Value;
+
+            stoPhanBoCT.DataSource = dBDG.BangPhanBoNhap();//dPBMT.DanhSach();
             stoPhanBoCT.DataBind();
+
+            /*stoPhanBoCT.DataSource = dPBMT.DanhSach();
+            stoPhanBoCT.DataBind();*/
 
             X.Msg.Alert("","Đã cập nhật mục tiêu từ dữ liệu KPI 12 tháng xong.").Show();
         }

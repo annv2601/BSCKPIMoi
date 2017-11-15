@@ -62,4 +62,15 @@
       <Column Name="NguoiSua" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
     </ElementType>
   </Function>
+  <Function Name="dbo.sp_tblBKKeHoachDanhGia_DanhSachNhanVien_DonVi" Method="sp_tblBKKeHoachDanhGia_DanhSachNhanVien_DonVi">
+    <Parameter Name="Thang" Parameter="thang" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="Nam" Parameter="nam" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDKeHoach" Parameter="iDKeHoach" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDDonVi" Parameter="iDDonVi" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDPhongBan" Parameter="iDPhongBan" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_tblBKKeHoachDanhGia_DanhSachNhanVien_DonViResult">
+      <Column Name="IDNhanVien" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="TenNhanVien" Type="System.String" DbType="NVarChar(83)" CanBeNull="true" />
+    </ElementType>
+  </Function>
 </Database>

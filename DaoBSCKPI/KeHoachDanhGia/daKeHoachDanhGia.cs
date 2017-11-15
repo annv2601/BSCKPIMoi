@@ -57,6 +57,13 @@ namespace DaoBSCKPI.KeHoachDanhGia
             return daDatatableVaList.ToDataTable(lst);
         }
 
+        public DataTable DanhSachNhanVienDonVi(int rIDDonVi, int rIDPhongBan)
+        {
+            List<sp_tblBKKeHoachDanhGia_DanhSachNhanVien_DonViResult> lst;
+            lst = lKH.sp_tblBKKeHoachDanhGia_DanhSachNhanVien_DonVi(Thang, Nam, KHDG.ID,rIDDonVi,rIDPhongBan).ToList();
+            return daDatatableVaList.ToDataTable(lst);
+        }
+
         public List<sp_tblBKKeHoachDanhGia_DanhSachNhanVienResult> lstDanhSachNhanVien()
         {
             List<sp_tblBKKeHoachDanhGia_DanhSachNhanVienResult> lst;

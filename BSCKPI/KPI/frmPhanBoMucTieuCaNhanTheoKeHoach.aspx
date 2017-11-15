@@ -44,7 +44,7 @@
                 //        return;
                 //    }
                 //}
-                BangPBMTCTX.EditCT(e.record.data.ThuTu, e.field, e.originalValue, e.value, e.record.data);
+                BangPBMTCTX.EditCT(e.record.data.STT, e.field, e.originalValue, e.value, e.record.data);
             }
         }
         var getSum = function (grid, index) {
@@ -114,6 +114,32 @@
                         </ext:Store>
                     </Store>
                 </ext:SelectBox>
+                <ext:SelectBox runat="server" ID="slbDonVi" DisplayField="Ten" ValueField="IDDonVi" EmptyText="Chọn đơn vị" MarginSpec="0 0 0 10" Width="200">
+                            <Listeners>
+                                <Select Handler="#{stoPhong}.reload();#{stoNhanVien}.reload();" />
+                            </Listeners>
+                            <Store>
+                                <ext:Store runat="server" ID="stoDonVi">
+                                    <Fields>
+                                        <ext:ModelField Name="IDDonVi" />
+                                        <ext:ModelField Name="Ten" />
+                                    </Fields>
+                                </ext:Store>
+                            </Store>
+                        </ext:SelectBox>
+                    <ext:SelectBox runat="server" ID="slbPhongBan" DisplayField="TenPhongBan" ValueField="IDPhongBan" EmptyText="Chọn Phòng ban" MarginSpec="0 0 0 10" Width="200">
+                                <Listeners>
+                                    <Select Handler="#{stoNhanVien}.reload();" />
+                                </Listeners>
+                                <Store>
+                                    <ext:Store runat="server" ID="stoPhong" OnReadData="DanhSachPhongBan">
+                                        <Fields>
+                                            <ext:ModelField Name="IDPhongBan" />
+                                            <ext:ModelField Name="TenPhongBan" />
+                                        </Fields>
+                                    </ext:Store>
+                                </Store>
+                            </ext:SelectBox>
             </Items>
         </ext:FieldContainer>
 
@@ -121,18 +147,19 @@
                             <Store>
                                 <ext:Store runat="server" ID="stoPhanBoCT" OnReadData="DanhSachPBMTNV">
                                     <Model>
-                                        <ext:Model runat="server" IDProperty="ThuTu">
+                                        <ext:Model runat="server" IDProperty="STT">
                                             <Fields>
-                                                <ext:ModelField Name="ThuTu" />
-                                                <ext:ModelField Name="IDKPI" />
-                                                <ext:ModelField Name="MaKPI" />
-                                                <ext:ModelField Name="TenKPI" />
-                                                <ext:ModelField Name="XuHuongYeuCau" />
+                                                <ext:ModelField Name="STT" />
+                                                <ext:ModelField Name="ID" />
+                                                <ext:ModelField Name="Ma" />
+                                                <ext:ModelField Name="Ten" />
+                                                <ext:ModelField Name="XuHuong" />
                                                 <ext:ModelField Name="DonViTinh" />
                                                 <ext:ModelField Name="TanSuatDo" />
                                                 <ext:ModelField Name="MucTieu" />
                                                 <ext:ModelField Name="TrongSo" />
                                                 <ext:ModelField Name="TrongSoNhom" />
+                                                <ext:ModelField Name="LoaiChiTieu" />
                                             </Fields>
                                         </ext:Model>
                                     </Model>
@@ -195,11 +222,11 @@
                             <ColumnModel runat="server">
                                 <Columns>
                                     <ext:RowNumbererColumn runat="server" ID="RowNumbererColumn1" Text="STT" Width="60" Align="Center"/>
-                                    <ext:Column runat="server" ID="Column1" Text="Mã" DataIndex="MaKPI" Width="70"/>
-                                    <ext:Column runat="server" ID="Column2" Text="Tên KPI" DataIndex="TenKPI" Width="200"/>
+                                    <ext:Column runat="server" ID="Column1" Text="Mã" DataIndex="Ma" Width="70"/>
+                                    <ext:Column runat="server" ID="Column2" Text="Tên KPI" DataIndex="Ten" Width="200"/>
                                     <ext:Column runat="server" ID="Column3" Text="Đơn vị tính" DataIndex="DonViTinh"  Align="Center"/>
                                     <ext:Column runat="server" ID="Column4" Text="Tần suất đo" DataIndex="TanSuatDo"  Align="Center"/>
-                                    <ext:Column runat="server" ID="Column5" Text="Xu hướng yêu cầu" DataIndex="XuHuongYeuCau" Width="130" Align="Center"/>
+                                    <ext:Column runat="server" ID="Column5" Text="Xu hướng yêu cầu" DataIndex="XuHuong" Width="130" Align="Center"/>
                                     <ext:NumberColumn runat="server" ID="cTrongSoNhom" Text="Trọng số nhóm" DataIndex="TrongSoNhom" Format="000%"  Align="Center" Width="120"/>
                                     <ext:NumberColumn runat="server" ID="NumberColumn1" Text="Trọng số" DataIndex ="TrongSo" Width="150" Align="Right">
                                     <Renderer Handler="return Ext.util.Format.number(value,'0,000.0')+'%';"></Renderer>
@@ -210,9 +237,9 @@
                                     </ext:NumberColumn>
                                     <ext:NumberColumn runat="server" ID="NumberColumn2" Text="Mục tiêu" DataIndex ="MucTieu" Width="200" Align="Right">
                                     <SummaryRenderer  Handler="return Ext.util.Format.number(value,'000,000,000.00');"></SummaryRenderer >
-                                        <Editor>
+                                        <%--<Editor>
                                             <ext:NumberField ID="NumberField3" runat="server" AllowDecimals="true" DecimalPrecision="2" />
-                                        </Editor>
+                                        </Editor>--%>
                                     </ext:NumberColumn>
                                     <ext:Column runat="server" Width="100" />
                                 </Columns>

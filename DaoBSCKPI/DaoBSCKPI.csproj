@@ -54,6 +54,7 @@
     <Compile Include="CongViecCaNhan\dacvcnQuaTrinhXuLy.cs" />
     <Compile Include="CongViec\daKQNhiemVuTrongTam.cs" />
     <Compile Include="CongViec\daNhiemVuTrongTam.cs" />
+    <Compile Include="CongViec\daPBNhiemVuTrongTam.cs" />
     <Compile Include="daDatatableVaList.cs" />
     <Compile Include="DanhMucBSCKPI\daDanhMucBK.cs" />
     <Compile Include="DanhMucBSCKPI\daNhomDanhMucBK.cs" />
@@ -120,6 +121,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>linqNhiemVuTrongTam.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Database\CongViec\linqPBNhiemVuTrongTam.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>linqPBNhiemVuTrongTam.dbml</DependentUpon>
     </Compile>
     <Compile Include="Database\DanhMucBK\linqDanhMucBK.designer.cs">
       <AutoGen>True</AutoGen>
@@ -358,6 +364,14 @@
     </None>
     <None Include="Database\CongViec\linqNhiemVuTrongTam.dbml.layout">
       <DependentUpon>linqNhiemVuTrongTam.dbml</DependentUpon>
+    </None>
+    <None Include="Database\CongViec\linqPBNhiemVuTrongTam.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>linqPBNhiemVuTrongTam.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database\CongViec\linqPBNhiemVuTrongTam.dbml.layout">
+      <DependentUpon>linqPBNhiemVuTrongTam.dbml</DependentUpon>
     </None>
     <None Include="Database\DanhMucBK\linqDanhMucBK.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>

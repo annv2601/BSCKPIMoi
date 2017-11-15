@@ -66,7 +66,7 @@ namespace DaoBSCKPI.PhanBoMucTieu
         public DataTable DanhSach()
         {
             List<sp_tblBKPhanBoMucTieu_DanhSachResult> lst;
-            lst = lPB.sp_tblBKPhanBoMucTieu_DanhSach(MT.Thang, MT.Nam, MT.IDNhanVien).ToList();
+            lst = lPB.sp_tblBKPhanBoMucTieu_DanhSach(MT.Thang, MT.Nam, MT.IDNhanVien).ToList();            
             return daDatatableVaList.ToDataTable(lst);
         }
 

@@ -17,7 +17,8 @@ namespace BSCKPI.UC
             if (!X.IsAjaxRequest)
             {
                 DanhSachDanhMuc((int)daNhomDanhMucBK.eNhom.Đơn_Vị_Tính);
-                DanhSachDanhMuc((int)daNhomDanhMucBK.eNhom.Tần_Suất);                
+                DanhSachDanhMuc((int)daNhomDanhMucBK.eNhom.Tần_Suất);
+                DanhSachDanhMuc((int)daNhomDanhMucBK.eNhom.Xu_Hướng);
             }
         }
 
@@ -107,6 +108,33 @@ namespace BSCKPI.UC
             get { return int.Parse(txtTrangThai.Text); }
             set { txtTrangThai.Text = value.ToString(); }
         }
+
+        public string Ma
+        {
+            get { return txtMaCV.Text.Trim(); }
+            set { txtMaCV.Text = value; }
+        }
+
+        public int XuHuongYeuCau
+        {
+            get
+            {
+                return cboXuHuongYeuCau.SelectedItem.Value == null ? 0 : int.Parse(cboXuHuongYeuCau.SelectedItem.Value);
+            }
+            set
+            {
+                cboXuHuongYeuCau.SelectedItems.Clear();
+                if (value <= 0)
+                {
+                    cboXuHuongYeuCau.SelectedItems.Add(new Ext.Net.ListItem { Text = string.Empty, Mode = ParameterMode.Raw });
+                }
+                else
+                {
+                    cboXuHuongYeuCau.SelectedItems.Add(new Ext.Net.ListItem { Value = value.ToString(), Mode = ParameterMode.Raw });
+                }
+                cboXuHuongYeuCau.UpdateSelectedItems();
+            }
+        }
         #endregion
 
         #region Tinh nang
@@ -124,7 +152,10 @@ namespace BSCKPI.UC
                     stoTanSuat.DataSource = dt;
                     stoTanSuat.DataBind();
                     break;
-                
+                case (int)daNhomDanhMucBK.eNhom.Xu_Hướng:
+                    stoXuHuong.DataSource = dt;
+                    stoXuHuong.DataBind();
+                    break;
             }
         }
 
@@ -142,6 +173,8 @@ namespace BSCKPI.UC
             TanSuatDo = 0;
             DonViTinh = 0;
             MucTieu = 0;
+            Ma = "";
+            XuHuongYeuCau = 0;
         }
         #endregion
     }

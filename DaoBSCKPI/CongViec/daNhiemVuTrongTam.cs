@@ -30,8 +30,8 @@ namespace DaoBSCKPI.CongViec
 
         public void ThemSua()
         {
-            lNV.sp_tblcvNhiemVuTrongTam_ThemSua(NVu.ID, NVu.Thang, NVu.Nam, NVu.IDNhanVien, NVu.TenCongViec, NVu.MucTieu, NVu.IDTanSuatDo,
-                NVu.IDDonViTinh, NVu.IDTrangThai, NVu.NguoiTao);
+            lNV.sp_tblcvNhiemVuTrongTam_ThemSua(NVu.ID, NVu.Ma, NVu.Thang, NVu.Nam, NVu.IDNhanVien, NVu.TenCongViec, NVu.MucTieu, NVu.IDTanSuatDo,
+                NVu.IDDonViTinh, NVu.IDXuHuongYeuCau, NVu.IDTrangThai, NVu.NguoiTao);
         }
 
         public DataTable DanhSach()
