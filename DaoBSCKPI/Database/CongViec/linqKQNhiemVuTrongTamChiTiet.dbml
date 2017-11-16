@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BSCKPI" Class="linqKQNhiemVuTrongTamChiTietDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=10.10.200.160;Initial Catalog=BSCKPI;Persist Security Info=True;User ID=chay" SettingsObjectName="DaoBSCKPI.Properties.Settings" SettingsPropertyName="BSCKPIConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.sp_tblcvKetQuaNhiemVuTrongTamChiTiet_DanhSach" Method="sp_tblcvKetQuaNhiemVuTrongTamChiTiet_DanhSach">
+    <Parameter Name="Thang" Parameter="thang" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="Nam" Parameter="nam" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDNhiemVu" Parameter="iDNhiemVu" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_tblcvKetQuaNhiemVuTrongTamChiTiet_DanhSachResult">
+      <Column Name="STT" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IDNhiemVu" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TenCongViec" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="MucTieu" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="IDDonViTinh" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DonViTinh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDPhuongThuc" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PhuongThuc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="KetQua" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="Diem" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_tblcvKetQuaNhiemVuTrongTamChiTiet_ThongTin" Method="sp_tblcvKetQuaNhiemVuTrongTamChiTiet_ThongTin">
+    <Parameter Name="Thang" Parameter="thang" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="Nam" Parameter="nam" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDNhiemVu" Parameter="iDNhiemVu" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDPhuongThuc" Parameter="iDPhuongThuc" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_tblcvKetQuaNhiemVuTrongTamChiTiet_ThongTinResult">
+      <Column Name="Thang" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Nam" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDNhiemVu" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDPhuongThuc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="KetQua" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="Diem" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
+      <Column Name="NguoiTao" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="NguoiSua" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="NgayTao" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NgaySua" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_tblcvKetQuaNhiemVuTrongTamChiTiet_ThemSua" Method="sp_tblcvKetQuaNhiemVuTrongTamChiTiet_ThemSua">
+    <Parameter Name="Thang" Parameter="thang" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="Nam" Parameter="nam" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDNhiemVu" Parameter="iDNhiemVu" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDPhuongThuc" Parameter="iDPhuongThuc" Type="System.Int32" DbType="Int" />
+    <Parameter Name="KetQua" Parameter="ketQua" Type="System.Decimal" DbType="Decimal(22,3)" />
+    <Parameter Name="Diem" Parameter="diem" Type="System.Decimal" DbType="Decimal(18,3)" />
+    <Parameter Name="NguoiTao" Parameter="nguoiTao" Type="System.String" DbType="NVarChar(30)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

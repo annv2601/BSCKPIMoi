@@ -18,6 +18,7 @@ namespace DaoBSCKPI.DanhMucBSCKPI
             Mức_Độ=4,
             Hướng_Xử_Lý_Công_Việc=5,
             Trạng_Thái_Công_Việc=6,
+            Phương_Thức=7,
             Trọng_Số_Nhóm_KPI=10,
             Tham_số_Tính_điểm=11
         }

@@ -82,6 +82,20 @@ namespace DaoBSCKPI.Database.DanhMucBK
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), ten);
 			return ((ISingleResult<sp_tblBKDanhMuc_TimResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_tblBKDanhMuc_ThemSua")]
+		public int sp_tblBKDanhMuc_ThemSua([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID", DbType="Int")] System.Nullable<int> iD, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Ma", DbType="NVarChar(20)")] string ma, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Ten", DbType="NVarChar(50)")] string ten, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="TenTat", DbType="NVarChar(30)")] string tenTat, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="GhiChu", DbType="NVarChar(250)")] string ghiChu, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="STTsx", DbType="Decimal(8,1)")] System.Nullable<decimal> sTTsx, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nhom", DbType="Int")] System.Nullable<int> nhom, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="NguoiTao", DbType="NVarChar(30)")] string nguoiTao)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD, ma, ten, tenTat, ghiChu, sTTsx, nhom, nguoiTao);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_tblBKDanhMuc_ThongTin")]
+		public ISingleResult<sp_tblBKDanhMuc_ThongTinResult> sp_tblBKDanhMuc_ThongTin([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID", DbType="Int")] System.Nullable<int> iD)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD);
+			return ((ISingleResult<sp_tblBKDanhMuc_ThongTinResult>)(result.ReturnValue));
+		}
 	}
 	
 	public partial class sp_tblBKNhomDanhMuc_DanhSachResult
@@ -434,6 +448,230 @@ namespace DaoBSCKPI.Database.DanhMucBK
 		private System.Nullable<bool> _DangSuDung;
 		
 		public sp_tblBKDanhMuc_TimResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", DbType="Int NOT NULL")]
+		public int ID
+		{
+			get
+			{
+				return this._ID;
+			}
+			set
+			{
+				if ((this._ID != value))
+				{
+					this._ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ma", DbType="NVarChar(20)")]
+		public string Ma
+		{
+			get
+			{
+				return this._Ma;
+			}
+			set
+			{
+				if ((this._Ma != value))
+				{
+					this._Ma = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ten", DbType="NVarChar(50)")]
+		public string Ten
+		{
+			get
+			{
+				return this._Ten;
+			}
+			set
+			{
+				if ((this._Ten != value))
+				{
+					this._Ten = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenTat", DbType="NVarChar(30)")]
+		public string TenTat
+		{
+			get
+			{
+				return this._TenTat;
+			}
+			set
+			{
+				if ((this._TenTat != value))
+				{
+					this._TenTat = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GhiChu", DbType="NVarChar(250)")]
+		public string GhiChu
+		{
+			get
+			{
+				return this._GhiChu;
+			}
+			set
+			{
+				if ((this._GhiChu != value))
+				{
+					this._GhiChu = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_STTsx", DbType="Decimal(8,1)")]
+		public System.Nullable<decimal> STTsx
+		{
+			get
+			{
+				return this._STTsx;
+			}
+			set
+			{
+				if ((this._STTsx != value))
+				{
+					this._STTsx = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Nhom", DbType="Int")]
+		public System.Nullable<int> Nhom
+		{
+			get
+			{
+				return this._Nhom;
+			}
+			set
+			{
+				if ((this._Nhom != value))
+				{
+					this._Nhom = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NguoiTao", DbType="NVarChar(30)")]
+		public string NguoiTao
+		{
+			get
+			{
+				return this._NguoiTao;
+			}
+			set
+			{
+				if ((this._NguoiTao != value))
+				{
+					this._NguoiTao = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NguoiSua", DbType="NVarChar(30)")]
+		public string NguoiSua
+		{
+			get
+			{
+				return this._NguoiSua;
+			}
+			set
+			{
+				if ((this._NguoiSua != value))
+				{
+					this._NguoiSua = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayTao", DbType="DateTime")]
+		public System.Nullable<System.DateTime> NgayTao
+		{
+			get
+			{
+				return this._NgayTao;
+			}
+			set
+			{
+				if ((this._NgayTao != value))
+				{
+					this._NgayTao = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgaySua", DbType="DateTime")]
+		public System.Nullable<System.DateTime> NgaySua
+		{
+			get
+			{
+				return this._NgaySua;
+			}
+			set
+			{
+				if ((this._NgaySua != value))
+				{
+					this._NgaySua = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DangSuDung", DbType="Bit")]
+		public System.Nullable<bool> DangSuDung
+		{
+			get
+			{
+				return this._DangSuDung;
+			}
+			set
+			{
+				if ((this._DangSuDung != value))
+				{
+					this._DangSuDung = value;
+				}
+			}
+		}
+	}
+	
+	public partial class sp_tblBKDanhMuc_ThongTinResult
+	{
+		
+		private int _ID;
+		
+		private string _Ma;
+		
+		private string _Ten;
+		
+		private string _TenTat;
+		
+		private string _GhiChu;
+		
+		private System.Nullable<decimal> _STTsx;
+		
+		private System.Nullable<int> _Nhom;
+		
+		private string _NguoiTao;
+		
+		private string _NguoiSua;
+		
+		private System.Nullable<System.DateTime> _NgayTao;
+		
+		private System.Nullable<System.DateTime> _NgaySua;
+		
+		private System.Nullable<bool> _DangSuDung;
+		
+		public sp_tblBKDanhMuc_ThongTinResult()
 		{
 		}
 		

@@ -49,7 +49,7 @@ namespace BSCKPI.KPI
             dBDG.Thang = rThang;
             dBDG.Nam = rNam;
             dBDG.IDNhanVien = rIDNhanVien;
-            crBangPB.SetDataSource(dBDG.BangPhanBo());
+            crBangPB.SetDataSource(dBDG.BangPhanBoIn());
 
             daThongTinNhanVien dTTNV = new daThongTinNhanVien();
             dTTNV.TTNV.IDNhanVien = rIDNhanVien;
@@ -181,7 +181,7 @@ namespace BSCKPI.KPI
                 {
                     _TenBC = "rptPB" + i.ToString();
                     dBDG.IDNhanVien = lst[i].IDNhanVien.Value;
-                    rptBangPBNhieu.Subreports[_TenBC].SetDataSource(dBDG.BangPhanBo());
+                    rptBangPBNhieu.Subreports[_TenBC].SetDataSource(dBDG.BangPhanBoIn());
                     i = i + 1;
                 }
                 /* while (i < 100)

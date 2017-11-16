@@ -89,7 +89,6 @@ namespace BSCKPI.KetQuaDanhGia
 
                     dKQNV.KQNV.IDNhiemVu = int.Parse(node.Property("ID").Value.ToString());
                     dKQNV.KQNV.KetQua = decimal.Parse(node.Property("KetQua").Value.ToString());
-                    dKQNV.KQNV.TrongSo = decimal.Parse(node.Property("TrongSo").Value.ToString());
                     dKQNV.KQNV.Diem = int.Parse(node.Property("Diem").Value.ToString());
                     dKQNV.KQNV.DienGiai = node.Property("DienGiai").Value.ToString();
                     dKQNV.KQNV.NguoiTao = daPhien.NguoiDung.IDNhanVien.ToString();

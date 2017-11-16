@@ -144,9 +144,12 @@
     <Content Include="resource\js\perfect-scrollbar.min.js" />
     <Content Include="Test.aspx" />
     <Content Include="ThamSo\frmGhepKPIvaThamSo.aspx" />
+    <Content Include="ThamSo\frmPhuongThucDanhGia.aspx" />
     <Content Include="ThamSo\frmThamSoTinhDiem.aspx" />
+    <Content Include="ThamSo\UC\ucPhuongThucDanhGia.ascx" />
     <Content Include="ThamSo\UC\ucThamSoTinhDiem.ascx" />
     <Content Include="UC\ucBSCKPI.ascx" />
+    <Content Include="UC\ucDanhMucBK.ascx" />
     <Content Include="UC\ucNhiemVuTrongTam.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -369,12 +372,26 @@
     <Compile Include="ThamSo\frmGhepKPIvaThamSo.aspx.designer.cs">
       <DependentUpon>frmGhepKPIvaThamSo.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ThamSo\frmPhuongThucDanhGia.aspx.cs">
+      <DependentUpon>frmPhuongThucDanhGia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThamSo\frmPhuongThucDanhGia.aspx.designer.cs">
+      <DependentUpon>frmPhuongThucDanhGia.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ThamSo\frmThamSoTinhDiem.aspx.cs">
       <DependentUpon>frmThamSoTinhDiem.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ThamSo\frmThamSoTinhDiem.aspx.designer.cs">
       <DependentUpon>frmThamSoTinhDiem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThamSo\UC\ucPhuongThucDanhGia.ascx.cs">
+      <DependentUpon>ucPhuongThucDanhGia.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThamSo\UC\ucPhuongThucDanhGia.ascx.designer.cs">
+      <DependentUpon>ucPhuongThucDanhGia.ascx</DependentUpon>
     </Compile>
     <Compile Include="ThamSo\UC\ucThamSoTinhDiem.ascx.cs">
       <DependentUpon>ucThamSoTinhDiem.ascx</DependentUpon>
@@ -389,6 +406,13 @@
     </Compile>
     <Compile Include="UC\ucBSCKPI.ascx.designer.cs">
       <DependentUpon>ucBSCKPI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\ucDanhMucBK.ascx.cs">
+      <DependentUpon>ucDanhMucBK.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\ucDanhMucBK.ascx.designer.cs">
+      <DependentUpon>ucDanhMucBK.ascx</DependentUpon>
     </Compile>
     <Compile Include="UC\ucNhiemVuTrongTam.ascx.cs">
       <DependentUpon>ucNhiemVuTrongTam.ascx</DependentUpon>

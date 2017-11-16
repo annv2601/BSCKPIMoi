@@ -30,7 +30,7 @@ namespace DaoBSCKPI.CongViec
 
         public void ThemSua()
         {
-            lKQNV.sp_tblcvKetQuaNhiemVuTrongTam_ThemSua(KQNV.Thang, KQNV.Nam, KQNV.IDNhiemVu, KQNV.KetQua, KQNV.TrongSo, KQNV.Diem,
+            lKQNV.sp_tblcvKetQuaNhiemVuTrongTam_ThemSua(KQNV.Thang, KQNV.Nam, KQNV.IDNhiemVu, KQNV.KetQua, KQNV.Diem,
                 KQNV.DienGiai, KQNV.NguoiTao);
         }
 
@@ -41,13 +41,20 @@ namespace DaoBSCKPI.CongViec
 
         public void CapNhat()
         {
-            lKQNV.sp_tblcvKetQuaNhiemVuTrongTam_CapNhat(KQNV.Thang, KQNV.Nam, KQNV.IDNhiemVu, KQNV.KetQua, KQNV.TrongSo, KQNV.Diem,
+            lKQNV.sp_tblcvKetQuaNhiemVuTrongTam_CapNhat(KQNV.Thang, KQNV.Nam, KQNV.IDNhiemVu, KQNV.KetQua, KQNV.Diem,
                 KQNV.DienGiai, KQNV.NguoiTao);
         }
 
         public void BoSung(daThamSo dTS)
         {
             lKQNV.sp_tblcvKetQuaNhiemVuTrongTam_BoSung(dTS.Thang, dTS.Nam, dTS.IDDonVi, dTS.IDPhongBan, dTS.IDNguoiDung);
+        }
+
+        public DataTable DanhSach(daThamSo dTS)
+        {
+            List<sp_tblcvKetQuaNhiemVuTrongTam_DanhSachResult> lst;
+            lst = lKQNV.sp_tblcvKetQuaNhiemVuTrongTam_DanhSach(dTS.Thang, dTS.Nam, dTS.IDDonVi, dTS.IDPhongBan).ToList();
+            return daDatatableVaList.ToDataTable(lst);
         }
     }
 }

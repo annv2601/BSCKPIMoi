@@ -53,6 +53,7 @@
     <Compile Include="CongViecCaNhan\dacvcnNguoiThucHien.cs" />
     <Compile Include="CongViecCaNhan\dacvcnQuaTrinhXuLy.cs" />
     <Compile Include="CongViec\daKQNhiemVuTrongTam.cs" />
+    <Compile Include="CongViec\daKQNhiemVuTrongTamChiTiet.cs" />
     <Compile Include="CongViec\daNhiemVuTrongTam.cs" />
     <Compile Include="CongViec\daPBNhiemVuTrongTam.cs" />
     <Compile Include="daDatatableVaList.cs" />
@@ -116,6 +117,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>linqKQNhiemVuTrongTam.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Database\CongViec\linqKQNhiemVuTrongTamChiTiet.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>linqKQNhiemVuTrongTamChiTiet.dbml</DependentUpon>
     </Compile>
     <Compile Include="Database\CongViec\linqNhiemVuTrongTam.designer.cs">
       <AutoGen>True</AutoGen>
@@ -228,6 +234,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>linqPhanBoMucTieu.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Database\ThamSoTinhDiem\linqPhuongThucDanhGiaKetQua.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>linqPhuongThucDanhGiaKetQua.dbml</DependentUpon>
+    </Compile>
     <Compile Include="Database\ThamSoTinhDiem\linqTSTinhDiem.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -263,6 +274,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="ThamSoTinhDiem\daPhuongThucDanhGiaKetQuaNVTT.cs" />
     <Compile Include="ThamSoTinhDiem\daThamSoTinhDiem.cs" />
     <Compile Include="ThamSoTinhDiem\daThamSoTinhDiemApKPI.cs" />
   </ItemGroup>
@@ -356,6 +368,14 @@
     </None>
     <None Include="Database\CongViec\linqKQNhiemVuTrongTam.dbml.layout">
       <DependentUpon>linqKQNhiemVuTrongTam.dbml</DependentUpon>
+    </None>
+    <None Include="Database\CongViec\linqKQNhiemVuTrongTamChiTiet.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>linqKQNhiemVuTrongTamChiTiet.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database\CongViec\linqKQNhiemVuTrongTamChiTiet.dbml.layout">
+      <DependentUpon>linqKQNhiemVuTrongTamChiTiet.dbml</DependentUpon>
     </None>
     <None Include="Database\CongViec\linqNhiemVuTrongTam.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
@@ -532,6 +552,14 @@
     </None>
     <None Include="Database\PhanBoMucTieu\linqPhanBoMucTieu.dbml.layout">
       <DependentUpon>linqPhanBoMucTieu.dbml</DependentUpon>
+    </None>
+    <None Include="Database\ThamSoTinhDiem\linqPhuongThucDanhGiaKetQua.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>linqPhuongThucDanhGiaKetQua.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database\ThamSoTinhDiem\linqPhuongThucDanhGiaKetQua.dbml.layout">
+      <DependentUpon>linqPhuongThucDanhGiaKetQua.dbml</DependentUpon>
     </None>
     <None Include="Database\ThamSoTinhDiem\linqTSTinhDiem.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
