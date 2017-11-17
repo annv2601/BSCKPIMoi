@@ -24,6 +24,8 @@
                         <ext:ModelField Name="TuNgay" />
                         <ext:ModelField Name="DenNgay" />
                         <ext:ModelField Name="ThuTu" />
+                        <ext:ModelField Name="GiaTriToiThieu" />
+                        <ext:ModelField Name="GiaTriToiDa" />
                     </Fields>
                 </ext:Model>
             </Model>
@@ -73,12 +75,13 @@
             <ColumnModel>
                 <Columns>
                     <ext:RowNumbererColumn runat="server" Text="STT" Align="Center" Width="60" StyleSpec="font-weight: bold;"/>
-                    <ext:Column runat="server" Text="Đơn vị tính" DataIndex="TanSuat" Width="150" StyleSpec="font-weight: bold;"/>
-                    <ext:Column runat="server" Text="Quy cách" DataIndex="PhuongThuc" Width="150" StyleSpec="font-weight: bold;"/>
+                    <ext:Column runat="server" Text="Đơn vị tính" DataIndex="TanSuat" Width="100" StyleSpec="font-weight: bold;" Align="Center"/>
+                    <ext:Column runat="server" Text="Quy cách" DataIndex="PhuongThuc" Width="250" StyleSpec="font-weight: bold;"/>
                     <ext:DateColumn runat="server" Text="Từ ngày" DataIndex="TuNgay" Width="120" StyleSpec="font-weight: bold;"/>
                     <ext:DateColumn runat="server" Text="Đến ngày" DataIndex="DenNgay" Width="120" StyleSpec="font-weight: bold;"/>
+                    <ext:NumberColumn runat="server" Text="Giá trị tối đa" DataIndex="GiaTriToiDa" Width="150" StyleSpec="font-weight: bold;" Align="Right"/>
                     <ext:Column runat="server" Text="STT sắp xếp" DataIndex="ThuTu" Width="" StyleSpec="font-weight: bold;"/>
-                    <ext:Column runat="server" Text="" Width="500" />
+                    <ext:Column runat="server" Text="" Width="400" />
                 </Columns>
             </ColumnModel>
             <SelectionModel>
@@ -86,7 +89,7 @@
             </SelectionModel>
         </ext:GridPanel>
 
-        <ext:Window runat="server" ID="wPTDG" Width="340" Height="300" ButtonAlign="Center" Hidden="true"
+        <ext:Window runat="server" ID="wPTDG" Width="340" Height="360" ButtonAlign="Center" Hidden="true"
             Icon="Application" TitleAlign="Center" Title="Quy cách đánh giá">
             <Items>
                 <ext:Panel runat="server" Header="false" Layout="FitLayout" Closable="false">

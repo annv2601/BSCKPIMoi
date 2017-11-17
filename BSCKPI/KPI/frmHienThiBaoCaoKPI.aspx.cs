@@ -29,14 +29,21 @@ namespace BSCKPI.KPI
                 Guid _IDNhanVien;
                 _Thang = byte.Parse(Request.QueryString["ThangBaoCao"]);
                 _Nam = int.Parse(Request.QueryString["NamBaoCao"]);
-                _IDNhanVien = Guid.Parse(Request.QueryString["NhanVienBaoCao"]);
+                try
+                {
+                    _IDNhanVien = Guid.Parse(Request.QueryString["NhanVienBaoCao"]);
+                }
+                catch
+                {
+                    _IDNhanVien = Guid.Empty;
+                }
                 switch(int.Parse(Request.QueryString["BieuBaoCao"]))
                 {
                     case 1:
                         BangPhanBo(_Thang, _Nam, _IDNhanVien);
                         break;
                     case 2:
-                        BangPhanBoKeHoach(_Thang, _Nam, int.Parse(Request.QueryString["IDKeHoach"]));
+                        BangPhanBoKeHoach(_Thang, _Nam, int.Parse(Request.QueryString["IDKeHoach"]), int.Parse(Request.QueryString["IDDonVi"]), int.Parse(Request.QueryString["IDPhongBan"]));
                         break;
                 }
             }
@@ -161,14 +168,21 @@ namespace BSCKPI.KPI
         #endregion
 
         #region Nhieu
-        private void BangPhanBoKeHoach(byte _Thang, int _Nam, int _IDKeHoach)
+        private void BangPhanBoKeHoach(byte _Thang, int _Nam, int _IDKeHoach, int _IDDV, int _IDPB)
         {            
             daKeHoachDanhGia dKH = new daKeHoachDanhGia();
             List<sp_tblBKKeHoachDanhGia_DanhSachNhanVienResult> lst;
             dKH.Thang = _Thang;
             dKH.Nam = _Nam;
             dKH.KHDG.ID = _IDKeHoach;
-            lst = dKH.lstDanhSachNhanVien();
+            if (_IDDV == 0)
+            {
+                lst = dKH.lstDanhSachNhanVien();
+            }
+            else
+            {
+                lst = dKH.lstDanhSachNhanVienDonVi(_IDDV, _IDPB);
+            }
             if (lst.Count > 0)
             {
                 daBangDanhGia dBDG = new daBangDanhGia();

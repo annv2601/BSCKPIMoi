@@ -7,108 +7,153 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BSCKPI.ThamSo.UC {
+namespace BSCKPI.KetQuaDanhGia {
     
     
-    public partial class ucPhuongThucDanhGia {
+    public partial class frmKetQuaNhiemVuChinh {
         
         /// <summary>
-        /// Panel1 control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.Panel Panel1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// txtID control.
+        /// grdNV control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.Hidden txtID;
+        protected global::Ext.Net.GridPanel grdNV;
         
         /// <summary>
-        /// cboDonViTinh control.
+        /// stoNV control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.ComboBox cboDonViTinh;
+        protected global::Ext.Net.Store stoNV;
         
         /// <summary>
-        /// stoDonViTinh control.
+        /// slbThang control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.Store stoDonViTinh;
+        protected global::Ext.Net.SelectBox slbThang;
         
         /// <summary>
-        /// cboPhuongThuc control.
+        /// stoThang control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.ComboBox cboPhuongThuc;
+        protected global::Ext.Net.Store stoThang;
         
         /// <summary>
-        /// stoPhuongThhuc control.
+        /// slbNam control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.Store stoPhuongThhuc;
+        protected global::Ext.Net.SelectBox slbNam;
         
         /// <summary>
-        /// txtTuNgay control.
+        /// stoNam control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.DateField txtTuNgay;
+        protected global::Ext.Net.Store stoNam;
         
         /// <summary>
-        /// txtDenNgay control.
+        /// slbDonVi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.DateField txtDenNgay;
+        protected global::Ext.Net.SelectBox slbDonVi;
         
         /// <summary>
-        /// txtGiaTriToiThieu control.
+        /// stoDonVi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.NumberField txtGiaTriToiThieu;
+        protected global::Ext.Net.Store stoDonVi;
         
         /// <summary>
-        /// txtGiaTriToiDa control.
+        /// slbPhongBan control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.NumberField txtGiaTriToiDa;
+        protected global::Ext.Net.SelectBox slbPhongBan;
         
         /// <summary>
-        /// txtThuTu control.
+        /// stoPhong control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.NumberField txtThuTu;
+        protected global::Ext.Net.Store stoPhong;
+        
+        /// <summary>
+        /// stoKQCTiet control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Store stoKQCTiet;
+        
+        /// <summary>
+        /// txtIDNhiemVu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Hidden txtIDNhiemVu;
+        
+        /// <summary>
+        /// wKQChiTiet control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Window wKQChiTiet;
+        
+        /// <summary>
+        /// grdKQCTiet control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.GridPanel grdKQCTiet;
+        
+        /// <summary>
+        /// btnDong control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Button btnDong;
     }
 }

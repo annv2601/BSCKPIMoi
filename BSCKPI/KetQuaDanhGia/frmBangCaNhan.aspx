@@ -193,9 +193,9 @@
                         </Editor>
                     </ext:NumberColumn>
                     <ext:SummaryColumn runat="server" Text="Điểm" DataIndex="Diem" Align="Right" SummaryType="Sum">
-                        <Editor>
+                        <%--<Editor>
                             <ext:NumberField runat="server" AllowDecimals="false" EmptyNumber="0" MinValue="0"/>
-                        </Editor>
+                        </Editor>--%>
                     </ext:SummaryColumn>
                     <ext:Column runat="server" Text="Diễn giải" DataIndex="DienGiai" Width="300">
                         <Editor>

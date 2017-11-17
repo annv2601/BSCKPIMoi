@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="frmThamSoTinhDiem.aspx.cs" Inherits="BSCKPI.ThamSo.frmThamSoTinhDiem" %>
-<<%@ Register Src="~/ThamSo/UC/ucThamSoTinhDiem.ascx" TagName="TD" TagPrefix="UC" %>
+<%@ Register Src="~/ThamSo/UC/ucThamSoTinhDiem.ascx" TagName="TD" TagPrefix="UC" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">

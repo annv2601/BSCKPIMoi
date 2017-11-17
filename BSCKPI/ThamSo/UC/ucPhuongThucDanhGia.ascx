@@ -49,6 +49,8 @@
                         </ext:ComboBox>
         <ext:DateField runat="server" ID="txtTuNgay" FieldLabel="Từ ngày" Format="dd/MM/yyyy" MarginSpec="10 0 0 5"/>
         <ext:DateField runat="server" ID="txtDenNgay" FieldLabel="Đến ngày" Format="dd/MM/yyyy" MarginSpec="10 0 0 5"/>
+        <ext:NumberField runat="server" ID="txtGiaTriToiThieu" FieldLabel="Giá trị tối thiểu" Width="310" AllowDecimals="true" DecimalPrecision="3" MarginSpec="10 0 0 5" LabelWidth="120" Visible="false"/>
+        <ext:NumberField runat="server" ID="txtGiaTriToiDa" FieldLabel="Giá trị tối đa" Width="310" AllowDecimals="true" DecimalPrecision="3" MarginSpec="10 0 0 5" LabelWidth="100"/>
         <ext:NumberField runat="server" ID="txtThuTu" FieldLabel="Thứ tự" MarginSpec="10 0 0 5" Width="310" MinValue="1" AllowDecimals="true" DecimalPrecision="1"/>
     </Items>
 </ext:Panel>

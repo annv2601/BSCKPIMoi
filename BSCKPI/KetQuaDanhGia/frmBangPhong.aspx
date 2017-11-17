@@ -14,6 +14,8 @@
            <Items>
                <ext:SelectBox runat="server" ID="slbThang" DisplayField="Ten" ValueField="ID"
                             FieldLabel="Tháng" MarginSpec="0 0 0 40" LabelWidth="40">
+                   <ListConfig MaxHeight="500">                       
+                   </ListConfig>
                             <Store>                                
                                 <ext:Store runat="server" ID="stoThang">
                                     <Model>

@@ -30,7 +30,12 @@ namespace DaoBSCKPI.ThamSoTinhDiem
 
         public void ThemSua()
         {
-            lPT.sp_tblcvPhuongThucDanhGiaKetQua_ThemSua(PT.ID, PT.IDTanSuatDo, PT.IDPhuongThuc, PT.TuNgay, PT.DenNgay, PT.ThuTu, PT.NguoiTao);
+            lPT.sp_tblcvPhuongThucDanhGiaKetQua_ThemSua(PT.ID, PT.IDTanSuatDo, PT.IDPhuongThuc, PT.TuNgay, PT.DenNgay, PT.GiaTriToiThieu, PT.GiaTriToiDa, PT.ThuTu, PT.NguoiTao);
+        }
+
+        public Boolean KiemTraXoa()
+        {
+            return lPT.sp_tblcvPhuongThucDanhGiaKetQua_KiemTraXoa(PT.IDPhuongThuc).Single().CoGiaTri.Value;
         }
 
         public void Xoa()

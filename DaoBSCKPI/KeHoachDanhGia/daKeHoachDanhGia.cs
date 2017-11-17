@@ -70,5 +70,22 @@ namespace DaoBSCKPI.KeHoachDanhGia
             lst = lKH.sp_tblBKKeHoachDanhGia_DanhSachNhanVien(Thang, Nam, KHDG.ID).ToList();
             return lst;
         }
+
+        public List<sp_tblBKKeHoachDanhGia_DanhSachNhanVienResult> lstDanhSachNhanVienDonVi(int rIDDonVi, int rIDPhongBan)
+        {
+            List<sp_tblBKKeHoachDanhGia_DanhSachNhanVienResult> lst=new List<sp_tblBKKeHoachDanhGia_DanhSachNhanVienResult>();
+            sp_tblBKKeHoachDanhGia_DanhSachNhanVienResult _p;
+            List<sp_tblBKKeHoachDanhGia_DanhSachNhanVien_DonViResult> lst1;
+            lst1 = lKH.sp_tblBKKeHoachDanhGia_DanhSachNhanVien_DonVi(Thang, Nam, KHDG.ID, rIDDonVi, rIDPhongBan).ToList();
+            foreach(sp_tblBKKeHoachDanhGia_DanhSachNhanVien_DonViResult pt in lst1)
+            {
+                _p = new sp_tblBKKeHoachDanhGia_DanhSachNhanVienResult();
+                _p.IDNhanVien = pt.IDNhanVien;
+                _p.TenNhanVien = pt.TenNhanVien;
+                lst.Add(_p);
+            }
+            
+            return lst;
+        }
     }
 }

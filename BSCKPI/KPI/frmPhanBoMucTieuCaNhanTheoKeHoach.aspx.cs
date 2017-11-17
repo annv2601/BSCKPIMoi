@@ -266,8 +266,14 @@ namespace BSCKPI.KPI
                 return;
             }
             Ext.Net.Window CSo = new Ext.Net.Window();
-            CSo = CuaSoChucNang("Bảng đánh giá kết quả", "frmHienThiBaoCaoKPI.aspx?ThangBaoCao=" + slbThang.SelectedItem.Value + "&&NamBaoCao=" + slbNam.SelectedItem.Value + "&&NhanVienBaoCao=" + slbNhanVien.SelectedItem.Value + "&&IDKeHoach=" + slbKeHoachDG.SelectedItem.Value + "&&BieuBaoCao=2");
-
+            if (slbDonVi.SelectedItem.Value == null)
+            {
+                CSo = CuaSoChucNang("Bảng đánh giá kết quả", "frmHienThiBaoCaoKPI.aspx?ThangBaoCao=" + slbThang.SelectedItem.Value + "&&NamBaoCao=" + slbNam.SelectedItem.Value + "&&NhanVienBaoCao=" + slbNhanVien.SelectedItem.Value + "&&IDKeHoach=" + slbKeHoachDG.SelectedItem.Value + "&&BieuBaoCao=2&&IDDonVi=0&&IDPhongBan=0");
+            }
+            else
+            {
+                CSo = CuaSoChucNang("Bảng đánh giá kết quả", "frmHienThiBaoCaoKPI.aspx?ThangBaoCao=" + slbThang.SelectedItem.Value + "&&NamBaoCao=" + slbNam.SelectedItem.Value + "&&NhanVienBaoCao=" + slbNhanVien.SelectedItem.Value + "&&IDKeHoach=" + slbKeHoachDG.SelectedItem.Value + "&&BieuBaoCao=2&&IDDonVi="+slbDonVi.SelectedItem.Value+"&&IDPhongBan="+slbPhongBan.SelectedItem.Value);
+            }
             this.Form.Controls.Add(CSo);
             CSo.Render();
             CSo.Show();

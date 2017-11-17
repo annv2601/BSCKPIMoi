@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="frmNhanVien.aspx.cs" Inherits="BSCKPI.MoHinhToChuc.frmNhanVien" %>
-<<%@ Register Src="~/MoHinhToChuc/UC/ucNhanVien.ascx" TagName="NV" TagPrefix="UC" %>
+<%@ Register Src="~/MoHinhToChuc/UC/ucNhanVien.ascx" TagName="NV" TagPrefix="UC" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -16,7 +16,9 @@
         <ext:FieldContainer runat="server" Layout="HBoxLayout" MarginSpec="10 0 0 0">
             <Items>
                 <ext:SelectBox runat="server" ID="slbThang" 
-                            EmptyText="Tháng ...." DisplayField="Ten" ValueField="ID" MarginSpec="0 0 0 10" RenderXType="True">
+                            EmptyText="Tháng ...." DisplayField="Ten" ValueField="ID" MarginSpec="0 0 0 10">
+                    <ListConfig MaxHeight="500">                       
+                   </ListConfig>
                             <Listeners>
                                 <Select Handler="#{stoNhanVien}.reload();" />
                             </Listeners>

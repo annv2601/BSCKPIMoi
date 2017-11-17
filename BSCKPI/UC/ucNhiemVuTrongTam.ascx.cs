@@ -168,7 +168,7 @@ namespace BSCKPI.UC
         public void KhoiTao()
         {
             IDNVChinh = 0;
-            IDNhanVien = Guid.Empty;
+            //IDNhanVien = Guid.Empty;
             TenCongViec = "";
             TanSuatDo = 0;
             DonViTinh = 0;

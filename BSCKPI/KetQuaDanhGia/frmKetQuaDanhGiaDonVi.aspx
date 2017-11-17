@@ -44,6 +44,8 @@
                     <Items>
                         <ext:SelectBox runat="server" ID="slbThang" DisplayField="Ten" ValueField="ID"
                             EmptyText="Chọn Tháng ..." MarginSpec="0 0 0 10">
+                            <ListConfig MaxHeight="500">                       
+                            </ListConfig>
                             <Listeners>
                                 <Select Handler="#{stoDGDV}.reload();" />
                             </Listeners>

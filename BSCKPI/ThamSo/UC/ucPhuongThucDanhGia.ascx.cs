@@ -73,6 +73,27 @@ namespace BSCKPI.ThamSo.UC
             set { txtDenNgay.SelectedDate = value; }
         }
 
+        public decimal GiaTriToiDa
+        {
+            get { return Convert.ToDecimal(txtGiaTriToiDa.Number); }
+            set { txtGiaTriToiDa.Number = Convert.ToDouble(value); }
+        }
+
+        public decimal GiaTriToiThieu
+        {
+            get {
+                try
+                {
+                    return Convert.ToDecimal(txtGiaTriToiThieu.Number);
+                }
+                catch
+                {
+                    return 0;
+                }
+            }
+            set { txtGiaTriToiThieu.Number = Convert.ToDouble(value); }
+        }
+
         public decimal ThuTu
         {
             get { return Convert.ToDecimal(txtThuTu.Number); }
@@ -85,6 +106,7 @@ namespace BSCKPI.ThamSo.UC
             if(!X.IsAjaxRequest)
             {
                 DanhSachDanhMuc((int)daNhomDanhMucBK.eNhom.Đơn_Vị_Tính);
+                DanhSachDanhMuc((int)daNhomDanhMucBK.eNhom.Phương_Thức);
             }
         }
 
@@ -118,6 +140,8 @@ namespace BSCKPI.ThamSo.UC
             IDPTDG = 0;
             IDTanSuatDo = 0;
             IDPhuongThuc = 0;
+            GiaTriToiDa = 0;
+            GiaTriToiThieu = 0;
             ThuTu = 1;
             DateTime _Ngay = DateTime.Now;
             TuNgay = DateTime.Parse(_Ngay.Month.ToString()+"/01/"+_Ngay.Year.ToString());

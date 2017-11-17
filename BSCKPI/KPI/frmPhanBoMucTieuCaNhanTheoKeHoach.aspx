@@ -66,6 +66,8 @@
             <Items>
                 <ext:SelectBox runat="server" ID="slbThang" 
                             EmptyText="Tháng ...." DisplayField="Ten" ValueField="ID" MarginSpec="0 0 0 10" RenderXType="True">
+                    <ListConfig MaxHeight="500">                       
+                   </ListConfig>
                             <Listeners>
                                 <Select Handler="#{stoNhanVien}.reload();" />
                             </Listeners>

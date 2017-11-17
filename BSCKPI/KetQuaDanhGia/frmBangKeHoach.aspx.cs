@@ -10,6 +10,7 @@ using DaoBSCKPI.Database.NhanVien;
 using DaoBSCKPI.KeHoachDanhGia;
 using DaoBSCKPI.KetQuaDanhGia;
 using DaoBSCKPI.CongViec;
+using DaoBSCKPI.DonVi;
 
 
 using BSCKPI.UIHelper;
@@ -23,6 +24,7 @@ namespace BSCKPI.KetQuaDanhGia
             if(!X.IsAjaxRequest)
             {
                 DanhSachThangNam();
+                DanhSachDonVi(DateTime.Now, daPhien.NguoiDung.IDDonVi.Value);
                 DanhSachKeHoachDG();
             }
         }
@@ -33,10 +35,18 @@ namespace BSCKPI.KetQuaDanhGia
             daThamSo dTS = new daThamSo();
             stoThang.DataSource = dTS.DanhSachThang();
             stoThang.DataBind();
-
-
+            
             stoNam.DataSource = dTS.DanhSachNam();
             stoNam.DataBind();
+        }
+
+        private void DanhSachDonVi(DateTime rNgay, int rIDDVQL)
+        {
+            daMoHinhDonVi dMHDV = new daMoHinhDonVi();
+            dMHDV.MHDV.TuNgay = rNgay;
+            dMHDV.MHDV.IDDonViQuanLy = rIDDVQL;
+            stoDonVi.DataSource = dMHDV.DanhSach();
+            stoDonVi.DataBind();
         }
 
         private void DanhSachBangDanhGiaCaNhan()
@@ -115,6 +125,20 @@ namespace BSCKPI.KetQuaDanhGia
             }
         }
 
+        private void DanhSachNhanVienDanhGiaDonVi()
+        {
+            if (slbKeHoachDG.SelectedItem.Value != null)
+            {
+                daKeHoachDanhGia dKHDG = new daKeHoachDanhGia();
+                dKHDG.Thang = byte.Parse(slbThang.SelectedItem.Value);
+                dKHDG.Nam = int.Parse(slbNam.SelectedItem.Value);
+                dKHDG.KHDG.ID = int.Parse(slbKeHoachDG.SelectedItem.Value);
+
+                stoNhanVien.DataSource = dKHDG.DanhSachNhanVienDonVi(int.Parse(slbDonVi.SelectedItem.Value), int.Parse(slbPhongBan.SelectedItem.Value));
+                stoNhanVien.DataBind();
+            }
+        }
+
         private Ext.Net.Window CuaSoChucNang(string rTieuDe, string Url)
         {
             Ext.Net.Window _CSo = new Ext.Net.Window();
@@ -174,6 +198,15 @@ namespace BSCKPI.KetQuaDanhGia
             tabBangDanhGia.SetActiveTab(pl);
         }
 
+        protected void DanhSachPhongBan(object sender, StoreReadDataEventArgs e)
+        {
+            daMoHinhPhongBan dMHPB = new daMoHinhPhongBan();
+            dMHPB.MHPB.TuNgay = DateTime.Now;
+            dMHPB.MHPB.IDDonVi = int.Parse(slbDonVi.SelectedItem.Value);
+            stoPhong.DataSource = dMHPB.DanhSachDDL();
+            stoPhong.DataBind();
+        }
+
         protected void btnBoSung_Click(object sender, DirectEventArgs e)
         {
 
@@ -181,7 +214,21 @@ namespace BSCKPI.KetQuaDanhGia
 
         protected void DanhSachNhanVien(object sender, StoreReadDataEventArgs e)
         {
-            DanhSachNhanVienDanhGia();
+            if (slbThang.SelectedItem.Value == null || slbNam.SelectedItem.Value == null)
+            {
+                return;
+            }
+            if (slbDonVi.SelectedItem.Value == null && slbPhongBan.SelectedItem.Value == null)
+            {
+                DanhSachNhanVienDanhGia();
+            }
+            else
+            {
+                if (slbDonVi.SelectedItem.Value != null && slbPhongBan.SelectedItem.Value != null)
+                {
+                    DanhSachNhanVienDanhGiaDonVi();
+                }
+            }
         }
 
         protected void btnInCaNhan_Click(object sender, DirectEventArgs e)
@@ -207,7 +254,15 @@ namespace BSCKPI.KetQuaDanhGia
                 return;
             }
             Ext.Net.Window CSo = new Ext.Net.Window();
-            CSo = CuaSoChucNang("Bảng đánh giá kết quả", "frmHienThiBaoCaoDanhGia.aspx?ThangBaoCao=" + slbThang.SelectedItem.Value + "&&NamBaoCao=" + slbNam.SelectedItem.Value + "&&NhanVienBaoCao=" + slbNhanVien.SelectedItem.Value + "&&IDKeHoach=" + slbKeHoachDG.SelectedItem.Value + "&&BieuBaoCao=2");
+            if (slbDonVi.SelectedItem.Value == null)
+            {
+                CSo = CuaSoChucNang("Bảng đánh giá kết quả", "frmHienThiBaoCaoDanhGia.aspx?ThangBaoCao=" + slbThang.SelectedItem.Value + "&&NamBaoCao=" + slbNam.SelectedItem.Value + "&&NhanVienBaoCao=" + slbNhanVien.SelectedItem.Value + "&&IDKeHoach=" + slbKeHoachDG.SelectedItem.Value + "&&BieuBaoCao=2&&IDDonVi=0&&IDPhongBan=0");
+            }
+            else
+            {
+                CSo = CuaSoChucNang("Bảng đánh giá kết quả", "frmHienThiBaoCaoDanhGia.aspx?ThangBaoCao=" + slbThang.SelectedItem.Value + "&&NamBaoCao=" + slbNam.SelectedItem.Value + "&&NhanVienBaoCao=" + slbNhanVien.SelectedItem.Value + "&&IDKeHoach=" + slbKeHoachDG.SelectedItem.Value + "&&BieuBaoCao=2&&IDDonVi=" + slbDonVi.SelectedItem.Value + "&&IDPhongBan=" + slbPhongBan.SelectedItem.Value);
+            }
+            //CSo = CuaSoChucNang("Bảng đánh giá kết quả", "frmHienThiBaoCaoDanhGia.aspx?ThangBaoCao=" + slbThang.SelectedItem.Value + "&&NamBaoCao=" + slbNam.SelectedItem.Value + "&&NhanVienBaoCao=" + slbNhanVien.SelectedItem.Value + "&&IDKeHoach=" + slbKeHoachDG.SelectedItem.Value + "&&BieuBaoCao=2");
 
             this.Form.Controls.Add(CSo);
             CSo.Render();

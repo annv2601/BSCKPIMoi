@@ -28,34 +28,6 @@
       <Column Name="NgaySua" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.sp_tblcvKetQuaNhiemVuTrongTam_DanhSach" Method="sp_tblcvKetQuaNhiemVuTrongTam_DanhSach">
-    <Parameter Name="Thang" Parameter="thang" Type="System.Int16" DbType="SmallInt" />
-    <Parameter Name="Nam" Parameter="nam" Type="System.Int32" DbType="Int" />
-    <Parameter Name="IDDonVi" Parameter="iDDonVi" Type="System.Int32" DbType="Int" />
-    <Parameter Name="IDPhongBan" Parameter="iDPhongBan" Type="System.Int32" DbType="Int" />
-    <ElementType Name="sp_tblcvKetQuaNhiemVuTrongTam_DanhSachResult">
-      <Column Name="Thang" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
-      <Column Name="Nam" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="IDNhiemVu" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="KetQua" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
-      <Column Name="Diem" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
-      <Column Name="TyLeHoanThanh" Type="System.Decimal" DbType="Decimal(22,4)" CanBeNull="true" />
-      <Column Name="TyLeTinh" Type="System.Decimal" DbType="Decimal(22,4)" CanBeNull="true" />
-      <Column Name="DiemTinh" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
-      <Column Name="DienGiai" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
-      <Column Name="TenCongViec" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
-      <Column Name="MucTieu" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
-      <Column Name="Ma" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
-      <Column Name="IDDonViTinh" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="DonViTinh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="IDTanSuatDo" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="TanSuatDo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="IDXuHuongYeuCau" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="XuHuongYeuCau" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="IDNhanVien" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
-      <Column Name="TenNhanVien" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.sp_tblcvKetQuaNhiemVuTrongTam_KhoiTao" Method="sp_tblcvKetQuaNhiemVuTrongTam_KhoiTao">
     <Parameter Name="Thang" Parameter="thang" Type="System.Int16" DbType="SmallInt" />
     <Parameter Name="Nam" Parameter="nam" Type="System.Int32" DbType="Int" />
@@ -83,5 +55,34 @@
     <Parameter Name="DienGiai" Parameter="dienGiai" Type="System.String" DbType="NVarChar(500)" />
     <Parameter Name="NguoiTao" Parameter="nguoiTao" Type="System.String" DbType="NVarChar(30)" />
     <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_tblcvKetQuaNhiemVuTrongTam_DanhSach" Method="sp_tblcvKetQuaNhiemVuTrongTam_DanhSach">
+    <Parameter Name="Thang" Parameter="thang" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="Nam" Parameter="nam" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDDonVi" Parameter="iDDonVi" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDPhongBan" Parameter="iDPhongBan" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_tblcvKetQuaNhiemVuTrongTam_DanhSachResult">
+      <Column Name="Thang" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Nam" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDNhiemVu" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="KetQua" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="Diem" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
+      <Column Name="TyLeHoanThanh" Type="System.Decimal" DbType="Decimal(22,4)" CanBeNull="true" />
+      <Column Name="TyLeTinh" Type="System.Decimal" DbType="Decimal(22,4)" CanBeNull="true" />
+      <Column Name="DiemTinh" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
+      <Column Name="DienGiai" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="TenCongViec" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="MucTieu" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Ma" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="IDDonViTinh" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DonViTinh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDTanSuatDo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TanSuatDo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDXuHuongYeuCau" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="XuHuongYeuCau" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDNhanVien" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="TenNhanVien" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NhapChiTiet" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
   </Function>
 </Database>

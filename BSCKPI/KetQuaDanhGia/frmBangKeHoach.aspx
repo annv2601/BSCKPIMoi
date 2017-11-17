@@ -14,6 +14,8 @@
            <Items>
                <ext:SelectBox runat="server" ID="slbThang" DisplayField="Ten" ValueField="ID"
                            EmptyText="Tháng" MarginSpec="0 0 0 20" LabelWidth="40" Width="120">
+                   <ListConfig MaxHeight="500">                       
+                   </ListConfig>
                             <Store>                                
                                 <ext:Store runat="server" ID="stoThang">
                                     <Model>
@@ -31,7 +33,7 @@
                                 <Change OnEvent="ChonThangNam_Click" />
                             </DirectEvents>--%>
                         </ext:SelectBox>
-                        <ext:SelectBox runat="server" ID="slbNam" DisplayField="Ten" ValueField="ID"
+               <ext:SelectBox runat="server" ID="slbNam" DisplayField="Ten" ValueField="ID"
                             EmptyText="Năm" MarginSpec="0 0 0 20" LabelWidth="40" Width="120">
                             <Store>
                                 <ext:Store runat="server" ID="stoNam">
@@ -63,7 +65,39 @@
                         </ext:Store>
                     </Store>
                 </ext:SelectBox>
-               <ext:SelectBox runat="server" ID="slbNhanVien" QueryMode="Local" EmptyText="Nhân viên"
+               <ext:SelectBox runat="server" ID="slbDonVi" DisplayField="Ten" ValueField="IDDonVi" EmptyText="Chọn đơn vị" MarginSpec="0 0 0 10" Width="200">
+                            <Listeners>
+                                <Select Handler="#{stoPhong}.reload();#{stoNhanVien}.reload();" />
+                            </Listeners>
+                            <Store>
+                                <ext:Store runat="server" ID="stoDonVi">
+                                    <Fields>
+                                        <ext:ModelField Name="IDDonVi" />
+                                        <ext:ModelField Name="Ten" />
+                                    </Fields>
+                                </ext:Store>
+                            </Store>
+                        </ext:SelectBox>
+               <ext:SelectBox runat="server" ID="slbPhongBan" DisplayField="TenPhongBan" ValueField="IDPhongBan" EmptyText="Chọn Phòng ban" MarginSpec="0 0 0 10" Width="200">
+                                <Listeners>
+                                    <Select Handler="#{stoNhanVien}.reload();" />
+                                </Listeners>
+                                <Store>
+                                    <ext:Store runat="server" ID="stoPhong" OnReadData="DanhSachPhongBan">
+                                        <Fields>
+                                            <ext:ModelField Name="IDPhongBan" />
+                                            <ext:ModelField Name="TenPhongBan" />
+                                        </Fields>
+                                    </ext:Store>
+                                </Store>
+                            </ext:SelectBox>
+
+               
+           </Items>
+       </ext:FieldContainer>
+        <ext:FieldContainer runat="server" Layout="HBoxLayout" MarginSpec="10 0 0 0">
+           <Items>
+                <ext:SelectBox runat="server" ID="slbNhanVien" QueryMode="Local" EmptyText="Nhân viên"
                                     DisplayField="TenNhanVien" ValueField="IDNhanVien" LabelStyle="font-weight:bold;" Width="250" MarginSpec="0 0 0 20">
                                     <DirectEvents>
                                         <Change OnEvent="ChonThangNam_Click" />
@@ -112,7 +146,7 @@
                             </Menu>
                         </ext:SplitButton>
            </Items>
-       </ext:FieldContainer>
+        </ext:FieldContainer>
        <ext:TabPanel runat="server" ID="tabBangDanhGia" MarginSpec="10 0 0 0">
 
        </ext:TabPanel>

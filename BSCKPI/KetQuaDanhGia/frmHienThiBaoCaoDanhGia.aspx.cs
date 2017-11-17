@@ -39,7 +39,7 @@ namespace BSCKPI.KPI
                         BangDanhGia(_Thang, _Nam, _IDNhanVien);
                         break;
                     case 2:
-                        BangDanhGiaKeHoach(_Thang,_Nam,int.Parse(Request.QueryString["IDKeHoach"]));
+                        BangDanhGiaKeHoach(_Thang,_Nam,int.Parse(Request.QueryString["IDKeHoach"]), int.Parse(Request.QueryString["IDDonVi"]), int.Parse(Request.QueryString["IDPhongBan"]));
                         break;
                     case 9:
                         BangTongHop(_Thang, _Nam, int.Parse(Request.QueryString["IDDonViBaoCao"]), int.Parse(Request.QueryString["KHBaoCao"]));
@@ -198,14 +198,22 @@ namespace BSCKPI.KPI
         #endregion
 
         #region Nhieu
-        private void BangDanhGiaKeHoach(byte _Thang, int _Nam, int _IDKeHoach)
+        private void BangDanhGiaKeHoach(byte _Thang, int _Nam, int _IDKeHoach, int _IDDonVi, int _IDPhongBan)
         {
             daKeHoachDanhGia dKH = new daKeHoachDanhGia();
             List<sp_tblBKKeHoachDanhGia_DanhSachNhanVienResult> lst;
             dKH.Thang = _Thang;
             dKH.Nam = _Nam;
             dKH.KHDG.ID = _IDKeHoach;
-            lst = dKH.lstDanhSachNhanVien();
+            if(_IDDonVi==0)
+            {
+                lst = dKH.lstDanhSachNhanVien();
+            }
+            else
+            {
+                lst = dKH.lstDanhSachNhanVienDonVi(_IDDonVi,_IDPhongBan);
+            }
+
             if (lst.Count > 0)
             {
                 daBangDanhGia dBDG = new daBangDanhGia();

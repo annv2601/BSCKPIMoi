@@ -76,13 +76,6 @@ namespace DaoBSCKPI.Database.CongViec
 			return ((ISingleResult<sp_tblcvKetQuaNhiemVuTrongTam_ThongTinResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_tblcvKetQuaNhiemVuTrongTam_DanhSach")]
-		public ISingleResult<sp_tblcvKetQuaNhiemVuTrongTam_DanhSachResult> sp_tblcvKetQuaNhiemVuTrongTam_DanhSach([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Thang", DbType="SmallInt")] System.Nullable<short> thang, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nam", DbType="Int")] System.Nullable<int> nam, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDDonVi", DbType="Int")] System.Nullable<int> iDDonVi, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDPhongBan", DbType="Int")] System.Nullable<int> iDPhongBan)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), thang, nam, iDDonVi, iDPhongBan);
-			return ((ISingleResult<sp_tblcvKetQuaNhiemVuTrongTam_DanhSachResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_tblcvKetQuaNhiemVuTrongTam_KhoiTao")]
 		public int sp_tblcvKetQuaNhiemVuTrongTam_KhoiTao([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Thang", DbType="SmallInt")] System.Nullable<short> thang, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nam", DbType="Int")] System.Nullable<int> nam, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDDonVi", DbType="Int")] System.Nullable<int> iDDonVi, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDPhongBan", DbType="Int")] System.Nullable<int> iDPhongBan, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="NguoiTao", DbType="NVarChar(30)")] string nguoiTao)
 		{
@@ -102,6 +95,13 @@ namespace DaoBSCKPI.Database.CongViec
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), thang, nam, iDNhiemVu, ketQua, diem, dienGiai, nguoiTao);
 			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_tblcvKetQuaNhiemVuTrongTam_DanhSach")]
+		public ISingleResult<sp_tblcvKetQuaNhiemVuTrongTam_DanhSachResult> sp_tblcvKetQuaNhiemVuTrongTam_DanhSach([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Thang", DbType="SmallInt")] System.Nullable<short> thang, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nam", DbType="Int")] System.Nullable<int> nam, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDDonVi", DbType="Int")] System.Nullable<int> iDDonVi, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDPhongBan", DbType="Int")] System.Nullable<int> iDPhongBan)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), thang, nam, iDDonVi, iDPhongBan);
+			return ((ISingleResult<sp_tblcvKetQuaNhiemVuTrongTam_DanhSachResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -389,6 +389,8 @@ namespace DaoBSCKPI.Database.CongViec
 		private System.Nullable<System.Guid> _IDNhanVien;
 		
 		private string _TenNhanVien;
+		
+		private System.Nullable<int> _NhapChiTiet;
 		
 		public sp_tblcvKetQuaNhiemVuTrongTam_DanhSachResult()
 		{
@@ -710,6 +712,22 @@ namespace DaoBSCKPI.Database.CongViec
 				if ((this._TenNhanVien != value))
 				{
 					this._TenNhanVien = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NhapChiTiet", DbType="Int")]
+		public System.Nullable<int> NhapChiTiet
+		{
+			get
+			{
+				return this._NhapChiTiet;
+			}
+			set
+			{
+				if ((this._NhapChiTiet != value))
+				{
+					this._NhapChiTiet = value;
 				}
 			}
 		}
