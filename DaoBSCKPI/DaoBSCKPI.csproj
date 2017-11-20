@@ -45,6 +45,7 @@
     <Compile Include="ChiTieuBSC\daChiTieuBSC.cs" />
     <Compile Include="ChiTieuBSC\daChiTieuBSCPhong.cs" />
     <Compile Include="ChiTieuKPI\daChiTieuKPI.cs" />
+    <Compile Include="ChiTieuKPI\daChiTieuKPIChoPhong.cs" />
     <Compile Include="ChiTieuKPI\daChiTieuKPIPhong.cs" />
     <Compile Include="ChiTieuKPI\daTrongSoNhomKPI.cs" />
     <Compile Include="CongViecCaNhan\daCongViecCaNhan.cs" />
@@ -76,6 +77,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>linqChiTieuKPI.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ChiTieuKPI\linqChiTieuKPIChoPhong.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>linqChiTieuKPIChoPhong.dbml</DependentUpon>
     </Compile>
     <Compile Include="Database\ChiTieuKPI\linqChiTieuKPIPhong.designer.cs">
       <AutoGen>True</AutoGen>
@@ -304,6 +310,14 @@
     </None>
     <None Include="Database\ChiTieuKPI\linqChiTieuKPI.dbml.layout">
       <DependentUpon>linqChiTieuKPI.dbml</DependentUpon>
+    </None>
+    <None Include="Database\ChiTieuKPI\linqChiTieuKPIChoPhong.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>linqChiTieuKPIChoPhong.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database\ChiTieuKPI\linqChiTieuKPIChoPhong.dbml.layout">
+      <DependentUpon>linqChiTieuKPIChoPhong.dbml</DependentUpon>
     </None>
     <None Include="Database\ChiTieuKPI\linqChiTieuKPIPhong.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>

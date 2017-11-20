@@ -117,6 +117,13 @@ namespace DaoBSCKPI.Database.NhanVien
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), thang, nam, iDDonVi, iDPhongBan);
 			return ((ISingleResult<sp_tblThongTinNhanVien_DanhSach_DonViResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_tblThongTinNhanVien_ChuyenDonVi")]
+		public int sp_tblThongTinNhanVien_ChuyenDonVi([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDNhanVien", DbType="UniqueIdentifier")] System.Nullable<System.Guid> iDNhanVien, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Thang", DbType="SmallInt")] System.Nullable<short> thang, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nam", DbType="Int")] System.Nullable<int> nam, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDDonViMoi", DbType="Int")] System.Nullable<int> iDDonViMoi, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDPhongBanMoi", DbType="Int")] System.Nullable<int> iDPhongBanMoi, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="NguoiSua", DbType="NVarChar(30)")] string nguoiSua)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iDNhanVien, thang, nam, iDDonViMoi, iDPhongBanMoi, nguoiSua);
+			return ((int)(result.ReturnValue));
+		}
 	}
 	
 	public partial class sp_tblTrangThai_DanhSachResult

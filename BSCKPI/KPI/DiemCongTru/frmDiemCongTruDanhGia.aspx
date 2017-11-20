@@ -21,7 +21,7 @@
     <form id="form1" runat="server">
         <ext:FieldContainer runat="server" Layout="HBoxLayout" MarginSpec="10 0 0 0">
             <Items>
-                <ext:SelectBox runat="server" ID="slbThang" 
+                <ext:SelectBox runat="server" ID="slbThang" Width="120"
                             EmptyText="Tháng ...." DisplayField="Ten" ValueField="ID" MarginSpec="0 0 0 10" RenderXType="True" >
                     <ListConfig MaxHeight="500" />
                             <Store>
@@ -37,7 +37,7 @@
                                 </ext:Store>
                             </Store>
                         </ext:SelectBox>
-                        <ext:SelectBox runat="server" ID="slbNam" QueryMode="Local" TypeAhead="true"
+                <ext:SelectBox runat="server" ID="slbNam" QueryMode="Local" TypeAhead="true" Width="120"
                             EmptyText="Năm ...." DisplayField="Ten" ValueField="ID" MarginSpec="0 0 0 10" RenderXType="true">
                             <Store>
                                 <ext:Store runat="server" ID="stoNam" AutoDataBind="true">
@@ -65,7 +65,37 @@
                             </Fields>
                         </ext:Store>
                     </Store>
-                </ext:SelectBox>
+                </ext:SelectBox>   
+                <ext:SelectBox runat="server" ID="slbDonVi" DisplayField="Ten" ValueField="IDDonVi" EmptyText="Chọn đơn vị" MarginSpec="0 0 0 10" Width="300">
+                            <Listeners>
+                                <Select Handler="#{stoPhong}.reload();#{stoDCTDG}.reload();" />
+                            </Listeners>
+                            <Store>
+                                <ext:Store runat="server" ID="stoDonVi">
+                                    <Fields>
+                                        <ext:ModelField Name="IDDonVi" />
+                                        <ext:ModelField Name="Ten" />
+                                    </Fields>
+                                </ext:Store>
+                            </Store>
+                        </ext:SelectBox>
+                <ext:SelectBox runat="server" ID="slbPhongBan" DisplayField="TenPhongBan" ValueField="IDPhongBan" EmptyText="Chọn Phòng ban" MarginSpec="0 0 0 10" Width="200">
+                                <Listeners>
+                                    <Select Handler="#{stoDCTDG}.reload();" />
+                                </Listeners>
+                                <Store>
+                                    <ext:Store runat="server" ID="stoPhong" OnReadData="DanhSachPhongBan">
+                                        <Fields>
+                                            <ext:ModelField Name="IDPhongBan" />
+                                            <ext:ModelField Name="TenPhongBan" />
+                                        </Fields>
+                                    </ext:Store>
+                                </Store>
+                            </ext:SelectBox>
+            </Items>
+        </ext:FieldContainer>
+        <ext:FieldContainer runat="server" Layout="HBoxLayout" MarginSpec="10 0 0 20">
+            <Items>
                 <ext:Button runat="server" ID="btnTinhDiem" Text="Tính và xếp loại" Icon="CalculatorLink" Width="150" UI="Success" MarginSpec="0 0 0 10">
                     <DirectEvents>
                         <Click OnEvent="btnTinhDiem_Click">

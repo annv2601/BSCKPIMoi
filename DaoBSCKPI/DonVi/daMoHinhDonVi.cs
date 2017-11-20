@@ -41,8 +41,22 @@ namespace DaoBSCKPI.DonVi
         public DataTable DanhSach()
         {
             List<sp_tblMoHinhDonVi_DanhSachResult> lst;
-            lst = lmhdv.sp_tblMoHinhDonVi_DanhSach(MHDV.IDDonViQuanLy, MHDV.TuNgay).ToList();
+            lst = lmhdv.sp_tblMoHinhDonVi_DanhSach(MHDV.IDDonViQuanLy, MHDV.TuNgay,true).ToList();
             return daDatatableVaList.ToDataTable(lst);
         }
+
+        private List<sp_tblMoHinhDonVi_DanhSachResult> lstDSCon(int rIDDVQL, DateTime rNgay)
+        {
+            List<sp_tblMoHinhDonVi_DanhSachResult> lstCon;
+            lstCon = lmhdv.sp_tblMoHinhDonVi_DanhSach(rIDDVQL, rNgay,false).ToList();
+            return lstCon;
+        }
+
+        /*public DataTable DanhSachPhanCap()
+        {
+            List<sp_tblMoHinhDonVi_DanhSachResult> lst;
+            lst = lmhdv.sp_tblMoHinhDonVi_DanhSach(MHDV.IDDonViQuanLy, MHDV.TuNgay).ToList();
+            return daDatatableVaList.ToDataTable(lst);
+        }*/
     }
 }

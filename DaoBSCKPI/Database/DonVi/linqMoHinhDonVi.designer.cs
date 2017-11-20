@@ -84,9 +84,9 @@ namespace DaoBSCKPI.Database.DonVi
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_tblMoHinhDonVi_DanhSach")]
-		public ISingleResult<sp_tblMoHinhDonVi_DanhSachResult> sp_tblMoHinhDonVi_DanhSach([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDDonViQuanLy", DbType="Int")] System.Nullable<int> iDDonViQuanLy, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Ngay", DbType="Date")] System.Nullable<System.DateTime> ngay)
+		public ISingleResult<sp_tblMoHinhDonVi_DanhSachResult> sp_tblMoHinhDonVi_DanhSach([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDDonViQuanLy", DbType="Int")] System.Nullable<int> iDDonViQuanLy, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Ngay", DbType="Date")] System.Nullable<System.DateTime> ngay, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="CoCapTren", DbType="Bit")] System.Nullable<bool> coCapTren)
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iDDonViQuanLy, ngay);
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iDDonViQuanLy, ngay, coCapTren);
 			return ((ISingleResult<sp_tblMoHinhDonVi_DanhSachResult>)(result.ReturnValue));
 		}
 	}

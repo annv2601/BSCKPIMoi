@@ -39,5 +39,12 @@ namespace DaoBSCKPI.DiemCongTru
             lst = lDCTDG.sp_tblBKDiemCongTruDanhGia_DanhSach_KeHoach(DCTDG.Thang, DCTDG.Nam, rIDKeHoach).ToList();
             return daDatatableVaList.ToDataTable(lst);
         }
+
+        public DataTable DanhSachDonVi(int rIDDonVi, int rIDPhongBan)
+        {
+            List<sp_tblBKDiemCongTruDanhGia_DanhSach_DonViResult> lst;
+            lst = lDCTDG.sp_tblBKDiemCongTruDanhGia_DanhSach_DonVi(DCTDG.Thang, DCTDG.Nam, rIDDonVi,rIDPhongBan).ToList();
+            return daDatatableVaList.ToDataTable(lst);
+        }
     }
 }

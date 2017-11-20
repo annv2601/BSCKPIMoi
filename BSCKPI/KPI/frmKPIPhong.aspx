@@ -6,12 +6,37 @@
 <head runat="server">
     <title></title>
     <link href="../resource/css/main.css" rel="stylesheet" />
+    <style type="text/css">
+        .GridPanelUsersRowYellow
+        {
+            background: #FFDEAD;
+        }
+        .GridPanelUsersRowWhite
+        {
+            background: white;            
+        }
+    </style>
     <script type="text/javascript">
+        var beforeCellEditHandler = function (e) {
+            if (e.field == "Chon" && e.record.data.ChoChon == false) {
+                CellEditing1.cancelEdit();
+            }
+        }
+
         var edit = function (editor, e)
         {
             if (e.value !== e.originalValue)
             {
                 BangKPIPX.Edit(e.record.data.IDKPI, e.field, e.originalValue, e.value, e.record.data);
+            }
+        }
+
+        function getRowClass(record) {
+            if (record.data.Chon) {
+                return "GridPanelUsersRowYellow";
+            }
+            else {
+
             }
         }
     </script>
@@ -42,6 +67,8 @@
                                 <ext:ModelField Name="MucTieuThang10" Type="Float" />
                                 <ext:ModelField Name="MucTieuThang11" Type="Float" />
                                 <ext:ModelField Name="MucTieuThang12" Type="Float" />
+                                <ext:ModelField Name="Chon" />
+                                <ext:ModelField Name="ChoChon" />
                             </Fields>
                         </ext:Model>
                     </Model>
@@ -66,9 +93,9 @@
                                 </ext:Store>
                             </Store>
                         </ext:SelectBox>
-                        <ext:SelectBox runat="server" ID="slbDonVi" DisplayField="Ten" ValueField="IDDonVi" EmptyText="Chọn đơn vị" MarginSpec="0 0 0 10" Width="200">
+                        <ext:SelectBox runat="server" ID="slbDonVi" DisplayField="Ten" ValueField="IDDonVi" EmptyText="Chọn đơn vị" MarginSpec="0 0 0 10" Width="300">
                             <Listeners>
-                                <Select Handler="#{stoKPIPhong}.reload();" />
+                                <Select Handler="#{stoKPIPhong}.reload();#{stoPhong}.reload();" />
                             </Listeners>
                             <Store>
                                 <ext:Store runat="server" ID="stoDonVi">
@@ -79,7 +106,34 @@
                                 </ext:Store>
                             </Store>
                         </ext:SelectBox>
-                        <ext:Button ID="btnCapNhatMTNam" runat="server" Icon="ApplicationEdit" Text="Lấy mục tiêu BSC" MarginSpec="0 0 0 10">
+                        <ext:SelectBox runat="server" ID="slbPhongBan" DisplayField="TenPhongBan" ValueField="IDPhongBan" EmptyText="Chọn Phòng ban" MarginSpec="0 0 0 10" Width="200">                                
+                                <Store>
+                                    <ext:Store runat="server" ID="stoPhong" OnReadData="DanhSachPhongBan">
+                                        <Fields>
+                                            <ext:ModelField Name="IDPhongBan" />
+                                            <ext:ModelField Name="TenPhongBan" />
+                                        </Fields>
+                                    </ext:Store>
+                                </Store>
+                            <Triggers>
+                                <ext:FieldTrigger Icon="Clear" Hidden="true" Weight="-1" />
+                            </Triggers>
+                            <Listeners>
+                                <Select Handler="this.getTrigger(0).show();#{stoKPIPhong}.reload();" />
+                                <BeforeQuery Handler="this.getTrigger(0)[this.getRawValue().toString().length == 0 ? 'hide' : 'show']();" />
+                                <TriggerClick Handler="if (index == 0) {
+                                                           this.clearValue();
+                                                           this.getTrigger(0).hide();
+                                                           #{stoKPIPhong}.reload();
+                                                       }" />
+                            </Listeners>
+                            </ext:SelectBox>
+                        <ext:Checkbox ID="chkChiChon" runat="server" FieldLabel="Của phòng" MarginSpec="0 0 0 10" Checked="true" LabelWidth="70">
+                            <Listeners>
+                                <Change Handler="#{stoKPIPhong}.reload();" Delay="1"/>
+                            </Listeners>
+                        </ext:Checkbox>
+                        <ext:Button ID="btnCapNhatMTNam" runat="server" Icon="ApplicationEdit" Text="Lấy mục tiêu BSC" MarginSpec="0 0 0 30">
                             <DirectEvents>
                                 <Click OnEvent="btnCapNhatMTNam_Click">
                                     <EventMask ShowMask="true" Msg="Thực thi ....." />
@@ -91,14 +145,15 @@
             </TopBar>
             <View>
                 <ext:GridView ID="GridView1" runat="server">
-                    
+                    <GetRowClass Fn="getRowClass" />
                 </ext:GridView>
             </View>
             <ColumnModel runat="server">
                         <Columns>
                             <ext:RowNumbererColumn runat="server" Text="STT" Width="70" Align="Center" StyleSpec="font-weight:bold;"/>
+                            <ext:CheckColumn runat="server" Text="Chọn" Width="70" Align="Center" DataIndex="Chon" StyleSpec="font-weight: bold;" Editable="true"/>
                             <ext:Column runat="server" Text="Mã" DataIndex="Ma" Width="80" StyleSpec="font-weight:bold;"/>
-                            <ext:Column runat="server" Text="Tên" DataIndex="TenKPI" Width="200" StyleSpec="font-weight:bold;"/>
+                            <ext:Column runat="server" Text="Tên" DataIndex="TenKPI" Width="200" StyleSpec="font-weight:bold;" CellWrap="true"/>
                             <ext:Column runat="server" Text="Đơn vị tính" DataIndex="DonViTinh"  StyleSpec="font-weight:bold;" Align="Center"/>
                             <ext:Column runat="server" Text="Tần suất đo" DataIndex="TanSuatDo"  StyleSpec="font-weight:bold;" Align="Center"/>
                             <ext:Column runat="server" Text="Xu hướng" DataIndex="XuHuongYeuCau"  StyleSpec="font-weight:bold;" Align="Center"/>
@@ -178,6 +233,7 @@
             <Plugins>                
                 <ext:CellEditing runat="server" ClicksToEdit="1">
                     <Listeners>
+                        <BeforeEdit Handler="return beforeCellEditHandler(e);"></BeforeEdit>
                         <Edit Fn="edit" />
                     </Listeners>
                 </ext:CellEditing>

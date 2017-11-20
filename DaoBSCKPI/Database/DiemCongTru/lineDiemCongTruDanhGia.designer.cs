@@ -82,6 +82,13 @@ namespace DaoBSCKPI.Database.DiemCongTru
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), thang, nam, iDKeHoach);
 			return ((ISingleResult<sp_tblBKDiemCongTruDanhGia_DanhSach_KeHoachResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_tblBKDiemCongTruDanhGia_DanhSach_DonVi")]
+		public ISingleResult<sp_tblBKDiemCongTruDanhGia_DanhSach_DonViResult> sp_tblBKDiemCongTruDanhGia_DanhSach_DonVi([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Thang", DbType="SmallInt")] System.Nullable<short> thang, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nam", DbType="Int")] System.Nullable<int> nam, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDDonVi", DbType="Int")] System.Nullable<int> iDDonVi, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDPhongBan", DbType="Int")] System.Nullable<int> iDPhongBan)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), thang, nam, iDDonVi, iDPhongBan);
+			return ((ISingleResult<sp_tblBKDiemCongTruDanhGia_DanhSach_DonViResult>)(result.ReturnValue));
+		}
 	}
 	
 	public partial class sp_tblBKDiemCongTruDanhGia_ThongTinResult
@@ -252,6 +259,122 @@ namespace DaoBSCKPI.Database.DiemCongTru
 		private System.Nullable<decimal> _TongDiemCong;
 		
 		public sp_tblBKDiemCongTruDanhGia_DanhSach_KeHoachResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ThuTu", DbType="BigInt")]
+		public System.Nullable<long> ThuTu
+		{
+			get
+			{
+				return this._ThuTu;
+			}
+			set
+			{
+				if ((this._ThuTu != value))
+				{
+					this._ThuTu = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IDNhanVien", DbType="UniqueIdentifier")]
+		public System.Nullable<System.Guid> IDNhanVien
+		{
+			get
+			{
+				return this._IDNhanVien;
+			}
+			set
+			{
+				if ((this._IDNhanVien != value))
+				{
+					this._IDNhanVien = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenNhanVien", DbType="NVarChar(83)")]
+		public string TenNhanVien
+		{
+			get
+			{
+				return this._TenNhanVien;
+			}
+			set
+			{
+				if ((this._TenNhanVien != value))
+				{
+					this._TenNhanVien = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TongDiemKPI", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> TongDiemKPI
+		{
+			get
+			{
+				return this._TongDiemKPI;
+			}
+			set
+			{
+				if ((this._TongDiemKPI != value))
+				{
+					this._TongDiemKPI = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Diem", DbType="Decimal(18,3)")]
+		public System.Nullable<decimal> Diem
+		{
+			get
+			{
+				return this._Diem;
+			}
+			set
+			{
+				if ((this._Diem != value))
+				{
+					this._Diem = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TongDiemCong", DbType="Decimal(20,3)")]
+		public System.Nullable<decimal> TongDiemCong
+		{
+			get
+			{
+				return this._TongDiemCong;
+			}
+			set
+			{
+				if ((this._TongDiemCong != value))
+				{
+					this._TongDiemCong = value;
+				}
+			}
+		}
+	}
+	
+	public partial class sp_tblBKDiemCongTruDanhGia_DanhSach_DonViResult
+	{
+		
+		private System.Nullable<long> _ThuTu;
+		
+		private System.Nullable<System.Guid> _IDNhanVien;
+		
+		private string _TenNhanVien;
+		
+		private System.Nullable<decimal> _TongDiemKPI;
+		
+		private System.Nullable<decimal> _Diem;
+		
+		private System.Nullable<decimal> _TongDiemCong;
+		
+		public sp_tblBKDiemCongTruDanhGia_DanhSach_DonViResult()
 		{
 		}
 		

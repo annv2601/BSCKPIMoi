@@ -56,5 +56,12 @@ namespace DaoBSCKPI.ChiTieuKPI
             lst = lKPIP.sp_tblBKChiTieuKPIPhong_DanhSach(KPIP.Nam, KPIP.IDDonVi, KPIP.IDPhongBan).ToList();
             return daDatatableVaList.ToDataTable(lst);
         }
+
+        public DataTable DanhSachChoPhong(bool rChiChon)
+        {
+            List<sp_tblBKChiTieuKPIPhong_DanhSach_ChoPhongResult> lst;
+            lst = lKPIP.sp_tblBKChiTieuKPIPhong_DanhSach_ChoPhong(KPIP.Nam, KPIP.IDDonVi, KPIP.IDPhongBan,rChiChon).ToList();
+            return daDatatableVaList.ToDataTable(lst);
+        }
     }
 }

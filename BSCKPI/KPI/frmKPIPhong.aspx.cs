@@ -51,13 +51,30 @@ namespace BSCKPI.KPI
             dKPIP.KPIP.Nam = int.Parse(slbNam.SelectedItem.Value);
             dKPIP.KPIP.IDDonVi = int.Parse(slbDonVi.SelectedItem.Value);//daPhien.NguoiDung.IDDonVi;
             dKPIP.KPIP.IDPhongBan = 0;//daPhien.NguoiDung.IDPhongBan;
-            dKPIP.KhoiTao();
-            stoKPIPhong.DataSource = dKPIP.DanhSach();
+            if (slbPhongBan.SelectedItem.Value != null)
+            {
+                dKPIP.KPIP.IDPhongBan = int.Parse(slbPhongBan.SelectedItem.Value);
+                stoKPIPhong.DataSource = dKPIP.DanhSachChoPhong(chkChiChon.Checked);
+            }
+            else
+            {
+                dKPIP.KhoiTao();
+                stoKPIPhong.DataSource = dKPIP.DanhSach();
+            }
             stoKPIPhong.DataBind();
         }
         #endregion
 
         #region Su Kien
+        protected void DanhSachPhongBan(object sender, StoreReadDataEventArgs e)
+        {
+            daMoHinhPhongBan dMHPB = new daMoHinhPhongBan();
+            dMHPB.MHPB.TuNgay = DateTime.Now;
+            dMHPB.MHPB.IDDonVi = int.Parse(slbDonVi.SelectedItem.Value);
+            stoPhong.DataSource = dMHPB.DanhSachDDL();
+            stoPhong.DataBind();
+        }
+
         protected void dsKPIPhong(object sender, StoreReadDataEventArgs e)
         {
             DanhSachKPIPhong();
@@ -76,6 +93,24 @@ namespace BSCKPI.KPI
         [DirectMethod(Namespace = "BangKPIPX")]
         public void Edit(int id, string field, string oldvalue, string newvalue, object BangKPIP)
         {
+            if (field=="Chon")
+            {
+                daChiTieuKPIChoPhong dCP = new daChiTieuKPIChoPhong();
+                dCP.KPICP.Nam = int.Parse(slbNam.SelectedItem.Value);
+                dCP.KPICP.IDDonVi = int.Parse(slbDonVi.SelectedItem.Value);
+                dCP.KPICP.IDPhongBan = int.Parse(slbPhongBan.SelectedItem.Value);
+                dCP.KPICP.IDKPI = id;
+                if (Convert.ToBoolean(newvalue))
+                {
+                    dCP.Them();
+                }
+                else
+                {
+                    dCP.Xoa();
+                }
+                grdKPIP.GetStore().GetById(id).Commit();
+                return;
+            }
             daChiTieuKPIPhong dKPIP = new daChiTieuKPIPhong();
             dKPIP.KPIP.Nam = int.Parse(slbNam.SelectedItem.Value);
             dKPIP.KPIP.IDDonVi = int.Parse(slbDonVi.SelectedItem.Value);// daPhien.NguoiDung.IDDonVi;

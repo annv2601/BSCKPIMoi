@@ -57,7 +57,7 @@ namespace BSCKPI.KetQuaDanhGia
             dTSo.IDDonVi = dTTNV.TTNV.IDDonVi.Value;
             dTSo.IDPhongBan = dTTNV.TTNV.IDPhongBan.Value;
             dTSo.IDNguoiDung = daPhien.NguoiDung.IDNhanVien.ToString();
-            dKQ.KhoiTao(dTSo);
+            //dKQ.KhoiTao(dTSo);
             dKQK.KhoiTao(dTSo);
             dKQNV.KhoiTao(dTSo);
             dTSo = null;

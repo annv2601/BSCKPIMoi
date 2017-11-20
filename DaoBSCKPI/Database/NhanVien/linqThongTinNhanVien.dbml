@@ -130,4 +130,13 @@
       <Column Name="urlAnh" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
     </ElementType>
   </Function>
+  <Function Name="dbo.sp_tblThongTinNhanVien_ChuyenDonVi" Method="sp_tblThongTinNhanVien_ChuyenDonVi">
+    <Parameter Name="IDNhanVien" Parameter="iDNhanVien" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="Thang" Parameter="thang" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="Nam" Parameter="nam" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDDonViMoi" Parameter="iDDonViMoi" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDPhongBanMoi" Parameter="iDPhongBanMoi" Type="System.Int32" DbType="Int" />
+    <Parameter Name="NguoiSua" Parameter="nguoiSua" Type="System.String" DbType="NVarChar(30)" />
+    <Return Type="System.Int32" />
+  </Function>
 </Database>

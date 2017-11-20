@@ -136,6 +136,7 @@
     <Content Include="KPI\frmPhanBoMucTieuCaNhanTheoKeHoach.aspx" />
     <Content Include="KPI\frmPhanBoMucTieuCaNhan.aspx" />
     <Content Include="MoHinhToChuc\frmNhanVien.aspx" />
+    <Content Include="MoHinhToChuc\UC\ucChuyenDonVi.ascx" />
     <Content Include="MoHinhToChuc\UC\ucNhanVien.ascx" />
     <Content Include="resource\css\DataView.css" />
     <Content Include="resource\css\examples.css" />
@@ -357,6 +358,13 @@
     </Compile>
     <Compile Include="MoHinhToChuc\frmNhanVien.aspx.designer.cs">
       <DependentUpon>frmNhanVien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MoHinhToChuc\UC\ucChuyenDonVi.ascx.cs">
+      <DependentUpon>ucChuyenDonVi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MoHinhToChuc\UC\ucChuyenDonVi.ascx.designer.cs">
+      <DependentUpon>ucChuyenDonVi.ascx</DependentUpon>
     </Compile>
     <Compile Include="MoHinhToChuc\UC\ucNhanVien.ascx.cs">
       <DependentUpon>ucNhanVien.ascx</DependentUpon>

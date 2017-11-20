@@ -1,35 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BSCKPI" Class="linqChiTieuKPIPhongDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="AppSettings" ConnectionString="Data Source=10.10.200.160;Initial Catalog=BSCKPI;Persist Security Info=True;User ID=chay" SettingsObjectName="DaoBSCKPI.Properties.Settings" SettingsPropertyName="BSCKPIConnectionString" Provider="System.Data.SqlClient" />
-  <Function Name="dbo.sp_tblBKChiTieuKPIPhong_DanhSach" Method="sp_tblBKChiTieuKPIPhong_DanhSach">
-    <Parameter Name="Nam" Parameter="nam" Type="System.Int32" DbType="Int" />
-    <Parameter Name="IDDonVi" Parameter="iDDonVi" Type="System.Int32" DbType="Int" />
-    <Parameter Name="IDPhongBan" Parameter="iDPhongBan" Type="System.Int32" DbType="Int" />
-    <ElementType Name="sp_tblBKChiTieuKPIPhong_DanhSachResult">
-      <Column Name="Nam" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="IDDonVi" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="IDPhongBan" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="IDKPI" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Ma" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
-      <Column Name="TenKPI" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
-      <Column Name="DonViTinh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="TanSuatDo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="IDXuHuongYeuCau" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="XuHuongYeuCau" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="MucTieuNam" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
-      <Column Name="MucTieuThang1" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
-      <Column Name="MucTieuThang2" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
-      <Column Name="MucTieuThang3" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
-      <Column Name="MucTieuThang4" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
-      <Column Name="MucTieuThang5" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
-      <Column Name="MucTieuThang6" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
-      <Column Name="MucTieuThang7" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
-      <Column Name="MucTieuThang8" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
-      <Column Name="MucTieuThang9" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
-      <Column Name="MucTieuThang10" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
-      <Column Name="MucTieuThang11" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
-      <Column Name="MucTieuThang12" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.sp_tblBKChiTieuKPIPhong_Xoa" Method="sp_tblBKChiTieuKPIPhong_Xoa">
     <Parameter Name="Nam" Parameter="nam" Type="System.Int32" DbType="Int" />
     <Parameter Name="IDDonVi" Parameter="iDDonVi" Type="System.Int32" DbType="Int" />
@@ -99,5 +69,70 @@
     <Parameter Name="IDDonVi" Parameter="iDDonVi" Type="System.Int32" DbType="Int" />
     <Parameter Name="IDPhongBan" Parameter="iDPhongBan" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_tblBKChiTieuKPIPhong_DanhSach_ChoPhong" Method="sp_tblBKChiTieuKPIPhong_DanhSach_ChoPhong">
+    <Parameter Name="Nam" Parameter="nam" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDDonVi" Parameter="iDDonVi" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDPhongBan" Parameter="iDPhongBan" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ChiChon" Parameter="chiChon" Type="System.Boolean" DbType="Bit" />
+    <ElementType Name="sp_tblBKChiTieuKPIPhong_DanhSach_ChoPhongResult">
+      <Column Name="Nam" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDDonVi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDPhongBan" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDKPI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ma" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="TenKPI" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DonViTinh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TanSuatDo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDXuHuongYeuCau" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="XuHuongYeuCau" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MucTieuNam" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="MucTieuThang1" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="MucTieuThang2" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="MucTieuThang3" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="MucTieuThang4" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="MucTieuThang5" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="MucTieuThang6" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="MucTieuThang7" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="MucTieuThang8" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="MucTieuThang9" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="MucTieuThang10" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="MucTieuThang11" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="MucTieuThang12" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="Chon" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ChoChon" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_tblBKChiTieuKPIPhong_DanhSach" Method="sp_tblBKChiTieuKPIPhong_DanhSach">
+    <Parameter Name="Nam" Parameter="nam" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDDonVi" Parameter="iDDonVi" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDPhongBan" Parameter="iDPhongBan" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_tblBKChiTieuKPIPhong_DanhSachResult">
+      <Column Name="Nam" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDDonVi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDPhongBan" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDKPI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ma" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="TenKPI" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DonViTinh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TanSuatDo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDXuHuongYeuCau" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="XuHuongYeuCau" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MucTieuNam" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="MucTieuThang1" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="MucTieuThang2" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="MucTieuThang3" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="MucTieuThang4" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="MucTieuThang5" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="MucTieuThang6" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="MucTieuThang7" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="MucTieuThang8" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="MucTieuThang9" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="MucTieuThang10" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="MucTieuThang11" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="MucTieuThang12" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="Chon" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ChoChon" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
   </Function>
 </Database>

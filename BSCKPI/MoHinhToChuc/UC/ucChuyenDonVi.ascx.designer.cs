@@ -7,73 +7,64 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BSCKPI.KPI.DiemCongTru {
+namespace BSCKPI.MoHinhToChuc.UC {
     
     
-    public partial class frmDiemCongTruDanhGia {
+    public partial class ucChuyenDonVi {
         
         /// <summary>
-        /// form1 control.
+        /// Panel1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::Ext.Net.Panel Panel1;
         
         /// <summary>
-        /// slbThang control.
+        /// txtIDNhanVien control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.SelectBox slbThang;
+        protected global::Ext.Net.Hidden txtIDNhanVien;
         
         /// <summary>
-        /// stoThang control.
+        /// lblTenNhanVien control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.Store stoThang;
+        protected global::Ext.Net.Label lblTenNhanVien;
         
         /// <summary>
-        /// slbNam control.
+        /// lblNgaySinh control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.SelectBox slbNam;
+        protected global::Ext.Net.Label lblNgaySinh;
         
         /// <summary>
-        /// stoNam control.
+        /// lblDonViCu control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.Store stoNam;
+        protected global::Ext.Net.Label lblDonViCu;
         
         /// <summary>
-        /// slbKeHoachDG control.
+        /// lblPhongBanCu control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.SelectBox slbKeHoachDG;
-        
-        /// <summary>
-        /// stoKHDG control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Ext.Net.Store stoKHDG;
+        protected global::Ext.Net.Label lblPhongBanCu;
         
         /// <summary>
         /// slbDonVi control.
@@ -110,59 +101,5 @@ namespace BSCKPI.KPI.DiemCongTru {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::Ext.Net.Store stoPhong;
-        
-        /// <summary>
-        /// btnTinhDiem control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Ext.Net.Button btnTinhDiem;
-        
-        /// <summary>
-        /// btnIn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Ext.Net.Button btnIn;
-        
-        /// <summary>
-        /// grdDCTDG control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Ext.Net.GridPanel grdDCTDG;
-        
-        /// <summary>
-        /// stoDCTDG control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Ext.Net.Store stoDCTDG;
-        
-        /// <summary>
-        /// RowNumbererColumn1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Ext.Net.RowNumbererColumn RowNumbererColumn1;
-        
-        /// <summary>
-        /// Column2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Ext.Net.Column Column2;
     }
 }

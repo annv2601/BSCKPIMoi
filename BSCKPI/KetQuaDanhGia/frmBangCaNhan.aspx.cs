@@ -51,7 +51,7 @@ namespace BSCKPI.KetQuaDanhGia
             dKQ.KQ.Nam = Nam;
             dKQ.KQ.IDNhanVien = IDNhanVien;
             dKQ.KQ.NguoiTao = daPhien.NguoiDung.IDNhanVien.ToString();
-            dKQ.KhoiTaoNhanVienTuDonVi();
+            //dKQ.KhoiTaoNhanVienTuDonVi();
 
             daBangDanhGia dBDG = new daBangDanhGia();
             dBDG.Thang = rThang;

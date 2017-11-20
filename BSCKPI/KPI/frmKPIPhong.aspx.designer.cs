@@ -76,6 +76,33 @@ namespace BSCKPI.KPI {
         protected global::Ext.Net.Store stoDonVi;
         
         /// <summary>
+        /// slbPhongBan control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.SelectBox slbPhongBan;
+        
+        /// <summary>
+        /// stoPhong control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Store stoPhong;
+        
+        /// <summary>
+        /// chkChiChon control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Checkbox chkChiChon;
+        
+        /// <summary>
         /// btnCapNhatMTNam control.
         /// </summary>
         /// <remarks>

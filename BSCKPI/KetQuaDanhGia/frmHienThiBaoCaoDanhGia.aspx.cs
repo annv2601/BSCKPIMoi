@@ -412,7 +412,7 @@ namespace BSCKPI.KPI
 
             CrystalReportViewer1.ReportSource = rptDGTongHop;
         }
-             
+        
         #endregion
     }
 }

@@ -8,6 +8,7 @@ using DaoBSCKPI.KeHoachDanhGia;
 using DaoBSCKPI.DiemCongTru;
 using DaoBSCKPI.KetQuaDanhGia;
 using DaoBSCKPI;
+using DaoBSCKPI.DonVi;
 
 using Ext.Net;
 using BSCKPI.UIHelper;
@@ -20,6 +21,7 @@ namespace BSCKPI.KPI.DiemCongTru
             if(!X.IsAjaxRequest)
             {
                 DanhSachThangNam();
+                DanhSachDonVi(DateTime.Now, daPhien.NguoiDung.IDDonVi.Value);
                 DanhSachKeHoachDG();
             }
         }
@@ -33,6 +35,15 @@ namespace BSCKPI.KPI.DiemCongTru
 
             stoNam.DataSource = dTS.DanhSachNam();
             stoNam.DataBind();
+        }
+
+        private void DanhSachDonVi(DateTime rNgay, int rIDDVQL)
+        {
+            daMoHinhDonVi dMHDV = new daMoHinhDonVi();
+            dMHDV.MHDV.TuNgay = rNgay;
+            dMHDV.MHDV.IDDonViQuanLy = rIDDVQL;
+            stoDonVi.DataSource = dMHDV.DanhSach();
+            stoDonVi.DataBind();
         }
 
         private void DanhSachKeHoachDG()
@@ -71,11 +82,26 @@ namespace BSCKPI.KPI.DiemCongTru
             daDiemCongTruDanhGia dDCT = new daDiemCongTruDanhGia();
             dDCT.DCTDG.Thang = byte.Parse(slbThang.SelectedItem.Value);
             dDCT.DCTDG.Nam = int.Parse(slbNam.SelectedItem.Value);
-            
-            stoDCTDG.DataSource = dDCT.DanhSach(int.Parse(slbKeHoachDG.SelectedItem.Value));
+
+            if (slbDonVi.SelectedItem.Value == null)
+            {
+                stoDCTDG.DataSource = dDCT.DanhSachDonVi(int.Parse(slbDonVi.SelectedItem.Value),int.Parse(slbPhongBan.SelectedItem.Value));
+            }
+            else
+            {
+                stoDCTDG.DataSource = dDCT.DanhSach(int.Parse(slbKeHoachDG.SelectedItem.Value));
+            }
             stoDCTDG.DataBind();
         }
-        
+
+        protected void DanhSachPhongBan(object sender, StoreReadDataEventArgs e)
+        {
+            daMoHinhPhongBan dMHPB = new daMoHinhPhongBan();
+            dMHPB.MHPB.TuNgay = DateTime.Now;
+            dMHPB.MHPB.IDDonVi = int.Parse(slbDonVi.SelectedItem.Value);
+            stoPhong.DataSource = dMHPB.DanhSachDDL();
+            stoPhong.DataBind();
+        }
 
         [DirectMethod(Namespace = "BangDCTDGX")]
         public void Edit(int id, string field, string oldvalue, string newvalue, object BangPB)
