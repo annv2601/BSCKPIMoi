@@ -182,6 +182,80 @@ namespace BSCKPI.KPI
                 ucNV1.Ma = dNVu.NVu.Ma;
             }
         }
+
+
+        protected void mnuitmXoa_Click(object sender, DirectEventArgs e)
+        {
+            string json = e.ExtraParams["Values"];
+            if (json == "")
+            {
+                return;
+            }
+            Dictionary<string, string>[] companies = JSON.Deserialize<Dictionary<string, string>[]>(json);           
+            foreach (Dictionary<string, string> row in companies)
+            {
+                try
+                {
+                    txtIDNV.Text = row["ID"].ToString();
+                }
+                catch
+                {
+                    txtIDNV.Text = "0";
+                }
+            }
+            if (txtIDNV.Text=="0")
+            {
+                X.Msg.Show(new MessageBoxConfig
+                {
+                    Title = "Thông báo",
+                    Message = "Đề nghị phải chọn một công việc trước khi xóa",
+                    Buttons = MessageBox.Button.OK,
+                    Icon = (MessageBox.Icon)Enum.Parse(typeof(MessageBox.Icon), "WARNING")
+                });
+            }
+            else
+            {
+                X.MessageBox.Confirm("Xóa Công việc", "Anh chị có chắc chắn muốn XÓA Công việc này không?", new MessageBoxButtonsConfig
+                {
+                    Yes = new MessageBoxButtonConfig
+                    {
+                        Handler = "App.direct.DoYes()",
+                        Text = "Đồng ý Xóa"
+                    },
+                    No = new MessageBoxButtonConfig
+                    {
+                        Handler = "App.direct.DoNo()",
+                        Text = "Hủy bỏ"
+                    }
+                }).Show();
+            }
+        }
+
+        [DirectMethod]
+        public void DoYes()
+        {
+            daNhiemVuTrongTam dNV = new daNhiemVuTrongTam();
+            dNV.NVu.Thang = byte.Parse(slbThang.SelectedItem.Value);
+            dNV.NVu.Nam = int.Parse(slbNam.SelectedItem.Value);
+            dNV.NVu.ID = int.Parse(txtIDNV.Text);
+            dNV.Xoa();
+            stoNV.Reload();
+            txtIDNV.Text = "0";
+
+            X.Msg.Show(new MessageBoxConfig
+            {
+                Title = "Hoàn thành",
+                Message = "Đã XÓA công việc thành công",
+                Buttons = MessageBox.Button.OK,
+                Icon = (MessageBox.Icon)Enum.Parse(typeof(MessageBox.Icon), "ERROR")
+            });
+        }
+
+        [DirectMethod]
+        public void DoNo()
+        {
+            txtIDNV.Text = "0";
+        }
         #endregion
     }
 }

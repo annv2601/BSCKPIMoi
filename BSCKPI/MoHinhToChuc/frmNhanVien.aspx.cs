@@ -21,7 +21,8 @@ namespace BSCKPI.MoHinhToChuc
             if(!X.IsAjaxRequest)
             {
                 DanhSachThangNam();
-                DanhSachDonVi(DateTime.Now,daPhien.NguoiDung.IDDonVi.Value);
+                //DanhSachDonVi(DateTime.Now,daPhien.NguoiDung.IDDonVi.Value);
+                DanhSachDonViPhanCap(DateTime.Now, daPhien.NguoiDung.IDDonVi.Value);
             }
         }
 
@@ -43,6 +44,17 @@ namespace BSCKPI.MoHinhToChuc
             dMHDV.MHDV.IDDonViQuanLy = rIDDVQL;
             stoDonVi.DataSource = dMHDV.DanhSach();
             stoDonVi.DataBind();
+        }
+
+        private void DanhSachDonViPhanCap(DateTime rNgay, int rIDDVQL)
+        {
+            daMoHinhDonVi dMH = new daMoHinhDonVi();
+            DataTable dt = dMH.DanhSachMHDV(rIDDVQL, rNgay);
+            DataTable dt2 = dt;
+            stoDonVi.DataSource = dt;
+            stoDonVi.DataBind();
+
+            ucCDV1.DanhSachGanDonVi(dt2);
         }
         #endregion
 
@@ -178,6 +190,22 @@ namespace BSCKPI.MoHinhToChuc
 
             ucNV1.KhoiTao();
         }
+
+        protected void btnCapNhatCDV_Click(object sender, DirectEventArgs e)
+        {
+            daThongTinNhanVien dTTNV = new daThongTinNhanVien();
+            dTTNV.TTNV.Thang = byte.Parse(slbThang.SelectedItem.Value);
+            dTTNV.TTNV.Nam = int.Parse(slbNam.SelectedItem.Value);
+            dTTNV.TTNV.NguoiTao = daPhien.NguoiDung.IDNhanVien.ToString();
+            dTTNV.TTNV.IDNhanVien = ucCDV1.IDNhanVien;
+            dTTNV.TTNV.IDDonVi = ucCDV1.IDDonViMoi;
+            dTTNV.TTNV.IDPhongBan = ucCDV1.IDPhongBanMoi;
+            dTTNV.ChuyenDonVi();
+            stoNhanVien.Reload();
+            ucCDV1.KhoiTao();
+            wChuyenDonVi.Hide();
+            X.Msg.Alert("","Đã chuyển đơn vị làm việc cho lao động xong!").Show();
+        }
         #endregion
 
         #region Su kien menu
@@ -305,6 +333,50 @@ namespace BSCKPI.MoHinhToChuc
             ucNV1.IDNhanVien = Guid.Empty;
         }
 
+        protected void mnuitmChuyenDonVi_Click(object sender, DirectEventArgs e)
+        {
+            string json = e.ExtraParams["Values"];
+            if (json == "")
+            {
+                return;
+            }
+            Dictionary<string, string>[] companies = JSON.Deserialize<Dictionary<string, string>[]>(json);
+            ucNV1.IDNhanVien = Guid.Empty;
+            foreach (Dictionary<string, string> row in companies)
+            {
+                try
+                {
+                    ucCDV1.IDNhanVien = Guid.Parse(row["IDNhanVien"].ToString());
+                    ucCDV1.TenNhanVien = row["TenNhanVien"].ToString();
+                    ucCDV1.NgaySinh = DateTime.Parse(row["NgaySinh"].ToString()).ToString("dd/MM/yyyy");                    
+                }
+                catch
+                {
+                    ucCDV1.IDNhanVien = Guid.Empty;
+                }
+            }
+            if (ucCDV1.IDNhanVien == Guid.Empty)
+            {
+                X.Msg.Show(new MessageBoxConfig
+                {
+                    Title = "Thông báo",
+                    Message = "Đề nghị phải chọn một nhân viên trước khi Chuyển đơn vị làm việc",
+                    Buttons = MessageBox.Button.OK,
+                    Icon = (MessageBox.Icon)Enum.Parse(typeof(MessageBox.Icon), "WARNING")
+                });
+            }
+            else
+            {
+                daThongTinNhanVien dTTNV = new daThongTinNhanVien();
+                dTTNV.TTNV.Thang = byte.Parse(slbThang.SelectedItem.Value);
+                dTTNV.TTNV.Nam = int.Parse(slbNam.SelectedItem.Value);
+                dTTNV.TTNV.IDNhanVien = ucCDV1.IDNhanVien;
+                dTTNV.ThongTinTen();
+                ucCDV1.DonViCu = dTTNV.TTNVTen.DonVi;
+                ucCDV1.PhongBanCu = dTTNV.TTNVTen.PhongBan;
+                wChuyenDonVi.Show();
+            }
+        }
         #endregion
     }
 }

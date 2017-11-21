@@ -12,6 +12,7 @@ namespace DaoBSCKPI.DonVi
     {
         private linqMoHinhDonViDataContext lmhdv = new linqMoHinhDonViDataContext();
         private sp_tblMoHinhDonVi_ThongTinResult _MHDV = new sp_tblMoHinhDonVi_ThongTinResult();
+        private List<sp_tblDonVi_ThongTinResult> lstMHDV = new List<sp_tblDonVi_ThongTinResult>();
 
         public sp_tblMoHinhDonVi_ThongTinResult MHDV { get => _MHDV; set => _MHDV = value; }
 
@@ -45,18 +46,65 @@ namespace DaoBSCKPI.DonVi
             return daDatatableVaList.ToDataTable(lst);
         }
 
-        private List<sp_tblMoHinhDonVi_DanhSachResult> lstDSCon(int rIDDVQL, DateTime rNgay)
+        public List<sp_tblMoHinhDonVi_DanhSachResult> lstPhanCap(int rIDDVQL, DateTime rNgay)
         {
             List<sp_tblMoHinhDonVi_DanhSachResult> lstCon;
             lstCon = lmhdv.sp_tblMoHinhDonVi_DanhSach(rIDDVQL, rNgay,false).ToList();
             return lstCon;
         }
-
-        /*public DataTable DanhSachPhanCap()
+        
+        private void lstChon(int rIDDVQL, DateTime rNgay, int rMuc, string rTenTat)
         {
-            List<sp_tblMoHinhDonVi_DanhSachResult> lst;
-            lst = lmhdv.sp_tblMoHinhDonVi_DanhSach(MHDV.IDDonViQuanLy, MHDV.TuNgay).ToList();
-            return daDatatableVaList.ToDataTable(lst);
-        }*/
+            List<sp_tblMoHinhDonVi_DanhSachResult> lstCon;
+            lstCon = lmhdv.sp_tblMoHinhDonVi_DanhSach(rIDDVQL, rNgay, false).ToList();
+            daDonVi dDV = new daDonVi();
+            dDV.DV.ID = rIDDVQL;
+            dDV.ThongTin();
+            string _Dau="";
+            switch(rMuc)
+            {
+                case 0:
+                    _Dau = "";
+                    break;
+                case 1:
+                    _Dau = "--";
+                    break;
+                case 2:
+                    _Dau = "----";
+                    break;
+                case 3:
+                    _Dau = "------";
+                    break;
+                case 4:
+                    _Dau = "--------";
+                    break;
+                case 5:
+                    _Dau = "----------";
+                    break;
+                case 6:
+                    _Dau = "------------";
+                    break;
+            }
+            rTenTat = rTenTat == "" ? "" : (rTenTat + "/ ");
+            dDV.DV.Ten = _Dau + " "+rTenTat + dDV.DV.Ten + " : " + dDV.DV.ID.ToString();
+            if (lstCon.Count==0)
+            {   
+                lstMHDV.Add(dDV.DV);                
+            }
+            else
+            {
+                lstMHDV.Add(dDV.DV);
+                foreach (sp_tblMoHinhDonVi_DanhSachResult pt in lstCon)
+                {
+                    lstChon(pt.IDDonVi, rNgay,rMuc+1,dDV.DV.TenTat);
+                }
+            }
+        }
+
+        public DataTable DanhSachMHDV(int rIDDVQL, DateTime rNgay)
+        {
+            lstChon(rIDDVQL, rNgay,0,"");
+            return daDatatableVaList.ToDataTable(lstMHDV);
+        }
     }
 }

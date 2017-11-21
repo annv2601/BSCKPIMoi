@@ -34,6 +34,11 @@ namespace DaoBSCKPI.CongViec
                 NVu.IDDonViTinh, NVu.IDXuHuongYeuCau, NVu.IDTrangThai, NVu.NguoiTao);
         }
 
+        public void Xoa()
+        {
+            lNV.sp_tblcvNhiemVuTrongTam_Xoa(NVu.ID, NVu.Thang, NVu.Nam);
+        }
+
         public DataTable DanhSach()
         {
             List<sp_tblcvNhiemVuTrongTam_DanhSachResult> lst;

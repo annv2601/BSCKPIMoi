@@ -83,9 +83,16 @@ namespace BSCKPI.KPI.DiemCongTru
             dDCT.DCTDG.Thang = byte.Parse(slbThang.SelectedItem.Value);
             dDCT.DCTDG.Nam = int.Parse(slbNam.SelectedItem.Value);
 
-            if (slbDonVi.SelectedItem.Value == null)
+            if (slbDonVi.SelectedItem.Value != null)
             {
-                stoDCTDG.DataSource = dDCT.DanhSachDonVi(int.Parse(slbDonVi.SelectedItem.Value),int.Parse(slbPhongBan.SelectedItem.Value));
+                if (slbPhongBan.SelectedItem.Value != null)
+                {
+                    stoDCTDG.DataSource = dDCT.DanhSachDonVi(int.Parse(slbDonVi.SelectedItem.Value), int.Parse(slbPhongBan.SelectedItem.Value));
+                }
+                else
+                {
+                    return;
+                }
             }
             else
             {

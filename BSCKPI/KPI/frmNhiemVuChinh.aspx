@@ -10,7 +10,25 @@
 <body>
     <ext:ResourceManager runat="server" Locale="vi-VN"/>
     <form id="form1" runat="server">
-        <ext:GridPanel runat="server" ID="grdNV"
+        <ext:Hidden runat="server" ID="txtIDNV" />
+        <ext:Menu runat="server" ID="mnuNVTT">
+            <Items>
+                <ext:MenuItem runat="server" ID="mnuitmXoa" Text="Xóa Công việc được phân công" Icon="Delete">
+                    <DirectEvents>
+                        <Click OnEvent="mnuitmXoa_Click">
+                            <ExtraParams>
+                                <ext:Parameter
+                                    Name="Values"
+                                    Value="#{grdNV}.getRowsValues({ selectedOnly : true })"
+                                    Mode="Raw"
+                                    Encode="true" />
+                            </ExtraParams>
+                        </Click>
+                    </DirectEvents>                    
+                </ext:MenuItem>
+            </Items>
+        </ext:Menu>
+        <ext:GridPanel runat="server" ID="grdNV" ContextMenuID="mnuNVTT"
             Title="Nhiệm vụ trọng tâm" TitleAlign="Center" MinHeight="500">
             <Store>
                 <ext:Store runat="server" ID="stoNV" OnReadData="DanhSachNVTTam">

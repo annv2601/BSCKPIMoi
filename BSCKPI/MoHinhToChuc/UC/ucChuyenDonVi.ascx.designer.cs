@@ -67,13 +67,13 @@ namespace BSCKPI.MoHinhToChuc.UC {
         protected global::Ext.Net.Label lblPhongBanCu;
         
         /// <summary>
-        /// slbDonVi control.
+        /// slbDonViCDV control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.SelectBox slbDonVi;
+        protected global::Ext.Net.ComboBox slbDonViCDV;
         
         /// <summary>
         /// stoDonVi control.
@@ -85,21 +85,21 @@ namespace BSCKPI.MoHinhToChuc.UC {
         protected global::Ext.Net.Store stoDonVi;
         
         /// <summary>
-        /// slbPhongBan control.
+        /// slbPhongBanCDV control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.SelectBox slbPhongBan;
+        protected global::Ext.Net.SelectBox slbPhongBanCDV;
         
         /// <summary>
-        /// stoPhong control.
+        /// stoPhongCDV control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.Store stoPhong;
+        protected global::Ext.Net.Store stoPhongCDV;
     }
 }

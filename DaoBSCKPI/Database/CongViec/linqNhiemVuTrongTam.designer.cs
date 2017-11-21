@@ -82,6 +82,13 @@ namespace DaoBSCKPI.Database.CongViec
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), thang, nam, iDDonVi, iDPhongBan);
 			return ((ISingleResult<sp_tblcvNhiemVuTrongTam_DanhSachResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_tblcvNhiemVuTrongTam_Xoa")]
+		public int sp_tblcvNhiemVuTrongTam_Xoa([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID", DbType="Int")] System.Nullable<int> iD, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Thang", DbType="SmallInt")] System.Nullable<short> thang, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nam", DbType="Int")] System.Nullable<int> nam)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD, thang, nam);
+			return ((int)(result.ReturnValue));
+		}
 	}
 	
 	public partial class sp_tblcvNhiemVuTrongTam_ThongTinResult

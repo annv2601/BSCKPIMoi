@@ -76,6 +76,24 @@ namespace BSCKPI.KPI.DiemCongTru {
         protected global::Ext.Net.Store stoKHDG;
         
         /// <summary>
+        /// btnTinhDiem control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Button btnTinhDiem;
+        
+        /// <summary>
+        /// btnIn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Button btnIn;
+        
+        /// <summary>
         /// slbDonVi control.
         /// </summary>
         /// <remarks>
@@ -110,24 +128,6 @@ namespace BSCKPI.KPI.DiemCongTru {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::Ext.Net.Store stoPhong;
-        
-        /// <summary>
-        /// btnTinhDiem control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Ext.Net.Button btnTinhDiem;
-        
-        /// <summary>
-        /// btnIn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Ext.Net.Button btnIn;
         
         /// <summary>
         /// grdDCTDG control.

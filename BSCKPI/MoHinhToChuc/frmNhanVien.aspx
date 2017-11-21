@@ -1,5 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="frmNhanVien.aspx.cs" Inherits="BSCKPI.MoHinhToChuc.frmNhanVien" %>
 <%@ Register Src="~/MoHinhToChuc/UC/ucNhanVien.ascx" TagName="NV" TagPrefix="UC" %>
+<%@ Register Src="~/MoHinhToChuc/UC/ucChuyenDonVi.ascx" TagName="DV" TagPrefix="UC" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -16,7 +17,7 @@
         <ext:FieldContainer runat="server" Layout="HBoxLayout" MarginSpec="10 0 0 0">
             <Items>
                 <ext:SelectBox runat="server" ID="slbThang" 
-                            EmptyText="Tháng ...." DisplayField="Ten" ValueField="ID" MarginSpec="0 0 0 10">
+                            EmptyText="Tháng ...." DisplayField="Ten" ValueField="ID" MarginSpec="0 0 0 10" Width="120">
                     <ListConfig MaxHeight="500">                       
                    </ListConfig>
                             <Listeners>
@@ -35,7 +36,7 @@
                                 </ext:Store>
                             </Store>
                         </ext:SelectBox>
-                        <ext:SelectBox runat="server" ID="slbNam" QueryMode="Local" TypeAhead="true"
+                        <ext:SelectBox runat="server" ID="slbNam" QueryMode="Local" TypeAhead="true" Width="120"
                             EmptyText="Năm ...." DisplayField="Ten" ValueField="ID" MarginSpec="0 0 0 10" RenderXType="true">
                             <Listeners>
                                 <Select Handler="#{stoNhanVien}.reload();" />
@@ -53,14 +54,14 @@
                                 </ext:Store>
                             </Store>
                         </ext:SelectBox>
-                <ext:SelectBox runat="server" ID="slbDonVi" DisplayField="Ten" ValueField="IDDonVi" EmptyText="Chọn đơn vị" MarginSpec="0 0 0 10" Width="200">
+                <ext:SelectBox runat="server" ID="slbDonVi" DisplayField="Ten" ValueField="ID" EmptyText="Chọn đơn vị" MarginSpec="0 0 0 10" Width="350">
                             <Listeners>
                                 <Select Handler="#{stoPhong}.reload();#{stoNhanVien}.reload();" />
                             </Listeners>
                             <Store>
                                 <ext:Store runat="server" ID="stoDonVi">
                                     <Fields>
-                                        <ext:ModelField Name="IDDonVi" />
+                                        <ext:ModelField Name="ID" />
                                         <ext:ModelField Name="Ten" />
                                     </Fields>
                                 </ext:Store>
@@ -92,6 +93,19 @@
                 <ext:MenuItem runat="server" ID="mnuitemThongTin" Text="Thông tin Nhân viên" Icon="Information">
                     <DirectEvents>
                         <Click OnEvent="mnuitemThongTin_Click">
+                            <ExtraParams>
+                                <ext:Parameter
+                                    Name="Values"
+                                    Value="#{vNhanVien}.getRowsValues({ selectedOnly : true })"
+                                    Mode="Raw"
+                                    Encode="true" />
+                            </ExtraParams>
+                        </Click>
+                    </DirectEvents>
+                </ext:MenuItem>
+                <ext:MenuItem runat="server" ID="mnuitmChuyenDonVi" Text="Chuyển đơn vị làm việc" Icon="TransmitEdit">
+                    <DirectEvents>
+                        <Click OnEvent="mnuitmChuyenDonVi_Click">
                             <ExtraParams>
                                 <ext:Parameter
                                     Name="Values"
@@ -185,6 +199,29 @@
                 <ext:Button runat="server" ID="btnDongCSNV" Icon="Cross" Text="Đóng">
                     <Listeners>
                         <Click Handler="#{wNhanVien}.hide();#{stoNhanVien}.reload();" />
+                    </Listeners>
+                </ext:Button>
+            </Buttons>
+        </ext:Window>
+
+        <ext:Window runat="server" ID="wChuyenDonVi" Width="460" Height="400" ButtonAlign="Center" Hidden="true"
+            Icon="TransmitEdit" TitleAlign="Center" Title="Chuyển đơn vị làm việc">
+            <Items>
+                <ext:Panel runat="server" Header="false" Layout="FitLayout" Closable="false">
+                    <Content>
+                        <uc:DV ID="ucCDV1" runat="server" Title="" />
+                    </Content>
+                </ext:Panel>
+            </Items>
+            <Buttons>
+                <ext:Button runat="server" ID="btnCapNhatCDV" Text="Cập nhật" Icon="Accept">
+                    <DirectEvents>
+                        <Click OnEvent="btnCapNhatCDV_Click" />
+                    </DirectEvents>
+                </ext:Button>
+                <ext:Button runat="server" ID="Button2" Icon="Cross" Text="Đóng">
+                    <Listeners>
+                        <Click Handler="#{wChuyenDonVi}.hide();#{stoNhanVien}.reload();" />
                     </Listeners>
                 </ext:Button>
             </Buttons>

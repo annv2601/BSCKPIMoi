@@ -66,6 +66,24 @@
                         </ext:Store>
                     </Store>
                 </ext:SelectBox>   
+                <ext:Button runat="server" ID="btnTinhDiem" Text="Tính và xếp loại" Icon="CalculatorLink" Width="150" UI="Success" MarginSpec="0 0 0 10">
+                    <DirectEvents>
+                        <Click OnEvent="btnTinhDiem_Click">
+                            <EventMask ShowMask="true" Msg="Đang tính toán....." />
+                        </Click>
+                    </DirectEvents>
+                </ext:Button>
+                <ext:Button runat="server" ID="btnIn" Text="In Tổng hợp" Icon="Printer" Width="150" UI="Success" MarginSpec="0 0 0 10">
+                    <DirectEvents>
+                        <Click OnEvent="btnIn_Click">
+                            <EventMask ShowMask="true" Msg="....." />
+                        </Click>
+                    </DirectEvents>
+                </ext:Button>
+            </Items>
+        </ext:FieldContainer>
+        <ext:FieldContainer runat="server" Layout="HBoxLayout" MarginSpec="10 0 0 0">
+            <Items>
                 <ext:SelectBox runat="server" ID="slbDonVi" DisplayField="Ten" ValueField="IDDonVi" EmptyText="Chọn đơn vị" MarginSpec="0 0 0 10" Width="300">
                             <Listeners>
                                 <Select Handler="#{stoPhong}.reload();#{stoDCTDG}.reload();" />
@@ -92,24 +110,7 @@
                                     </ext:Store>
                                 </Store>
                             </ext:SelectBox>
-            </Items>
-        </ext:FieldContainer>
-        <ext:FieldContainer runat="server" Layout="HBoxLayout" MarginSpec="10 0 0 20">
-            <Items>
-                <ext:Button runat="server" ID="btnTinhDiem" Text="Tính và xếp loại" Icon="CalculatorLink" Width="150" UI="Success" MarginSpec="0 0 0 10">
-                    <DirectEvents>
-                        <Click OnEvent="btnTinhDiem_Click">
-                            <EventMask ShowMask="true" Msg="Đang tính toán....." />
-                        </Click>
-                    </DirectEvents>
-                </ext:Button>
-                <ext:Button runat="server" ID="btnIn" Text="In Tổng hợp" Icon="Printer" Width="150" UI="Success" MarginSpec="0 0 0 10">
-                    <DirectEvents>
-                        <Click OnEvent="btnIn_Click">
-                            <EventMask ShowMask="true" Msg="....." />
-                        </Click>
-                    </DirectEvents>
-                </ext:Button>
+                
             </Items>
         </ext:FieldContainer>
 

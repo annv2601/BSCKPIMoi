@@ -264,6 +264,8 @@ namespace DaoBSCKPI.Database.DonVi
 		
 		private string _NguoiTao;
 		
+		private bool _DonViQuanLy;
+		
 		public sp_tblMoHinhDonVi_DanhSachResult()
 		{
 		}
@@ -408,6 +410,22 @@ namespace DaoBSCKPI.Database.DonVi
 				if ((this._NguoiTao != value))
 				{
 					this._NguoiTao = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DonViQuanLy", DbType="Bit NOT NULL")]
+		public bool DonViQuanLy
+		{
+			get
+			{
+				return this._DonViQuanLy;
+			}
+			set
+			{
+				if ((this._DonViQuanLy != value))
+				{
+					this._DonViQuanLy = value;
 				}
 			}
 		}

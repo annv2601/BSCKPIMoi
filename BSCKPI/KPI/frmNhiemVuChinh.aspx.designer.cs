@@ -22,6 +22,33 @@ namespace BSCKPI.KPI {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// txtIDNV control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Hidden txtIDNV;
+        
+        /// <summary>
+        /// mnuNVTT control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Menu mnuNVTT;
+        
+        /// <summary>
+        /// mnuitmXoa control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.MenuItem mnuitmXoa;
+        
+        /// <summary>
         /// grdNV control.
         /// </summary>
         /// <remarks>
