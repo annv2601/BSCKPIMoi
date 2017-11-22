@@ -138,6 +138,7 @@
     <Content Include="MoHinhToChuc\frmNhanVien.aspx" />
     <Content Include="MoHinhToChuc\UC\ucChuyenDonVi.ascx" />
     <Content Include="MoHinhToChuc\UC\ucNhanVien.ascx" />
+    <Content Include="NguoiDung\frmQuanTriNguoiDung.aspx" />
     <Content Include="resource\css\DataView.css" />
     <Content Include="resource\css\examples.css" />
     <Content Include="resource\css\main.css" />
@@ -372,6 +373,13 @@
     </Compile>
     <Compile Include="MoHinhToChuc\UC\ucNhanVien.ascx.designer.cs">
       <DependentUpon>ucNhanVien.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="NguoiDung\frmQuanTriNguoiDung.aspx.cs">
+      <DependentUpon>frmQuanTriNguoiDung.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NguoiDung\frmQuanTriNguoiDung.aspx.designer.cs">
+      <DependentUpon>frmQuanTriNguoiDung.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Test.aspx.cs">

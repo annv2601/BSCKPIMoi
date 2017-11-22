@@ -56,7 +56,7 @@
                         </ext:SelectBox>
                 <ext:SelectBox runat="server" ID="slbDonVi" DisplayField="Ten" ValueField="ID" EmptyText="Chọn đơn vị" MarginSpec="0 0 0 10" Width="350">
                             <Listeners>
-                                <Select Handler="#{stoPhong}.reload();#{stoNhanVien}.reload();" />
+                                <Select Handler="#{stoPhong}.reload();#{stoNhanVien}.reload();" />                                
                             </Listeners>
                             <Store>
                                 <ext:Store runat="server" ID="stoDonVi">
@@ -119,6 +119,20 @@
                 <ext:MenuItem runat="server" ID="mnuitemNhanVienXoa" Text="Xóa Nhân viên nhập sai" Icon="Delete">
                     <DirectEvents>
                         <Click OnEvent="mnuitemNhanVienXoa_Click">
+                            <ExtraParams>
+                                <ext:Parameter
+                                    Name="Values"
+                                    Value="#{vNhanVien}.getRowsValues({ selectedOnly : true })"
+                                    Mode="Raw"
+                                    Encode="true" />
+                            </ExtraParams>
+                        </Click>
+                    </DirectEvents>
+                </ext:MenuItem>
+                <ext:MenuSeparator />
+                <ext:MenuItem runat="server" ID="mnuitmQuanLyTruyNhap" Text="Quản lý truy nhập" Icon="DiskMultiple">
+                    <DirectEvents>
+                        <Click OnEvent="mnuitmQuanLyTruyNhap_Click">
                             <ExtraParams>
                                 <ext:Parameter
                                     Name="Values"

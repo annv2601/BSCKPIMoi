@@ -139,6 +139,15 @@ namespace BSCKPI.MoHinhToChuc {
         protected global::Ext.Net.MenuItem mnuitemNhanVienXoa;
         
         /// <summary>
+        /// mnuitmQuanLyTruyNhap control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.MenuItem mnuitmQuanLyTruyNhap;
+        
+        /// <summary>
         /// vNhanVien control.
         /// </summary>
         /// <remarks>

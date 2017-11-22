@@ -17,7 +17,7 @@ namespace BSCKPI.MoHinhToChuc.UC
         {
             if(!X.IsAjaxRequest)
             {
-                DanhSachDonVi(daPhien.NguoiDung.IDDonVi.Value, DateTime.Now);
+                //DanhSachDonVi(daPhien.NguoiDung.IDDonVi.Value, DateTime.Now);
             }
         }
 

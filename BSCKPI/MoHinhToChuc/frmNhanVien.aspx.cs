@@ -21,12 +21,18 @@ namespace BSCKPI.MoHinhToChuc
             if(!X.IsAjaxRequest)
             {
                 DanhSachThangNam();
-                //DanhSachDonVi(DateTime.Now,daPhien.NguoiDung.IDDonVi.Value);
-                DanhSachDonViPhanCap(DateTime.Now, daPhien.NguoiDung.IDDonVi.Value);
+                DanhSachDonVi(DateTime.Now,daPhien.NguoiDung.IDDonVi.Value);
+                //DanhSachDonViPhanCap(DateTime.Now, daPhien.NguoiDung.IDDonVi.Value);
             }
         }
 
         #region Rieng
+        private Guid IDNhanVienTruyNhap
+        {
+            get { return Session["IDNhanVienTruyNhapQLy"]==null?Guid.Empty:(Guid)Session["IDNhanVienTruyNhapQLy"]; }
+            set { Session["IDNhanVienTruyNhapQLy"] = value; }
+        }
+
         private void DanhSachThangNam()
         {
             daThamSo dTS = new daThamSo();
@@ -42,8 +48,14 @@ namespace BSCKPI.MoHinhToChuc
             daMoHinhDonVi dMHDV = new daMoHinhDonVi();
             dMHDV.MHDV.TuNgay = rNgay;
             dMHDV.MHDV.IDDonViQuanLy = rIDDVQL;
-            stoDonVi.DataSource = dMHDV.DanhSach();
+            DataTable dt= dMHDV.DanhSach();
+            dt.Columns["IDDonVi"].ColumnName = "ID";
+            dt.Rows.Add(999999,"--- Hiện cả đơn vị dưới ---",0,9999,DateTime.Now,DateTime.Now,"", DateTime.Now,"");
+            stoDonVi.DataSource = dt;
             stoDonVi.DataBind();
+
+            DataTable dt2 = dt;
+            ucCDV1.DanhSachGanDonVi(dt2);
         }
 
         private void DanhSachDonViPhanCap(DateTime rNgay, int rIDDVQL)
@@ -55,6 +67,28 @@ namespace BSCKPI.MoHinhToChuc
             stoDonVi.DataBind();
 
             ucCDV1.DanhSachGanDonVi(dt2);
+        }
+
+        private Ext.Net.Window TaoCuaSo(string rTieuDe, string Url)
+        {
+            Ext.Net.Window _CSo = new Ext.Net.Window();
+            ComponentLoader _Loader = new ComponentLoader();
+            _Loader.Url = Url; //daPhien.LayDiaChiURL(Url);
+            _Loader.Mode = LoadMode.Frame;
+            _Loader.LoadMask.ShowMask = true;
+            _Loader.LoadMask.Msg = "Đang xử lý .....";
+
+            _CSo.ID = "wQLTruyNhap";
+            _CSo.Title = rTieuDe;
+            _CSo.TitleAlign = TitleAlign.Center;
+            _CSo.AutoRender = true;
+            _CSo.Maximizable = false;
+            _CSo.Icon = Icon.DiskMultiple;
+            _CSo.Width = 810;
+            _CSo.Height = 560;
+            _CSo.Loader = _Loader;
+
+            return _CSo;
         }
         #endregion
 
@@ -80,12 +114,22 @@ namespace BSCKPI.MoHinhToChuc
 
         protected void DanhSachPhongBan(object sender, StoreReadDataEventArgs e)
         {
+            if (slbDonVi.SelectedItem.Value== "999999")
+            {
+                DanhSachDonViPhanCap(DateTime.Now, daPhien.NguoiDung.IDDonVi.Value);
+                slbDonVi.SelectedItems.Clear();
+                slbDonVi.UpdateSelectedItems();
+
+                slbPhongBan.SelectedItems.Clear();
+                slbPhongBan.UpdateSelectedItems();
+                return;
+            }
             daMoHinhPhongBan dMHPB = new daMoHinhPhongBan();
             dMHPB.MHPB.TuNgay = DateTime.Now;
             dMHPB.MHPB.IDDonVi = int.Parse(slbDonVi.SelectedItem.Value);
             stoPhong.DataSource = dMHPB.DanhSachDDL();
             stoPhong.DataBind();
-        }
+        }        
         #endregion
 
         #region Su kien Nut bam
@@ -375,6 +419,45 @@ namespace BSCKPI.MoHinhToChuc
                 ucCDV1.DonViCu = dTTNV.TTNVTen.DonVi;
                 ucCDV1.PhongBanCu = dTTNV.TTNVTen.PhongBan;
                 wChuyenDonVi.Show();
+            }
+        }
+
+        protected void mnuitmQuanLyTruyNhap_Click(object sender, DirectEventArgs e)
+        {
+            string json = e.ExtraParams["Values"];
+            if (json == "")
+            {
+                return;
+            }
+            Dictionary<string, string>[] companies = JSON.Deserialize<Dictionary<string, string>[]>(json);
+            
+            foreach (Dictionary<string, string> row in companies)
+            {
+                try
+                {
+                    IDNhanVienTruyNhap = Guid.Parse(row["IDNhanVien"].ToString());                    
+                }
+                catch
+                {
+                    IDNhanVienTruyNhap = Guid.Empty;
+                }
+            }
+            if (IDNhanVienTruyNhap == Guid.Empty)
+            {
+                X.Msg.Show(new MessageBoxConfig
+                {
+                    Title = "Thông báo",
+                    Message = "Đề nghị phải chọn một nhân viên trước khi cập nhật quyền truy nhập!",
+                    Buttons = MessageBox.Button.OK,
+                    Icon = (MessageBox.Icon)Enum.Parse(typeof(MessageBox.Icon), "WARNING")
+                });
+            }
+            else
+            {
+                Ext.Net.Window csTruyNhap;
+                csTruyNhap = TaoCuaSo("Quản lý truy nhập", daPhien.LayDiaChiURL("/NguoiDung/frmQuanTriNguoiDung.aspx"));
+                this.form1.Controls.Add(csTruyNhap);
+                csTruyNhap.Render();
             }
         }
         #endregion

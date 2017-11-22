@@ -225,6 +225,36 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>linqTrangThai.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Database\NguoiDung\linqDangNhap.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>linqDangNhap.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Database\NguoiDung\linqNguoiDungNhom.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>linqNguoiDungNhom.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Database\NguoiDung\linqNguoiDungQuyen.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>linqNguoiDungQuyen.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Database\NguoiDung\linqNhomTruyNhap.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>linqNhomTruyNhap.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Database\NguoiDung\linqQuyenNhomTruyNhap.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>linqQuyenNhomTruyNhap.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Database\NguoiDung\linqQuyenTruyNhap.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>linqQuyenTruyNhap.dbml</DependentUpon>
+    </Compile>
     <Compile Include="Database\NhanVien\linqNhanVien.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -271,6 +301,12 @@
     <Compile Include="KetQuaDanhGia\daKetQuaDanhGiaDonVi.cs" />
     <Compile Include="KetQuaDanhGia\daKetQuaDanhGiaKhongMucTieu.cs" />
     <Compile Include="Khac\daTrangThai.cs" />
+    <Compile Include="NguoiDung\daDangNhap.cs" />
+    <Compile Include="NguoiDung\daNguoiDungNhom.cs" />
+    <Compile Include="NguoiDung\daNguoiDungQuyen.cs" />
+    <Compile Include="NguoiDung\daNhomTruyNhap.cs" />
+    <Compile Include="NguoiDung\daQuyenNhomTruyNhap.cs" />
+    <Compile Include="NguoiDung\daQuyenTruyNhap.cs" />
     <Compile Include="NhanVien\daNhanVien.cs" />
     <Compile Include="NhanVien\daThongTinNhanVien.cs" />
     <Compile Include="PhanBoMucTieu\daPhanBoMucTieu.cs" />
@@ -542,6 +578,54 @@
     </None>
     <None Include="Database\Khac\linqTrangThai.dbml.layout">
       <DependentUpon>linqTrangThai.dbml</DependentUpon>
+    </None>
+    <None Include="Database\NguoiDung\linqDangNhap.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>linqDangNhap.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database\NguoiDung\linqDangNhap.dbml.layout">
+      <DependentUpon>linqDangNhap.dbml</DependentUpon>
+    </None>
+    <None Include="Database\NguoiDung\linqNguoiDungNhom.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>linqNguoiDungNhom.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database\NguoiDung\linqNguoiDungNhom.dbml.layout">
+      <DependentUpon>linqNguoiDungNhom.dbml</DependentUpon>
+    </None>
+    <None Include="Database\NguoiDung\linqNguoiDungQuyen.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>linqNguoiDungQuyen.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database\NguoiDung\linqNguoiDungQuyen.dbml.layout">
+      <DependentUpon>linqNguoiDungQuyen.dbml</DependentUpon>
+    </None>
+    <None Include="Database\NguoiDung\linqNhomTruyNhap.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>linqNhomTruyNhap.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database\NguoiDung\linqNhomTruyNhap.dbml.layout">
+      <DependentUpon>linqNhomTruyNhap.dbml</DependentUpon>
+    </None>
+    <None Include="Database\NguoiDung\linqQuyenNhomTruyNhap.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>linqQuyenNhomTruyNhap.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database\NguoiDung\linqQuyenNhomTruyNhap.dbml.layout">
+      <DependentUpon>linqQuyenNhomTruyNhap.dbml</DependentUpon>
+    </None>
+    <None Include="Database\NguoiDung\linqQuyenTruyNhap.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>linqQuyenTruyNhap.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database\NguoiDung\linqQuyenTruyNhap.dbml.layout">
+      <DependentUpon>linqQuyenTruyNhap.dbml</DependentUpon>
     </None>
     <None Include="Database\NhanVien\linqNhanVien.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>

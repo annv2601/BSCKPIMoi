@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BSCKPI" Class="linqNguoiDungQuyenDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=10.10.200.160;Initial Catalog=BSCKPI;Persist Security Info=True;User ID=chay" SettingsObjectName="DaoBSCKPI.Properties.Settings" SettingsPropertyName="BSCKPIConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.sp_tblHTNguoiDungQuyenTruyNhap_ThemSua" Method="sp_tblHTNguoiDungQuyenTruyNhap_ThemSua">
+    <Parameter Name="IDNhanVien" Parameter="iDNhanVien" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="IDQuyenTruyNhap" Parameter="iDQuyenTruyNhap" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDChucNang" Parameter="iDChucNang" Type="System.Int32" DbType="Int" />
+    <Parameter Name="NguoiTao" Parameter="nguoiTao" Type="System.String" DbType="NVarChar(30)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_tblHTNguoiDungQuyenTruyNhap_ThongTin" Method="sp_tblHTNguoiDungQuyenTruyNhap_ThongTin">
+    <Parameter Name="IDNhanVien" Parameter="iDNhanVien" Type="System.Guid" DbType="UniqueIdentifier" />
+    <ElementType Name="sp_tblHTNguoiDungQuyenTruyNhap_ThongTinResult">
+      <Column Name="IDNhanVien" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="IDQuyenTruyNhap" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDChucNang" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NgayTao" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NguoiTao" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_tblHTNguoiDungQuyenTruyNhap_DanhSach" Method="sp_tblHTNguoiDungQuyenTruyNhap_DanhSach">
+    <Parameter Name="IDNhanVien" Parameter="iDNhanVien" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="IDQuyenTruyNhap" Parameter="iDQuyenTruyNhap" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDChucNang" Parameter="iDChucNang" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_tblHTNguoiDungQuyenTruyNhap_DanhSachResult">
+      <Column Name="IDNhanVien" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="IDChucNang" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ChucNang" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDQuyenTruyNhap" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QuyenTruyNhap" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_tblHTNguoiDungQuyenTruyNhap_Xoa" Method="sp_tblHTNguoiDungQuyenTruyNhap_Xoa">
+    <Parameter Name="IDNhanVien" Parameter="iDNhanVien" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="IDQuyenTruyNhap" Parameter="iDQuyenTruyNhap" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDChucNang" Parameter="iDChucNang" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>
