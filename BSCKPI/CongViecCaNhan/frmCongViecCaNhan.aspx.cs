@@ -190,6 +190,11 @@ namespace BSCKPI.CongViecCaNhan
             }
         }
 
+        protected void mnuitmThongTinCVCN_Click(object sender, DirectEventArgs e)
+        {
+
+        }
+
         protected void mnuitemDanhGia_Click(object sender, DirectEventArgs e)
         {
             string json = e.ExtraParams["Values"];

@@ -22,6 +22,15 @@ namespace BSCKPI.NguoiDung {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// txtIDNhanVienDangNhap control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Hidden txtIDNhanVienDangNhap;
+        
+        /// <summary>
         /// txtEmail control.
         /// </summary>
         /// <remarks>
@@ -47,5 +56,140 @@ namespace BSCKPI.NguoiDung {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::Ext.Net.TextField txtMatKhauNhacLai;
+        
+        /// <summary>
+        /// btnCapNhatMatKhau control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Button btnCapNhatMatKhau;
+        
+        /// <summary>
+        /// grdNhomTruyNhapDaChon control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.GridPanel grdNhomTruyNhapDaChon;
+        
+        /// <summary>
+        /// stoNhomTruyNhapDaChon control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Store stoNhomTruyNhapDaChon;
+        
+        /// <summary>
+        /// ntnNhomTruyNhap control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Column ntnNhomTruyNhap;
+        
+        /// <summary>
+        /// btnThemNhomTruyNhap control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Button btnThemNhomTruyNhap;
+        
+        /// <summary>
+        /// btnLoaiBoNhomTruyNhap control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Button btnLoaiBoNhomTruyNhap;
+        
+        /// <summary>
+        /// btnThemChucNang control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Button btnThemChucNang;
+        
+        /// <summary>
+        /// btnLoaiBoChucNang control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Button btnLoaiBoChucNang;
+        
+        /// <summary>
+        /// grdChucNang control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.GridPanel grdChucNang;
+        
+        /// <summary>
+        /// stoChucNang control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Store stoChucNang;
+        
+        /// <summary>
+        /// qtnChucNang control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Column qtnChucNang;
+        
+        /// <summary>
+        /// grdQuyenTruyNhap control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.GridPanel grdQuyenTruyNhap;
+        
+        /// <summary>
+        /// stoQuyenTruyNhap control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Store stoQuyenTruyNhap;
+        
+        /// <summary>
+        /// qtnChon control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.CheckColumn qtnChon;
+        
+        /// <summary>
+        /// qtnQuyenTruyNhap control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Column qtnQuyenTruyNhap;
     }
 }

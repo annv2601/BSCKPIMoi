@@ -139,6 +139,8 @@
     <Content Include="MoHinhToChuc\UC\ucChuyenDonVi.ascx" />
     <Content Include="MoHinhToChuc\UC\ucNhanVien.ascx" />
     <Content Include="NguoiDung\frmQuanTriNguoiDung.aspx" />
+    <Content Include="NguoiDung\UC\ucGanQuyenChoChucNang.ascx" />
+    <Content Include="NguoiDung\UC\ucNhomQuyenTruyNhap.ascx" />
     <Content Include="resource\css\DataView.css" />
     <Content Include="resource\css\examples.css" />
     <Content Include="resource\css\main.css" />
@@ -380,6 +382,20 @@
     </Compile>
     <Compile Include="NguoiDung\frmQuanTriNguoiDung.aspx.designer.cs">
       <DependentUpon>frmQuanTriNguoiDung.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NguoiDung\UC\ucGanQuyenChoChucNang.ascx.cs">
+      <DependentUpon>ucGanQuyenChoChucNang.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NguoiDung\UC\ucGanQuyenChoChucNang.ascx.designer.cs">
+      <DependentUpon>ucGanQuyenChoChucNang.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="NguoiDung\UC\ucNhomQuyenTruyNhap.ascx.cs">
+      <DependentUpon>ucNhomQuyenTruyNhap.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NguoiDung\UC\ucNhomQuyenTruyNhap.ascx.designer.cs">
+      <DependentUpon>ucNhomQuyenTruyNhap.ascx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Test.aspx.cs">

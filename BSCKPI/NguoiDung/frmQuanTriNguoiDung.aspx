@@ -10,9 +10,10 @@
 <body>
     <ext:ResourceManager runat="server" Locale="vi-VN" />
     <form id="form1" runat="server">
+        <ext:Hidden ID="txtIDNhanVienDangNhap" runat="server" />
         <ext:TabPanel runat="server" Layout="FitLayout" ButtonAlign="Center" Cls="tabs">
             <Items>
-                <ext:Panel runat="server" Title="Thông tin đăng nhập" Icon="UserKey" Header="false" Height="420">
+                <ext:Panel runat="server" Title="Thông tin đăng nhập" Icon="UserKey" Header="false" Height="380" ButtonAlign="Center">
                     <LayoutConfig>
                                 <ext:VBoxLayoutConfig Align="Center" />
                             </LayoutConfig>
@@ -37,31 +38,104 @@
                             </Items>
                         </ext:FieldContainer>
                     </Items>
+                    <Buttons>
+                        <ext:Button runat="server" ID="btnCapNhatMatKhau" Text="Cập nhật" Icon="Accept" Width="150">
+                            <DirectEvents>
+                                <Click OnEvent="btnCapNhatMatKhau_Click"></Click>
+                            </DirectEvents>
+                        </ext:Button>
+                    </Buttons>
                 </ext:Panel>
-                <ext:Panel runat="server" Title="Nhóm truy nhập" Icon="GroupKey" Header="false" Height="420">
+                <ext:Panel runat="server" Title="Nhóm truy nhập" Icon="GroupKey" Header="false" Height="380">
+                    <Items>
+                        <ext:FieldContainer runat="server" Layout="HBoxLayout">
+                            <Items>
+                                <ext:GridPanel runat="server" ID="grdNhomTruyNhapDaChon" Header="false" MarginSpec="10 0 0 10" MinHeight="300">
+                                    <Store>
+                                        <ext:Store runat="server" ID="stoNhomTruyNhapDaChon">
+                                            <Fields>
+                                                <ext:ModelField Name="IDNhomTruyNhap" />
+                                                <ext:ModelField Name="NhomTruyNhap" />
+                                            </Fields>
+                                        </ext:Store>
+                                    </Store>
+                                    <ColumnModel>
+                                        <Columns>
+                                            <ext:Column runat="server" ID="ntnNhomTruyNhap" Text="Nhóm truy nhập" DataIndex="NhomTruyNhap" Width="350" StyleSpec="font-weight:bold;" />
+                                        </Columns>
+                                    </ColumnModel>
+                                </ext:GridPanel>
+                                <ext:FieldContainer runat="server" Layout="VBoxLayout" MarginSpec="10 0 0 50">
+                                    <LayoutConfig>
+                                        <ext:VBoxLayoutConfig Align="Center" />
+                                    </LayoutConfig>
+                                    <Items>
+                                        <ext:Button runat="server" ID="btnThemNhomTruyNhap" Text="Gán" Icon="GroupAdd" MarginSpec="30 0 0 10" Width="120">
+
+                                        </ext:Button>
+                                        <ext:Button runat="server" ID="btnLoaiBoNhomTruyNhap" Text="Loại bỏ" Icon="GroupGo" MarginSpec="50 0 0 10" Width="120">
+
+                                        </ext:Button>
+                                    </Items>
+                                </ext:FieldContainer>
+                            </Items>
+                        </ext:FieldContainer>
+                    </Items>
                 </ext:Panel>
-                <ext:Panel runat="server" Title="Quyền truy nhập" Icon="KeyGo" Header="false" Height="420">
+                <ext:Panel runat="server" Title="Quyền truy nhập" Icon="KeyGo" Header="false" Height="380">
+                    <Items>
+                        <ext:FieldContainer runat="server" Layout="HBoxLayout" MarginSpec="10 0 0 10">
+                                    <Items>
+                                        <ext:Button runat="server" ID="btnThemChucNang" Text="Gán" Icon="ApplicationAdd" MarginSpec="0 0 0 10" Width="120">
+
+                                        </ext:Button>
+                                        <ext:Button runat="server" ID="btnLoaiBoChucNang" Text="Loại bỏ" Icon="ApplicationDelete" MarginSpec="0 0 0 10" Width="120">
+
+                                        </ext:Button>
+                                    </Items>
+                                </ext:FieldContainer>
+                        <ext:FieldContainer runat="server" Layout="HBoxLayout">
+                            <Items>
+                                <ext:GridPanel runat="server" ID="grdChucNang" Header="false" MarginSpec="0 0 0 10" MinHeight="300">
+                                    <Store>
+                                        <ext:Store runat="server" ID="stoChucNang">
+                                            <Fields>
+                                                <ext:ModelField Name="IDChucNang" />
+                                                <ext:ModelField Name="ChucNang" />
+                                            </Fields>
+                                        </ext:Store>
+                                    </Store>
+                                    <ColumnModel>
+                                        <Columns>
+                                            <ext:Column runat="server" ID="qtnChucNang" Text="Module đối tượng" DataIndex="ChucNang" Width="320" StyleSpec="font-weight:bold;" />
+                                        </Columns>
+                                    </ColumnModel>
+                                </ext:GridPanel>
+
+                                <ext:GridPanel runat="server" ID="grdQuyenTruyNhap" Header="false" MarginSpec="0 0 0 30" MinHeight="300">
+                                    <Store>
+                                        <ext:Store runat="server" ID="stoQuyenTruyNhap">
+                                            <Fields>
+                                                <ext:ModelField Name="IDQuyenTruyNhap" />
+                                                <ext:ModelField Name="Chon" />
+                                                <ext:ModelField Name="QuyenTruyNhap" />
+                                            </Fields>
+                                        </ext:Store>
+                                    </Store>
+                                    <ColumnModel>
+                                        <Columns>
+                                            <ext:CheckColumn runat="server" ID="qtnChon" Text="Chọn" DataIndex="Chon" Editable="true" Width="60" StyleSpec="font-weight:bold;"/>
+                                            <ext:Column runat="server" ID="qtnQuyenTruyNhap" Text="Quyền truy nhập" DataIndex="QuyenTruyNhap" Width="300" StyleSpec="font-weight:bold;" />
+                                        </Columns>
+                                    </ColumnModel>
+                                </ext:GridPanel>
+                            </Items>
+                        </ext:FieldContainer>
+                    </Items>
                 </ext:Panel>
             </Items>
-            <Buttons>
-                <ext:Button runat="server" Text="Cập nhật" Icon="Accept" Width="150">
-
-                </ext:Button>
-            </Buttons>
+            
         </ext:TabPanel>
-        <%--<ext:Panel runat="server" Layout="FitLayout">
-            <DockedItems>
-                <ext:TabStrip runat="server">
-                    <Items>
-                        <ext:Tab Text="Thông tin đăng nhập" Icon="UserKey">
-                            
-                        </ext:Tab>
-                        <ext:Tab Text="Nhóm truy nhập" Icon="GroupKey"/>
-                        <ext:Tab Text="Quyền truy nhập" Icon="KeyGo"/>
-                    </Items>
-                </ext:TabStrip>
-            </DockedItems>
-        </ext:Panel>--%>
     </form>
 </body>
 </html>

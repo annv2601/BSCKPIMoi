@@ -84,8 +84,8 @@ namespace BSCKPI.MoHinhToChuc
             _CSo.AutoRender = true;
             _CSo.Maximizable = false;
             _CSo.Icon = Icon.DiskMultiple;
-            _CSo.Width = 810;
-            _CSo.Height = 560;
+            _CSo.Width = 640;
+            _CSo.Height = 480;
             _CSo.Loader = _Loader;
 
             return _CSo;
@@ -455,7 +455,7 @@ namespace BSCKPI.MoHinhToChuc
             else
             {
                 Ext.Net.Window csTruyNhap;
-                csTruyNhap = TaoCuaSo("Quản lý truy nhập", daPhien.LayDiaChiURL("/NguoiDung/frmQuanTriNguoiDung.aspx"));
+                csTruyNhap = TaoCuaSo("Quản lý truy nhập", daPhien.LayDiaChiURL("/NguoiDung/frmQuanTriNguoiDung.aspx?IDNhanVienTruyNhap="+IDNhanVienTruyNhap.ToString()));
                 this.form1.Controls.Add(csTruyNhap);
                 csTruyNhap.Render();
             }
