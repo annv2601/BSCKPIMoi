@@ -127,7 +127,7 @@ namespace BSCKPI.KPI {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.SelectBox slbPhongBan;
+        protected global::Ext.Net.ComboBox slbPhongBan;
         
         /// <summary>
         /// stoPhong control.

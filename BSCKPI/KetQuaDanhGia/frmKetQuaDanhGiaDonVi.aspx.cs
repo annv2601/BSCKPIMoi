@@ -83,6 +83,29 @@ namespace BSCKPI.KetQuaDanhGia
             dDV.CapNhat();
             grdDGDV.GetStore().GetById(id).Commit();
         }
+
+        protected void btnGanChoNhanVien_CLick(object sender, DirectEventArgs e)
+        {
+            if (slbThang.SelectedItem.Value == null || slbNam.SelectedItem.Value == null || slbDonVi.SelectedItem.Value == null)
+            {
+                X.Msg.Show(new MessageBoxConfig
+                {
+                    Title = "Thông báo",
+                    Message = "Tham số chọn chưa đủ!",
+                    Buttons = MessageBox.Button.OK,
+                    Icon = (MessageBox.Icon)Enum.Parse(typeof(MessageBox.Icon), "WARNING"),
+                    AnimEl = this.btnGanChoNhanVien.ClientID
+                });
+                return;
+            }
+            daKetQuaDanhGiaDonVi dKQDV = new daKetQuaDanhGiaDonVi();
+            dKQDV.DGDV.Thang = byte.Parse(slbThang.SelectedItem.Value);
+            dKQDV.DGDV.Nam = int.Parse(slbNam.SelectedItem.Value);
+            dKQDV.DGDV.IDDonVi = int.Parse(slbDonVi.SelectedItem.Value);
+            dKQDV.DGDV.NguoiTao = daPhien.NguoiDung.IDNhanVien.ToString();
+            dKQDV.GanChoNhanVien();
+            X.Msg.Alert("", "Gán kết quả đánh giá sang cho nhân viên của " + slbDonVi.SelectedItem.Text + " hoàn thành").Show();
+        }
         #endregion
     }
 }

@@ -33,6 +33,11 @@ namespace DaoBSCKPI.KetQuaDanhGia
             lDGV.sp_tblBKKetQuaDanhGiaDonVi_CapNhat(DGDV.Thang, DGDV.Nam, DGDV.IDDonVi, DGDV.IDPhongBan, DGDV.IDKPI, DGDV.KetQua, DGDV.NguoiTao);
         }
 
+        public void GanChoNhanVien()
+        {
+            lDGV.sp_tblBKKetQuaDanhGiaDonVi_GanChoNhanVien(DGDV.Thang, DGDV.Nam, DGDV.IDDonVi, DGDV.NguoiTao);
+        }
+
         public void KhoiTao()
         {
             lDGV.sp_tblBKKetQuaDanhGiaDonVi_KhoiTao(DGDV.Thang, DGDV.Nam, DGDV.IDDonVi, DGDV.IDPhongBan, DGDV.NguoiTao);

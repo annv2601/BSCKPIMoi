@@ -154,8 +154,14 @@ namespace BSCKPI.KPI.DiemCongTru
             _TD1 = "tổng hợp kết quả đánh giá kpi tháng của cbcnv các đơn vị chức năng bđhn";
             _TD2 = "(Kèm theo Quyết định số              /QĐ-BĐHN ngày              /2017 của BĐHN";
             _TD3 = "Đối tượng: CBCNV các đơn vị chức năng Bưu điện TP Hà Nội";*/
-            CSo = CuaSoChucNang("Bảng đánh giá Tổng hợp", "/KetQuaDanhGia/frmHienThiBaoCaoDanhGia.aspx?ThangBaoCao=" + slbThang.SelectedItem.Value + "&&NamBaoCao=" + slbNam.SelectedItem.Value + "&&BieuBaoCao=9&&KHBaoCao=" +slbKeHoachDG.SelectedItem.Value+ "&&IDDonViBaoCao="+daPhien.NguoiDung.IDDonVi.ToString() + "&&NhanVienBaoCao="+Guid.Empty.ToString());
-
+            if (slbDonVi.SelectedItem.Value == null || slbPhongBan.SelectedItem.Value == null)
+            {
+                CSo = CuaSoChucNang("Bảng đánh giá Tổng hợp", "/KetQuaDanhGia/frmHienThiBaoCaoDanhGia.aspx?ThangBaoCao=" + slbThang.SelectedItem.Value + "&&NamBaoCao=" + slbNam.SelectedItem.Value + "&&BieuBaoCao=9&&KHBaoCao=" + slbKeHoachDG.SelectedItem.Value + "&&IDDonViBaoCao=" + daPhien.NguoiDung.IDDonVi.ToString() + "&&NhanVienBaoCao=" + Guid.Empty.ToString());
+            }
+            else
+            {
+                CSo = CuaSoChucNang("Bảng đánh giá Tổng hợp", "/KetQuaDanhGia/frmHienThiBaoCaoDanhGia.aspx?ThangBaoCao=" + slbThang.SelectedItem.Value + "&&NamBaoCao=" + slbNam.SelectedItem.Value + "&&BieuBaoCao=9&&KHBaoCao=" + slbKeHoachDG.SelectedItem.Value + "&&IDDonViBaoCao=" + slbDonVi.SelectedItem.Value + "&&IDPhongBanBaoCao=" + slbPhongBan.SelectedItem.Value + "&&NhanVienBaoCao=" + Guid.Empty.ToString());
+            }
             this.Form.Controls.Add(CSo);
             CSo.Render();
             CSo.Show();

@@ -85,6 +85,13 @@
                                 </ext:Store>
                             </Store>
                         </ext:SelectBox>
+                        <ext:Button runat="server" ID="btnGanChoNhanVien" Text="Gán sang nhân viên" Icon="TransmitGo" Width="200" MarginSpec="0 0 0 10">
+                            <DirectEvents>
+                                <Click OnEvent="btnGanChoNhanVien_CLick">
+                                    <EventMask ShowMask="true" Msg="Đang thực thi ....." />
+                                </Click>
+                            </DirectEvents>
+                        </ext:Button>
                     </Items>
                 </ext:Toolbar>
             </TopBar>

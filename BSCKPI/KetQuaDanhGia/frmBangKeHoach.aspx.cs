@@ -134,7 +134,20 @@ namespace BSCKPI.KetQuaDanhGia
                 dKHDG.Nam = int.Parse(slbNam.SelectedItem.Value);
                 dKHDG.KHDG.ID = int.Parse(slbKeHoachDG.SelectedItem.Value);
 
-                stoNhanVien.DataSource = dKHDG.DanhSachNhanVienDonVi(int.Parse(slbDonVi.SelectedItem.Value), int.Parse(slbPhongBan.SelectedItem.Value));
+                int _IDDV, _IDPB;
+                _IDDV = int.Parse(slbDonVi.SelectedItem.Value);
+                _IDPB = int.Parse(slbPhongBan.SelectedItem.Value);
+                if (_IDPB < 0)
+                {
+                    _IDPB = 0 - _IDPB;
+                }
+                else
+                {
+                    _IDDV = _IDPB;
+                    _IDPB = 0;
+                }
+
+                stoNhanVien.DataSource = dKHDG.DanhSachNhanVienDonVi(_IDDV, _IDPB);
                 stoNhanVien.DataBind();
             }
         }
@@ -200,10 +213,12 @@ namespace BSCKPI.KetQuaDanhGia
 
         protected void DanhSachPhongBan(object sender, StoreReadDataEventArgs e)
         {
-            daMoHinhPhongBan dMHPB = new daMoHinhPhongBan();
-            dMHPB.MHPB.TuNgay = DateTime.Now;
-            dMHPB.MHPB.IDDonVi = int.Parse(slbDonVi.SelectedItem.Value);
-            stoPhong.DataSource = dMHPB.DanhSachDDL();
+            slbPhongBan.SelectedItems.Clear();
+            slbPhongBan.UpdateSelectedItems();
+            daMoHinhDonVi dMHDV = new daMoHinhDonVi();
+            dMHDV.MHDV.TuNgay = DateTime.Now;
+            dMHDV.MHDV.IDDonViQuanLy = int.Parse(slbDonVi.SelectedItem.Value);
+            stoPhong.DataSource = dMHDV.DanhSachGopVoiPhongBan();
             stoPhong.DataBind();
         }
 

@@ -22,6 +22,7 @@ namespace BSCKPI.KPI
         private crBangDanhGia rptBDG = new crBangDanhGia();
         private crBangDanhGiaNhieu rptDGNhieu = new crBangDanhGiaNhieu();
         private crDanhGiaTongHop rptDGTongHop = new crDanhGiaTongHop();
+        private crDanhGiaTongHopDonVi rptDGTongHopDonVi = new crDanhGiaTongHopDonVi();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -42,7 +43,14 @@ namespace BSCKPI.KPI
                         BangDanhGiaKeHoach(_Thang,_Nam,int.Parse(Request.QueryString["IDKeHoach"]), int.Parse(Request.QueryString["IDDonVi"]), int.Parse(Request.QueryString["IDPhongBan"]));
                         break;
                     case 9:
-                        BangTongHop(_Thang, _Nam, int.Parse(Request.QueryString["IDDonViBaoCao"]), int.Parse(Request.QueryString["KHBaoCao"]));
+                        if (Request.QueryString["IDPhongBanBaoCao"] == null)
+                        {
+                            BangTongHop(_Thang, _Nam, int.Parse(Request.QueryString["IDDonViBaoCao"]), int.Parse(Request.QueryString["KHBaoCao"]));
+                        }
+                        else
+                        {
+                            BangTongHopDonVi(_Thang, _Nam, int.Parse(Request.QueryString["IDDonViBaoCao"]), int.Parse(Request.QueryString["IDPhongBanBaoCao"]), int.Parse(Request.QueryString["KHBaoCao"]));
+                        }
                         break;
                 }
             }
@@ -412,7 +420,53 @@ namespace BSCKPI.KPI
 
             CrystalReportViewer1.ReportSource = rptDGTongHop;
         }
-        
+
+        private void BangTongHopDonVi(byte rThang, int rNam, int rIDDonVi, int rIDPhongBan, int rIDKH)
+        {
+            daDiemXepLoai dXL = new daDiemXepLoai();
+            dXL.DXL.Thang = rThang;
+            dXL.DXL.Nam = rNam;
+            rptDGTongHopDonVi.SetDataSource(dXL.BaoCaoDonVi(rIDDonVi,rIDPhongBan));
+
+            daMoHinhDonVi dMHDV = new daMoHinhDonVi();
+            daDonVi dDV = new daDonVi();
+            daPhongBan dPB = new daPhongBan();
+
+            if(rIDPhongBan!=0)
+            {
+                dDV.DV.ID = rIDDonVi;
+                dDV.ThongTin();
+                rptDGTongHopDonVi.SetParameterValue(0, dDV.DV.Ten.ToUpper());
+
+                dPB.PB.ID = rIDPhongBan;
+                dPB.ThongTin();
+                rptDGTongHopDonVi.SetParameterValue(1, dPB.PB.Ten);
+            }
+            else
+            {
+                dMHDV.MHDV.IDDonVi = rIDDonVi;
+                dMHDV.MHDV.TuNgay = DateTime.Parse(rThang.ToString() + "/01/" + rNam.ToString());
+                dMHDV.ThongTin();
+
+                dDV.DV.ID = dMHDV.MHDV.IDDonViQuanLy;
+                dDV.ThongTin();
+                rptDGTongHopDonVi.SetParameterValue(0, dDV.DV.Ten.ToUpper());
+                dDV.DV.ID = rIDDonVi;
+                dDV.ThongTin();
+                rptDGTongHopDonVi.SetParameterValue(1, dDV.DV.Ten.ToUpper());
+            }
+            
+
+            daKeHoachDanhGia dKH = new daKeHoachDanhGia();
+            dKH.KHDG.ID = rIDKH;
+            dKH.ThongTin();
+            rptDGTongHopDonVi.SetParameterValue(2, dKH.KHDG.TieuDe1.ToUpper());
+            rptDGTongHopDonVi.SetParameterValue(3, dKH.KHDG.TieuDe2);
+            rptDGTongHopDonVi.SetParameterValue(4, dKH.KHDG.TieuDe3);
+            rptDGTongHopDonVi.SetParameterValue(5, "Kỳ đánh giá: " + "Tháng " + rThang.ToString() + "/" + rNam.ToString());
+
+            CrystalReportViewer1.ReportSource = rptDGTongHopDonVi;
+        }
         #endregion
     }
 }

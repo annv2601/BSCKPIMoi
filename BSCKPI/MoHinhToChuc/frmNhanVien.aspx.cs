@@ -104,6 +104,15 @@ namespace BSCKPI.MoHinhToChuc
             dTTNV.TTNV.Nam = int.Parse(slbNam.SelectedItem.Value);
             dTTNV.TTNV.IDDonVi = int.Parse(slbDonVi.SelectedItem.Value);
             dTTNV.TTNV.IDPhongBan = int.Parse(slbPhongBan.SelectedItem.Value);
+            if(dTTNV.TTNV.IDPhongBan<0)
+            {
+                dTTNV.TTNV.IDPhongBan = 0 - dTTNV.TTNV.IDPhongBan;
+            }
+            else
+            {
+                dTTNV.TTNV.IDDonVi = int.Parse(slbPhongBan.SelectedItem.Value);
+                dTTNV.TTNV.IDPhongBan = 0;
+            }
             dTTNV.TTNV.NguoiTao = daPhien.NguoiDung.IDNhanVien.ToString();
 
             dTTNV.KhoiTao(); //Kiem tra neu chua co thi khoi tao luon
@@ -124,11 +133,18 @@ namespace BSCKPI.MoHinhToChuc
                 slbPhongBan.UpdateSelectedItems();
                 return;
             }
-            daMoHinhPhongBan dMHPB = new daMoHinhPhongBan();
+            slbPhongBan.SelectedItems.Clear();
+            slbPhongBan.UpdateSelectedItems();
+            daMoHinhDonVi dMHDV = new daMoHinhDonVi();
+            dMHDV.MHDV.TuNgay = DateTime.Now;
+            dMHDV.MHDV.IDDonViQuanLy = int.Parse(slbDonVi.SelectedItem.Value);
+            stoPhong.DataSource = dMHDV.DanhSachGopVoiPhongBan();
+            stoPhong.DataBind();
+            /*daMoHinhPhongBan dMHPB = new daMoHinhPhongBan();
             dMHPB.MHPB.TuNgay = DateTime.Now;
             dMHPB.MHPB.IDDonVi = int.Parse(slbDonVi.SelectedItem.Value);
             stoPhong.DataSource = dMHPB.DanhSachDDL();
-            stoPhong.DataBind();
+            stoPhong.DataBind();*/
         }        
         #endregion
 

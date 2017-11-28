@@ -54,7 +54,7 @@
                                 </ext:Store>
                             </Store>
                         </ext:SelectBox>
-                <ext:SelectBox runat="server" ID="slbDonVi" DisplayField="Ten" ValueField="ID" EmptyText="Chọn đơn vị" MarginSpec="0 0 0 10" Width="350">
+                <ext:SelectBox runat="server" ID="slbDonVi" DisplayField="Ten" ValueField="ID" EmptyText="Chọn đơn vị quản lý" MarginSpec="0 0 0 10" Width="300">
                             <Listeners>
                                 <Select Handler="#{stoPhong}.reload();#{stoNhanVien}.reload();" />                                
                             </Listeners>
@@ -67,19 +67,19 @@
                                 </ext:Store>
                             </Store>
                         </ext:SelectBox>
-                <ext:SelectBox runat="server" ID="slbPhongBan" DisplayField="TenPhongBan" ValueField="IDPhongBan" EmptyText="Chọn Phòng ban" MarginSpec="0 0 0 10" Width="200">
+                <ext:ComboBox runat="server" ID="slbPhongBan" DisplayField="Ten" ValueField="ID" EmptyText="Chọn Phòng ban, đơn vị dưới" MarginSpec="0 0 0 10" Width="300" QueryMode="Local">
                             <Listeners>
                                 <Select Handler="#{stoNhanVien}.reload();" />
                             </Listeners>
                             <Store>
                                 <ext:Store runat="server" ID="stoPhong" OnReadData="DanhSachPhongBan">
                                     <Fields>
-                                        <ext:ModelField Name="IDPhongBan" />
-                                        <ext:ModelField Name="TenPhongBan" />
+                                        <ext:ModelField Name="ID" />
+                                        <ext:ModelField Name="Ten" />
                                     </Fields>
                                 </ext:Store>
                             </Store>
-                        </ext:SelectBox>
+                        </ext:ComboBox>
                 <ext:Button runat="server" ID="btnThemMoiNhanVien" Text="Thêm nhân viên" Icon="UserAdd" MarginSpec="0 0 0 30">
                     <DirectEvents>
                         <Click OnEvent="btnThemMoiNhanVien_Click" />

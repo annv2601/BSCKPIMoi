@@ -106,5 +106,29 @@ namespace DaoBSCKPI.DonVi
             lstChon(rIDDVQL, rNgay,0,"");
             return daDatatableVaList.ToDataTable(lstMHDV);
         }
+
+        public DataTable DanhSachGopVoiPhongBan()
+        {
+            DataTable dt = new DataTable();
+            dt.Columns.Add("ID", typeof(int));
+            dt.Columns.Add("Ten", typeof(string));
+
+            linqMoHinhPhongBanDataContext lPB = new linqMoHinhPhongBanDataContext();
+            List<sp_tblMoHinhPhongBan_DanhSachResult> lstPB;
+            lstPB = lPB.sp_tblMoHinhPhongBan_DanhSach(MHDV.IDDonViQuanLy, MHDV.TuNgay).ToList();
+            foreach(sp_tblMoHinhPhongBan_DanhSachResult ptP in lstPB)
+            {
+                dt.Rows.Add(0 - ptP.IDPhongBan, ptP.TenPhongBan);
+            }
+
+            List<sp_tblMoHinhDonVi_DanhSachResult> lst;
+            lst = lmhdv.sp_tblMoHinhDonVi_DanhSach(MHDV.IDDonViQuanLy, MHDV.TuNgay, false).ToList();
+            foreach(sp_tblMoHinhDonVi_DanhSachResult ptD in lst)
+            {
+                dt.Rows.Add(ptD.IDDonVi, ptD.Ten);
+            }
+
+            return dt;
+        }
     }
 }

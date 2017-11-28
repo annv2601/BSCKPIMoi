@@ -79,10 +79,12 @@ namespace BSCKPI.KetQuaDanhGia
         #region SuKien
         protected void DanhSachPhongBan(object sender, StoreReadDataEventArgs e)
         {
-            daMoHinhPhongBan dMHPB = new daMoHinhPhongBan();
-            dMHPB.MHPB.TuNgay = DateTime.Now;
-            dMHPB.MHPB.IDDonVi = int.Parse(slbDonVi.SelectedItem.Value);
-            stoPhong.DataSource = dMHPB.DanhSachDDL();
+            slbPhongBan.SelectedItems.Clear();
+            slbPhongBan.UpdateSelectedItems();
+            daMoHinhDonVi dMHDV = new daMoHinhDonVi();
+            dMHDV.MHDV.TuNgay = DateTime.Now;
+            dMHDV.MHDV.IDDonViQuanLy = int.Parse(slbDonVi.SelectedItem.Value);
+            stoPhong.DataSource = dMHDV.DanhSachGopVoiPhongBan();
             stoPhong.DataBind();
         }
 
@@ -95,7 +97,16 @@ namespace BSCKPI.KetQuaDanhGia
 
             int _IDDV,_IDPB;
             _IDDV = int.Parse(slbDonVi.SelectedItem.Value);
-            _IDPB = int.Parse(slbPhongBan.SelectedItem.Value);            
+            _IDPB = int.Parse(slbPhongBan.SelectedItem.Value);
+            if (_IDPB < 0)
+            {
+                _IDPB = 0 - _IDPB;
+            }
+            else
+            {
+                _IDDV = _IDPB;
+                _IDPB = 0;
+            }
             DanhSachNhiemVuChinh(_IDDV, _IDPB);
         }
         
