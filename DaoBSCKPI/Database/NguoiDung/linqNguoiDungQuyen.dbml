@@ -35,4 +35,14 @@
     <Parameter Name="IDChucNang" Parameter="iDChucNang" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
+  <Function Name="dbo.sp_tblHTNguoiDungQuyenTruyNhap_DanhSachChucNang" Method="sp_tblHTNguoiDungQuyenTruyNhap_DanhSachChucNang">
+    <Parameter Name="IDNhanVien" Parameter="iDNhanVien" Type="System.Guid" DbType="UniqueIdentifier" />
+    <ElementType Name="sp_tblHTNguoiDungQuyenTruyNhap_DanhSachChucNangResult">
+      <Column Name="IDNhanVien" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="IDChucNang" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ChucNang" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="STTsx" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="Nhom" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
 </Database>

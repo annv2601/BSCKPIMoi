@@ -44,5 +44,12 @@ namespace DaoBSCKPI.NguoiDung
             lst = lNDQ.sp_tblHTNguoiDungQuyenTruyNhap_DanhSach(NDQ.IDNhanVien, NDQ.IDQuyenTruyNhap, NDQ.IDChucNang).ToList();
             return daDatatableVaList.ToDataTable(lst);
         }
+
+        public DataTable DanhSachChucNang()
+        {
+            List<sp_tblHTNguoiDungQuyenTruyNhap_DanhSachChucNangResult> lst;
+            lst = lNDQ.sp_tblHTNguoiDungQuyenTruyNhap_DanhSachChucNang(NDQ.IDNhanVien).ToList();
+            return daDatatableVaList.ToDataTable(lst);
+        }
     }
 }

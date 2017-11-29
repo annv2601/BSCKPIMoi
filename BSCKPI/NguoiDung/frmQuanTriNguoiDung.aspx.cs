@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
 using DaoBSCKPI.NguoiDung;
+using DaoBSCKPI.DanhMucHeThong;
 
 using Ext.Net;
 using BSCKPI.UIHelper;
@@ -19,6 +20,9 @@ namespace BSCKPI.NguoiDung
             {
                 txtIDNhanVienDangNhap.Text = Request.QueryString["IDNhanVienTruyNhap"];
                 LayThongTinNhanVien();
+
+                DanhSachChucNangChon();
+                DanhSachChucNangQTN();
             }
         }
 
@@ -55,6 +59,22 @@ namespace BSCKPI.NguoiDung
             dDN.ND.IDNhanVien = IDNhanVien;
             dDN.ThongTin();
             EmailDN = dDN.ND.Email;
+        }
+
+        private void DanhSachChucNangChon()
+        {
+            daChucNang dCN = new daChucNang();
+            dCN.CN.Nhom = 0;
+            stoDSChucNang.DataSource = dCN.DanhSach();
+            stoDSChucNang.DataBind();
+        }
+
+        private void DanhSachChucNangQTN()
+        {
+            daNguoiDungQuyen dNDQ = new daNguoiDungQuyen();
+            dNDQ.NDQ.IDNhanVien = IDNhanVien;
+            stoQTNChucNang.DataSource = dNDQ.DanhSachChucNang();
+            stoQTNChucNang.DataBind();
         }
         #endregion
 
@@ -124,6 +144,50 @@ namespace BSCKPI.NguoiDung
             dDN.ND.NguoiTao = daPhien.NguoiDung.IDNhanVien.ToString();
             dDN.ThemSua();
             X.Msg.Alert("", "Đã cập nhật mật khẩu thành công!").Show();
+        }
+        #endregion
+
+        #region Su kien Quyen chuc nang
+
+        protected void DanhSachQuuyenCuaChucNang(object sender, StoreReadDataEventArgs e)
+        {
+
+        }
+        protected void btnGanThamChucNang_Click(object sender, DirectEventArgs e)
+        {
+            string json = e.ExtraParams["Values"];
+            if (json == "")
+            {
+                return;
+            }
+            Dictionary<string, string>[] companies = JSON.Deserialize<Dictionary<string, string>[]>(json);
+            daNguoiDungQuyen dNDQ = new daNguoiDungQuyen();
+            dNDQ.NDQ.NguoiTao = daPhien.NguoiDung.IDNhanVien.ToString();
+            dNDQ.NDQ.IDNhanVien = IDNhanVien;
+            dNDQ.NDQ.IDQuyenTruyNhap = 0;
+            foreach (Dictionary<string, string> row in companies)
+            {
+                dNDQ.NDQ.IDChucNang = int.Parse(row["ID"]);
+                dNDQ.ThemSua();
+            }
+            
+            wDSChucNang.Hide();
+
+            DanhSachChucNangQTN();
+        }
+
+        protected void btnThemChucNang_Click(object sender, DirectEventArgs e)
+        {
+            wDSChucNang.Show();
+        }
+
+        [DirectMethod(Namespace = "BangQuyenTNX")]
+        public void EditQTN(int id, string field, string oldvalue, string newvalue, object BangQTN)
+        {
+
+            Newtonsoft.Json.Linq.JObject node = JSON.Deserialize<Newtonsoft.Json.Linq.JObject>(BangQTN.ToString());
+
+            
         }
         #endregion
     }

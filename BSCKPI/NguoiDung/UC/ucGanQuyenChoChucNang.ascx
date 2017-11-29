@@ -1,7 +1,11 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ucGanQuyenChoChucNang.ascx.cs" Inherits="BSCKPI.NguoiDung.UC.ucGanQuyenChoChucNang" %>
-<script>
-    
-</script>
+<script type="text/javascript">
+    var editChonQuyen = function (editor, e) {
+        if (e.value !== e.originalValue) {
+            BangQuyenTNX.EditQTN(e.record.data.IDQuyenTruyNhap, e.field, e.originalValue, e.value, e.record.data);
+        }
+    }
+    </script>
 <ext:Panel runat="server">
     <Items>
         <ext:Hidden runat="server" ID="txtIDNhanVienQuyenTN" />
@@ -57,11 +61,7 @@
                         </ext:CellEditing>
                     </Plugins>
                 </ext:GridPanel>
-
             </Items>
-        </ext:FieldContainer>
-        
-
-                                
+        </ext:FieldContainer>   
     </Items>
 </ext:Panel>
