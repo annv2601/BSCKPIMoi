@@ -119,6 +119,8 @@
     <Content Include="CongViecCaNhan\uccvcnNguoiThucHien.ascx" />
     <Content Include="DanhMuc\frmDanhMucTrongSoNhom.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="frmChuaLogin.aspx" />
+    <Content Include="frmLogin.aspx" />
     <Content Include="KeHoachDanhGia\frmKeHoachDanhGia.aspx" />
     <Content Include="KetQuaDanhGia\frmBangCaNhan.aspx" />
     <Content Include="KetQuaDanhGia\frmBangKeHoach.aspx" />
@@ -242,6 +244,20 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmChuaLogin.aspx.cs">
+      <DependentUpon>frmChuaLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmChuaLogin.aspx.designer.cs">
+      <DependentUpon>frmChuaLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.aspx.cs">
+      <DependentUpon>frmLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmLogin.aspx.designer.cs">
+      <DependentUpon>frmLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="KeHoachDanhGia\frmKeHoachDanhGia.aspx.cs">
       <DependentUpon>frmKeHoachDanhGia.aspx</DependentUpon>

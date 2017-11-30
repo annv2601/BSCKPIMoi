@@ -121,7 +121,18 @@
                                             </DirectEvents>
                                         </ext:Button>
                                         <ext:Button runat="server" ID="btnLoaiBoChucNang" Text="Loại bỏ" Icon="KeyDelete" MarginSpec="0 0 0 10" Width="100">
-                                            
+                                            <DirectEvents>
+                                                <Click OnEvent="btnLoaiBoChucNang_Click">
+                                                    <EventMask ShowMask="true" Msg="......" />
+                                                    <ExtraParams>
+                                                                <ext:Parameter
+                                                                    Name="Values"
+                                                                    Value="#{grdQTNChucNang}.getRowsValues({ selectedOnly : true })"
+                                                                    Mode="Raw"
+                                                                    Encode="true" />
+                                                            </ExtraParams>
+                                                </Click>
+                                            </DirectEvents>
                                         </ext:Button>
                                     </Items>
                                 </ext:Toolbar>
@@ -131,28 +142,42 @@
                                                     <ext:Column runat="server" ID="cqtnChucNang" Text="Module đối tượng" DataIndex="ChucNang" Width="300" StyleSpec="font-weight:bold;" Flex="1"/>
                                                 </Columns>
                                             </ColumnModel>
-                                            <%--<SelectionModel>
-                                                <ext:RowSelectionModel runat="server">
-                                                    <Listeners>
-                                                        <Select Handler="#{stoQTNQuyen}.reload();" />
-                                                    </Listeners>
+                                            <SelectionModel>
+                                                <ext:RowSelectionModel runat="server" Mode="Single">
+                                                    <DirectEvents>
+                                                        <Select OnEvent="grdQTNChucNang_Chon">
+                                                            <ExtraParams>
+                                                                <ext:Parameter
+                                                                    Name="Values"
+                                                                    Value="#{grdQTNChucNang}.getRowsValues({ selectedOnly : true })"
+                                                                    Mode="Raw"
+                                                                    Encode="true" />
+                                                            </ExtraParams>
+                                                        </Select>
+                                                    </DirectEvents>
                                                 </ext:RowSelectionModel>
-                                            </SelectionModel>--%>
+                                            </SelectionModel>
                                         </ext:GridPanel>
-                                <ext:GridPanel runat="server" ID="grdQTNQuyen" Header="false" MarginSpec="40 0 0 30" MinHeight="300">
+
+                                <ext:GridPanel runat="server" ID="grdQTNQuyen" Header="false" MarginSpec="40 0 0 30" MinHeight="300" Flex="1">
                                                             <Store>
                                                                 <ext:Store runat="server" ID="stoQTNQuyen" OnReadData="DanhSachQuuyenCuaChucNang">
-                                                                    <Fields>
-                                                                        <ext:ModelField Name="IDQuyenTruyNhap" />
-                                                                        <ext:ModelField Name="Chon" />
-                                                                        <ext:ModelField Name="QuyenTruyNhap" />
-                                                                    </Fields>
+                                                                    <Model>
+                                                                        <ext:Model runat="server" IDProperty="IDQuyenTruyNhap">
+                                                                            <Fields>
+                                                                                <ext:ModelField Name="IDQuyenTruyNhap" />
+                                                                                <ext:ModelField Name="IDChucNang" />
+                                                                                <ext:ModelField Name="Chon" />
+                                                                                <ext:ModelField Name="QuyenTruyNhap" />
+                                                                            </Fields>
+                                                                        </ext:Model>
+                                                                    </Model>                                                                    
                                                                 </ext:Store>
                                                             </Store>
                                                             <ColumnModel>
                                                                 <Columns>
-                                                                    <ext:CheckColumn runat="server" ID="cqtnChon" Text="Chọn" DataIndex="Chon" Editable="true" Width="60" StyleSpec="font-weight:bold;"/>
-                                                                    <ext:Column runat="server" ID="cqtnQuyenTruyNhap" Text="Quyền truy nhập" DataIndex="QuyenTruyNhap" Width="300" StyleSpec="font-weight:bold;" />
+                                                                    <ext:CheckColumn runat="server" ID="cqtnChon" Text="..." DataIndex="Chon" Editable="true" Width="40" StyleSpec="font-weight:bold;" Flex="1"/>
+                                                                    <ext:Column runat="server" ID="cqtnQuyenTruyNhap" Text="Quyền truy nhập" DataIndex="QuyenTruyNhap" Width="250" StyleSpec="font-weight:bold;" />
                                                                 </Columns>
                                                             </ColumnModel>
                                             <SelectionModel>

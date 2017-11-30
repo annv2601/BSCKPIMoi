@@ -8,6 +8,7 @@ using System.Web.UI.WebControls;
 using DaoBSCKPI.DonVi;
 using DaoBSCKPI.NhanVien;
 using DaoBSCKPI;
+using DaoBSCKPI.NguoiDung;
 
 using Ext.Net;
 using BSCKPI.UIHelper;
@@ -20,13 +21,86 @@ namespace BSCKPI.MoHinhToChuc
         {
             if(!X.IsAjaxRequest)
             {
+                daPhien.KiemTraXacThuc();
+
                 DanhSachThangNam();
                 DanhSachDonVi(DateTime.Now,daPhien.NguoiDung.IDDonVi.Value);
                 //DanhSachDonViPhanCap(DateTime.Now, daPhien.NguoiDung.IDDonVi.Value);
+
+                CheckQuyen(int.Parse(Request.QueryString["CN"]));
             }
         }
 
         #region Rieng
+
+        private void CheckQuyen(int rIDCN)
+        {
+            DaoBSCKPI.NguoiDung.daNguoiDungQuyen dNDQ = new DaoBSCKPI.NguoiDung.daNguoiDungQuyen();
+            dNDQ.NDQ.IDNhanVien = daPhien.NguoiDung.IDNhanVien;
+            dNDQ.NDQ.IDChucNang = rIDCN;
+            dNDQ.DanhSachQuyen();
+            if (dNDQ.lstQuyen.Count > 0)
+            {
+                if (dNDQ.lstQuyen[0].IDQuyenTruyNhap.Value >= (int)DaoBSCKPI.NguoiDung.daQuyenTruyNhap.eQuyen.Nhập && dNDQ.lstQuyen[0].IDQuyenTruyNhap.Value != (int)DaoBSCKPI.NguoiDung.daQuyenTruyNhap.eQuyen.Gán_Truy_nhập)
+                {
+                    btnThemMoiNhanVien.Visible = true;
+                }
+                else
+                {
+                    btnThemMoiNhanVien.Visible = false;
+                }
+            }
+            else
+            {
+                btnThemMoiNhanVien.Visible = false;
+            }
+
+            //Quyen Sua
+            bool _Quyen = false;
+            int i;
+            for (i = 0; i < dNDQ.lstQuyen.Count; i++)
+            {
+                if (dNDQ.lstQuyen[i].IDQuyenTruyNhap == (int)DaoBSCKPI.NguoiDung.daQuyenTruyNhap.eQuyen.Sửa)
+                {
+                    _Quyen = true;
+                    break;
+                }
+            }
+            mnuitemThongTin.Visible = _Quyen;
+            mnuitmChuyenDonVi.Visible = _Quyen;
+
+            _Quyen = false;
+            for (i = 0; i < dNDQ.lstQuyen.Count; i++)
+            {
+                if (dNDQ.lstQuyen[i].IDQuyenTruyNhap == (int)DaoBSCKPI.NguoiDung.daQuyenTruyNhap.eQuyen.Xóa)
+                {
+                    _Quyen = true;
+                    break;
+                }
+            }
+            mnuitemNhanVienXoa.Visible = _Quyen;
+
+            _Quyen = false;
+            for (i = 0; i < dNDQ.lstQuyen.Count; i++)
+            {
+                if (dNDQ.lstQuyen[i].IDQuyenTruyNhap == (int)DaoBSCKPI.NguoiDung.daQuyenTruyNhap.eQuyen.Gán_Truy_nhập)
+                {
+                    _Quyen = true;
+                    break;
+                }
+            }
+            mnuitmQuanLyTruyNhap.Visible = _Quyen;
+
+            if (dNDQ.lstQuyen[0].IDQuyenTruyNhap == (int)DaoBSCKPI.NguoiDung.daQuyenTruyNhap.eQuyen.Tất_Cả)
+            {
+                mnuitemNhanVienXoa.Visible = true;
+                mnuitmChuyenDonVi.Visible = true;
+                mnuitemThongTin.Visible = true;
+                mnuitmQuanLyTruyNhap.Visible = true;
+            }
+
+        }
+
         private Guid IDNhanVienTruyNhap
         {
             get { return Session["IDNhanVienTruyNhapQLy"]==null?Guid.Empty:(Guid)Session["IDNhanVienTruyNhapQLy"]; }
@@ -237,6 +311,15 @@ namespace BSCKPI.MoHinhToChuc
             dTNV.TTNV.TenNhanVien = dNV.NV.TenNhanVien;
             dTNV.TTNV.MoTaCongViec = ucNV1.MoTaCongViec;
             dTNV.TTNV.NguoiTao = daPhien.NguoiDung.IDNhanVien.ToString();
+            if (dTNV.TTNV.IDPhongBan < 0)
+            {
+                dTNV.TTNV.IDPhongBan = 0 - dTNV.TTNV.IDPhongBan;
+            }
+            else
+            {
+                dTNV.TTNV.IDDonVi = int.Parse(slbPhongBan.SelectedItem.Value);
+                dTNV.TTNV.IDPhongBan = 0;
+            }
             dTNV.ThemSua();
 
             X.Msg.Show(new MessageBoxConfig

@@ -10,51 +10,51 @@
 namespace BSCKPI {
     
     
-    public partial class Default {
+    public partial class frmLogin {
         
         /// <summary>
-        /// ResourceManager1 control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.ResourceManager ResourceManager1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// pnlChucNang control.
+        /// txtEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.Panel pnlChucNang;
+        protected global::Ext.Net.TextField txtEmail;
         
         /// <summary>
-        /// btnLogin control.
+        /// txtMatKhau control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.Button btnLogin;
+        protected global::Ext.Net.TextField txtMatKhau;
         
         /// <summary>
-        /// TabPanelChinh control.
+        /// chkNho control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.TabPanel TabPanelChinh;
+        protected global::Ext.Net.Checkbox chkNho;
         
         /// <summary>
-        /// tabHome control.
+        /// btnDangNhap control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Ext.Net.Panel tabHome;
+        protected global::Ext.Net.Button btnDangNhap;
     }
 }

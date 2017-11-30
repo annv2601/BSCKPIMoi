@@ -96,6 +96,20 @@ namespace DaoBSCKPI.Database.NguoiDung
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iDNhanVien);
 			return ((ISingleResult<sp_tblHTNguoiDungQuyenTruyNhap_DanhSachChucNangResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_tblHTNguoiDungQuyenTruyNhap_XoaChucNang")]
+		public int sp_tblHTNguoiDungQuyenTruyNhap_XoaChucNang([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDNhanVien", DbType="UniqueIdentifier")] System.Nullable<System.Guid> iDNhanVien, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDChucNang", DbType="Int")] System.Nullable<int> iDChucNang)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iDNhanVien, iDChucNang);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_tblHTNguoiDungQuyenTruyNhap_DanhSachQuyen")]
+		public ISingleResult<sp_tblHTNguoiDungQuyenTruyNhap_DanhSachQuyenResult> sp_tblHTNguoiDungQuyenTruyNhap_DanhSachQuyen([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDNhanVien", DbType="UniqueIdentifier")] System.Nullable<System.Guid> iDNhanVien, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDChucNang", DbType="Int")] System.Nullable<int> iDChucNang)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iDNhanVien, iDChucNang);
+			return ((ISingleResult<sp_tblHTNguoiDungQuyenTruyNhap_DanhSachQuyenResult>)(result.ReturnValue));
+		}
 	}
 	
 	public partial class sp_tblHTNguoiDungQuyenTruyNhap_ThongTinResult
@@ -387,6 +401,86 @@ namespace DaoBSCKPI.Database.NguoiDung
 				if ((this._Nhom != value))
 				{
 					this._Nhom = value;
+				}
+			}
+		}
+	}
+	
+	public partial class sp_tblHTNguoiDungQuyenTruyNhap_DanhSachQuyenResult
+	{
+		
+		private int _IDQuyenTruyNhap;
+		
+		private string _QuyenTruyNhap;
+		
+		private System.Nullable<int> _IDChucNang;
+		
+		private System.Nullable<bool> _Chon;
+		
+		public sp_tblHTNguoiDungQuyenTruyNhap_DanhSachQuyenResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IDQuyenTruyNhap", DbType="Int NOT NULL")]
+		public int IDQuyenTruyNhap
+		{
+			get
+			{
+				return this._IDQuyenTruyNhap;
+			}
+			set
+			{
+				if ((this._IDQuyenTruyNhap != value))
+				{
+					this._IDQuyenTruyNhap = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_QuyenTruyNhap", DbType="NVarChar(50)")]
+		public string QuyenTruyNhap
+		{
+			get
+			{
+				return this._QuyenTruyNhap;
+			}
+			set
+			{
+				if ((this._QuyenTruyNhap != value))
+				{
+					this._QuyenTruyNhap = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IDChucNang", DbType="Int")]
+		public System.Nullable<int> IDChucNang
+		{
+			get
+			{
+				return this._IDChucNang;
+			}
+			set
+			{
+				if ((this._IDChucNang != value))
+				{
+					this._IDChucNang = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Chon", DbType="Bit")]
+		public System.Nullable<bool> Chon
+		{
+			get
+			{
+				return this._Chon;
+			}
+			set
+			{
+				if ((this._Chon != value))
+				{
+					this._Chon = value;
 				}
 			}
 		}

@@ -32,6 +32,28 @@ namespace DaoBSCKPI.NhanVien
             }
         }
 
+        public sp_tblThongTinNhanVien_ThongTinResult TimEmail(string rEmail)
+        {
+            try
+            {
+                sp_tblThongTinNhanVien_ThongTinResult pt=new sp_tblThongTinNhanVien_ThongTinResult();
+                sp_tblThongTinNhanVien_ThongTinEmailResult ptE;
+                ptE = lTT.sp_tblThongTinNhanVien_ThongTinEmail(TTNV.Thang, TTNV.Nam, rEmail).Single();
+                pt.IDNhanVien = ptE.IDNhanVien;
+                pt.IDDonVi = ptE.IDDonVi;
+                pt.IDPhongBan = ptE.IDPhongBan;
+                pt.IDChucVu = ptE.IDChucVu;
+                pt.IDChucDanh = ptE.IDChucDanh;
+                pt.IDPhuTrach = ptE.IDPhuTrach;
+                
+                return pt;
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
         public sp_tblThongTinNhanVien_ThongTinTenResult ThongTinTen()
         {
             try

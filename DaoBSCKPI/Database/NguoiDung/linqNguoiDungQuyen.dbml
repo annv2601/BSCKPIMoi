@@ -45,4 +45,19 @@
       <Column Name="Nhom" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </ElementType>
   </Function>
+  <Function Name="dbo.sp_tblHTNguoiDungQuyenTruyNhap_XoaChucNang" Method="sp_tblHTNguoiDungQuyenTruyNhap_XoaChucNang">
+    <Parameter Name="IDNhanVien" Parameter="iDNhanVien" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="IDChucNang" Parameter="iDChucNang" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_tblHTNguoiDungQuyenTruyNhap_DanhSachQuyen" Method="sp_tblHTNguoiDungQuyenTruyNhap_DanhSachQuyen">
+    <Parameter Name="IDNhanVien" Parameter="iDNhanVien" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="IDChucNang" Parameter="iDChucNang" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_tblHTNguoiDungQuyenTruyNhap_DanhSachQuyenResult">
+      <Column Name="IDQuyenTruyNhap" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="QuyenTruyNhap" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDChucNang" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Chon" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
 </Database>

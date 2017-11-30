@@ -23,9 +23,9 @@ namespace DaoBSCKPI.DanhMucHeThong
         private sp_tblChucNang_ThongTinResult _CN = new sp_tblChucNang_ThongTinResult();
 
         public sp_tblChucNang_ThongTinResult CN { get => _CN; set => _CN = value; }
-        public List<sp_tblChucNang_DanhSachResult> LstChucNang { get => _lstChucNang; set => _lstChucNang = value; }
+        public List<sp_tblChucNang_DanhSach_NhanVienResult> LstChucNang { get => _lstChucNang; set => _lstChucNang = value; }
 
-        private List<sp_tblChucNang_DanhSachResult> _lstChucNang = new List<sp_tblChucNang_DanhSachResult>();
+        private List<sp_tblChucNang_DanhSach_NhanVienResult> _lstChucNang = new List<sp_tblChucNang_DanhSach_NhanVienResult>();
 
         public sp_tblChucNang_ThongTinResult ThongTin()
         {
@@ -47,10 +47,12 @@ namespace DaoBSCKPI.DanhMucHeThong
             return daDatatableVaList.ToDataTable(lst);
         }
 
-        public List<sp_tblChucNang_DanhSachResult> lstDanhSach()
+        public List<sp_tblChucNang_DanhSach_NhanVienResult> lstDanhSach(Guid rIDNV)
         {
-            LstChucNang = lCN.sp_tblChucNang_DanhSach(CN.Nhom).ToList();
+            LstChucNang = lCN.sp_tblChucNang_DanhSach_NhanVien(CN.Nhom,rIDNV).ToList();
             return LstChucNang;
         }
+
+
     }
 }

@@ -93,10 +93,17 @@
                     MinWidth="175"
                     MaxWidth="400"
                     MarginSpec="5 0 5 5"
-                    Layout="AccordionLayout">
+                    Layout="AccordionLayout" ButtonAlign="Center">
                 <Items>
                     
                 </Items>
+                <Buttons>
+                    <ext:Button runat="server" ID="btnLogin" Text="Đăng xuất" Icon="KeyStop" UI="Warning" Width="160" Height="25">
+                        <DirectEvents>
+                            <Click OnEvent="btnLogin_Click" />
+                        </DirectEvents>
+                    </ext:Button>
+                </Buttons>
             </ext:Panel>
             
             <ext:TabPanel

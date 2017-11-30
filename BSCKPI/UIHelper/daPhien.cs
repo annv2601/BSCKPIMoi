@@ -26,5 +26,26 @@ namespace BSCKPI.UIHelper
                 return r.Url.Scheme + "://" + r.Url.Authority + r.ApplicationPath + rDuongDan;
             }
         }
+
+        public static string LayDiaChiURLChucNang(int rID,string rDuongDan)
+        {
+            HttpRequest r = HttpContext.Current.Request;
+            if (r.ApplicationPath == "/")
+            {
+                return r.Url.Scheme + "://" + r.Url.Authority + rDuongDan + "?CN=" + rID.ToString();
+            }
+            else
+            {
+                return r.Url.Scheme + "://" + r.Url.Authority + r.ApplicationPath + rDuongDan + "?CN=" + rID.ToString(); ;
+            }
+        }
+
+        public static void KiemTraXacThuc()
+        {
+            if(HttpContext.Current.Session["PhienLamViecBSC"]==null)
+            {
+                HttpContext.Current.Response.Redirect("frmChuaLogin.aspx");
+            }
+        }
     }
 }

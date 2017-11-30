@@ -19,6 +19,7 @@ namespace BSCKPI.ThamSo
             if(!X.IsAjaxRequest)
             {
                 stoPTDG.Reload();
+                CheckQuyen(int.Parse(Request.QueryString["CN"]));
             }
         }
 
@@ -26,6 +27,63 @@ namespace BSCKPI.ThamSo
         #endregion
 
         #region Su kien
+        private void CheckQuyen(int rIDCN)
+        {
+            DaoBSCKPI.NguoiDung.daNguoiDungQuyen dNDQ = new DaoBSCKPI.NguoiDung.daNguoiDungQuyen();
+            dNDQ.NDQ.IDNhanVien = daPhien.NguoiDung.IDNhanVien;
+            dNDQ.NDQ.IDChucNang = rIDCN;
+            dNDQ.DanhSachQuyen();
+            if (dNDQ.lstQuyen.Count > 0)
+            {
+                if (dNDQ.lstQuyen[0].IDQuyenTruyNhap.Value >= (int)DaoBSCKPI.NguoiDung.daQuyenTruyNhap.eQuyen.Nhập)
+                {
+                    btnThemPTDG.Visible = true;
+                    btnThemQuyCach.Visible = true;
+                }
+                else
+                {
+                    btnThemPTDG.Visible = false;
+                    btnThemQuyCach.Visible = false;
+                }
+            }
+            else
+            {
+                btnThemPTDG.Visible = false;
+                btnThemQuyCach.Visible = false;
+            }
+
+            //Quyen Sua
+            bool _Quyen = false;
+            int i;
+            for(i=0; i<dNDQ.lstQuyen.Count;i++)
+            {
+                if(dNDQ.lstQuyen[i].IDQuyenTruyNhap== (int)DaoBSCKPI.NguoiDung.daQuyenTruyNhap.eQuyen.Sửa)
+                {
+                    _Quyen = true;
+                    break;
+                }
+            }
+            mnuiThongTin.Visible = _Quyen;
+
+            _Quyen = false;
+            for (i = 0; i < dNDQ.lstQuyen.Count; i++)
+            {
+                if (dNDQ.lstQuyen[i].IDQuyenTruyNhap == (int)DaoBSCKPI.NguoiDung.daQuyenTruyNhap.eQuyen.Xóa)
+                {
+                    _Quyen = true;
+                    break;
+                }
+            }
+            mnuiXoa.Visible = _Quyen;
+
+            if(dNDQ.lstQuyen[0].IDQuyenTruyNhap== (int)DaoBSCKPI.NguoiDung.daQuyenTruyNhap.eQuyen.Tất_Cả)
+            {
+                mnuiThongTin.Visible = true;
+                mnuiXoa.Visible = true;
+            }
+
+        }
+
         protected void DanhSachPTDG(object sender, StoreReadDataEventArgs e)
         {
             daPhuongThucDanhGiaKetQuaNVTT dPT = new daPhuongThucDanhGiaKetQuaNVTT();

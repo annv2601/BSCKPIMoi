@@ -10,6 +10,19 @@ namespace DaoBSCKPI.NguoiDung
 {
     public class daQuyenTruyNhap
     {
+        public enum eQuyen
+        {
+            Xem=1,
+            Nhập=2,
+            Sửa=3,
+            Gán_Truy_nhập=9,
+            Xóa=4,
+            Gửi=5,
+            Duyệt=6,
+            Khóa=7,
+            Tất_Cả=8
+        }
+
         private linqQuyenTruyNhapDataContext lQTN = new linqQuyenTruyNhapDataContext();
         private sp_tblHTQuyenTruyNhap_ThongTinResult _QTN = new sp_tblHTQuyenTruyNhap_ThongTinResult();
 

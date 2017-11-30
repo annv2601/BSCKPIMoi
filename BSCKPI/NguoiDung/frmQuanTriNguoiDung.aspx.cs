@@ -153,6 +153,25 @@ namespace BSCKPI.NguoiDung
         {
 
         }
+
+        protected void grdQTNChucNang_Chon(object sender, DirectEventArgs e)
+        {
+            string json = e.ExtraParams["Values"];
+            if (json == "")
+            {
+                return;
+            }
+            Dictionary<string, string>[] companies = JSON.Deserialize<Dictionary<string, string>[]>(json);
+            daNguoiDungQuyen dNDQ = new daNguoiDungQuyen();
+            dNDQ.NDQ.IDNhanVien = IDNhanVien;
+            foreach(Dictionary<string,string> row in companies)
+            {
+                dNDQ.NDQ.IDChucNang = int.Parse(row["IDChucNang"]);
+            }
+            stoQTNQuyen.DataSource = dNDQ.DanhSachChucQuyen();
+            stoQTNQuyen.DataBind();
+        }
+
         protected void btnGanThamChucNang_Click(object sender, DirectEventArgs e)
         {
             string json = e.ExtraParams["Values"];
@@ -164,7 +183,7 @@ namespace BSCKPI.NguoiDung
             daNguoiDungQuyen dNDQ = new daNguoiDungQuyen();
             dNDQ.NDQ.NguoiTao = daPhien.NguoiDung.IDNhanVien.ToString();
             dNDQ.NDQ.IDNhanVien = IDNhanVien;
-            dNDQ.NDQ.IDQuyenTruyNhap = 0;
+            dNDQ.NDQ.IDQuyenTruyNhap = (int)daQuyenTruyNhap.eQuyen.Xem;
             foreach (Dictionary<string, string> row in companies)
             {
                 dNDQ.NDQ.IDChucNang = int.Parse(row["ID"]);
@@ -176,6 +195,29 @@ namespace BSCKPI.NguoiDung
             DanhSachChucNangQTN();
         }
 
+        protected void btnLoaiBoChucNang_Click(object sender, DirectEventArgs e)
+        {
+            string json = e.ExtraParams["Values"];
+            if (json == "")
+            {
+                return;
+            }
+            Dictionary<string, string>[] companies = JSON.Deserialize<Dictionary<string, string>[]>(json);
+            daNguoiDungQuyen dNDQ = new daNguoiDungQuyen();
+            dNDQ.NDQ.IDNhanVien = IDNhanVien;
+            foreach (Dictionary<string, string> row in companies)
+            {
+                dNDQ.NDQ.IDChucNang = int.Parse(row["IDChucNang"]);
+            }
+
+            dNDQ.XoaChucNang();
+
+            DanhSachChucNangQTN();
+
+            stoQTNQuyen.DataSource = dNDQ.DanhSachChucQuyen();
+            stoQTNQuyen.DataBind();
+        }
+
         protected void btnThemChucNang_Click(object sender, DirectEventArgs e)
         {
             wDSChucNang.Show();
@@ -184,10 +226,21 @@ namespace BSCKPI.NguoiDung
         [DirectMethod(Namespace = "BangQuyenTNX")]
         public void EditQTN(int id, string field, string oldvalue, string newvalue, object BangQTN)
         {
-
             Newtonsoft.Json.Linq.JObject node = JSON.Deserialize<Newtonsoft.Json.Linq.JObject>(BangQTN.ToString());
-
-            
+            daNguoiDungQuyen dNDQ = new daNguoiDungQuyen();
+            dNDQ.NDQ.IDNhanVien = IDNhanVien;
+            dNDQ.NDQ.IDChucNang = int.Parse(node.Property("IDChucNang").Value.ToString());
+            dNDQ.NDQ.IDQuyenTruyNhap = int.Parse(node.Property("IDQuyenTruyNhap").Value.ToString());
+            if(Boolean.Parse(newvalue))
+            {
+                dNDQ.NDQ.NguoiTao = daPhien.NguoiDung.IDNhanVien.ToString();
+                dNDQ.ThemSua();
+            }
+            else
+            {
+                dNDQ.Xoa();
+            }
+            grdQTNQuyen.GetStore().GetById(id).Commit();
         }
         #endregion
     }
