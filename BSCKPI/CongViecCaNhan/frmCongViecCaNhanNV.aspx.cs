@@ -13,7 +13,7 @@ using Ext.Net;
 using BSCKPI.UIHelper;
 namespace BSCKPI.CongViecCaNhan
 {
-    public partial class frmCongViecCaNhan : System.Web.UI.Page
+    public partial class frmCongViecCaNhanNV : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -51,7 +51,7 @@ namespace BSCKPI.CongViecCaNhan
             }
 
             //Quyen Sua
-            bool _Quyen = false;
+            /*bool _Quyen = false;
             int i;
             for (i = 0; i < dNDQ.lstQuyen.Count; i++)
             {
@@ -84,7 +84,7 @@ namespace BSCKPI.CongViecCaNhan
                 mnuitmThemNguoiThucHien.Visible = true;
                 mnuitemGiaHan.Visible = true;
                 mnuitemDanhGia.Visible = true;
-            }
+            }*/
 
         }
 
@@ -97,7 +97,8 @@ namespace BSCKPI.CongViecCaNhan
             dCV.TuNgay = daTienIch.NgayDauThang(_Ngay);
             dCV.IDDonVi = daPhien.NguoiDung.IDDonVi.Value;
             dCV.IDPhongBan = daPhien.NguoiDung.IDPhongBan.Value;
-            stoCVCN.DataSource = dCV.DanhSach();
+            dCV.IDNhanVien = daPhien.NguoiDung.IDNhanVien.Value;
+            stoCVCN.DataSource = dCV.DanhSach_NguoiLam();
             stoCVCN.DataBind();            
         }
 
@@ -120,6 +121,8 @@ namespace BSCKPI.CongViecCaNhan
             }
 
             CVCN1.DanhSachNguoiLam(dt);
+
+            CVCN1.NguoiLamChinh = daPhien.NguoiDung.IDNhanVien.Value;
 
             dt = dTTNV.DanhSachLanhDao();
             CVCN1.DanhSachLanhDao(dt);
@@ -173,7 +176,7 @@ namespace BSCKPI.CongViecCaNhan
             dCV.CVCN.NgayDenHan = CVCN1.NgayDenHan;
             dCV.CVCN.GioDenHan = CVCN1.GioDenHan;
             dCV.CVCN.IDMucDo = CVCN1.IDMucDo;
-            dCV.CVCN.NguoiLamChinh = CVCN1.NguoiLamChinh;
+            dCV.CVCN.NguoiLamChinh = daPhien.NguoiDung.IDNhanVien.Value;//CVCN1.NguoiLamChinh;
             dCV.CVCN.ChiDaoChung = CVCN1.ChiDaoChung;
 
             dCV.CVCN.IDDonVi = daPhien.NguoiDung.IDDonVi.Value;

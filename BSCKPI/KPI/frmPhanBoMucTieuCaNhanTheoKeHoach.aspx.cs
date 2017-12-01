@@ -27,10 +27,57 @@ namespace BSCKPI.KPI
                 DanhSachThangNam();
                 DanhSachDonVi(DateTime.Now,daPhien.NguoiDung.IDDonVi.Value);
                 DanhSachKeHoachDG();
+
+                CheckQuyen(int.Parse(Request.QueryString["CN"]));
             }
         }
 
         #region Rieng
+        private void CheckQuyen(int rIDCN)
+        {
+            DaoBSCKPI.NguoiDung.daNguoiDungQuyen dNDQ = new DaoBSCKPI.NguoiDung.daNguoiDungQuyen();
+            dNDQ.NDQ.IDNhanVien = daPhien.NguoiDung.IDNhanVien;
+            dNDQ.NDQ.IDChucNang = rIDCN;
+            dNDQ.DanhSachQuyen();
+            if (dNDQ.lstQuyen.Count > 0)
+            {
+                if (dNDQ.lstQuyen[0].IDQuyenTruyNhap.Value >= (int)DaoBSCKPI.NguoiDung.daQuyenTruyNhap.eQuyen.Nhập)
+                {
+                    btnCapNhatMucTieu.Visible = true;
+                    txtNhap.Text = "1";
+                }
+                else
+                {
+                    btnCapNhatMucTieu.Visible = false;
+                    txtNhap.Text = "0";
+                }
+            }
+            else
+            {
+                btnCapNhatMucTieu.Visible = false;
+                txtNhap.Text = "0";
+            }
+
+            //Quyen Xoa
+            bool _Quyen = false;
+            int i;
+            for (i = 0; i < dNDQ.lstQuyen.Count; i++)
+            {
+                if (dNDQ.lstQuyen[i].IDQuyenTruyNhap == (int)DaoBSCKPI.NguoiDung.daQuyenTruyNhap.eQuyen.Xóa)
+                {
+                    _Quyen = true;
+                    break;
+                }
+            }
+            mnuitmXoa.Visible = _Quyen;
+            
+            if (dNDQ.lstQuyen[0].IDQuyenTruyNhap == (int)DaoBSCKPI.NguoiDung.daQuyenTruyNhap.eQuyen.Tất_Cả)
+            {
+                mnuitmXoa.Visible = true;
+            }
+
+        }
+
         private void DanhSachThangNam()
         {
             daThamSo dTS = new daThamSo();
@@ -315,6 +362,61 @@ namespace BSCKPI.KPI
             stoPhanBoCT.DataBind();*/
 
             X.Msg.Alert("","Đã cập nhật mục tiêu từ dữ liệu KPI 12 tháng xong.").Show();
+        }
+
+        protected void mnuitmXoa_CLick(object sender, DirectEventArgs e)
+        {
+            string json = e.ExtraParams["Values"];
+            if (json == "")
+            {
+                return;
+            }
+            Dictionary<string, string>[] companies = JSON.Deserialize<Dictionary<string, string>[]>(json);
+            daPhanBoMucTieu dPB = new daPhanBoMucTieu();
+            int _LoaiChiTieu=0;
+            dPB.MT.Thang = byte.Parse(slbThang.SelectedItem.Value);
+            dPB.MT.Nam = int.Parse(slbNam.SelectedItem.Value);
+            dPB.MT.IDNhanVien = Guid.Parse(slbNhanVien.SelectedItem.Value);
+            foreach (Dictionary<string, string> row in companies)
+            {
+                try
+                {
+                    dPB.MT.IDKPI = int.Parse(row["ID"].ToString());
+                    _LoaiChiTieu = int.Parse(row["LoaiChiTieu"]);
+                }
+                catch
+                {
+                    dPB.MT.IDKPI = 0;
+                }
+            }
+            if(dPB.MT.IDKPI==0)
+            {
+                X.Msg.Show(new MessageBoxConfig
+                {
+                    Title = "Thông báo",
+                    Message = "Đề nghị chọn 1 chỉ tiêu phân bổ KPI trước khi Xóa!",
+                    Buttons = MessageBox.Button.OK,
+                    Icon = (MessageBox.Icon)Enum.Parse(typeof(MessageBox.Icon), "WARNING")
+                });
+            }
+            else
+            {
+                if(_LoaiChiTieu!=1)
+                {
+                    X.Msg.Show(new MessageBoxConfig
+                    {
+                        Title = "Thông báo",
+                        Message = "Chỉ tiêu phân bổ chọn không phải là chỉ tiêu KPI!",
+                        Buttons = MessageBox.Button.OK,
+                        Icon = (MessageBox.Icon)Enum.Parse(typeof(MessageBox.Icon), "WARNING")
+                    });
+                }
+                else
+                {
+                    dPB.Xoa();
+                    stoPhanBoCT.Reload();
+                }
+            }
         }
         #endregion
     }

@@ -49,6 +49,15 @@ namespace BSCKPI.KPI {
         protected global::Ext.Net.MenuItem mnuitmXoa;
         
         /// <summary>
+        /// txtNhapNVC control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Hidden txtNhapNVC;
+        
+        /// <summary>
         /// grdNV control.
         /// </summary>
         /// <remarks>

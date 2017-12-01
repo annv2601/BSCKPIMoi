@@ -26,10 +26,39 @@ namespace BSCKPI.KetQuaDanhGia
                 DanhSachThangNam();
                 DanhSachDonVi(DateTime.Now, daPhien.NguoiDung.IDDonVi.Value);
                 DanhSachKeHoachDG();
+
+                CheckQuyen(int.Parse(Request.QueryString["CN"]));
             }
         }
 
         #region Rieng
+        private void CheckQuyen(int rIDCN)
+        {
+            DaoBSCKPI.NguoiDung.daNguoiDungQuyen dNDQ = new DaoBSCKPI.NguoiDung.daNguoiDungQuyen();
+            dNDQ.NDQ.IDNhanVien = daPhien.NguoiDung.IDNhanVien;
+            dNDQ.NDQ.IDChucNang = rIDCN;
+            dNDQ.DanhSachQuyen();
+            if (dNDQ.lstQuyen.Count > 0)
+            {
+                if (dNDQ.lstQuyen[0].IDQuyenTruyNhap.Value >= (int)DaoBSCKPI.NguoiDung.daQuyenTruyNhap.eQuyen.Duyệt)
+                {
+                    btnTinhDiemCaNhan.Visible = true;
+                    btnTinhDiemKeHoach.Visible = true;
+                }
+                else
+                {
+                    btnTinhDiemCaNhan.Visible = false;
+                    btnTinhDiemKeHoach.Visible = false;
+                }
+            }
+            else
+            {
+                btnTinhDiemCaNhan.Visible = false;
+                btnTinhDiemKeHoach.Visible = false;
+            }
+
+        }
+
         private void DanhSachThangNam()
         {
             daThamSo dTS = new daThamSo();

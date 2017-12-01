@@ -21,6 +21,10 @@
             if (e.field == "Chon" && e.record.data.ChoChon == false) {
                 CellEditing1.cancelEdit();
             }
+
+            if (App.txtGiaoKPI.getValue() == "0") {
+                CellEditing1.cancelEdit();
+            }
         }
 
         var edit = function (editor, e)
@@ -73,7 +77,7 @@
                         </ext:Model>
                     </Model>
                 </ext:Store>
-
+        <ext:Hidden runat="server" ID="txtGiaoKPI" />
         <ext:GridPanel runat="server" Title="KPI 12 tháng" ID="grdKPIP" StoreID="stoKPIPhong" 
             MinHeight="500">
             <TopBar>

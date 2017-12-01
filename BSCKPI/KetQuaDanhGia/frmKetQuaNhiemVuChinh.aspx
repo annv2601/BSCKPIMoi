@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="../resource/css/main.css" />
     <script>
         var beforeCellEditHandler = function (e) {
+            if (App.txtNhapKQNVC.getValue() == "0") {
+                CellEditing1.cancelEdit();
+            }
+
             if (e.record.data.NhapChiTiet > 0 && e.field == "KetQua") {
                 //alert("Co chay");
                 App.txtIDNhiemVu.setValue(e.record.data.IDNhiemVu);
@@ -43,6 +47,7 @@
 <body>
     <ext:ResourceManager runat="server" Locale="vi-VN"/>
     <form id="form1" runat="server">
+        <ext:Hidden runat="server" ID="txtNhapKQNVC" />
         <ext:GridPanel runat="server" ID="grdNV"
             Title="Kết quả Nhiệm vụ trọng tâm" TitleAlign="Center" MinHeight="500">
             <Store>

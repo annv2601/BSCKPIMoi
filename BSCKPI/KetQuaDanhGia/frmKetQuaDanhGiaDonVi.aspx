@@ -15,6 +15,12 @@
                 grid.editingPlugin.startEdit(pos.row + 1, pos.column);
             }
         }
+
+        var beforeCellEditHandler = function (e) {
+            if (App.txtNhapKQDV.getValue() == "0") {
+                CellEditing1.cancelEdit();
+            }
+        }
     </script>
    
 </head>
@@ -38,6 +44,7 @@
                 </ext:Model>
             </Model>
         </ext:Store>
+        <ext:Hidden runat="server" ID="txtNhapKQDV" />
         <ext:GridPanel runat="server" ID="grdDGDV" MinHeight="400" StoreID="stoDGDV">
             <TopBar>
                 <ext:Toolbar runat="server">
@@ -118,6 +125,7 @@
             <Plugins>
                 <ext:CellEditing runat="server" ClicksToEdit="1">
                     <Listeners>
+                        <BeforeEdit Handler="return beforeCellEditHandler(e);"></BeforeEdit>
                         <Edit Fn="edit" />
                     </Listeners>
                 </ext:CellEditing>

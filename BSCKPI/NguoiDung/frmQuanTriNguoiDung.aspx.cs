@@ -50,6 +50,27 @@ namespace BSCKPI.NguoiDung
             get { return txtMatKhauNhacLai.Text.Trim(); }
             set { txtMatKhauNhacLai.Text = value; }
         }
+
+        private int IDVaiTro
+        {
+            get
+            {
+                return slbVaiTro.SelectedItem.Value == null ? 0 : int.Parse(slbVaiTro.SelectedItem.Value);
+            }
+            set
+            {
+                slbVaiTro.SelectedItems.Clear();
+                if(value<=0)
+                {
+                    slbVaiTro.SelectedItems.Add(new Ext.Net.ListItem { Text = string.Empty, Mode = ParameterMode.Raw });
+                }
+                else
+                {
+                    slbVaiTro.SelectedItems.Add(new Ext.Net.ListItem { Value=value.ToString(), Mode = ParameterMode.Raw });
+                }
+                slbVaiTro.UpdateSelectedItems();
+            }
+        }
         #endregion
 
         #region Rieng
@@ -59,6 +80,7 @@ namespace BSCKPI.NguoiDung
             dDN.ND.IDNhanVien = IDNhanVien;
             dDN.ThongTin();
             EmailDN = dDN.ND.Email;
+            IDVaiTro = dDN.ND.IDVaiTro;
         }
 
         private void DanhSachChucNangChon()
@@ -67,6 +89,13 @@ namespace BSCKPI.NguoiDung
             dCN.CN.Nhom = 0;
             stoDSChucNang.DataSource = dCN.DanhSach();
             stoDSChucNang.DataBind();
+        }
+
+        private void DanhSachVaiTro()
+        {
+            daDangNhap dDN = new daDangNhap();
+            stoVaiTro.DataSource = dDN.DanhSachVaiTro();
+            stoVaiTro.DataBind();
         }
 
         private void DanhSachChucNangQTN()
@@ -141,6 +170,7 @@ namespace BSCKPI.NguoiDung
             dDN.ND.IDNhanVien = IDNhanVien;
             dDN.ND.Email = EmailDN;
             dDN.ND.MatKhau = MatKhau;
+            dDN.ND.IDVaiTro = IDVaiTro;
             dDN.ND.NguoiTao = daPhien.NguoiDung.IDNhanVien.ToString();
             dDN.ThemSua();
             X.Msg.Alert("", "Đã cập nhật mật khẩu thành công!").Show();

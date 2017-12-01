@@ -24,9 +24,6 @@ namespace BSCKPI.ThamSo
         }
 
         #region Rieng
-        #endregion
-
-        #region Su kien
         private void CheckQuyen(int rIDCN)
         {
             DaoBSCKPI.NguoiDung.daNguoiDungQuyen dNDQ = new DaoBSCKPI.NguoiDung.daNguoiDungQuyen();
@@ -55,9 +52,9 @@ namespace BSCKPI.ThamSo
             //Quyen Sua
             bool _Quyen = false;
             int i;
-            for(i=0; i<dNDQ.lstQuyen.Count;i++)
+            for (i = 0; i < dNDQ.lstQuyen.Count; i++)
             {
-                if(dNDQ.lstQuyen[i].IDQuyenTruyNhap== (int)DaoBSCKPI.NguoiDung.daQuyenTruyNhap.eQuyen.Sửa)
+                if (dNDQ.lstQuyen[i].IDQuyenTruyNhap == (int)DaoBSCKPI.NguoiDung.daQuyenTruyNhap.eQuyen.Sửa)
                 {
                     _Quyen = true;
                     break;
@@ -76,13 +73,16 @@ namespace BSCKPI.ThamSo
             }
             mnuiXoa.Visible = _Quyen;
 
-            if(dNDQ.lstQuyen[0].IDQuyenTruyNhap== (int)DaoBSCKPI.NguoiDung.daQuyenTruyNhap.eQuyen.Tất_Cả)
+            if (dNDQ.lstQuyen[0].IDQuyenTruyNhap == (int)DaoBSCKPI.NguoiDung.daQuyenTruyNhap.eQuyen.Tất_Cả)
             {
                 mnuiThongTin.Visible = true;
                 mnuiXoa.Visible = true;
             }
 
         }
+        #endregion
+
+        #region Su kien
 
         protected void DanhSachPTDG(object sender, StoreReadDataEventArgs e)
         {

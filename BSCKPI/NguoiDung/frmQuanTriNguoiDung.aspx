@@ -37,6 +37,17 @@
                                         <Blur Handler="this.next().validate();" />
                                     </Listeners>
                                 </ext:TextField>
+                                <ext:SelectBox runat="server" ID="slbVaiTro" FieldLabel="Vai trò" LabelStyle="font-weight:bold;" Width="500" MarginSpec="20 0 0 10"
+                                    DisplayField="Ten" ValueField="ID">
+                                    <Store>
+                                        <ext:Store runat="server" ID="stoVaiTro">
+                                            <Fields>
+                                                <ext:ModelField Name="ID" />
+                                                <ext:ModelField Name="Ten" />
+                                            </Fields>
+                                        </ext:Store>
+                                    </Store>
+                                </ext:SelectBox>
                                 <ext:TextField runat="server" ID="txtMatKhauNhacLai" FieldLabel="Nhắc lại Mật khẩu" LabelStyle="font-weight:bold;" Width="500" MarginSpec="20 0 0 10" EmptyText="Mật khẩu nhắc lại phải giống Mật khẩu"  InputType="Password"
                                     AllowBlank="false"  MsgTarget="Side">
                                     <CustomConfig>

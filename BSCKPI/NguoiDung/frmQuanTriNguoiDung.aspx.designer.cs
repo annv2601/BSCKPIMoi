@@ -49,6 +49,24 @@ namespace BSCKPI.NguoiDung {
         protected global::Ext.Net.TextField txtMatKhau;
         
         /// <summary>
+        /// slbVaiTro control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.SelectBox slbVaiTro;
+        
+        /// <summary>
+        /// stoVaiTro control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Store stoVaiTro;
+        
+        /// <summary>
         /// txtMatKhauNhacLai control.
         /// </summary>
         /// <remarks>

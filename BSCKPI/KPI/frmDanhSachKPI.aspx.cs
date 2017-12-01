@@ -32,10 +32,59 @@ namespace BSCKPI.KPI
                 Node TN = new Node();
                 TN = CayDanhSachBSC(0);
                 tpBSC.Root.Add(TN);
+
+                CheckQuyen(int.Parse(Request.QueryString["CN"]));
             }
         }
 
         #region Rieng
+        private void CheckQuyen(int rIDCN)
+        {
+            DaoBSCKPI.NguoiDung.daNguoiDungQuyen dNDQ = new DaoBSCKPI.NguoiDung.daNguoiDungQuyen();
+            dNDQ.NDQ.IDNhanVien = daPhien.NguoiDung.IDNhanVien;
+            dNDQ.NDQ.IDChucNang = rIDCN;
+            dNDQ.DanhSachQuyen();
+            if (dNDQ.lstQuyen.Count > 0)
+            {
+                if (dNDQ.lstQuyen[0].IDQuyenTruyNhap.Value >= (int)DaoBSCKPI.NguoiDung.daQuyenTruyNhap.eQuyen.Nhập)
+                {
+                    btnCapNhatBSC.Visible = true;
+                    txtNhapKPI.Text = "1";
+                }
+                else
+                {
+                    btnCapNhatBSC.Visible = false;
+                    txtNhapKPI.Text = "0";
+                }
+            }
+            else
+            {
+                btnCapNhatBSC.Visible = false;
+                txtNhapKPI.Text = "0";
+            }
+
+            //Quyen Xoa
+            bool _Quyen = false;
+            int i;
+            for (i = 0; i < dNDQ.lstQuyen.Count; i++)
+            {
+                if (dNDQ.lstQuyen[i].IDQuyenTruyNhap == (int)DaoBSCKPI.NguoiDung.daQuyenTruyNhap.eQuyen.Duyệt)
+                {
+                    _Quyen = true;
+                    break;
+                }
+            }
+            mnuitemKPIPheDuyet.Visible = _Quyen;
+            mnuitemKPILienKetBSC.Visible = _Quyen;
+
+            if (dNDQ.lstQuyen[0].IDQuyenTruyNhap == (int)DaoBSCKPI.NguoiDung.daQuyenTruyNhap.eQuyen.Tất_Cả)
+            {
+                mnuitemKPIPheDuyet.Visible = true;
+                mnuitemKPILienKetBSC.Visible = true;
+            }
+
+        }
+
         private void DanhSachDonVi()
         {
             daMoHinhDonVi dMHDV = new daMoHinhDonVi();

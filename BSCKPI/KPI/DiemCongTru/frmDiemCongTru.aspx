@@ -13,6 +13,12 @@
                 BangDCTX.Edit(e.record.data.ThuTu, e.field, e.originalValue, e.value, e.record.data);
             }
         }        
+
+        var beforeCellEditHandler = function (e) {
+            if (App.txtNhapDCT.getValue() == "0") {
+                CellEditing1.cancelEdit();
+            }
+        }
     </script>
 </head>
 <body>
@@ -67,7 +73,7 @@
                 </ext:SelectBox>
             </Items>
         </ext:FieldContainer>
-
+        <ext:Hidden runat="server" ID="txtNhapDCT" />
         <ext:GridPanel runat="server" ID="grdDCT" Width="1300" MinHeight="460" Layout="FitLayout">
                             <Store>
                                 <ext:Store runat="server" ID="stoDCT" OnReadData="DanhSachDCT">
@@ -113,6 +119,7 @@
                             <Plugins>                
                                 <ext:CellEditing runat="server" ClicksToEdit="1">
                                     <Listeners>
+                                        <BeforeEdit Handler="return beforeCellEditHandler(e);"></BeforeEdit>
                                         <Edit Fn="edit" />
                                     </Listeners>
                                 </ext:CellEditing>

@@ -28,6 +28,7 @@
                 </ext:MenuItem>
             </Items>
         </ext:Menu>
+        <ext:Hidden runat="server" ID="txtNhapNVC" />
         <ext:GridPanel runat="server" ID="grdNV" ContextMenuID="mnuNVTT"
             Title="Nhiệm vụ trọng tâm" TitleAlign="Center" MinHeight="500">
             <Store>

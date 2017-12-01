@@ -107,6 +107,10 @@
         };
 
         var beforeCellEditHandler = function (e) {
+            if (App.txtNhapKQDGCN.getValue() == "0") {
+                CellEditing1.cancelEdit();
+            }
+
             if (e.field == "Diem" && e.record.data.NhapDiem == false) {
                 //alert("Co chay");
                 CellEditing1.cancelEdit(); 
@@ -128,6 +132,7 @@
     <ext:ResourceManager runat="server" Locale="vi-VN"/>
     <form id="form1" runat="server">
         <ext:Hidden runat="server" ID="txtIDNhanVien" />
+        <ext:Hidden runat="server" ID="txtNhapKQDGCN" />
         <ext:GridPanel
             ID="grdBangCN"
             runat="server"

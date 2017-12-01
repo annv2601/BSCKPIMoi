@@ -25,7 +25,11 @@ namespace BSCKPI
                 dTTNV.TTNV.IDNhanVien = Guid.Parse("F2A8A332-84F8-4EB3-B223-03A785D3A337");
                 daPhien.NguoiDung = dTTNV.TTNV;*/
 
-                daPhien.KiemTraXacThuc();
+                if (Session["PhienLamViecBSC"] == null)
+                {
+                    Response.Redirect("frmLogin.aspx");
+                    return;
+                }
 
                 DanhSachChucNang();
 

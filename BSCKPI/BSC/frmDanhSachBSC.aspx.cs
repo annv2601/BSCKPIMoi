@@ -23,10 +23,38 @@ namespace BSCKPI.BSC
                 tpBSC.ExpandAll();
 
                 ucBK1.KhoiTao();
+
+                CheckQuyen(int.Parse(Request.QueryString["CN"]));
             }
         }
 
         #region Rieng
+
+        private void CheckQuyen(int rIDCN)
+        {
+            DaoBSCKPI.NguoiDung.daNguoiDungQuyen dNDQ = new DaoBSCKPI.NguoiDung.daNguoiDungQuyen();
+            dNDQ.NDQ.IDNhanVien = daPhien.NguoiDung.IDNhanVien;
+            dNDQ.NDQ.IDChucNang = rIDCN;
+            dNDQ.DanhSachQuyen();
+            if (dNDQ.lstQuyen.Count > 0)
+            {
+                if (dNDQ.lstQuyen[0].IDQuyenTruyNhap.Value >= (int)DaoBSCKPI.NguoiDung.daQuyenTruyNhap.eQuyen.Nhập)
+                {
+                    btnThemMoiBSC.Visible = true;
+                    btnCapNhatBSC.Visible = true;
+                }
+                else
+                {
+                    btnThemMoiBSC.Visible = false;
+                    btnCapNhatBSC.Visible = false;
+                }
+            }
+            else
+            {
+                btnThemMoiBSC.Visible = false;
+                btnCapNhatBSC.Visible = false;
+            }
+        }
         private List<ConfigItem> PhanTu(sp_tblBKChiTieuBSC_ThongTinResult pt)
         {
             List<ConfigItem> _lst = new List<ConfigItem>();

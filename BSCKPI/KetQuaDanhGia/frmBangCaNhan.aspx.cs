@@ -44,6 +44,29 @@ namespace BSCKPI.KetQuaDanhGia
         }
 
         #region Rieng
+        private void CheckQuyen(int rIDCN)
+        {
+            DaoBSCKPI.NguoiDung.daNguoiDungQuyen dNDQ = new DaoBSCKPI.NguoiDung.daNguoiDungQuyen();
+            dNDQ.NDQ.IDNhanVien = daPhien.NguoiDung.IDNhanVien;
+            dNDQ.NDQ.IDChucNang = rIDCN;
+            dNDQ.DanhSachQuyen();
+            if (dNDQ.lstQuyen.Count > 0)
+            {
+                if (dNDQ.lstQuyen[0].IDQuyenTruyNhap.Value >= (int)DaoBSCKPI.NguoiDung.daQuyenTruyNhap.eQuyen.Nhập)
+                {
+                    txtNhapKQDGCN.Text = "1";
+                }
+                else
+                {
+                    txtNhapKQDGCN.Text = "0";
+                }
+            }
+            else
+            {
+                txtNhapKQDGCN.Text = "0";
+            }
+        }
+
         private void LayBangDanhGia(byte rThang, int rNam, Guid rIDNhanVien)
         {
             daKetQuaDanhGia dKQ = new daKetQuaDanhGia();

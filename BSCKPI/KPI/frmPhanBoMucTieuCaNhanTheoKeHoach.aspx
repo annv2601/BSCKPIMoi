@@ -57,6 +57,12 @@
 
             return sum;
         };
+
+        var beforeCellEditHandler = function (e) {
+            if (App.txtNhap.getValue() == "0") {
+                CellEditing1.cancelEdit();
+            }
+        }
     </script>
 </head>
 <body>
@@ -145,7 +151,21 @@
             </Items>
         </ext:FieldContainer>
 
-        <ext:GridPanel runat="server" ID="grdPBChiTieu" Width="1300" MinHeight="500" Layout="FitLayout">
+        <ext:Menu runat="server" ID="mnuPBChiTieu">
+            <Items>
+                <ext:MenuItem runat="server" ID="mnuitmXoa" Text="Xóa chỉ tiêu phân bổ" Icon="Delete">
+                    <DirectEvents>
+                        <Click OnEvent="mnuitmXoa_CLick">
+                            <ExtraParams>
+                                <ext:Parameter Name="Values" Value="Ext.encode(#{grdPBChiTieu}.getRowsValues({selectedOnly:true}))" Mode="Raw" />
+                            </ExtraParams>
+                        </Click>
+                    </DirectEvents>
+                </ext:MenuItem>
+            </Items>
+        </ext:Menu>
+        <ext:Hidden runat="server" ID="txtNhap" />
+        <ext:GridPanel runat="server" ID="grdPBChiTieu" Width="1300" MinHeight="500" Layout="FitLayout" ContextMenuID="mnuPBChiTieu">
                             <Store>
                                 <ext:Store runat="server" ID="stoPhanBoCT" OnReadData="DanhSachPBMTNV">
                                     <Model>
@@ -247,12 +267,13 @@
                                 </Columns>
                             </ColumnModel>
                             <SelectionModel>
-                                <ext:CellSelectionModel runat="server" >                    
+                                <ext:CellSelectionModel runat="server" Mode="Single">                    
                                 </ext:CellSelectionModel>
                             </SelectionModel>
                             <Plugins>                
                                 <ext:CellEditing runat="server" ClicksToEdit="1">
                                     <Listeners>
+                                        <BeforeEdit Handler="return beforeCellEditHandler(e);"></BeforeEdit>
                                         <Edit Fn="editCT" />
                                     </Listeners>
                                 </ext:CellEditing>

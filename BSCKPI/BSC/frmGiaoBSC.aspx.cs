@@ -27,6 +27,8 @@ namespace BSCKPI.BSC
                 ucBK1.KhoiTao();
 
                 LaChon = true;
+
+                CheckQuyen(int.Parse(Request.QueryString["CN"]));
             }
         }
 
@@ -37,6 +39,31 @@ namespace BSCKPI.BSC
         }
 
         #region Rieng
+        private void CheckQuyen(int rIDCN)
+        {
+            DaoBSCKPI.NguoiDung.daNguoiDungQuyen dNDQ = new DaoBSCKPI.NguoiDung.daNguoiDungQuyen();
+            dNDQ.NDQ.IDNhanVien = daPhien.NguoiDung.IDNhanVien;
+            dNDQ.NDQ.IDChucNang = rIDCN;
+            dNDQ.DanhSachQuyen();
+            if (dNDQ.lstQuyen.Count > 0)
+            {
+                if (dNDQ.lstQuyen[0].IDQuyenTruyNhap.Value >= (int)DaoBSCKPI.NguoiDung.daQuyenTruyNhap.eQuyen.Nhập)
+                {
+                    btnCapNhatBSC.Visible = true;
+                    btnDongBoChiTieu.Visible = true;
+                }
+                else
+                {
+                    btnCapNhatBSC.Visible = false;
+                    btnDongBoChiTieu.Visible = false;
+                }
+            }
+            else
+            {
+                btnCapNhatBSC.Visible = false;
+                btnDongBoChiTieu.Visible = false;
+            }
+        }
 
         private void DanhSachThangNam()
         {

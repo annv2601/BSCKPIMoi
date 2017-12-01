@@ -46,5 +46,12 @@ namespace DaoBSCKPI.CongViecCaNhan
             lst = lCVCN.sp_tblcvCongViecCaNhan_DanhSach(TuNgay, DenNgay, IDDonVi, IDPhongBan).ToList();
             return daDatatableVaList.ToDataTable(lst);
         }
+
+        public DataTable DanhSach_NguoiLam()
+        {
+            List<sp_tblcvCongViecCaNhan_DanhSach_NguoiLamResult> lst;
+            lst = lCVCN.sp_tblcvCongViecCaNhan_DanhSach_NguoiLam(TuNgay, DenNgay, IDDonVi, IDPhongBan,IDNhanVien).ToList();
+            return daDatatableVaList.ToDataTable(lst);
+        }
     }
 }

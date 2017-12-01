@@ -33,6 +33,12 @@
 
             }
         }
+
+        var beforeCellEditHandler = function (e) {
+            if (App.txtNhapKPI.getValue() == "0") {
+                CellEditing1.cancelEdit();
+            }
+        }
         
     </script>
 </head>
@@ -97,6 +103,7 @@
                 </ext:MenuItem>
             </Items>
         </ext:Menu>
+        <ext:Hidden runat="server" ID="txtNhapKPI" />
         <ext:GridPanel runat="server" Title="Danh sách KPI" ID="grdKPI" StoreID="stoKPI" 
             MinHeight="300" ContextMenuID="mnuKPI" MaxHeight="550" AutoScroll="true">
             <View>
@@ -154,6 +161,7 @@
                 <ext:FilterHeader runat="server" OnCreateFilterableField="OnCreateFilterableField" />
                 <ext:CellEditing runat="server" ClicksToEdit="2">
                     <Listeners>
+                        <BeforeEdit Handler="return beforeCellEditHandler(e);"></BeforeEdit>
                         <Edit Fn="edit" />
                     </Listeners>
                 </ext:CellEditing>

@@ -76,6 +76,15 @@ namespace BSCKPI.KPI.DiemCongTru {
         protected global::Ext.Net.Store stoKHDG;
         
         /// <summary>
+        /// txtNhapDCT control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Hidden txtNhapDCT;
+        
+        /// <summary>
         /// grdDCT control.
         /// </summary>
         /// <remarks>

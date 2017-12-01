@@ -21,10 +21,41 @@ namespace BSCKPI.KetQuaDanhGia
             {
                 DanhSachThangNam();
                 DanhSachDonVi();
+
+                CheckQuyen(int.Parse(Request.QueryString["CN"]));
             }
         }
 
         #region Rieng
+        private void CheckQuyen(int rIDCN)
+        {
+            DaoBSCKPI.NguoiDung.daNguoiDungQuyen dNDQ = new DaoBSCKPI.NguoiDung.daNguoiDungQuyen();
+            dNDQ.NDQ.IDNhanVien = daPhien.NguoiDung.IDNhanVien;
+            dNDQ.NDQ.IDChucNang = rIDCN;
+            dNDQ.DanhSachQuyen();
+            if (dNDQ.lstQuyen.Count > 0)
+            {
+                if (dNDQ.lstQuyen[0].IDQuyenTruyNhap.Value >= (int)DaoBSCKPI.NguoiDung.daQuyenTruyNhap.eQuyen.Nhập)
+                {
+                    txtNhapKQDV.Text = "1";
+                }
+                else
+                {
+                    txtNhapKQDV.Text = "0";
+                }
+            }
+            else
+            {
+                txtNhapKQDV.Text = "0";
+            }
+            
+            if (dNDQ.lstQuyen[0].IDQuyenTruyNhap >= (int)DaoBSCKPI.NguoiDung.daQuyenTruyNhap.eQuyen.Duyệt)
+            {
+                btnGanChoNhanVien.Visible = true;
+            }
+
+        }
+
         private void DanhSachDonVi()
         {
             daMoHinhDonVi dMHDV = new daMoHinhDonVi();

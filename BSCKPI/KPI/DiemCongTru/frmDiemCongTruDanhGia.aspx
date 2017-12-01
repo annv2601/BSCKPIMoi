@@ -13,7 +13,13 @@
                 BangDCTDGX.Edit(e.record.data.ThuTu, e.field, e.originalValue, e.value, e.record.data);
                 e.record.data.TongDiemCong = e.record.data.TongDiemKPI + e.value;
             }
-        }        
+        }
+
+        var beforeCellEditHandler = function (e) {
+            if (App.txtNhapDCTDG.getValue() == "0") {
+                CellEditing1.cancelEdit();
+            }
+        }
     </script>
 </head>
 <body>
@@ -113,7 +119,7 @@
                 
             </Items>
         </ext:FieldContainer>
-
+        <ext:Hidden runat="server" ID="txtNhapDCTDG" />
         <ext:GridPanel runat="server" ID="grdDCTDG" Width="1300" MinHeight="500" Layout="FitLayout" MarginSpec="10 0 0 0">
                             <Store>
                                 <ext:Store runat="server" ID="stoDCTDG" OnReadData="DanhSachDCTDG">
@@ -153,6 +159,7 @@
                             <Plugins>                
                                 <ext:CellEditing runat="server" ClicksToEdit="1">
                                     <Listeners>
+                                        <BeforeEdit Handler="return beforeCellEditHandler(e);"></BeforeEdit>
                                         <Edit Fn="edit" />
                                     </Listeners>
                                 </ext:CellEditing>
