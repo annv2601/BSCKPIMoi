@@ -119,17 +119,34 @@ namespace BSCKPI.MoHinhToChuc
 
         private void DanhSachDonVi(DateTime rNgay,int rIDDVQL)
         {
-            daMoHinhDonVi dMHDV = new daMoHinhDonVi();
-            dMHDV.MHDV.TuNgay = rNgay;
-            dMHDV.MHDV.IDDonViQuanLy = rIDDVQL;
-            DataTable dt= dMHDV.DanhSach();
-            dt.Columns["IDDonVi"].ColumnName = "ID";
-            dt.Rows.Add(999999,"--- Hiện cả đơn vị dưới ---",0,9999,DateTime.Now,DateTime.Now,"", DateTime.Now,"");
-            stoDonVi.DataSource = dt;
-            stoDonVi.DataBind();
+            DataTable dt;
+            if (daPhien.VaiTro<=(int)daDangNhap.eVaiTro.Quản_lý_Phòng)
+            {
+                daDonVi dDV = new daDonVi();
+                dDV.DV.ID = daPhien.NguoiDung.IDDonVi.Value;
+                dt = dDV.DanhSachDuyNhat();
 
-            DataTable dt2 = dt;
-            ucCDV1.DanhSachGanDonVi(dt2);
+                stoDonVi.DataSource = dt;
+                stoDonVi.DataBind();
+
+                DataTable dt2 = dt;
+                ucCDV1.DanhSachGanDonVi(dt2);
+            }
+            else
+            {
+                daMoHinhDonVi dMHDV = new daMoHinhDonVi();
+                dMHDV.MHDV.TuNgay = rNgay;
+                dMHDV.MHDV.IDDonViQuanLy = rIDDVQL;
+                dt = dMHDV.DanhSach();
+                dt.Columns["IDDonVi"].ColumnName = "ID";
+                dt.Rows.Add(999999, "--- Hiện cả đơn vị dưới ---", 0, 9999, DateTime.Now, DateTime.Now, "", DateTime.Now, "");
+
+                stoDonVi.DataSource = dt;
+                stoDonVi.DataBind();
+
+                DataTable dt2 = dt;
+                ucCDV1.DanhSachGanDonVi(dt2);
+            }
         }
 
         private void DanhSachDonViPhanCap(DateTime rNgay, int rIDDVQL)
@@ -212,13 +229,26 @@ namespace BSCKPI.MoHinhToChuc
             daMoHinhDonVi dMHDV = new daMoHinhDonVi();
             dMHDV.MHDV.TuNgay = DateTime.Now;
             dMHDV.MHDV.IDDonViQuanLy = int.Parse(slbDonVi.SelectedItem.Value);
-            stoPhong.DataSource = dMHDV.DanhSachGopVoiPhongBan();
-            stoPhong.DataBind();
-            /*daMoHinhPhongBan dMHPB = new daMoHinhPhongBan();
-            dMHPB.MHPB.TuNgay = DateTime.Now;
-            dMHPB.MHPB.IDDonVi = int.Parse(slbDonVi.SelectedItem.Value);
-            stoPhong.DataSource = dMHPB.DanhSachDDL();
-            stoPhong.DataBind();*/
+            if (daPhien.VaiTro <= (int)daDangNhap.eVaiTro.Quản_lý_Phòng)
+            {
+                daPhongBan dPB = new daPhongBan();
+                dPB.PB.ID = daPhien.NguoiDung.IDPhongBan.Value;
+                if (dPB.PB.ID != 0)
+                {
+                    stoPhong.DataSource = dPB.DanhSachDuyNhat();
+                }
+                else
+                {
+                    daDonVi dDV = new daDonVi();
+                    dDV.DV.ID = daPhien.NguoiDung.IDDonVi.Value;
+                    stoPhong.DataSource = dDV.DanhSachDuyNhat();
+                }
+            }
+            else
+            {
+                stoPhong.DataSource = dMHDV.DanhSachGopVoiPhongBan();
+            }
+            stoPhong.DataBind();            
         }        
         #endregion
 

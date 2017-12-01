@@ -37,5 +37,19 @@ namespace DaoBSCKPI.DonVi
         {
             lDV.sp_tblDonVi_Xoa(DV.ID);
         }
+
+        public DataTable DanhSachDuyNhat()
+        {
+            DataTable dt = new DataTable();
+            dt.Columns.Add("ID", typeof(int));
+            dt.Columns.Add("Ten", typeof(string));
+
+            if (ThongTin() != null)
+            {
+                dt.Rows.Add(DV.ID, DV.Ten);
+            }
+
+            return dt;
+        }
     }
 }

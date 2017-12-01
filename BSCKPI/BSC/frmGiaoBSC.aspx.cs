@@ -77,7 +77,17 @@ namespace BSCKPI.BSC
             daMoHinhDonVi dMHDV = new daMoHinhDonVi();
             dMHDV.MHDV.IDDonViQuanLy = daPhien.NguoiDung.IDDonVi.Value;
             dMHDV.MHDV.TuNgay = DateTime.Now;
-            stoDonVi.DataSource = dMHDV.DanhSach();
+            switch (daPhien.VaiTro)
+            {
+                case (int)DaoBSCKPI.NguoiDung.daDangNhap.eVaiTro.Quản_lý_Trung_tâm_Huyện:
+                    daDonVi dDV = new daDonVi();
+                    dDV.DV.ID = daPhien.NguoiDung.IDDonVi.Value;
+                    stoDonVi.DataSource = dDV.DanhSachDuyNhat();
+                    break;
+                case (int)DaoBSCKPI.NguoiDung.daDangNhap.eVaiTro.Quản_lý_Tỉnh_Thành:
+                    stoDonVi.DataSource = dMHDV.DanhSach();
+                    break;
+            }
             stoDonVi.DataBind();
         }
 

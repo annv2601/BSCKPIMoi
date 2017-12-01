@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BSCKPI" Class="linqDangNhapDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=10.10.200.160;Initial Catalog=BSCKPI;User ID=chay" SettingsObjectName="DaoBSCKPI.Properties.Settings" SettingsPropertyName="BSCKPIConnectionString1" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=10.10.200.160;Initial Catalog=BSCKPI;Persist Security Info=True;User ID=chay" SettingsObjectName="DaoBSCKPI.Properties.Settings" SettingsPropertyName="BSCKPIConnectionString" Provider="System.Data.SqlClient" />
   <Function Name="dbo.sp_tblHTDangNhap_DangNhap" Method="sp_tblHTDangNhap_DangNhap">
     <Parameter Name="Email" Parameter="email" Type="System.String" DbType="NVarChar(100)" />
     <Parameter Name="MatKhau" Parameter="matKhau" Type="System.String" DbType="NVarChar(100)" />

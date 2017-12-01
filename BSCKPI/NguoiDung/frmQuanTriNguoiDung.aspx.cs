@@ -23,6 +23,7 @@ namespace BSCKPI.NguoiDung
 
                 DanhSachChucNangChon();
                 DanhSachChucNangQTN();
+                DanhSachVaiTro();
             }
         }
 
@@ -153,7 +154,7 @@ namespace BSCKPI.NguoiDung
                 });
                 return;
             }
-            if (MatKhau=="12345")
+            if (MatKhau=="12345" || MatKhau=="123456")
             {
                 X.Msg.Show(new MessageBoxConfig
                 {

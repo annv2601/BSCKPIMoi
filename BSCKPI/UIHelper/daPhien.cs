@@ -14,6 +14,12 @@ namespace BSCKPI.UIHelper
             set { HttpContext.Current.Session["PhienLamViecBSC"] = value; }
         }
 
+        public static int VaiTro
+        {
+            get { return (int)HttpContext.Current.Session["BSCVaiTro"]; }
+            set { HttpContext.Current.Session["BSCVaiTro"] = value; }
+        }
+
         public static string LayDiaChiURL(string rDuongDan)
         {
             HttpRequest r = HttpContext.Current.Request;

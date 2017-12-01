@@ -33,7 +33,7 @@ namespace DaoBSCKPI.Database.NguoiDung
     #endregion
 		
 		public linqDangNhapDataContext() : 
-				base(global::DaoBSCKPI.Properties.Settings.Default.BSCKPIConnectionString1, mappingSource)
+				base(global::DaoBSCKPI.Properties.Settings.Default.BSCKPIConnectionString, mappingSource)
 		{
 			OnCreated();
 		}

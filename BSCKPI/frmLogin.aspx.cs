@@ -29,10 +29,11 @@ namespace BSCKPI
                 HttpCookie _EmailDangNhap;
                 _EmailDangNhap = Request.Cookies["BSCDiaChiEmailDangNhap"];
                 txtEmail.Text = _EmailDangNhap.Value;
+                txtMatKhau.Focus();
             }
             catch
             {
-
+                txtEmail.Focus();
             }
         }
 
@@ -121,8 +122,11 @@ namespace BSCKPI
             dTTNV.TTNV.Thang = Convert.ToByte(DateTime.Now.Month);
             dTTNV.TTNV.Nam = DateTime.Now.Year;
             daPhien.NguoiDung = dTTNV.TimEmail(dDN.ND.Email);
+                        
+            dDN.ND.IDNhanVien = daPhien.NguoiDung.IDNhanVien.Value;
+            dDN.ThongTin();
+            daPhien.VaiTro = dDN.ND.IDVaiTro;
 
-            
             if (chkNho.Checked)
             {
                 HttpCookie _E = new HttpCookie("BSCDiaChiEmailDangNhap");

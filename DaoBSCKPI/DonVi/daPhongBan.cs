@@ -44,5 +44,19 @@ namespace DaoBSCKPI.DonVi
             lst = lDV.sp_tblPhongBan_DanhSach().ToList();
             return daDatatableVaList.ToDataTable(lst);
         }
+
+        public DataTable DanhSachDuyNhat()
+        {
+            DataTable dt = new DataTable();
+            dt.Columns.Add("ID", typeof(int));
+            dt.Columns.Add("Ten", typeof(string));
+
+            if (ThongTin()!=null)
+            {
+                dt.Rows.Add(0 - PB.ID, PB.Ten);
+            }
+
+            return dt;
+        }
     }
 }
