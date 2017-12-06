@@ -22,6 +22,15 @@ namespace BSCKPI {
         protected global::Ext.Net.ResourceManager ResourceManager1;
         
         /// <summary>
+        /// form1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        
+        /// <summary>
         /// pnlChucNang control.
         /// </summary>
         /// <remarks>
@@ -40,6 +49,15 @@ namespace BSCKPI {
         protected global::Ext.Net.Button btnLogin;
         
         /// <summary>
+        /// btnDoiMatKhau control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Button btnDoiMatKhau;
+        
+        /// <summary>
         /// TabPanelChinh control.
         /// </summary>
         /// <remarks>
@@ -56,5 +74,59 @@ namespace BSCKPI {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::Ext.Net.Panel tabHome;
+        
+        /// <summary>
+        /// wDMK control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Window wDMK;
+        
+        /// <summary>
+        /// txtMatKhauCu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.TextField txtMatKhauCu;
+        
+        /// <summary>
+        /// txtMatKhauMoi control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.TextField txtMatKhauMoi;
+        
+        /// <summary>
+        /// txtMatKhauMoiNhacLai control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.TextField txtMatKhauMoiNhacLai;
+        
+        /// <summary>
+        /// btnCapNhatDMK control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Button btnCapNhatDMK;
+        
+        /// <summary>
+        /// btnDongDMK control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Button btnDongDMK;
     }
 }

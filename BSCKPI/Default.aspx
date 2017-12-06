@@ -52,8 +52,9 @@
     </ext:XScript>
 </head>
 <body>
-    <ext:ResourceManager ID="ResourceManager1" runat="server" Theme="Default" />
-
+    <ext:ResourceManager ID="ResourceManager1" runat="server" Theme="Default" Locale="vi-VN"/>
+    <form id="form1" runat="server">
+    
     <ext:Viewport runat="server" Layout="BorderLayout" UI="Warning">
         <Items>           
 
@@ -98,10 +99,15 @@
                     
                 </Items>
                 <Buttons>
-                    <ext:Button runat="server" ID="btnLogin" Text="Đăng xuất" Icon="KeyStop" UI="Warning" Width="160" Height="25">
+                    <ext:Button runat="server" ID="btnLogin" Text="Đăng xuất" Icon="KeyStop" UI="Warning" Width="90" Height="25">
                         <DirectEvents>
                             <Click OnEvent="btnLogin_Click" />
                         </DirectEvents>
+                    </ext:Button>
+                    <ext:Button runat="server" ID="btnDoiMatKhau" Text="Đổi mật khẩu" Width="90" UI="Warning" Height="25">
+                        <Listeners>
+                            <Click Handler="#{wDMK}.show();#{txtMatKhauCu}.setValue('');#{txtMatKhauMoi}.setValue('');#{txtMatKhauMoiNhacLai}.setValue('');"/>
+                        </Listeners>
                     </ext:Button>
                 </Buttons>
             </ext:Panel>
@@ -144,5 +150,48 @@
             </ext:Panel>--%>
         </Items>
     </ext:Viewport>
+
+    <ext:Window runat="server" ID="wDMK" Title="Đổi mật khẩu" Hidden="true" Width="350" Height="170">
+        <Items>
+            <ext:Panel runat="server" Layout="FormLayout" ButtonAlign="Center" Header="false" Width="350" Height="130">
+                <Items>
+                    <ext:TextField runat="server" ID="txtMatKhauCu" FieldLabel="Mật khẩu cũ" LabelStyle="font-weight:bold;" Width="320" MarginSpec="20 0 0 10" InputType="Password" 
+                                    AllowBlank="false"  MsgTarget="Side">
+                                    <Listeners>
+                                        <ValidityChange Handler="this.next().validate();" />
+                                        <Blur Handler="this.next().validate();" />
+                                    </Listeners>
+                                </ext:TextField>
+                    <ext:TextField runat="server" ID="txtMatKhauMoi" FieldLabel="Mật khẩu mới" LabelStyle="font-weight:bold;" Width="320" MarginSpec="30 0 0 10" InputType="Password" 
+                                    AllowBlank="false"  MsgTarget="Side">
+                                    <Listeners>
+                                        <ValidityChange Handler="this.next().validate();" />
+                                        <Blur Handler="this.next().validate();" />
+                                    </Listeners>
+                                </ext:TextField>
+                    <ext:TextField runat="server" ID="txtMatKhauMoiNhacLai" FieldLabel="Nhắc lại Mật khẩu" LabelStyle="font-weight:bold;" Width="320" MarginSpec="30 0 0 10" InputType="Password"
+                                    AllowBlank="false"  MsgTarget="Side">
+                                    <CustomConfig>
+                                        <ext:ConfigItem Name="initialPassField" Value="txtMatKhau" Mode="Value" />
+                                    </CustomConfig>
+                                </ext:TextField>
+                </Items>
+                <Buttons>
+                    <ext:Button runat="server" ID="btnCapNhatDMK" Text="Đổi mật khẩu" Icon="KeyGo" Width="100" Height="30">
+                        <DirectEvents>
+                            <Click OnEvent="btnCapNhatDMK_Click" />
+                        </DirectEvents>
+                    </ext:Button>
+                    <ext:Button runat="server" ID="btnDongDMK" Text="Đóng" Icon="Cross" Width="100" Height="30">
+                        <Listeners>
+                            <Click Handler="#{wDMK}.hide();" />
+                        </Listeners>
+                    </ext:Button>
+                </Buttons>
+            </ext:Panel>
+        </Items>
+    </ext:Window>
+
+    </form>
 </body>
 </html>

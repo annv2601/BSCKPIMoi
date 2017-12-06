@@ -58,7 +58,7 @@
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
-                        <ext:SelectBox runat="server" ID="slbThang" 
+                        <ext:SelectBox runat="server" ID="slbThang" Width="120"
                             EmptyText="Tháng ...." DisplayField="Ten" ValueField="ID" MarginSpec="0 0 0 10" RenderXType="True">
                             <ListConfig MaxHeight="500" />
                             <Listeners>
@@ -77,7 +77,7 @@
                                 </ext:Store>
                             </Store>
                         </ext:SelectBox>
-                        <ext:SelectBox runat="server" ID="slbNam" QueryMode="Local" TypeAhead="true"
+                        <ext:SelectBox runat="server" ID="slbNam" QueryMode="Local" TypeAhead="true" Width="120"
                             EmptyText="Năm ...." DisplayField="Ten" ValueField="ID" MarginSpec="0 0 0 10" RenderXType="true">
                             <Listeners>
                                 <Select Handler="#{stoNV}.reload();" />
@@ -95,7 +95,7 @@
                                 </ext:Store>
                             </Store>
                         </ext:SelectBox>
-                        <ext:SelectBox runat="server" ID="slbDonVi" DisplayField="Ten" ValueField="IDDonVi" EmptyText="Chọn đơn vị" MarginSpec="0 0 0 10" Width="200">
+                        <ext:SelectBox runat="server" ID="slbDonVi" DisplayField="Ten" ValueField="IDDonVi" EmptyText="Chọn đơn vị" MarginSpec="0 0 0 10" Width="300">
                             <Listeners>
                                 <Select Handler="#{stoPhong}.reload();#{stoNV}.reload();" />
                             </Listeners>
@@ -108,7 +108,7 @@
                                 </ext:Store>
                             </Store>
                         </ext:SelectBox>
-                    <ext:ComboBox runat="server" ID="slbPhongBan" DisplayField="Ten" ValueField="ID" EmptyText="Chọn Phòng ban, đơn vị dưới" MarginSpec="0 0 0 10" Width="200" QueryMode="Local">
+                    <ext:ComboBox runat="server" ID="slbPhongBan" DisplayField="Ten" ValueField="ID" EmptyText="Chọn Phòng ban, đơn vị dưới" MarginSpec="0 0 0 10" Width="300" QueryMode="Local">
                                 <Listeners>
                                     <Select Handler="#{stoNV}.reload();" />
                                 </Listeners>

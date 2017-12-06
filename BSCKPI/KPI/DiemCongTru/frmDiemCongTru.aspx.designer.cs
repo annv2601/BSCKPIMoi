@@ -76,6 +76,42 @@ namespace BSCKPI.KPI.DiemCongTru {
         protected global::Ext.Net.Store stoKHDG;
         
         /// <summary>
+        /// slbDonVi control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.SelectBox slbDonVi;
+        
+        /// <summary>
+        /// stoDonVi control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Store stoDonVi;
+        
+        /// <summary>
+        /// slbPhongBan control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.ComboBox slbPhongBan;
+        
+        /// <summary>
+        /// stoPhong control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Ext.Net.Store stoPhong;
+        
+        /// <summary>
         /// txtNhapDCT control.
         /// </summary>
         /// <remarks>

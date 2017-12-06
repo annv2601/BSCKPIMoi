@@ -61,37 +61,6 @@
     <Parameter Name="NguoiTao" Parameter="nguoiTao" Type="System.String" DbType="NVarChar(30)" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="dbo.sp_tblBKKetQuaDanhGia_ThemSua" Method="sp_tblBKKetQuaDanhGia_ThemSua">
-    <Parameter Name="Thang" Parameter="thang" Type="System.Int16" DbType="SmallInt" />
-    <Parameter Name="Nam" Parameter="nam" Type="System.Int32" DbType="Int" />
-    <Parameter Name="IDNhanVien" Parameter="iDNhanVien" Type="System.Guid" DbType="UniqueIdentifier" />
-    <Parameter Name="IDKPI" Parameter="iDKPI" Type="System.Int32" DbType="Int" />
-    <Parameter Name="KetQua" Parameter="ketQua" Type="System.Decimal" DbType="Decimal(22,3)" />
-    <Parameter Name="Diem" Parameter="diem" Type="System.Int32" DbType="Int" />
-    <Parameter Name="DienGiai" Parameter="dienGiai" Type="System.String" DbType="NVarChar(500)" />
-    <Parameter Name="NguoiTao" Parameter="nguoiTao" Type="System.String" DbType="NVarChar(30)" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.sp_tblBKKetQuaDanhGia_ThongTin" Method="sp_tblBKKetQuaDanhGia_ThongTin">
-    <Parameter Name="Thang" Parameter="thang" Type="System.Int16" DbType="SmallInt" />
-    <Parameter Name="Nam" Parameter="nam" Type="System.Int32" DbType="Int" />
-    <Parameter Name="IDNhanVien" Parameter="iDNhanVien" Type="System.Guid" DbType="UniqueIdentifier" />
-    <Parameter Name="IDKPI" Parameter="iDKPI" Type="System.Int32" DbType="Int" />
-    <ElementType Name="sp_tblBKKetQuaDanhGia_ThongTinResult">
-      <Column Name="Thang" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
-      <Column Name="Nam" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="IDNhanVien" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
-      <Column Name="IDKPI" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="KetQua" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
-      <Column Name="Diem" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="TyLeHoanThanh" Type="System.Decimal" DbType="Decimal(22,4)" CanBeNull="true" />
-      <Column Name="DienGiai" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
-      <Column Name="NguoiTao" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
-      <Column Name="NguoiSua" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
-      <Column Name="NgayTao" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="NgaySua" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.sp_tblBKKetQuaDanhGia_KhoiTao_NhanVien_TuDonVi" Method="sp_tblBKKetQuaDanhGia_KhoiTao_NhanVien_TuDonVi">
     <Parameter Name="Thang" Parameter="thang" Type="System.Int16" DbType="SmallInt" />
     <Parameter Name="Nam" Parameter="nam" Type="System.Int32" DbType="Int" />
@@ -118,5 +87,36 @@
     <ElementType Name="sp_tblBKKetQuaDanhGia_TinhDiem_NhanVienResult">
       <Column Name="Co" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
     </ElementType>
+  </Function>
+  <Function Name="dbo.sp_tblBKKetQuaDanhGia_ThongTin" Method="sp_tblBKKetQuaDanhGia_ThongTin">
+    <Parameter Name="Thang" Parameter="thang" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="Nam" Parameter="nam" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDNhanVien" Parameter="iDNhanVien" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="IDKPI" Parameter="iDKPI" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_tblBKKetQuaDanhGia_ThongTinResult">
+      <Column Name="Thang" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Nam" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDNhanVien" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="IDKPI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="KetQua" Type="System.Decimal" DbType="Decimal(22,3)" CanBeNull="true" />
+      <Column Name="Diem" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
+      <Column Name="TyLeHoanThanh" Type="System.Decimal" DbType="Decimal(22,4)" CanBeNull="true" />
+      <Column Name="DienGiai" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="NguoiTao" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="NguoiSua" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="NgayTao" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NgaySua" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_tblBKKetQuaDanhGia_ThemSua" Method="sp_tblBKKetQuaDanhGia_ThemSua">
+    <Parameter Name="Thang" Parameter="thang" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="Nam" Parameter="nam" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDNhanVien" Parameter="iDNhanVien" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="IDKPI" Parameter="iDKPI" Type="System.Int32" DbType="Int" />
+    <Parameter Name="KetQua" Parameter="ketQua" Type="System.Decimal" DbType="Decimal(22,3)" />
+    <Parameter Name="Diem" Parameter="diem" Type="System.Decimal" DbType="Decimal(22,3)" />
+    <Parameter Name="DienGiai" Parameter="dienGiai" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="NguoiTao" Parameter="nguoiTao" Type="System.String" DbType="NVarChar(30)" />
+    <Return Type="System.Int32" />
   </Function>
 </Database>

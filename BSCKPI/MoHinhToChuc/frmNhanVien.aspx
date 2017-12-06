@@ -54,14 +54,14 @@
                                 </ext:Store>
                             </Store>
                         </ext:SelectBox>
-                <ext:SelectBox runat="server" ID="slbDonVi" DisplayField="Ten" ValueField="ID" EmptyText="Chọn đơn vị quản lý" MarginSpec="0 0 0 10" Width="300">
+                <ext:SelectBox runat="server" ID="slbDonVi" DisplayField="Ten" ValueField="IDDonVi" EmptyText="Chọn đơn vị quản lý" MarginSpec="0 0 0 10" Width="300">
                             <Listeners>
                                 <Select Handler="#{stoPhong}.reload();#{stoNhanVien}.reload();" />                                
                             </Listeners>
                             <Store>
                                 <ext:Store runat="server" ID="stoDonVi">
                                     <Fields>
-                                        <ext:ModelField Name="ID" />
+                                        <ext:ModelField Name="IDDonVi" />
                                         <ext:ModelField Name="Ten" />
                                     </Fields>
                                 </ext:Store>

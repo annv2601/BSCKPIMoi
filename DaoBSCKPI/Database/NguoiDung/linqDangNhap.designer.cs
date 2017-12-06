@@ -89,6 +89,13 @@ namespace DaoBSCKPI.Database.NguoiDung
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
 			return ((ISingleResult<sp_tblHTVaiTro_DanhSachResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_tblHTDangNhap_DoiMatKhau")]
+		public ISingleResult<sp_tblHTDangNhap_DoiMatKhauResult> sp_tblHTDangNhap_DoiMatKhau([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDNhanVien", DbType="UniqueIdentifier")] System.Nullable<System.Guid> iDNhanVien, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="MatKhauCu", DbType="NVarChar(100)")] string matKhauCu, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="MatKhauMoi", DbType="NVarChar(100)")] string matKhauMoi, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="NguoiTao", DbType="NVarChar(30)")] string nguoiTao)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iDNhanVien, matKhauCu, matKhauMoi, nguoiTao);
+			return ((ISingleResult<sp_tblHTDangNhap_DoiMatKhauResult>)(result.ReturnValue));
+		}
 	}
 	
 	public partial class sp_tblHTDangNhap_DangNhapResult
@@ -362,6 +369,32 @@ namespace DaoBSCKPI.Database.NguoiDung
 				if ((this._NguoiTao != value))
 				{
 					this._NguoiTao = value;
+				}
+			}
+		}
+	}
+	
+	public partial class sp_tblHTDangNhap_DoiMatKhauResult
+	{
+		
+		private System.Nullable<bool> _KQDoiMatKhau;
+		
+		public sp_tblHTDangNhap_DoiMatKhauResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_KQDoiMatKhau", DbType="Bit")]
+		public System.Nullable<bool> KQDoiMatKhau
+		{
+			get
+			{
+				return this._KQDoiMatKhau;
+			}
+			set
+			{
+				if ((this._KQDoiMatKhau != value))
+				{
+					this._KQDoiMatKhau = value;
 				}
 			}
 		}

@@ -42,6 +42,11 @@ namespace DaoBSCKPI.NguoiDung
             lDN.sp_tblHTDangNhap_ThemSua(ND.IDNhanVien, ND.Email, ND.MatKhau, ND.IDVaiTro, ND.NguoiTao);
         }
 
+        public Boolean DOiMatKhau(string rMatKhauMoi)
+        {
+            return lDN.sp_tblHTDangNhap_DoiMatKhau(ND.IDNhanVien, ND.MatKhau, rMatKhauMoi, ND.NguoiTao).Single().KQDoiMatKhau.Value;
+        }
+
         public string DangNhap()
         {
             return lDN.sp_tblHTDangNhap_DangNhap(ND.Email, ND.MatKhau).Single().KetQuaDangNhap;

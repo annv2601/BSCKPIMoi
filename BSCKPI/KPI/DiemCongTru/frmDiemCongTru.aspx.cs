@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using DaoBSCKPI.KeHoachDanhGia;
 using DaoBSCKPI.DiemCongTru;
 using DaoBSCKPI;
+using DaoBSCKPI.DonVi;
 
 using Ext.Net;
 using BSCKPI.UIHelper;
@@ -21,6 +22,7 @@ namespace BSCKPI.KPI.DiemCongTru
             {
                 DanhSachThangNam();
                 DanhSachKeHoachDG();
+                DanhSachDonVi(DateTime.Now, daPhien.NguoiDung.IDDonVi.Value);
 
                 CheckQuyen(int.Parse(Request.QueryString["CN"]));
             }
@@ -64,6 +66,24 @@ namespace BSCKPI.KPI.DiemCongTru
             stoNam.DataBind();
         }
 
+        private void DanhSachDonVi(DateTime rNgay, int rIDDVQL)
+        {
+            daMoHinhDonVi dMHDV = new daMoHinhDonVi();
+            dMHDV.MHDV.TuNgay = rNgay;
+            dMHDV.MHDV.IDDonViQuanLy = rIDDVQL;
+            if (daPhien.VaiTro <= (int)DaoBSCKPI.NguoiDung.daDangNhap.eVaiTro.Quản_lý_Phòng)
+            {
+                daDonVi dDV = new daDonVi();
+                dDV.DV.ID = daPhien.NguoiDung.IDDonVi.Value;
+                stoDonVi.DataSource = dDV.DanhSachDuyNhat();
+            }
+            else
+            {
+                stoDonVi.DataSource = dMHDV.DanhSach();
+            }
+            stoDonVi.DataBind();
+        }
+
         private void DanhSachKeHoachDG()
         {
             daKeHoachDanhGia dKHDG = new daKeHoachDanhGia();
@@ -83,9 +103,65 @@ namespace BSCKPI.KPI.DiemCongTru
                 stoNhanVien.DataBind();
             }
         }
+
+        private void DanhSachNhanVienDanhGiaDonVi()
+        {
+            if (slbKeHoachDG.SelectedItem.Value != null)
+            {
+                daKeHoachDanhGia dKHDG = new daKeHoachDanhGia();
+                dKHDG.Thang = byte.Parse(slbThang.SelectedItem.Value);
+                dKHDG.Nam = int.Parse(slbNam.SelectedItem.Value);
+                dKHDG.KHDG.ID = int.Parse(slbKeHoachDG.SelectedItem.Value);
+
+                int _IDDV, _IDPB;
+                _IDDV = int.Parse(slbDonVi.SelectedItem.Value);
+                _IDPB = int.Parse(slbPhongBan.SelectedItem.Value);
+                if (_IDPB < 0)
+                {
+                    _IDPB = 0 - _IDPB;
+                }
+                else
+                {
+                    _IDDV = _IDPB;
+                    _IDPB = 0;
+                }
+
+                stoNhanVien.DataSource = dKHDG.DanhSachNhanVienDonVi(_IDDV, _IDPB);
+                stoNhanVien.DataBind();
+            }
+        }
         #endregion
 
         #region Su kien
+        protected void DanhSachPhongBan(object sender, StoreReadDataEventArgs e)
+        {
+            slbPhongBan.SelectedItems.Clear();
+            slbPhongBan.UpdateSelectedItems();
+            daMoHinhDonVi dMHDV = new daMoHinhDonVi();
+            dMHDV.MHDV.TuNgay = DateTime.Now;
+            dMHDV.MHDV.IDDonViQuanLy = int.Parse(slbDonVi.SelectedItem.Value);
+            if (daPhien.VaiTro <= (int)DaoBSCKPI.NguoiDung.daDangNhap.eVaiTro.Quản_lý_Phòng)
+            {
+                daPhongBan dPB = new daPhongBan();
+                dPB.PB.ID = daPhien.NguoiDung.IDPhongBan.Value;
+                if (dPB.PB.ID != 0)
+                {
+                    stoPhong.DataSource = dPB.DanhSachDuyNhat();
+                }
+                else
+                {
+                    daDonVi dDV = new daDonVi();
+                    dDV.DV.ID = daPhien.NguoiDung.IDDonVi.Value;
+                    stoPhong.DataSource = dDV.DanhSachDuyNhat();
+                }
+            }
+            else
+            {
+                stoPhong.DataSource = dMHDV.DanhSachGopVoiPhongBan();
+            }
+            stoPhong.DataBind();
+        }
+
         protected void DanhSachDCT(object sender, StoreReadDataEventArgs e)
         {
             daDiemCongTru dDCT = new daDiemCongTru();
@@ -98,7 +174,21 @@ namespace BSCKPI.KPI.DiemCongTru
 
         protected void DanhSachNhanVienTD(object sender, StoreReadDataEventArgs e)
         {
-            DanhSachNhanVienDanhGia();
+            if (slbThang.SelectedItem.Value == null || slbNam.SelectedItem.Value == null)
+            {
+                return;
+            }
+            if (slbDonVi.SelectedItem.Value == null && slbPhongBan.SelectedItem.Value == null)
+            {
+                DanhSachNhanVienDanhGia();
+            }
+            else
+            {
+                if (slbDonVi.SelectedItem.Value != null && slbPhongBan.SelectedItem.Value != null)
+                {
+                    DanhSachNhanVienDanhGiaDonVi();
+                }
+            }
         }
 
         protected void btnThem_Click(object sender, DirectEventArgs e)

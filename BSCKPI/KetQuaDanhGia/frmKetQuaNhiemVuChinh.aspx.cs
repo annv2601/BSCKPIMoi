@@ -78,7 +78,16 @@ namespace BSCKPI.KetQuaDanhGia
             daMoHinhDonVi dMHDV = new daMoHinhDonVi();
             dMHDV.MHDV.TuNgay = rNgay;
             dMHDV.MHDV.IDDonViQuanLy = rIDDVQL;
-            stoDonVi.DataSource = dMHDV.DanhSach();
+            if (daPhien.VaiTro <= (int)DaoBSCKPI.NguoiDung.daDangNhap.eVaiTro.Quản_lý_Phòng)
+            {
+                daDonVi dDV = new daDonVi();
+                dDV.DV.ID = daPhien.NguoiDung.IDDonVi.Value;
+                stoDonVi.DataSource = dDV.DanhSachDuyNhat();
+            }
+            else
+            {
+                stoDonVi.DataSource = dMHDV.DanhSach();
+            }
             stoDonVi.DataBind();
         }
 
@@ -109,7 +118,25 @@ namespace BSCKPI.KetQuaDanhGia
             daMoHinhDonVi dMHDV = new daMoHinhDonVi();
             dMHDV.MHDV.TuNgay = DateTime.Now;
             dMHDV.MHDV.IDDonViQuanLy = int.Parse(slbDonVi.SelectedItem.Value);
-            stoPhong.DataSource = dMHDV.DanhSachGopVoiPhongBan();
+            if (daPhien.VaiTro <= (int)DaoBSCKPI.NguoiDung.daDangNhap.eVaiTro.Quản_lý_Phòng)
+            {
+                daPhongBan dPB = new daPhongBan();
+                dPB.PB.ID = daPhien.NguoiDung.IDPhongBan.Value;
+                if (dPB.PB.ID != 0)
+                {
+                    stoPhong.DataSource = dPB.DanhSachDuyNhat();
+                }
+                else
+                {
+                    daDonVi dDV = new daDonVi();
+                    dDV.DV.ID = daPhien.NguoiDung.IDDonVi.Value;
+                    stoPhong.DataSource = dDV.DanhSachDuyNhat();
+                }
+            }
+            else
+            {
+                stoPhong.DataSource = dMHDV.DanhSachGopVoiPhongBan();
+            }
             stoPhong.DataBind();
         }
 

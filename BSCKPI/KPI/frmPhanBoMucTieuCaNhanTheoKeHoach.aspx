@@ -70,7 +70,7 @@
     <form id="form1" runat="server">
         <ext:FieldContainer runat="server" Layout="HBoxLayout" MarginSpec="10 0 0 0">
             <Items>
-                <ext:SelectBox runat="server" ID="slbThang" 
+                <ext:SelectBox runat="server" ID="slbThang" Width="120"
                             EmptyText="Tháng ...." DisplayField="Ten" ValueField="ID" MarginSpec="0 0 0 10" RenderXType="True">
                     <ListConfig MaxHeight="500">                       
                    </ListConfig>
@@ -90,7 +90,7 @@
                                 </ext:Store>
                             </Store>
                         </ext:SelectBox>
-                        <ext:SelectBox runat="server" ID="slbNam" QueryMode="Local" TypeAhead="true"
+                        <ext:SelectBox runat="server" ID="slbNam" QueryMode="Local" TypeAhead="true" Width="120"
                             EmptyText="Năm ...." DisplayField="Ten" ValueField="ID" MarginSpec="0 0 0 10" RenderXType="true">
                             <Listeners>
                                 <Select Handler="#{stoNhanVien}.reload();" />
@@ -110,9 +110,9 @@
                         </ext:SelectBox>
                 <ext:SelectBox runat="server" ID="slbKeHoachDG" EmptyText="Kế hoạch đánh giá ..."
                     DisplayField="Ten" ValueField="ID" MarginSpec="0 0 0 10" Width="350" >
-                    <Listeners>
+                    <%--<Listeners>
                           <Select Handler="#{stoNhanVien}.reload();" />
-                    </Listeners>
+                    </Listeners>--%>
                     <Store>
                         <ext:Store runat="server" ID="stoKHDG">
                             <Fields>
@@ -122,7 +122,7 @@
                         </ext:Store>
                     </Store>
                 </ext:SelectBox>
-                <ext:SelectBox runat="server" ID="slbDonVi" DisplayField="Ten" ValueField="IDDonVi" EmptyText="Chọn đơn vị" MarginSpec="0 0 0 10" Width="200">
+                <ext:SelectBox runat="server" ID="slbDonVi" DisplayField="Ten" ValueField="IDDonVi" EmptyText="Chọn đơn vị" MarginSpec="0 0 0 10" Width="250">
                             <Listeners>
                                 <Select Handler="#{stoPhong}.reload();#{stoNhanVien}.reload();" />
                             </Listeners>
@@ -135,7 +135,7 @@
                                 </ext:Store>
                             </Store>
                         </ext:SelectBox>
-                    <ext:ComboBox runat="server" ID="slbPhongBan" DisplayField="Ten" ValueField="ID" EmptyText="Chọn Phòng ban, đơn vị dưới" MarginSpec="0 0 0 10" Width="200" QueryMode="Local">
+                    <ext:ComboBox runat="server" ID="slbPhongBan" DisplayField="Ten" ValueField="ID" EmptyText="Chọn Phòng ban, đơn vị dưới" MarginSpec="0 0 0 10" Width="250" QueryMode="Local">
                                 <Listeners>
                                     <Select Handler="#{stoNhanVien}.reload();" />
                                 </Listeners>

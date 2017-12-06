@@ -41,7 +41,7 @@ namespace DaoBSCKPI.DonVi
         public DataTable DanhSachDuyNhat()
         {
             DataTable dt = new DataTable();
-            dt.Columns.Add("ID", typeof(int));
+            dt.Columns.Add("IDDonVi", typeof(int));
             dt.Columns.Add("Ten", typeof(string));
 
             if (ThongTin() != null)

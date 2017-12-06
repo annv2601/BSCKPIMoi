@@ -138,8 +138,8 @@ namespace BSCKPI.MoHinhToChuc
                 dMHDV.MHDV.TuNgay = rNgay;
                 dMHDV.MHDV.IDDonViQuanLy = rIDDVQL;
                 dt = dMHDV.DanhSach();
-                dt.Columns["IDDonVi"].ColumnName = "ID";
-                dt.Rows.Add(999999, "--- Hiện cả đơn vị dưới ---", 0, 9999, DateTime.Now, DateTime.Now, "", DateTime.Now, "");
+                //dt.Columns["IDDonVi"].ColumnName = "ID";
+                //dt.Rows.Add(999999, "--- Hiện cả đơn vị dưới ---", 0, 9999, DateTime.Now, DateTime.Now, "", DateTime.Now, "");
 
                 stoDonVi.DataSource = dt;
                 stoDonVi.DataBind();
@@ -484,6 +484,15 @@ namespace BSCKPI.MoHinhToChuc
             daThongTinNhanVien dTNV = new daThongTinNhanVien();
             dTNV.TTNV.IDDonVi = int.Parse(slbDonVi.SelectedItem.Value);
             dTNV.TTNV.IDPhongBan = int.Parse(slbPhongBan.SelectedItem.Value);
+            if (dTNV.TTNV.IDPhongBan<0)
+            {
+                dTNV.TTNV.IDPhongBan = 0 - dTNV.TTNV.IDPhongBan;
+            }
+            else
+            {
+                dTNV.TTNV.IDDonVi = dTNV.TTNV.IDPhongBan;
+                dTNV.TTNV.IDPhongBan = 0;
+            }
             dTNV.TTNV.Thang = byte.Parse(slbThang.SelectedItem.Value);
             dTNV.TTNV.Nam = int.Parse(slbNam.SelectedItem.Value);
             dTNV.TTNV.IDNhanVien = ucNV1.IDNhanVien;

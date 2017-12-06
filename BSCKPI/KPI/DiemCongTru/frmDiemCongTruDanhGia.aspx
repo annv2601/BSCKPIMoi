@@ -60,9 +60,9 @@
                         </ext:SelectBox>
                 <ext:SelectBox runat="server" ID="slbKeHoachDG" EmptyText="Kế hoạch đánh giá ..."
                     DisplayField="Ten" ValueField="ID" MarginSpec="0 0 0 10" Width="350" >
-                    <Listeners>
+                    <%--<Listeners>
                           <Select Handler="#{stoDCTDG}.reload();" />
-                    </Listeners>
+                    </Listeners>--%>
                     <Store>
                         <ext:Store runat="server" ID="stoKHDG">
                             <Fields>
@@ -103,15 +103,15 @@
                                 </ext:Store>
                             </Store>
                         </ext:SelectBox>
-                <ext:SelectBox runat="server" ID="slbPhongBan" DisplayField="TenPhongBan" ValueField="IDPhongBan" EmptyText="Chọn Phòng ban" MarginSpec="0 0 0 10" Width="200">
+                <ext:SelectBox runat="server" ID="slbPhongBan" DisplayField="Ten" ValueField="ID" EmptyText="Chọn Phòng ban" MarginSpec="0 0 0 10" Width="200">
                                 <Listeners>
                                     <Select Handler="#{stoDCTDG}.reload();" />
                                 </Listeners>
                                 <Store>
                                     <ext:Store runat="server" ID="stoPhong" OnReadData="DanhSachPhongBan">
                                         <Fields>
-                                            <ext:ModelField Name="IDPhongBan" />
-                                            <ext:ModelField Name="TenPhongBan" />
+                                            <ext:ModelField Name="ID" />
+                                            <ext:ModelField Name="Ten" />
                                         </Fields>
                                     </ext:Store>
                                 </Store>

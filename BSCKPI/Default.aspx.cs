@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using DaoBSCKPI.DanhMucHeThong;
 using DaoBSCKPI.Database.DanhMucMoHinh;
 using DaoBSCKPI.NhanVien;
+using DaoBSCKPI.NguoiDung;
 
 using Ext.Net;
 using BSCKPI.UIHelper;
@@ -165,6 +166,61 @@ namespace BSCKPI
         protected void btnLogin_Click(object sender, DirectEventArgs e)
         {
             Response.Redirect("frmLogin.aspx");
+        }
+
+        protected void btnCapNhatDMK_Click(object sender, DirectEventArgs e)
+        {            
+            daDangNhap dDN = new daDangNhap();
+            dDN.ND.IDNhanVien = daPhien.NguoiDung.IDNhanVien.Value;
+            dDN.ND.MatKhau = txtMatKhauCu.Text.Trim();
+            dDN.ND.NguoiTao = daPhien.NguoiDung.IDNhanVien.ToString();
+            //Kiem tra Mat khau
+            if (txtMatKhauMoi.Text.Trim() != txtMatKhauMoiNhacLai.Text.Trim())
+            {
+                X.Msg.Show(new MessageBoxConfig
+                {
+                    Title = "Thông báo",
+                    Message = "Mật khẩu nhập vào không đồng nhất!",
+                    Buttons = MessageBox.Button.OK,
+                    Icon = (MessageBox.Icon)Enum.Parse(typeof(MessageBox.Icon), "WARNING"),
+                    AnimEl = this.btnCapNhatDMK.ClientID
+                });
+                return;
+            }
+            if (txtMatKhauMoi.Text.Trim().Length < 5)
+            {
+                X.Msg.Show(new MessageBoxConfig
+                {
+                    Title = "Thông báo",
+                    Message = "Mật khẩu nhập vào quá ít ký tự!",
+                    Buttons = MessageBox.Button.OK,
+                    Icon = (MessageBox.Icon)Enum.Parse(typeof(MessageBox.Icon), "WARNING"),
+                    AnimEl = this.btnCapNhatDMK.ClientID
+                });
+                return;
+            }
+            if (txtMatKhauMoi.Text.Trim() == "12345" || txtMatKhauMoi.Text.Trim() == "123456")
+            {
+                X.Msg.Show(new MessageBoxConfig
+                {
+                    Title = "Thông báo",
+                    Message = "Mật khẩu nhập vào quá đơn giản!",
+                    Buttons = MessageBox.Button.OK,
+                    Icon = (MessageBox.Icon)Enum.Parse(typeof(MessageBox.Icon), "WARNING"),
+                    AnimEl = this.btnCapNhatDMK.ClientID
+                });
+                return;
+            }
+            //=====================
+            if (dDN.DOiMatKhau(txtMatKhauMoi.Text.Trim()))
+            {
+                X.Msg.Alert("", "Đã đổi sang mật khẩu mới thành công!").Show();
+                wDMK.Hide();
+            }
+            else
+            {
+                X.Msg.Alert("", "Mật khẩu cũ không đúng!").Show();
+            }
         }
         #endregion
     }

@@ -58,8 +58,18 @@ namespace BSCKPI.KPI
             daMoHinhDonVi dMHDV = new daMoHinhDonVi();
             dMHDV.MHDV.IDDonViQuanLy = daPhien.NguoiDung.IDDonVi.Value;
             dMHDV.MHDV.TuNgay = DateTime.Now;
-            stoDonVi.DataSource = dMHDV.DanhSach();
-            stoDonVi.DataBind();
+            if (daPhien.VaiTro <= (int)DaoBSCKPI.NguoiDung.daDangNhap.eVaiTro.Quản_lý_Phòng)
+            {
+                daDonVi dDV = new daDonVi();
+                dDV.DV.ID = daPhien.NguoiDung.IDDonVi.Value;
+                stoDonVi.DataSource = dDV.DanhSachDuyNhat();
+            }
+            else
+            {
+                stoDonVi.DataSource = dMHDV.DanhSach();
+                stoDonVi.DataBind();
+            }
+                
         }
 
         private void DanhSachNam()

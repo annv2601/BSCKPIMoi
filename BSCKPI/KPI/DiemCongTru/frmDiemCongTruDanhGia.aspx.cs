@@ -77,7 +77,16 @@ namespace BSCKPI.KPI.DiemCongTru
             daMoHinhDonVi dMHDV = new daMoHinhDonVi();
             dMHDV.MHDV.TuNgay = rNgay;
             dMHDV.MHDV.IDDonViQuanLy = rIDDVQL;
-            stoDonVi.DataSource = dMHDV.DanhSach();
+            if (daPhien.VaiTro <= (int)DaoBSCKPI.NguoiDung.daDangNhap.eVaiTro.Quản_lý_Phòng)
+            {
+                daDonVi dDV = new daDonVi();
+                dDV.DV.ID = daPhien.NguoiDung.IDDonVi.Value;
+                stoDonVi.DataSource = dDV.DanhSachDuyNhat();
+            }
+            else
+            {
+                stoDonVi.DataSource = dMHDV.DanhSach();
+            }
             stoDonVi.DataBind();
         }
 
@@ -114,6 +123,10 @@ namespace BSCKPI.KPI.DiemCongTru
         #region Su kien
         protected void DanhSachDCTDG(object sender, StoreReadDataEventArgs e)
         {
+            if (slbThang.SelectedItem.Value==null || slbNam.SelectedItem.Value==null)
+            {
+                return;
+            }
             daDiemCongTruDanhGia dDCT = new daDiemCongTruDanhGia();
             dDCT.DCTDG.Thang = byte.Parse(slbThang.SelectedItem.Value);
             dDCT.DCTDG.Nam = int.Parse(slbNam.SelectedItem.Value);
@@ -122,7 +135,19 @@ namespace BSCKPI.KPI.DiemCongTru
             {
                 if (slbPhongBan.SelectedItem.Value != null)
                 {
-                    stoDCTDG.DataSource = dDCT.DanhSachDonVi(int.Parse(slbDonVi.SelectedItem.Value), int.Parse(slbPhongBan.SelectedItem.Value));
+                    int _IDDV, _IDPB;
+                    _IDDV = int.Parse(slbDonVi.SelectedItem.Value);
+                    _IDPB = int.Parse(slbPhongBan.SelectedItem.Value);
+                    if (_IDPB < 0)
+                    {
+                        _IDPB = 0 - _IDPB;
+                    }
+                    else
+                    {
+                        _IDDV = _IDPB;
+                        _IDPB = 0;
+                    }
+                    stoDCTDG.DataSource = dDCT.DanhSachDonVi(_IDDV, _IDPB);
                 }
                 else
                 {
@@ -138,10 +163,31 @@ namespace BSCKPI.KPI.DiemCongTru
 
         protected void DanhSachPhongBan(object sender, StoreReadDataEventArgs e)
         {
-            daMoHinhPhongBan dMHPB = new daMoHinhPhongBan();
+            /*daMoHinhPhongBan dMHPB = new daMoHinhPhongBan();
             dMHPB.MHPB.TuNgay = DateTime.Now;
-            dMHPB.MHPB.IDDonVi = int.Parse(slbDonVi.SelectedItem.Value);
-            stoPhong.DataSource = dMHPB.DanhSachDDL();
+            dMHPB.MHPB.IDDonVi = int.Parse(slbDonVi.SelectedItem.Value);*/
+            daMoHinhDonVi dMHDV = new daMoHinhDonVi();
+            dMHDV.MHDV.TuNgay = DateTime.Now;
+            dMHDV.MHDV.IDDonViQuanLy = int.Parse(slbDonVi.SelectedItem.Value);
+            if (daPhien.VaiTro <= (int)DaoBSCKPI.NguoiDung.daDangNhap.eVaiTro.Quản_lý_Phòng)
+            {
+                daPhongBan dPB = new daPhongBan();
+                dPB.PB.ID = daPhien.NguoiDung.IDPhongBan.Value;
+                if (dPB.PB.ID != 0)
+                {
+                    stoPhong.DataSource = dPB.DanhSachDuyNhat();
+                }
+                else
+                {
+                    daDonVi dDV = new daDonVi();
+                    dDV.DV.ID = daPhien.NguoiDung.IDDonVi.Value;
+                    stoPhong.DataSource = dDV.DanhSachDuyNhat();
+                }
+            }
+            else
+            {
+                stoPhong.DataSource = dMHDV.DanhSachGopVoiPhongBan();
+            }
             stoPhong.DataBind();
         }
 
@@ -195,7 +241,19 @@ namespace BSCKPI.KPI.DiemCongTru
             }
             else
             {
-                CSo = CuaSoChucNang("Bảng đánh giá Tổng hợp", "/KetQuaDanhGia/frmHienThiBaoCaoDanhGia.aspx?ThangBaoCao=" + slbThang.SelectedItem.Value + "&&NamBaoCao=" + slbNam.SelectedItem.Value + "&&BieuBaoCao=9&&KHBaoCao=" + slbKeHoachDG.SelectedItem.Value + "&&IDDonViBaoCao=" + slbDonVi.SelectedItem.Value + "&&IDPhongBanBaoCao=" + slbPhongBan.SelectedItem.Value + "&&NhanVienBaoCao=" + Guid.Empty.ToString());
+                int _IDDV, _IDPB;
+                _IDDV = int.Parse(slbDonVi.SelectedItem.Value);
+                _IDPB = int.Parse(slbPhongBan.SelectedItem.Value);
+                if (_IDPB < 0)
+                {
+                    _IDPB = 0 - _IDPB;
+                }
+                else
+                {
+                    _IDDV = _IDPB;
+                    _IDPB = 0;
+                }
+                CSo = CuaSoChucNang("Bảng đánh giá Tổng hợp", "/KetQuaDanhGia/frmHienThiBaoCaoDanhGia.aspx?ThangBaoCao=" + slbThang.SelectedItem.Value + "&&NamBaoCao=" + slbNam.SelectedItem.Value + "&&BieuBaoCao=9&&KHBaoCao=" + slbKeHoachDG.SelectedItem.Value + "&&IDDonViBaoCao=" + _IDDV + "&&IDPhongBanBaoCao=" + _IDPB + "&&NhanVienBaoCao=" + Guid.Empty.ToString());
             }
             this.Form.Controls.Add(CSo);
             CSo.Render();

@@ -27,7 +27,7 @@
         <ext:FieldContainer runat="server" Layout="HBoxLayout" MarginSpec="10 0 0 0">
             <Items>
                 <ext:SelectBox runat="server" ID="slbThang" 
-                            EmptyText="Tháng ...." DisplayField="Ten" ValueField="ID" MarginSpec="0 0 0 10" RenderXType="True">                           
+                            EmptyText="Tháng ...." DisplayField="Ten" ValueField="ID" MarginSpec="0 0 0 10" RenderXType="True" Width="120">                           
                     <ListConfig MaxHeight="500" />
                             <Store>
                                 <ext:Store runat="server" ID="stoThang">
@@ -42,7 +42,7 @@
                                 </ext:Store>
                             </Store>
                         </ext:SelectBox>
-                        <ext:SelectBox runat="server" ID="slbNam" QueryMode="Local" TypeAhead="true"
+                <ext:SelectBox runat="server" ID="slbNam" QueryMode="Local" TypeAhead="true" Width="120"
                             EmptyText="Năm ...." DisplayField="Ten" ValueField="ID" MarginSpec="0 0 0 10" RenderXType="true">
                             <Store>
                                 <ext:Store runat="server" ID="stoNam" AutoDataBind="true">
@@ -59,9 +59,9 @@
                         </ext:SelectBox>
                 <ext:SelectBox runat="server" ID="slbKeHoachDG" EmptyText="Kế hoạch đánh giá ..."
                     DisplayField="Ten" ValueField="ID" MarginSpec="0 0 0 10" Width="350" >
-                    <Listeners>
+                    <%--<Listeners>
                           <Select Handler="#{stoNhanVien}.reload();" />
-                    </Listeners>
+                    </Listeners>--%>
                     <Store>
                         <ext:Store runat="server" ID="stoKHDG">
                             <Fields>
@@ -71,10 +71,36 @@
                         </ext:Store>
                     </Store>
                 </ext:SelectBox>
+                <ext:SelectBox runat="server" ID="slbDonVi" DisplayField="Ten" ValueField="IDDonVi" EmptyText="Chọn đơn vị" MarginSpec="0 0 0 10" Width="200">
+                            <Listeners>
+                                <Select Handler="#{stoPhong}.reload();#{stoNhanVien}.reload();" />
+                            </Listeners>
+                            <Store>
+                                <ext:Store runat="server" ID="stoDonVi">
+                                    <Fields>
+                                        <ext:ModelField Name="IDDonVi" />
+                                        <ext:ModelField Name="Ten" />
+                                    </Fields>
+                                </ext:Store>
+                            </Store>
+                        </ext:SelectBox>
+               <ext:ComboBox runat="server" ID="slbPhongBan" DisplayField="Ten" ValueField="ID" EmptyText="Chọn Phòng ban" MarginSpec="0 0 0 10" Width="200">
+                                <Listeners>
+                                    <Select Handler="#{stoNhanVien}.reload();" />
+                                </Listeners>
+                                <Store>
+                                    <ext:Store runat="server" ID="stoPhong" OnReadData="DanhSachPhongBan">
+                                        <Fields>
+                                            <ext:ModelField Name="ID" />
+                                            <ext:ModelField Name="Ten" />
+                                        </Fields>
+                                    </ext:Store>
+                                </Store>
+                            </ext:ComboBox>
             </Items>
         </ext:FieldContainer>
         <ext:Hidden runat="server" ID="txtNhapDCT" />
-        <ext:GridPanel runat="server" ID="grdDCT" Width="1300" MinHeight="460" Layout="FitLayout">
+        <ext:GridPanel runat="server" ID="grdDCT" Width="1300" MinHeight="460" Layout="FitLayout" MarginSpec="10 0 0 0">
                             <Store>
                                 <ext:Store runat="server" ID="stoDCT" OnReadData="DanhSachDCT">
                                     <Model>

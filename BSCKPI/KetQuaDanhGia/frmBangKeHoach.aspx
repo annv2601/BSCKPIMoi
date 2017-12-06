@@ -53,9 +53,9 @@
                         </ext:SelectBox>
                <ext:SelectBox runat="server" ID="slbKeHoachDG" EmptyText="Kế hoạch đánh giá ..."
                     DisplayField="Ten" ValueField="ID" MarginSpec="0 0 0 20" Width="350" MatchFieldWidth="true">
-                    <Listeners>
+                    <%--<Listeners>
                           <Select Handler="#{stoNhanVien}.reload();" />
-                    </Listeners>
+                    </Listeners>--%>
                     <Store>
                         <ext:Store runat="server" ID="stoKHDG">
                             <Fields>
@@ -78,7 +78,7 @@
                                 </ext:Store>
                             </Store>
                         </ext:SelectBox>
-               <ext:ComboBox runat="server" ID="slbPhongBan" DisplayField="Ten" ValueField="ID" EmptyText="Chọn Phòng ban" MarginSpec="0 0 0 10" Width="200">
+               <ext:ComboBox runat="server" ID="slbPhongBan" DisplayField="Ten" ValueField="ID" EmptyText="Chọn Phòng ban" MarginSpec="0 0 0 10" Width="200" QueryMode="Local">
                                 <Listeners>
                                     <Select Handler="#{stoNhanVien}.reload();" />
                                 </Listeners>

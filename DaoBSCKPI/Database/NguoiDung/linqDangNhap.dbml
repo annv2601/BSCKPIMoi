@@ -37,4 +37,13 @@
       <Column Name="NguoiTao" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
     </ElementType>
   </Function>
+  <Function Name="dbo.sp_tblHTDangNhap_DoiMatKhau" Method="sp_tblHTDangNhap_DoiMatKhau">
+    <Parameter Name="IDNhanVien" Parameter="iDNhanVien" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Parameter Name="MatKhauCu" Parameter="matKhauCu" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="MatKhauMoi" Parameter="matKhauMoi" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="NguoiTao" Parameter="nguoiTao" Type="System.String" DbType="NVarChar(30)" />
+    <ElementType Name="sp_tblHTDangNhap_DoiMatKhauResult">
+      <Column Name="KQDoiMatKhau" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
 </Database>

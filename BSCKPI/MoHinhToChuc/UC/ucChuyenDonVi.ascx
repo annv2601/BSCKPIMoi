@@ -17,14 +17,14 @@
         </ext:FieldSet>
         <ext:FieldSet runat="server" Title="Đơn vị mới">
             <Items>
-                <ext:ComboBox runat="server" ID="slbDonViCDV" DisplayField="Ten" ValueField="ID" EmptyText="Chọn đơn vị" MarginSpec="10 0 0 10" Width="400" QueryMode="Local">
+                <ext:ComboBox runat="server" ID="slbDonViCDV" DisplayField="Ten" ValueField="IDDonVi" EmptyText="Chọn đơn vị" MarginSpec="10 0 0 10" Width="400" QueryMode="Local">
                             <Listeners>
                                 <Select Handler="#{stoPhongCDV}.reload();" />
                             </Listeners>
                             <Store>
                                 <ext:Store runat="server" ID="stoDonVi">
                                     <Fields>
-                                        <ext:ModelField Name="ID" />
+                                        <ext:ModelField Name="IDDonVi" />
                                         <ext:ModelField Name="Ten" />
                                     </Fields>
                                 </ext:Store>
