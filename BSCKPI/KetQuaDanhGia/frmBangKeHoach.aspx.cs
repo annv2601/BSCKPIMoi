@@ -325,7 +325,7 @@ namespace BSCKPI.KetQuaDanhGia
                 return;
             }
             Ext.Net.Window CSo = new Ext.Net.Window();
-            if (slbDonVi.SelectedItem.Value == null)
+            if (slbDonVi.SelectedItem.Value == null && daPhien.VaiTro > (int)DaoBSCKPI.NguoiDung.daDangNhap.eVaiTro.Quản_lý_Trung_tâm_Huyện)
             {
                 CSo = CuaSoChucNang("Bảng đánh giá kết quả", "frmHienThiBaoCaoDanhGia.aspx?ThangBaoCao=" + slbThang.SelectedItem.Value + "&&NamBaoCao=" + slbNam.SelectedItem.Value + "&&NhanVienBaoCao=" + slbNhanVien.SelectedItem.Value + "&&IDKeHoach=" + slbKeHoachDG.SelectedItem.Value + "&&BieuBaoCao=2&&IDDonVi=0&&IDPhongBan=0");
             }
