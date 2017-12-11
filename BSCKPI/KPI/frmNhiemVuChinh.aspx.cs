@@ -263,7 +263,7 @@ namespace BSCKPI.KPI
                 ucNV1.TanSuatDo = dNVu.NVu.IDTanSuatDo.Value;
                 ucNV1.DonViTinh = dNVu.NVu.IDDonViTinh.Value;
                 ucNV1.TrangThai = dNVu.NVu.IDTrangThai.Value;
-                ucNV1.XuHuongYeuCau = dNVu.NVu.IDXuHuongYeuCau.Value;
+                ucNV1.XuHuongYeuCau = dNVu.NVu.IDXuHuongYeuCau;
                 ucNV1.Ma = dNVu.NVu.Ma;
             }
         }
@@ -340,6 +340,28 @@ namespace BSCKPI.KPI
         public void DoNo()
         {
             txtIDNV.Text = "0";
+        }
+
+        protected Field OnCreateFilterableField(object sender, ColumnBase column, Field defaultField)
+        {
+            if (column.DataIndex == "Id")
+            {
+                ((TextField)defaultField).Icon = Icon.Magnifier;
+            }
+
+            return defaultField;
+        }
+
+        [DirectMethod(Namespace = "BangNVTTX")]
+        public void EditC(int id, string field, string oldvalue, string newvalue, object BangKQ)
+        {
+            daNhiemVuTrongTam dNVTT = new daNhiemVuTrongTam();
+            dNVTT.NVu.Thang = byte.Parse(slbThang.SelectedItem.Value);
+            dNVTT.NVu.Nam = int.Parse(slbNam.SelectedItem.Value);
+            dNVTT.NVu.NguoiTao = daPhien.NguoiDung.IDNhanVien.ToString();
+            dNVTT.NVu.ID = id;
+            dNVTT.ChuyenDanhGiaTiepThangSau();
+            grdNV.GetStore().GetById(id).Commit();
         }
         #endregion
     }

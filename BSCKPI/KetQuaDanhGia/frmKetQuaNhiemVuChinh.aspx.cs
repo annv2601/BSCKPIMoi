@@ -249,6 +249,16 @@ namespace BSCKPI.KetQuaDanhGia
 
             grdKQCTiet.GetStore().GetById(id).Commit();
         }
+
+        protected Field OnCreateFilterableField(object sender, ColumnBase column, Field defaultField)
+        {
+            if (column.DataIndex == "Id")
+            {
+                ((TextField)defaultField).Icon = Icon.Magnifier;
+            }
+
+            return defaultField;
+        }
         #endregion
     }
 }

@@ -182,6 +182,7 @@
                         <BeforeEdit Handler="return beforeCellEditHandler(e);"></BeforeEdit>
                     </Listeners>
                 </ext:CellEditing>
+                <ext:FilterHeader runat="server" OnCreateFilterableField="OnCreateFilterableField" />
             </Plugins>
         </ext:GridPanel>
 

@@ -6,6 +6,13 @@
 <head runat="server">
     <title></title>
     <link rel="stylesheet" href="../resource/css/main.css" />
+    <script type="text/javascript">
+        var editC = function (editor, e) {
+            if (e.value !== e.originalValue) {
+                BangNVTTX.EditC(e.record.data.ID, e.field, e.originalValue, e.value, e.record.data);
+            }
+        }
+    </script>
 </head>
 <body>
     <ext:ResourceManager runat="server" Locale="vi-VN"/>
@@ -50,6 +57,7 @@
                                 <ext:ModelField Name="IDXuHuongYeuCau" />
                                 <ext:ModelField Name="XuHuongYeuCau" />
                                 <ext:ModelField Name="Ma" />
+                                <ext:ModelField Name="DanhGiaTiepThangSau" />
                             </Fields>
                         </ext:Model>
                     </Model>
@@ -134,6 +142,7 @@
                     <ext:Column runat="server" Text="Đơn vị tính" DataIndex="DonViTinh" Width="120" Align="Center"/>
                     <ext:Column runat="server" Text="Xu hướng" DataIndex="XuHuongYeuCau" Width="120" Align="Center"/>
                     <ext:NumberColumn runat="server" Text="Mục tiêu" DataIndex="MucTieu" Width="150" Align="Right" />
+                    <ext:CheckColumn runat="server" Text="Chuyển đánh giá tiếp tháng sau" DataIndex="DanhGiaTiepThangSau" Editable="true" />
                     <ext:Column runat="server" Text="Trạng thái" DataIndex="TrangThai" Width="120" />
                 </Columns>
             </ColumnModel>
@@ -148,6 +157,14 @@
                     </DirectEvents>
                 </ext:CellSelectionModel>
             </SelectionModel>
+            <Plugins>
+                <ext:FilterHeader runat="server" OnCreateFilterableField="OnCreateFilterableField" />
+                <ext:CellEditing runat="server" ClicksToEdit="1">
+                    <Listeners>
+                        <Edit Fn="editC"></Edit>
+                    </Listeners>
+                </ext:CellEditing>
+            </Plugins>
         </ext:GridPanel>
 
         <ext:FieldContainer runat="server" Layout="HBoxLayout" ID="fdcNhapLieu" >
