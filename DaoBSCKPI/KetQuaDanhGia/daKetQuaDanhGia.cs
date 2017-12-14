@@ -68,6 +68,10 @@ namespace DaoBSCKPI.KetQuaDanhGia
             lKQ.sp_tblBKKetQuaDanhGia_TinhDiem_Kehoach(KQ.Thang, KQ.Nam, rIDKeHoach, KQ.NguoiTao);
         }
 
+        public decimal TinhDiemNhap()
+        {
+            return lKQ.sp_tblBKKetQuaDanhGia_TinhDiem_Nhap(KQ.Thang, KQ.Nam, KQ.IDNhanVien, KQ.IDKPI).Single().DiemKPINV;
+        }
         public DataTable DanhSach()
         {
             List<sp_tblBKKetQuaDanhGia_DanhSachResult> lst;

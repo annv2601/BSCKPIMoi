@@ -193,6 +193,18 @@
                             </tpl>
                         </html>                   
                     </Tpl>
+                <DirectEvents>
+                    <ItemDblClick OnEvent="DanhGiaNhanVien_DBClick">
+                        <ExtraParams>
+                                <ext:Parameter
+                                    Name="Values"
+                                    Value="#{vNhanVien}.getRowsValues({ selectedOnly : true })"
+                                    Mode="Raw"
+                                    Encode="true" />
+                            </ExtraParams>
+                        <EventMask ShowMask="true" Msg="Đang thực hiện ....." />
+                    </ItemDblClick>
+                </DirectEvents>
                 </ext:DataView>
         
         <ext:Window runat="server" ID="wNhanVien" Width="780" Height="350" ButtonAlign="Center" Hidden="true"
@@ -239,6 +251,28 @@
                     </Listeners>
                 </ext:Button>
             </Buttons>
+        </ext:Window>
+
+        <ext:Window runat="server" ID="wDuLieuDanhGia" Width="1100" Height="620" ButtonAlign="Center" Hidden="true"
+            Icon="Bell" TitleAlign="Center" Title="Nhân viên ......">
+            <Items>
+                <ext:TabPanel runat="server" Layout="FitLayout" ButtonAlign="Center" Cls="tabs">
+                <Items>
+                    <ext:Panel runat="server" Title="Công việc chính" Header="false" ID="pCVC" Height="580">
+                        <Loader runat="server" Url="" ID="lCVC" Mode="Frame">                            
+                        </Loader>
+                    </ext:Panel>
+                    <ext:Panel runat="server" Title="Mục tiêu phân bổ" Header="false" ID="pMTPB" Height="580">
+                        <Loader runat="server" Url="" ID="lMTPB" Mode="Frame">                            
+                        </Loader>
+                    </ext:Panel>
+                    <ext:Panel runat="server" Title="Kết quả đánh giá" Header="false" ID="pKQDG" Height="580">
+                        <Loader runat="server" Url="" ID="lKQDG" Mode="Frame">                            
+                        </Loader>
+                    </ext:Panel>
+                </Items>
+                </ext:TabPanel>
+            </Items>            
         </ext:Window>
     </form>
 </body>

@@ -1019,4 +1019,30 @@ namespace DaoBSCKPI.Database.KetQuaDanhGia
             }
         }
     }
+
+    public partial class sp_tblBKKetQuaDanhGia_TinhDiem_NhapResult
+    {
+
+        private decimal _DiemKPINV;
+
+        public sp_tblBKKetQuaDanhGia_TinhDiem_NhapResult()
+        {
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_DiemKPINV", DbType = "Decimal(18,3)")]
+        public decimal DiemKPINV
+        {
+            get
+            {
+                return this._DiemKPINV;
+            }
+            set
+            {
+                if ((this._DiemKPINV != value))
+                {
+                    this._DiemKPINV = value;
+                }
+            }
+        }
+    }
 }

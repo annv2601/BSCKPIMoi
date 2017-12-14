@@ -28,6 +28,39 @@ namespace BSCKPI.MoHinhToChuc
                 //DanhSachDonViPhanCap(DateTime.Now, daPhien.NguoiDung.IDDonVi.Value);
 
                 CheckQuyen(int.Parse(Request.QueryString["CN"]));
+
+                //dat san
+                DateTime _ngay = DateTime.Now;
+                if (_ngay.Day < 15)
+                {
+                    _ngay = _ngay.AddMonths(-1);
+                }
+                daThongTinNhanVien dTTNV = new daThongTinNhanVien();
+                slbDonVi.SelectedItem.Value = daPhien.NguoiDung.IDDonVi.Value.ToString();
+                stoPhong.Reload();
+                if (daPhien.NguoiDung.IDPhongBan.Value > 0)
+                {
+                    slbPhongBan.SelectedItem.Value = (0 - daPhien.NguoiDung.IDPhongBan.Value).ToString();
+                }
+                else
+                {
+                    slbPhongBan.SelectedItem.Value = daPhien.NguoiDung.IDDonVi.Value.ToString();
+                }
+                slbPhongBan.UpdateSelectedItems();
+
+                slbThang.SelectedItem.Value = _ngay.Month.ToString();
+                slbNam.SelectedItem.Value = _ngay.Year.ToString();
+
+                dTTNV.TTNV.Thang = byte.Parse(slbThang.SelectedItem.Value);
+                dTTNV.TTNV.Nam = int.Parse(slbNam.SelectedItem.Value);
+                dTTNV.TTNV.IDDonVi = int.Parse(slbDonVi.SelectedItem.Value);
+                dTTNV.TTNV.IDPhongBan = daPhien.NguoiDung.IDPhongBan.Value;
+                dTTNV.TTNV.NguoiTao = daPhien.NguoiDung.IDNhanVien.ToString();
+
+                dTTNV.KhoiTao(); //Kiem tra neu chua co thi khoi tao luon
+
+                stoNhanVien.DataSource = dTTNV.DanhSach();
+                stoNhanVien.DataBind();
             }
         }
 
@@ -596,6 +629,54 @@ namespace BSCKPI.MoHinhToChuc
                 csTruyNhap = TaoCuaSo("Quản lý truy nhập", daPhien.LayDiaChiURL("/NguoiDung/frmQuanTriNguoiDung.aspx?IDNhanVienTruyNhap="+IDNhanVienTruyNhap.ToString()));
                 this.form1.Controls.Add(csTruyNhap);
                 csTruyNhap.Render();
+            }
+        }
+        #endregion
+
+        #region Chon de danh gia luon
+        protected void DanhGiaNhanVien_DBClick(object sender, DirectEventArgs e)
+        {
+            string json = e.ExtraParams["Values"];
+            if (json == "")
+            {
+                return;
+            }
+            Dictionary<string, string>[] companies = JSON.Deserialize<Dictionary<string, string>[]>(json);
+            string _IDNVCDG = "";
+            foreach (Dictionary<string, string> row in companies)
+            {
+                try
+                {
+                    _IDNVCDG = row["IDNhanVien"].ToString();
+                    wDuLieuDanhGia.Title ="Nhân viên: " + row["TenNhanVien"].ToString(); ;
+                }
+                catch
+                {
+                    _IDNVCDG = "";
+                }
+            }
+            if (_IDNVCDG == "")
+            {
+                X.Msg.Show(new MessageBoxConfig
+                {
+                    Title = "Thông báo",
+                    Message = "Đề nghị phải chọn một nhân viên trước khi Đánh giá",
+                    Buttons = MessageBox.Button.OK,
+                    Icon = (MessageBox.Icon)Enum.Parse(typeof(MessageBox.Icon), "WARNING")
+                });
+            }
+            else
+            {
+                pCVC.Loader.Url = "/KPI/frmNhiemVuChinhCaNhan.aspx?T=" + slbThang.SelectedItem.Value + "&N=" + slbNam.SelectedItem.Value + "&L=" + _IDNVCDG;
+                pCVC.LoadContent();
+
+                pMTPB.Loader.Url = "/KPI/frmPhanBoMucTieuMotCaNhan.aspx?T=" + slbThang.SelectedItem.Value + "&N=" + slbNam.SelectedItem.Value + "&L=" + _IDNVCDG;
+                pMTPB.LoadContent();
+
+                pKQDG.Loader.Url = "/KetQuaDanhGia/frmBangCaNhan.aspx?T=" + slbThang.SelectedItem.Value + "&N=" + slbNam.SelectedItem.Value + "&NhanVien=" + _IDNVCDG;
+                pKQDG.LoadContent();
+
+                wDuLieuDanhGia.Show();
             }
         }
         #endregion

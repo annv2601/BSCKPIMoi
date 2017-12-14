@@ -167,7 +167,7 @@
         <ext:Hidden runat="server" ID="txtNhap" />
         <ext:GridPanel runat="server" ID="grdPBChiTieu" Width="1300" MinHeight="500" Layout="FitLayout" ContextMenuID="mnuPBChiTieu">
                             <Store>
-                                <ext:Store runat="server" ID="stoPhanBoCT" OnReadData="DanhSachPBMTNV">
+                                <ext:Store runat="server" ID="stoPhanBoCT" OnReadData="DanhSachPBMTNV" GroupField="TenNhom" GroupDir="Default">
                                     <Model>
                                         <ext:Model runat="server" IDProperty="STT">
                                             <Fields>
@@ -175,6 +175,7 @@
                                                 <ext:ModelField Name="ID" />
                                                 <ext:ModelField Name="Ma" />
                                                 <ext:ModelField Name="Ten" />
+                                                <ext:ModelField Name="TenNhom" />
                                                 <ext:ModelField Name="XuHuong" />
                                                 <ext:ModelField Name="DonViTinh" />
                                                 <ext:ModelField Name="TanSuatDo" />
@@ -245,12 +246,22 @@
                                 <Columns>
                                     <ext:RowNumbererColumn runat="server" ID="RowNumbererColumn1" Text="STT" Width="60" Align="Center"/>
                                     <ext:Column runat="server" ID="Column1" Text="Mã" DataIndex="Ma" Width="70"/>
-                                    <ext:Column runat="server" ID="Column2" Text="Tên KPI" DataIndex="Ten" Width="200"/>
+                                    <ext:SummaryColumn
+                                        runat="server"
+                                        Text="Tên KPI"
+                                        DataIndex="Ten"
+                                        Hideable="false"
+                                        SummaryType="Count"
+                                        Width="200">
+                                        <SummaryRenderer Handler="return ((value === 0 || value > 1) ? '(' + value +')' : '(1)');" />
+                                    </ext:SummaryColumn>
+                                    
+                                    <%--<ext:Column runat="server" ID="Column2" Text="Tên KPI" DataIndex="Ten" Width="200"/>--%>
                                     <ext:Column runat="server" ID="Column3" Text="Đơn vị tính" DataIndex="DonViTinh"  Align="Center"/>
                                     <ext:Column runat="server" ID="Column4" Text="Tần suất đo" DataIndex="TanSuatDo"  Align="Center"/>
                                     <ext:Column runat="server" ID="Column5" Text="Xu hướng yêu cầu" DataIndex="XuHuong" Width="130" Align="Center"/>
                                     <ext:NumberColumn runat="server" ID="cTrongSoNhom" Text="Trọng số nhóm" DataIndex="TrongSoNhom" Format="000%"  Align="Center" Width="120"/>
-                                    <ext:NumberColumn runat="server" ID="NumberColumn1" Text="Trọng số" DataIndex ="TrongSo" Width="150" Align="Right">
+                                    <ext:NumberColumn runat="server" ID="NumberColumn1" Text="Trọng số" DataIndex ="TrongSo" SummaryType="Sum" Width="150" Align="Right">
                                     <Renderer Handler="return Ext.util.Format.number(value,'0,000.0')+'%';"></Renderer>
                                     <SummaryRenderer  Handler="return Ext.util.Format.number(value,'0,000.0')+'%';"></SummaryRenderer >
                                         <Editor>
@@ -278,6 +289,15 @@
                                     </Listeners>
                                 </ext:CellEditing>
                             </Plugins>
+                            <Features>
+                                
+                                <ext:GroupingSummary
+                                ID="Group1"
+                                runat="server"                    
+                                GroupHeaderTplString="{name}"
+                                HideGroupedHeader="true"
+                                EnableGroupingMenu="false" />
+                            </Features>
                         </ext:GridPanel>
     </form>
 </body>

@@ -38,6 +38,12 @@ namespace BSCKPI.KetQuaDanhGia
             if(!X.IsAjaxRequest)
             {
                 //txtIDNhanVien.Text = Request.QueryString["NhanVien"].ToString();
+                try
+                {
+                    Thang = byte.Parse(Request.QueryString["T"]);
+                    Nam = int.Parse(Request.QueryString["N"]);
+                }
+                catch { }
                 IDNhanVien= Guid.Parse(Request.QueryString["NhanVien"].ToString());
                 LayBangDanhGia(Thang, Nam, Guid.Parse(txtIDNhanVien.Text));
             }
@@ -104,6 +110,11 @@ namespace BSCKPI.KetQuaDanhGia
                     dKQ.KQ.NguoiTao = daPhien.NguoiDung.IDNhanVien.ToString();
 
                     dKQ.CapNhat();
+
+                    decimal _DTi;
+                    _DTi = dKQ.TinhDiemNhap();
+                    grdBangCN.GetStore().GetById(id).Set("Diem", _DTi);
+
                     break;
                 case (int)daBangDanhGia.eLoaiChiTieu.Nhiệm_Vụ_Trọng_Tâm:
                     daKQNhiemVuTrongTam dKQNV = new daKQNhiemVuTrongTam();

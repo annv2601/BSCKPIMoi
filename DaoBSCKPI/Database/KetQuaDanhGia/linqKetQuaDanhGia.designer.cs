@@ -138,6 +138,13 @@ namespace DaoBSCKPI.Database.KetQuaDanhGia
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), thang, nam, iDNhanVien, iDKPI, ketQua, diem, dienGiai, nguoiTao);
 			return ((int)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_tblBKKetQuaDanhGia_TinhDiem_Nhap")]
+		public ISingleResult<sp_tblBKKetQuaDanhGia_TinhDiem_NhapResult> sp_tblBKKetQuaDanhGia_TinhDiem_Nhap([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Thang", DbType="SmallInt")] System.Nullable<short> thang, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nam", DbType="Int")] System.Nullable<int> nam, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDNhanVien", DbType="UniqueIdentifier")] System.Nullable<System.Guid> iDNhanVien, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDKPI", DbType="Int")] System.Nullable<int> iDKPI)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), thang, nam, iDNhanVien, iDKPI);
+			return ((ISingleResult<sp_tblBKKetQuaDanhGia_TinhDiem_NhapResult>)(result.ReturnValue));
+		}
 	}
 	
 	public partial class sp_tblBKKetQuaDanhGia_DanhSachResult

@@ -136,8 +136,10 @@
     <Content Include="KPI\frmKetQuaDanhGiaCaNhan.aspx" />
     <Content Include="KPI\frmKPIPhong.aspx" />
     <Content Include="KPI\frmNhiemVuChinh.aspx" />
+    <Content Include="KPI\frmNhiemVuChinhCaNhan.aspx" />
     <Content Include="KPI\frmPhanBoMucTieuCaNhanTheoKeHoach.aspx" />
     <Content Include="KPI\frmPhanBoMucTieuCaNhan.aspx" />
+    <Content Include="KPI\frmPhanBoMucTieuMotCaNhan.aspx" />
     <Content Include="MoHinhToChuc\frmNhanVien.aspx" />
     <Content Include="MoHinhToChuc\UC\ucChuyenDonVi.ascx" />
     <Content Include="MoHinhToChuc\UC\ucNhanVien.ascx" />
@@ -365,6 +367,13 @@
     <Compile Include="KPI\frmNhiemVuChinh.aspx.designer.cs">
       <DependentUpon>frmNhiemVuChinh.aspx</DependentUpon>
     </Compile>
+    <Compile Include="KPI\frmNhiemVuChinhCaNhan.aspx.cs">
+      <DependentUpon>frmNhiemVuChinhCaNhan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KPI\frmNhiemVuChinhCaNhan.aspx.designer.cs">
+      <DependentUpon>frmNhiemVuChinhCaNhan.aspx</DependentUpon>
+    </Compile>
     <Compile Include="KPI\frmPhanBoMucTieuCaNhanTheoKeHoach.aspx.cs">
       <DependentUpon>frmPhanBoMucTieuCaNhanTheoKeHoach.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -378,6 +387,13 @@
     </Compile>
     <Compile Include="KPI\frmPhanBoMucTieuCaNhan.aspx.designer.cs">
       <DependentUpon>frmPhanBoMucTieuCaNhan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KPI\frmPhanBoMucTieuMotCaNhan.aspx.cs">
+      <DependentUpon>frmPhanBoMucTieuMotCaNhan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KPI\frmPhanBoMucTieuMotCaNhan.aspx.designer.cs">
+      <DependentUpon>frmPhanBoMucTieuMotCaNhan.aspx</DependentUpon>
     </Compile>
     <Compile Include="MoHinhToChuc\frmNhanVien.aspx.cs">
       <DependentUpon>frmNhanVien.aspx</DependentUpon>

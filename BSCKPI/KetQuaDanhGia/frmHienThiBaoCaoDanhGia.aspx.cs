@@ -432,7 +432,7 @@ namespace BSCKPI.KPI
             daDonVi dDV = new daDonVi();
             daPhongBan dPB = new daPhongBan();
 
-            if(rIDPhongBan!=0)
+            if(rIDPhongBan>0)
             {
                 dDV.DV.ID = rIDDonVi;
                 dDV.ThongTin();

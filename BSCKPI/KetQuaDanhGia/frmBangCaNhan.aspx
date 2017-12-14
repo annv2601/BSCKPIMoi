@@ -137,7 +137,7 @@
             ID="grdBangCN"
             runat="server"
             Frame="true"
-            Title=""
+            Title="" Header="false"
             TitleAlign="Center"
             Icon="TableKey" MinHeight="500">
             <Store>
@@ -188,10 +188,13 @@
                             <ext:Column runat="server" Text="Đơn vị tính" DataIndex="DonViTinh" />
                         </Columns>
                     </ext:Column>                   
-
-                    <ext:NumberColumn runat="server" Text="Trọng số" DataIndex="TrongSo" Format="000%" Align="Right">
+                    <ext:SummaryColumn runat="server" Text="Trọng số" SummaryType="Sum" DataIndex="TrongSo" Format="000%" Align="Center">
+                    <Renderer Handler="return value +'%';" />
+                    <SummaryRenderer Handler="return value +'%';" />
+                    </ext:SummaryColumn>
+                    <%--<ext:NumberColumn runat="server" Text="Trọng số" DataIndex="TrongSo" Format="000%" Align="Right">
                    
-                    </ext:NumberColumn>
+                    </ext:NumberColumn>--%>
                     <ext:NumberColumn runat="server" Text="Kết quả" DataIndex="KetQua" Align="Right">
                         <Editor>
                             <ext:NumberField runat="server" AllowDecimals="true" DecimalPrecision="2" EmptyNumber="0"  MinValue="0"/>

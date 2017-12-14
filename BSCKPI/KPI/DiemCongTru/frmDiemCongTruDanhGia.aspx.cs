@@ -243,15 +243,22 @@ namespace BSCKPI.KPI.DiemCongTru
             {
                 int _IDDV, _IDPB;
                 _IDDV = int.Parse(slbDonVi.SelectedItem.Value);
-                _IDPB = int.Parse(slbPhongBan.SelectedItem.Value);
-                if (_IDPB < 0)
+                try
                 {
-                    _IDPB = 0 - _IDPB;
+                    _IDPB = int.Parse(slbPhongBan.SelectedItem.Value);
+                    if (_IDPB < 0)
+                    {
+                        _IDPB = 0 - _IDPB;
+                    }
+                    else
+                    {
+                        _IDDV = _IDPB;
+                        _IDPB = 0;
+                    }
                 }
-                else
+                catch
                 {
-                    _IDDV = _IDPB;
-                    _IDPB = 0;
+                    _IDPB = -9;
                 }
                 CSo = CuaSoChucNang("Bảng đánh giá Tổng hợp", "/KetQuaDanhGia/frmHienThiBaoCaoDanhGia.aspx?ThangBaoCao=" + slbThang.SelectedItem.Value + "&&NamBaoCao=" + slbNam.SelectedItem.Value + "&&BieuBaoCao=9&&KHBaoCao=" + slbKeHoachDG.SelectedItem.Value + "&&IDDonViBaoCao=" + _IDDV + "&&IDPhongBanBaoCao=" + _IDPB + "&&NhanVienBaoCao=" + Guid.Empty.ToString());
             }
