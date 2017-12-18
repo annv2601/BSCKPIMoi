@@ -33,10 +33,11 @@ namespace BSCKPI.KPI
                 Guid _IDNhanVien;
                 _Thang = byte.Parse(Request.QueryString["ThangBaoCao"]);
                 _Nam = int.Parse(Request.QueryString["NamBaoCao"]);
-                _IDNhanVien = Guid.Parse(Request.QueryString["NhanVienBaoCao"]);
+                
                 switch (int.Parse(Request.QueryString["BieuBaoCao"]))
                 {
                     case 1:
+                        _IDNhanVien = Guid.Parse(Request.QueryString["NhanVienBaoCao"]);
                         BangDanhGia(_Thang, _Nam, _IDNhanVien);
                         break;
                     case 2:
@@ -219,6 +220,15 @@ namespace BSCKPI.KPI
             }
             else
             {
+                if(_IDPhongBan<0)
+                {
+                    _IDPhongBan = 0 - _IDPhongBan;
+                }
+                else
+                {
+                    _IDDonVi = _IDPhongBan;
+                    _IDPhongBan = 0;
+                }
                 lst = dKH.lstDanhSachNhanVienDonVi(_IDDonVi,_IDPhongBan);
             }
 
